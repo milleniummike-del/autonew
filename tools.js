@@ -26,6 +26,7 @@ execFile('powershell.exe', [
     console.log('Video processing completed.');
 });
 
+/*
 execFile('powershell.exe', [
     '-NoProfile',
     '-ExecutionPolicy', 'Bypass',
@@ -43,3 +44,4 @@ execFile('powershell.exe', [
 
     console.log('Video processing completed.');
 });
+*/

@@ -34,7 +34,7 @@ function waitForKeypress() {
     const page = await browser.newPage();
 
     // MAIN LOOP
-    for (let i = 30; i < 31; i++) {
+    for (let i = 21; i < 22; i++) {
         try {
             await page.goto(
                 'https://zsky.ai/create',
@@ -54,7 +54,7 @@ function waitForKeypress() {
             await page.locator('#promptInput').fill(prompt);
 
             const audioPath = filepath + i + ".wav";
-            const imagePath = filepath + i + ".jpeg";
+            const imagePath = filepath + i + ".webp";
 
             // CHECK BOTH FILES EXIST
             if (!fs.existsSync(audioPath)) {
@@ -124,17 +124,37 @@ function waitForKeypress() {
                     console.error('Download failed:', stderr || error.message);
                     return;
                 }
-
                 console.log('Downloaded:', outputFile);
+
+                const { filepath } = require('./environment');
+                const { execFile } = require('child_process');
+                const path = require('path');
+                
+                const workingDirectory1 = filepath+"\\"+i+".mp4";
+                const scriptPath1 = path.join(__dirname, 'ps_cutvideo_file.ps1');
+                
+                execFile('powershell.exe', [
+                    '-NoProfile',
+                    '-ExecutionPolicy', 'Bypass',
+                    '-File', scriptPath1,
+                    workingDirectory1
+                ], (error, stdout, stderr) => {
+                
+                    if (stdout) console.log(stdout);
+                    if (stderr) console.error(stderr);
+                
+                    if (error) {
+                        console.error('PowerShell error:', error.message);
+                        return;
+                    }
+                
+                    console.log('Video processing completed.');
+                });
             });
         } catch (e) {
             console.log(e);
             waitForKeypress()
         }
     }
-
-    const pages = await browser.pages();
-    for (const p of pages) await p.close();
-
-    await browser.close();
+    console.log("Finished queue");
 })();

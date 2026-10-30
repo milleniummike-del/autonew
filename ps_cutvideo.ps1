@@ -23,7 +23,7 @@ if ($files.Count -eq 0) {
 }
 
 foreach ($file in $files) {
-    $outPath = $InputFolder + "\short"
+    $outPath = $InputFolder + "\chop"
     $outputFile = Join-Path $outPath ($file.BaseName + "_5sec.mp4")
 
     # Avoid processing files created by this script
