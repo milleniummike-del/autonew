@@ -3,6 +3,7 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 const path = require('path');
 const { getBrowser } = require('./browser');
+const { filepath } = require('./environment');
 
 puppeteer.use(StealthPlugin());
 
@@ -33,7 +34,7 @@ function waitForKeypress() {
     const page = await browser.newPage();
 
     // MAIN LOOP
-    for (let i = 11; i < 12; i++) {
+    for (let i = 30; i < 31; i++) {
         try {
             await page.goto(
                 'https://zsky.ai/create',
@@ -52,11 +53,8 @@ function waitForKeypress() {
             await page.waitForSelector('#promptInput', { visible: true });
             await page.locator('#promptInput').fill(prompt);
 
-            const inputmixed = "X:\\inputmixed\\Sing the Dark Away_split_pieces_36_parts\\";
-
-
-            const audioPath = inputmixed + i + ".wav";
-            const imagePath = inputmixed + i + ".jpeg";
+            const audioPath = filepath + i + ".wav";
+            const imagePath = filepath + i + ".jpeg";
 
             // CHECK BOTH FILES EXIST
             if (!fs.existsSync(audioPath)) {
@@ -107,11 +105,11 @@ function waitForKeypress() {
 
             const videoSrc = await handle.jsonValue();
 
-            console.log('Invoke-WebRequest -Uri "' + videoSrc + '" -OutFile "' + inputmixed + '\\' + i + '.mp4"');
+            console.log('Invoke-WebRequest -Uri "' + videoSrc + '" -OutFile "' + filepath + '\\' + i + '.mp4"');
             const { execFile } = require('child_process');
             const path = require('path');
 
-            const outputFile = path.join(inputmixed, `${i}.mp4`);
+            const outputFile = path.join(filepath, `${i}.mp4`);
 
             execFile('curl.exe', [
                 '-L',
