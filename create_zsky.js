@@ -34,7 +34,7 @@ function waitForKeypress() {
     const page = await browser.newPage();
 
     // MAIN LOOP
-    for (let i = 21; i < 22; i++) {
+    for (let i = 1; i < 2; i++) {
         try {
             await page.goto(
                 'https://zsky.ai/create',
