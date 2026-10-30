@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "GT - Image to Image",
+  "version": "0.1.0",
+  "description": "Batch automation for Gentube prompts, generation, and downloads.",
+  "permissions": [
+    "sidePanel",
+    "scripting",
+    "downloads",
+    "storage"
+  ],
+  "web_accessible_resources": [
+  {
+    "resources": [
+      "inputimages/*"
+    ],
+    "matches": ["<all_urls>"]
+  }
+],
+  "host_permissions": [
+    "https://labs.google.com/*",
+    "https://labs.google/*",
+    "https://www.gentube.app/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "GT - Image to Image"
+  },
+  "side_panel": {
+    "default_path": "side_panel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://labs.google.com/*",
+        "https://labs.google/*",
+        "https://flow.google.com/project/*",
+        "https://www.gentube.app/*"
+      ],
+      "js": ["content_script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

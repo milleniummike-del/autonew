@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Automation</title>
+  <style>
+    body { font-family: sans-serif; padding: 10px; }
+    #log { width: 100%; height: 200px; white-space: pre; overflow-y: scroll; background: #f0f0f0; padding: 5px; }
+  </style>
+</head>
+<body>
+
+<h2>Media Slurper</h2>
+
+<hr>
+
+<label>
+  <input type="checkbox" id="toggleDownload">
+  Enable Auto-Download
+</label>
+
+<h3>Download file types:</h3>
+<label><input type="checkbox" class="extFilter" value="png"> png</label><br>
+<label><input type="checkbox" class="extFilter" value="jpg"> jpg</label><br>
+<label><input type="checkbox" class="extFilter" value="jpeg"> jpeg</label><br>
+<label><input type="checkbox" class="extFilter" value="webp"> webp</label><br>
+<label><input type="checkbox" class="extFilter" value="gif"> gif</label><br>
+<label><input type="checkbox" class="extFilter" value="mp4"> mp4</label><br>
+<label><input type="checkbox" class="extFilter" value="webm"> webm</label><br>
+<label><input type="checkbox" class="extFilter" value="mov"> mov</label><br>
+
+<hr>
+
+<pre id="log"></pre>
+
+<script src="side_panel.js"></script>
+</body>
+</html>

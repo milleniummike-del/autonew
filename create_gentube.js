@@ -1,0 +1,137 @@
+const puppeteer = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+const fs = require('fs');
+const path = require('path');
+const { getBrowser } = require('./browser');
+
+puppeteer.use(StealthPlugin());
+
+// Wait for any key to be pressed in the terminal
+function waitForKeypress() {
+    return new Promise(resolve => {
+        console.log('\nWebsite loaded. Press any key to start...');
+
+        if (process.stdin.isTTY) {
+            process.stdin.setRawMode(true);
+        }
+
+        process.stdin.resume();
+
+        process.stdin.once('data', () => {
+            if (process.stdin.isTTY) {
+                process.stdin.setRawMode(false);
+            }
+
+            process.stdin.pause();
+            resolve();
+        });
+    });
+}
+
+(async () => {
+    const browser = await getBrowser();
+
+    const matrix = require('./matrix.json');
+    const page = await browser.newPage();
+
+    await page.goto(
+        'https://www.gentube.app/create-together/k17e0enegvgsec6fy4epj16zrx8d9w78?creating=1',
+        { waitUntil: "networkidle2", timeout: 0 }
+    );
+
+    // WAIT FOR KEY BEFORE STARTING
+    await waitForKeypress();
+
+    // CLICK CHARACTER CARD
+    // await page.waitForSelector('img[alt="Aarav Patel"]', { visible: true });
+    // await page.click('img[alt="Aarav Patel"]');
+
+    // Ensure download directory exists
+    const downloadDir = path.join(__dirname, "inputimages");
+    if (!fs.existsSync(downloadDir)) fs.mkdirSync(downloadDir);
+
+    // Save DATA URI image ONLY
+    async function saveDataImage(src) {
+        const match = src.match(/^data:(image\/\w+);base64,(.*)$/);
+        if (!match) return;
+
+        const ext = match[1].split("/")[1];
+        const base64 = match[2];
+
+        const buffer = Buffer.from(base64, "base64");
+        const filename = `dataimg_${Date.now()}.${ext}`;
+        const filepath = path.join(downloadDir, filename);
+
+        fs.writeFileSync(filepath, buffer);
+        console.log("[DATA] Saved:", filepath);
+    }
+
+    console.log("Total prompts:", matrix.shots.length);
+
+    // MAIN LOOP
+    for (let i = 0; i < matrix.shots.length; i++) {
+
+        const textareaSelector = 'textarea';
+        await page.waitForSelector(textareaSelector, { visible: true });
+
+        const contentTextarea = await page.$(textareaSelector);
+
+        // Clear textarea
+        await contentTextarea.click({ clickCount: 3 });
+        await page.keyboard.press('Backspace');
+
+        // Prepare prompt
+        const text = `${JSON.stringify(matrix.shots[i].in_frame_still_prompt)}`;
+        const text2 = `${JSON.stringify(matrix.shots[i].out_frame_still_prompt)}`;
+
+        console.log(`Processing prompt ${i + 1}/${matrix.shots.length}`);
+        console.log(text);
+
+        await page.evaluate((selector, value) => {
+            const el = document.querySelector(selector);
+            const setter = Object.getOwnPropertyDescriptor(
+                Object.getPrototypeOf(el), 'value'
+            ).set;
+
+            setter.call(el, value);
+            el.dispatchEvent(new Event('input', { bubbles: true }));
+        }, textareaSelector, text);
+
+        // Wait for images to generate
+        await new Promise(r => setTimeout(r, 10000));
+
+        // Capture largest data:image
+        const dataImages = await page.evaluate(() => {
+            return Array.from(document.querySelectorAll("img"))
+                .map(img => ({
+                    src: img.src,
+                    size: img.src.startsWith("data:image")
+                        ? img.src.length
+                        : 0
+                }))
+                .filter(obj => obj.src.startsWith("data:image"));
+        });
+
+        if (dataImages.length === 0) {
+            console.log("[DATA] No data images found for prompt", i + 1);
+        } else {
+            const largest = dataImages.reduce(
+                (a, b) => b.size > a.size ? b : a
+            );
+
+            await saveDataImage(largest.src);
+        }
+
+        // Clear button
+        const clearButton = await page.waitForSelector(
+            'button[aria-label="Clear"]'
+        );
+
+        await clearButton.click();
+    }
+
+    const pages = await browser.pages();
+    for (const p of pages) await p.close();
+
+    await browser.close();
+})();

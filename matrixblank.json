@@ -1,0 +1,34 @@
+{
+  "shots": [
+    {
+      "shot_number": null,
+      "heading": "",
+      "duration_seconds": null,
+      "timecode": "",
+      "camera_lens": "",
+      "camera_motion": "",
+      "characters_present": [],
+      "set_used": "",
+      "props_used": [],
+      "spoken_dialogue": null,
+      "action_description": "",
+      "in_frame_still_prompt": "",
+      "out_frame_still_prompt": "",
+      "video_prompt": "",
+      "takes": [
+        {
+          "take_number": null,
+          "total_takes": null,
+          "duration_seconds": null,
+          "timecode": "",
+          "camera_instruction": "",
+          "motion_vector": "",
+          "init_seed_guidance": "",
+          "in_frame_still_prompt": "",
+          "out_frame_still_prompt": "",
+          "video_prompt": ""
+        }
+      ]
+    }
+  ]
+}
