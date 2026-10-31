@@ -4,7 +4,7 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 const path = require('path');
 const { getBrowser, safeRun, TIMEOUT } = require('./browser');
-
+const {downloadDir} = require('./environment');
 puppeteer.use(StealthPlugin());
 
 const URL = 'https://www.gentube.app/create-together/k17e0enegvgsec6fy4epj16zrx8d9w78?creating=1';
@@ -43,9 +43,6 @@ function waitForKeypress() {
 
     page.setDefaultTimeout(TIMEOUT);
     page.setDefaultNavigationTimeout(TIMEOUT);
-
-    // Ensure download directory exists
-    const downloadDir = path.join(__dirname, 'inputimages');
 
     if (!fs.existsSync(downloadDir)) {
         fs.mkdirSync(downloadDir, { recursive: true });
@@ -122,8 +119,7 @@ function waitForKeypress() {
 
             // Fill textarea
             await page.locator(textareaSelector).fill(text);
-
-            // Wait for image generation
+            await page.keyboard.press('Enter');// Wait for image generation
             await sleep(10000);
 
             // Capture largest data:image

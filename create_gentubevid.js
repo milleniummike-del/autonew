@@ -4,7 +4,7 @@ const { getBrowser } = require('./browser');
 const fs = require('fs');
 const path = require('path');
 const { getRandomCinematicShot } = require('./cinematic_shots');
-
+const {downloadDir} = require('./environment');
 puppeteer.use(StealthPlugin());
 
 function waitForKeypress() {
@@ -47,7 +47,7 @@ async function downloadViaPuppeteer(page, url, filepath) {
     // WAIT FOR KEY BEFORE STARTING
     await waitForKeypress();
 
-    const inputDir = path.join(__dirname, "inputimages");
+    const inputDir = downloadDir;
     if (!fs.existsSync(inputDir)) fs.mkdirSync(inputDir);
 
     // ---------------------------------------------------------
