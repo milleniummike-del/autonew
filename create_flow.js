@@ -15,7 +15,7 @@ puppeteer.use(StealthPlugin());
     const matrix = require('./matrix.json');
 
     await page.goto(
-        'https://labs.google/fx/tools/flow/project/5f470746-ea52-4acf-9473-7648b025d4ce',
+        'https://flow.google.com/project/8f7e882e-9e63-4dae-a270-59982786c733',
         { waitUntil: "networkidle2", timeout: 0 }
     );
 
@@ -125,6 +125,4 @@ async function safeType(page, text) {
         // ⭐ FIXED DELAY FOR YOUR PUPPETEER VERSION
         await new Promise(r => setTimeout(r, 6000));
     }
-
-    await browser.close();
 })();
