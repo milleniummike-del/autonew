@@ -1,17 +1,15 @@
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+const { getBrowser } = require('./browser');
 const fs = require('fs');
 const path = require('path');
-
+const { getRandomCinematicShot } = require('./cinematic_shots');
+const {downloadDir, waitForKeypress} = require('./environment');
 puppeteer.use(StealthPlugin());
 
 (async () => {
 
-    const browser = await puppeteer.launch({
-        userDataDir: "browser",
-        headless: false,
-        args: ["--no-sandbox", "--disable-setuid-sandbox"]
-    });
+    const browser = await getBrowser();
 
     const page = await browser.newPage();
     const matrix = require('./matrix.json');
@@ -21,17 +19,19 @@ puppeteer.use(StealthPlugin());
         { waitUntil: "networkidle2", timeout: 0 }
     );
 
+    await waitForKeypress();
+
     console.log("Total prompts:", matrix.shots.length);
 
-    // -------------------------------------------------------
-    // SAFE CHUNKED TYPING FOR PROSEMIRROR
-    // -------------------------------------------------------
-    async function safeType(page, text) {
-        const chunks = text.match(/.{1,120}/g) || [text];
-        for (const chunk of chunks) {
-            await page.keyboard.type(chunk, { delay: 12 });
-        }
-    }
+async function safeType(page, text) {
+    const client = await page.target().createCDPSession();
+
+    await client.send('Input.insertText', {
+        text: String(text)
+    });
+
+    await client.detach();
+}
 
     // -------------------------------------------------------
     // WAIT FOR FLOW TO ENABLE GENERATION
@@ -49,18 +49,29 @@ puppeteer.use(StealthPlugin());
     // -------------------------------------------------------
     // CLICK THE REAL BUTTON (NOT THE ICON)
     // -------------------------------------------------------
-    async function clickGenerate(page) {
-        await page.evaluate(() => {
-            const btn = document.querySelector('.generate-icon-button');
-            if (!btn) return;
+   async function clickGenerate(page) {
+    const selector = 'button.generate-icon-button[aria-label="Start generation"]';
 
-            btn.dispatchEvent(new MouseEvent("click", {
-                bubbles: true,
-                cancelable: true,
-                composed: true
-            }));
+    try {
+        await page.waitForSelector(selector, {
+            visible: true,
+            timeout: 15000
         });
+
+        const btn = await page.$(selector);
+
+        if (!btn) {
+            throw new Error('Generate button not found');
+        }
+
+        await btn.click();
+
+        console.log('[OK] Generate button clicked');
+
+    } catch (error) {
+        console.error('[ERROR] Failed to click Generate:', error.message);
     }
+}
 
     // -------------------------------------------------------
     // CLICK "Add to Prompt"
@@ -80,7 +91,6 @@ puppeteer.use(StealthPlugin());
     // MAIN LOOP
     // -------------------------------------------------------
     for (let i = 0; i < matrix.shots.length; i++) {
-
         const promptText = JSON.stringify(matrix.shots[i].in_frame_still_prompt);
         console.log(`\n--- Prompt ${i + 1}/${matrix.shots.length} ---`);
 
@@ -98,6 +108,7 @@ puppeteer.use(StealthPlugin());
         await page.keyboard.press('Backspace');
 
         // Type safely
+        
         await safeType(page, promptText);
         console.log("Typed prompt:", promptText);
 

@@ -90,7 +90,7 @@ function waitForKeypress() {
     console.log('[NAVIGATION] URL:', page.url());
 
     // Allow the application to render
-    await sleep(5000);
+    await sleep(2000);
 
     // WAIT FOR KEY BEFORE STARTING
     await waitForKeypress();

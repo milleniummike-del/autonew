@@ -44,9 +44,6 @@ async function downloadViaPuppeteer(page, url, filepath) {
         timeout: 0
     });
 
-    // WAIT FOR KEY BEFORE STARTING
-    await waitForKeypress();
-
     const inputDir = downloadDir;
     if (!fs.existsSync(inputDir)) fs.mkdirSync(inputDir);
 

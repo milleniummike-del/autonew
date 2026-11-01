@@ -399,7 +399,7 @@ const pickN = (arr, n) => {
 // GENERATOR
 // ---------------------------------------------------------
 
-const generateAerialBatch = (count = 20) => {
+const generateAerialBatch = (count = 25) => {
   const shots = [];
 
   for (let i = 0; i < count; i++) {
@@ -445,7 +445,7 @@ const parsedCount = Number.parseInt(args[0], 10);
 const count =
   Number.isInteger(parsedCount) && parsedCount > 0
     ? parsedCount
-    : 20;
+    : 25;
 
 const outputPath = path.join(process.cwd(), 'matrix.json');
 const output = generateAerialBatch(count);
