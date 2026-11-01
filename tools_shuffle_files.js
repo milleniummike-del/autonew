@@ -3,6 +3,7 @@ const path = require('path');
 const os = require('os');
 const hostname = os.hostname();
 const directory = require('./directory.js');
+const { downloadDir } = require('./environment');
 
 let destinationDir = directory.getPath()+'\\upscaled';
 console.log(destinationDir);

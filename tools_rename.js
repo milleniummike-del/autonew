@@ -1,9 +1,7 @@
-const { downloadDir } = require('./environment');
 const { execFile } = require('child_process');
 const path = require('path');
-
+const { downloadDir } = require('./environment');
 const workingDirectory1 = downloadDir;
-console.log (workingDirectory1);
 const scriptPath1 = path.join(__dirname, 'ps_rename_files.ps1');
 
 execFile('powershell.exe', [
