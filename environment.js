@@ -1,5 +1,5 @@
 const filepath = "x:\\inputmixed\\PoolsideDreamsLSM4416_split_pieces_42_parts\\";
-const downloadDir = "x:\\inputimages\\gentubepull";
+const downloadDir = "X:\\inputmixed\\PoolsideDreamsLSM4416_split_pieces_42_parts";
 const path = require('path');
 function waitForKeypress() {
     return new Promise(resolve => {

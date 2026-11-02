@@ -169,15 +169,6 @@ function waitForKeypress() {
 
     console.log('\n[COMPLETE] All prompts processed.');
 
-    // Close pages
-    const pages = await browser.pages();
-
-    for (const p of pages) {
-        await p.close().catch(() => {});
-    }
-
-    await browser.close();
-
 })().catch(error => {
     console.error('[FATAL]', error);
 });

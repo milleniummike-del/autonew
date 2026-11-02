@@ -1,4 +1,5 @@
-// & "C:\Program Files\Google\Chrome\Application\chrome.exe" ` --remote-debugging-port=9222 `    --user-data-dir="C:\Users\mike_\autonew\browser
+// & "C:\Program Files\Google\Chrome\Application\chrome.exe" ` --remote-debugging-port=9222 ` --user-data-dir="C:\Users\mike_\autonew\browser"
+// & "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\Users\mike\autonew\browser"
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 

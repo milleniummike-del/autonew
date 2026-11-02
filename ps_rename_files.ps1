@@ -1,6 +1,7 @@
 param(
     [string]$InputFolder = ".",
-    [switch]$WhatIf
+    [switch]$WhatIf,
+    [switch]$Randomize
 )
 
 Write-Host "========================================" -ForegroundColor Cyan
@@ -18,12 +19,23 @@ catch {
 $files = @(
     Get-ChildItem -LiteralPath $InputFolder -File |
     Where-Object {
-        $_.Extension.ToLowerInvariant() -in @(".wav", ".webp", ".jpeg", ".jpg")
-    } |
-    Sort-Object Name
+        $_.Extension.ToLowerInvariant() -in @(".wav", ".jpeg", ".webp")
+    }
 )
 
 Write-Host "[INFO] Files found: $($files.Count)" -ForegroundColor Yellow
+
+# Choose file ordering
+if ($Randomize) {
+    Write-Host "[INFO] Randomizing file order..." -ForegroundColor Magenta
+
+    $files = @($files | Sort-Object { Get-Random })
+}
+else {
+    Write-Host "[INFO] Using alphabetical order..." -ForegroundColor Gray
+
+    $files = @($files | Sort-Object Name)
+}
 
 $counter = 1
 $renamed = 0
@@ -73,4 +85,12 @@ Write-Host "SUMMARY" -ForegroundColor Cyan
 Write-Host "Files found: $($files.Count)"
 Write-Host "Renamed: $renamed" -ForegroundColor Green
 Write-Host "Errors: $errors" -ForegroundColor Red
+
+if ($Randomize) {
+    Write-Host "Order: Randomized" -ForegroundColor Magenta
+}
+else {
+    Write-Host "Order: Alphabetical" -ForegroundColor Gray
+}
+
 Write-Host "========================================" -ForegroundColor Cyan

@@ -8,6 +8,7 @@ execFile('powershell.exe', [
     '-NoProfile',
     '-ExecutionPolicy', 'Bypass',
     '-File', scriptPath1,
+    '-Randomize', true,
     '-InputFolder', workingDirectory1
 ], (error, stdout, stderr) => {
 
