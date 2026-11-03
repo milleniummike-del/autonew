@@ -48,35 +48,8 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
         console.log('[DATA] Saved:', filepath);
     }
 
-    // Navigate
-    console.log('[NAVIGATION] Opening Gentube...');
-
-    const navigated = await safeRun('Open Gentube', async () => {
-
-        await page.goto(URL, {
-            waitUntil: 'domcontentloaded',
-            timeout: TIMEOUT
-        });
-
-        return true;
-    });
-
-    if (!navigated) {
-        console.error('[ERROR] Navigation failed.');
-        console.log('Browser left open for inspection.');
-        return;
-    }
-
-    console.log('[NAVIGATION] URL:', page.url());
-
-    // Allow the application to render
-    await sleep(2000);
-
-
-    console.log('Total prompts:', matrix.shots.length);
-
     // MAIN LOOP
-    for (let i = 0; i < matrix.shots.length; i++) {
+    for (let i = 0; i < 100000; i++) {
 
         let promptText = await getInput('Enter prompt: ');
 
@@ -84,8 +57,6 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
                 const block = blocks.find(b => b[key] !== undefined);
                 return block ? block[key] : match;
             });
-        console.log(`\nProcessing prompt ${i + 1}/${matrix.shots.length}`);
-
         const success = await safeRun(promptText, async () => {
 
             const textareaSelector = 'textarea';
@@ -100,7 +71,6 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
             // Fill textarea
             await page.locator(textareaSelector).fill(promptText);
             await page.keyboard.press('Enter');// Wait for image generation
-            await sleep(10000);
 
             // Capture largest data:image
             const dataImages = await page.evaluate(() => {
@@ -128,23 +98,16 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
                 await saveDataImage(largest.src);
             }
+        });
 
-            // Clear button
+        await waitForKeypress();
+                    // Clear button
             await page.waitForSelector(
                 'button[aria-label="Clear"]',
                 { visible: true, timeout: 15000 }
             );
 
             await page.click('button[aria-label="Clear"]');
-
-            return true;
-        });
-
-        if (!success) {
-            console.error(`[SKIPPED] Prompt ${i + 1} failed. Moving to next.`);
-        }
-
-        await sleep(2000);
     }
 
     console.log('\n[COMPLETE] All prompts processed.');

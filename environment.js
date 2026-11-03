@@ -24,6 +24,8 @@ function waitForKeypress() {
 
 const readline = require('readline');
 
+let previousValue = '';
+
 function getInput(message = 'Enter value: ') {
     const rl = readline.createInterface({
         input: process.stdin,
@@ -31,9 +33,19 @@ function getInput(message = 'Enter value: ') {
     });
 
     return new Promise(resolve => {
-        rl.question(message, answer => {
+        const prompt = previousValue
+            ? `${message}[${previousValue}]: `
+            : message;
+
+        rl.question(prompt, answer => {
+            const value = answer.trim() || previousValue;
+
+            if (value) {
+                previousValue = value;
+            }
+
             rl.close();
-            resolve(answer);
+            resolve(value);
         });
     });
 }

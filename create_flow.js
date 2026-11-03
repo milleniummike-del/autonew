@@ -202,7 +202,7 @@ const projectName = "George the Bard";
             // ⭐ CLICK REAL BUTTON
             await clickGenerate(page);
             console.log("Generate clicked!");
-            // await waitForKeypress();
+            
         } catch (e) {
             console.log(e);
         }
