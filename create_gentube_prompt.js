@@ -72,6 +72,8 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
             await page.locator(textareaSelector).fill(promptText);
             await page.keyboard.press('Enter');// Wait for image generation
 
+            await page.click('button[aria-label="Create"]');
+            
             // Capture largest data:image
             const dataImages = await page.evaluate(() => {
 
