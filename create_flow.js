@@ -7,7 +7,7 @@ const { getRandomCinematicShot } = require('./cinematic_shots');
 const { downloadDir, waitForKeypress } = require('./environment');
 puppeteer.use(StealthPlugin());
 const projectName = "Song1";
-const characterName = "50.webp";
+const assetName = "13.webp";
 
 (async () => {
 
@@ -90,8 +90,8 @@ const characterName = "50.webp";
     // -------------------------------------------------------
     // MAIN LOOP
     // -------------------------------------------------------
-    for (let i = 0; i < matrix.shots.length; i++) {
-        await waitForKeypress();
+    //for (let i = 0; i < matrix.shots.length; i++) {
+    for (let i = 0; i < 2; i++) {
 
         const promptText = JSON.stringify(matrix.shots[i].in_frame_still_prompt);
         console.log(`\n--- Prompt ${i + 1}/${matrix.shots.length} ---`);
@@ -104,18 +104,12 @@ const characterName = "50.webp";
 
         await page.click('mat-icon.add-menu-icon');
 
-        await page.waitForSelector('mat-list-item.side-nav-list-item', {
+        await page.waitForSelector('mat-select', {
             visible: true,
             timeout: 30000
         });
 
-        
-        await page.waitForSelector('mat-select.sidebar-project-selector', {
-            visible: true,
-            timeout: 30000
-        });
-
-        await page.click('mat-select.sidebar-project-selector');
+        await page.click('mat-select');
 
         console.log('Opened project selector');
 
@@ -123,8 +117,6 @@ const characterName = "50.webp";
             visible: true,
             timeout: 30000
         });
-
-
 
         await page.evaluate((projectName) => {
             const target = [...document.querySelectorAll(
@@ -141,23 +133,6 @@ const characterName = "50.webp";
             (target.closest('button, [role="menuitem"], .flow-add-menu-dropdown-option') || target).click();
         }, projectName);
 
-
-        await page.evaluate(() => {
-            const items = [...document.querySelectorAll('mat-list-item.side-nav-list-item')];
-
-            const target = items.find(item =>
-                item.querySelector('.side-nav-list-item-title')
-                    ?.textContent.trim() === 'Images'
-            );
-
-            if (!target) {
-                throw new Error('Images menu item not found');
-            }
-
-            target.scrollIntoView({ block: 'center' });
-            target.click();
-        });
-
         console.log('Clicked Characters');
 
         await page.waitForSelector('span.asset-title', {
@@ -166,10 +141,13 @@ const characterName = "50.webp";
         });
 
          await new Promise(r => setTimeout(r, 1000));
+         await page.locator('input[placeholder="Search"]').fill(assetName);
 
-        await page.evaluate((characterName) => {
+        await new Promise(r => setTimeout(r, 2000));
+
+        await page.evaluate((assetName) => {
             const target = [...document.querySelectorAll('span.asset-title')]
-                .find(el => el.textContent.trim() === characterName);
+                .find(el => el.textContent.trim() === assetName);
 
             if (!target) {
                 throw new Error('Character not found');
@@ -177,7 +155,7 @@ const characterName = "50.webp";
 
             target.scrollIntoView({ block: 'center' });
             target.click();
-        },characterName);
+        },assetName);
 
         console.log('Clicked Character');
 
@@ -209,8 +187,5 @@ const characterName = "50.webp";
         // ⭐ CLICK REAL BUTTON
         await clickGenerate(page);
         console.log("Generate clicked!");
-
-        // ⭐ FIXED DELAY FOR YOUR PUPPETEER VERSION
-        // await new Promise(r => setTimeout(r, 6000));
     }
 })();
