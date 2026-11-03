@@ -39,7 +39,9 @@ function waitForKeypress() {
 
     const matrix = require('./matrix.json');
 
-    const page = await browser.newPage();
+    //const page = await browser.newPage();
+    const pages = await browser.pages();
+    const page = pages[pages.length - 1];
 
     page.setDefaultTimeout(TIMEOUT);
     page.setDefaultNavigationTimeout(TIMEOUT);
