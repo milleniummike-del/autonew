@@ -1,0 +1,344 @@
+{
+  "title": "Operation Crownfall",
+  "genre": "Action Thriller",
+  "premise": "A British royal is kidnapped by a violent terrorist organization during a high-profile public appearance. As international tensions rise and a media frenzy engulfs the nation, MI5 launches a multinational manhunt to locate the hostage, dismantle the terrorist network, and prevent a political catastrophe before time runs out.",
+  "logline": "After a British royal is abducted by terrorists, an MI5 task force races across a web of clues, betrayals, and hidden safehouses to bring her home alive.",
+  "visualTone": {
+    "colorPalette": ["#0B132B", "#A4161A", "#D4AF37", "#6C757D", "#E5E5E5"],
+    "cameraLenses": "ARRI Signature Prime 32mm, 40mm, 58mm, 75mm and 125mm",
+    "lightingPhilosophy": "Gritty espionage realism driven by practical light sources, emergency strobes, urban sodium vapor spill, and deep contrast silhouettes",
+    "grainAesthetic": "Kodak Vision3 500T 5219 cinematic 35mm grain"
+  },
+  "sets": [
+    {
+      "id": "Set1",
+      "tag": "[Set1]",
+      "name": "Royal Charity Square",
+      "description": "Historic London plaza filled with press platforms, ceremonial decorations, police barriers, and dense public crowds.",
+      "atmosphere": "Rain-soaked pavement, bustling crowds, media activity, and heightened security.",
+      "lighting": "Overcast daylight with flashing camera strobes and emergency vehicle lights."
+    },
+    {
+      "id": "Set2",
+      "tag": "[Set2]",
+      "name": "MI5 Command Center",
+      "description": "Ultra-secure intelligence operations floor featuring digital wall displays, surveillance systems, and mission-control workstations.",
+      "atmosphere": "Controlled urgency, nonstop communications, and operational pressure.",
+      "lighting": "Cold LED workstation illumination and glow from tactical displays."
+    },
+    {
+      "id": "Set3",
+      "tag": "[Set3]",
+      "name": "Docklands Safehouse",
+      "description": "Abandoned industrial warehouse disguised as a legitimate shipping facility.",
+      "atmosphere": "Cold air, container yard echoes, distant foghorns, and isolation.",
+      "lighting": "Sparse sodium lamps, forklift lights, and moonlight spill."
+    },
+    {
+      "id": "Set4",
+      "tag": "[Set4]",
+      "name": "Underground Transit Tunnel",
+      "description": "Service tunnels beneath the city lined with maintenance access corridors and aging infrastructure.",
+      "atmosphere": "Humid air, echoes, dripping water, and distant train vibrations.",
+      "lighting": "Fluorescent maintenance fixtures creating intermittent shadows."
+    },
+    {
+      "id": "Set5",
+      "tag": "[Set5]",
+      "name": "Coastal Extraction Point",
+      "description": "Remote cliffside helipad overlooking rough seas and jagged rock formations.",
+      "atmosphere": "Strong winds, sea spray, and storm clouds approaching offshore.",
+      "lighting": "Storm-filtered sunset mixed with helicopter searchlights."
+    }
+  ],
+  "characters": [
+    {
+      "id": "Character1",
+      "tag": "[Character1]",
+      "name": "Daniel Cross",
+      "actorName": "Veteran MI5 field commander",
+      "physicalDescription": "Mid-40s, athletic build, strong jawline, short dark hair, intense blue eyes.",
+      "behavioralTraits": "Disciplined, tactical thinker, calm under pressure."
+    },
+    {
+      "id": "Character2",
+      "tag": "[Character2]",
+      "name": "Princess Eleanor",
+      "actorName": "Modern royal with resilience and intelligence",
+      "physicalDescription": "Early 30s, elegant features, poised demeanor, expressive eyes.",
+      "behavioralTraits": "Courageous, diplomatic, mentally resilient."
+    },
+    {
+      "id": "Character3",
+      "tag": "[Character3]",
+      "name": "Amelia Wright",
+      "actorName": "Elite intelligence analyst",
+      "physicalDescription": "Late 30s, focused gaze, sharp features, professional appearance.",
+      "behavioralTraits": "Highly analytical, observant, detail-oriented."
+    },
+    {
+      "id": "Character4",
+      "tag": "[Character4]",
+      "name": "Tom Mercer",
+      "actorName": "Special operations team leader",
+      "physicalDescription": "Early 40s, muscular build, weathered face, close-cropped hair.",
+      "behavioralTraits": "Decisive, fearless, mission-focused."
+    },
+    {
+      "id": "Character5",
+      "tag": "[Character5]",
+      "name": "Karim Rahman",
+      "actorName": "Informant trapped between loyalties",
+      "physicalDescription": "Late 30s, tired eyes, lean frame, guarded expression.",
+      "behavioralTraits": "Nervous, cautious, constantly assessing risk."
+    }
+  ],
+  "costumes": [
+    {
+      "id": "Costume1",
+      "tag": "[Costume1]",
+      "name": "Field Operations Suit",
+      "description": "Dark civilian tactical apparel suitable for intelligence work.",
+      "materials": "Technical performance fabrics and concealed armor panels.",
+      "wearCondition": "Operational wear with light weather exposure."
+    },
+    {
+      "id": "Costume2",
+      "tag": "[Costume2]",
+      "name": "Royal Engagement Attire",
+      "description": "Tailored ceremonial clothing for public appearances.",
+      "materials": "Luxury wool and silk blends.",
+      "wearCondition": "Immaculate and formal."
+    },
+    {
+      "id": "Costume3",
+      "tag": "[Costume3]",
+      "name": "Intelligence Office Wear",
+      "description": "Professional attire adapted for command center operations.",
+      "materials": "High-quality wool, cotton, and synthetic blends.",
+      "wearCondition": "Perfectly maintained."
+    },
+    {
+      "id": "Costume4",
+      "tag": "[Costume4]",
+      "name": "Tactical Assault Gear",
+      "description": "Protective combat uniform with operational load-bearing equipment.",
+      "materials": "Ballistic fabrics and reinforced composite armor.",
+      "wearCondition": "Scuffed from deployments."
+    },
+    {
+      "id": "Costume5",
+      "tag": "[Costume5]",
+      "name": "Informant Streetwear",
+      "description": "Unremarkable civilian clothing intended to blend into crowds.",
+      "materials": "Cotton layers and worn outerwear.",
+      "wearCondition": "Weathered and frequently worn."
+    }
+  ],
+  "props": [
+    {
+      "id": "Prop1",
+      "tag": "[Prop1]",
+      "name": "Encrypted Intelligence Tablet",
+      "description": "Secure intelligence device displaying surveillance and analysis data.",
+      "narrativeSignificance": "Central command tool for the investigation.",
+      "handlingNote": "Used continuously during operations."
+    },
+    {
+      "id": "Prop2",
+      "tag": "[Prop2]",
+      "name": "Tracking Beacon",
+      "description": "Electronic locator transmitting encrypted location data.",
+      "narrativeSignificance": "Provides a critical lead in locating the hostage.",
+      "handlingNote": "Monitored remotely by intelligence teams."
+    },
+    {
+      "id": "Prop3",
+      "tag": "[Prop3]",
+      "name": "Evidence Case",
+      "description": "Secure case containing forensic evidence and intelligence reports.",
+      "narrativeSignificance": "Connects multiple suspects and locations.",
+      "handlingNote": "Handled only by authorized personnel."
+    },
+    {
+      "id": "Prop4",
+      "tag": "[Prop4]",
+      "name": "Secure Communicator",
+      "description": "Military-grade encrypted communications device.",
+      "narrativeSignificance": "Allows coordination during the rescue operation.",
+      "handlingNote": "Operated through discreet earpiece channels."
+    },
+    {
+      "id": "Prop5",
+      "tag": "[Prop5]",
+      "name": "Satellite Imagery Folder",
+      "description": "Collection of reconnaissance imagery and mission planning materials.",
+      "narrativeSignificance": "Reveals movement patterns connected to the kidnappers.",
+      "handlingNote": "Reviewed during intelligence briefings."
+    }
+  ],
+  "roles": [
+    {
+      "id": "Role1",
+      "tag": "[Role1]",
+      "roleName": "Lead MI5 Investigator",
+      "characterId": "Character1",
+      "costumeId": "Costume1",
+      "synthesisText": "[Character1] wearing [Costume1] becomes [Role1] (Lead MI5 Investigator)"
+    },
+    {
+      "id": "Role2",
+      "tag": "[Role2]",
+      "roleName": "Kidnapped Royal",
+      "characterId": "Character2",
+      "costumeId": "Costume2",
+      "synthesisText": "[Character2] wearing [Costume2] becomes [Role2] (Kidnapped Royal)"
+    },
+    {
+      "id": "Role3",
+      "tag": "[Role3]",
+      "roleName": "Intelligence Analyst",
+      "characterId": "Character3",
+      "costumeId": "Costume3",
+      "synthesisText": "[Character3] wearing [Costume3] becomes [Role3] (Intelligence Analyst)"
+    },
+    {
+      "id": "Role4",
+      "tag": "[Role4]",
+      "roleName": "Assault Team Commander",
+      "characterId": "Character4",
+      "costumeId": "Costume4",
+      "synthesisText": "[Character4] wearing [Costume4] becomes [Role4] (Assault Team Commander)"
+    },
+    {
+      "id": "Role5",
+      "tag": "[Role5]",
+      "roleName": "Reluctant Informant",
+      "characterId": "Character5",
+      "costumeId": "Costume5",
+      "synthesisText": "[Character5] wearing [Costume5] becomes [Role5] (Reluctant Informant)"
+    }
+  ],
+  "shots": [
+    {
+      "shotNumber": 1,
+      "shotType": "Wide Establishing Shot",
+      "lensAngle": "32mm Prime",
+      "imageframe": "[Role2] greets supporters with [Prop3] whilst standing in [Set1]",
+      "action": {
+        "roleActions": "Moves through the crowd, shaking hands as security escorts maintain formation.",
+        "dialogue": "It's wonderful to be here with all of you.",
+        "roleDialog": "Warm and genuine.",
+        "soundDesign": "Crowd cheers, camera shutters, city ambience."
+      }
+    },
+    {
+      "shotNumber": 2,
+      "shotType": "Handheld Chaos Shot",
+      "lensAngle": "40mm Prime",
+      "imageframe": "[Role2] reacts near [Prop3] whilst standing in [Set1]",
+      "action": {
+        "roleActions": "Turns toward a sudden disturbance as security rushes into action.",
+        "dialogue": "What's going on?",
+        "roleDialog": "Concerned but composed.",
+        "soundDesign": "Rising crowd panic, radios, vehicle sounds."
+      }
+    },
+    {
+      "shotNumber": 3,
+      "shotType": "Tracking Command Shot",
+      "lensAngle": "58mm Prime",
+      "imageframe": "[Role1] studies the [Prop1] whilst standing in [Set2]",
+      "action": {
+        "roleActions": "Coordinates investigative teams and evaluates incoming data.",
+        "dialogue": "Every second counts. Find me a lead.",
+        "roleDialog": "Commanding and urgent.",
+        "soundDesign": "Analyst chatter, keyboards, digital alerts."
+      }
+    },
+    {
+      "shotNumber": 4,
+      "shotType": "Intelligence Close-Up",
+      "lensAngle": "75mm Prime",
+      "imageframe": "[Role3] analyzes the [Prop5] whilst standing in [Set2]",
+      "action": {
+        "roleActions": "Identifies a suspicious transport route hidden within satellite imagery.",
+        "dialogue": "I've got something. This route shouldn't exist.",
+        "roleDialog": "Focused and analytical.",
+        "soundDesign": "Data processing tones, subdued score."
+      }
+    },
+    {
+      "shotNumber": 5,
+      "shotType": "Secret Meeting Shot",
+      "lensAngle": "50mm Prime",
+      "imageframe": "[Role5] surrenders the [Prop2] whilst standing in [Set4]",
+      "action": {
+        "roleActions": "Hands over critical intelligence while nervously watching tunnel entrances.",
+        "dialogue": "This is all I know. After tonight, I'm gone.",
+        "roleDialog": "Fearful and cautious.",
+        "soundDesign": "Echoing drips, passing train rumbles, distant footsteps."
+      }
+    },
+    {
+      "shotNumber": 6,
+      "shotType": "Mission Briefing Shot",
+      "lensAngle": "58mm Prime",
+      "imageframe": "[Role4] examines the [Prop2] whilst standing in [Set2]",
+      "action": {
+        "roleActions": "Reviews operational plans and prepares the rescue team.",
+        "dialogue": "We move fast and bring her home.",
+        "roleDialog": "Confident and decisive.",
+        "soundDesign": "Equipment preparation, tactical discussions."
+      }
+    },
+    {
+      "shotNumber": 7,
+      "shotType": "Suspense Close-Up",
+      "lensAngle": "75mm Prime",
+      "imageframe": "[Role2] observes the [Prop4] whilst standing in [Set3]",
+      "action": {
+        "roleActions": "Quietly assesses the room and listens for activity outside.",
+        "dialogue": "Someone is coming.",
+        "roleDialog": "Quiet resilience.",
+        "soundDesign": "Distant footsteps, hum of warehouse machinery."
+      }
+    },
+    {
+      "shotNumber": 8,
+      "shotType": "Dynamic Entry Shot",
+      "lensAngle": "40mm Prime",
+      "imageframe": "[Role4] coordinates with the [Prop4] whilst standing in [Set3]",
+      "action": {
+        "roleActions": "Leads the entry team into the warehouse to begin the rescue.",
+        "dialogue": "Team One, advance.",
+        "roleDialog": "Controlled operational command.",
+        "soundDesign": "Boot impacts, radio traffic, rising tension score."
+      }
+    },
+    {
+      "shotNumber": 9,
+      "shotType": "Rescue Reveal Shot",
+      "lensAngle": "58mm Prime",
+      "imageframe": "[Role1] secures the [Prop3] whilst standing in [Set3]",
+      "action": {
+        "roleActions": "Locates the hostage and confirms the area is secure.",
+        "dialogue": "We've got you. It's over.",
+        "roleDialog": "Reassuring and calm.",
+        "soundDesign": "Music swell, distant operational chatter."
+      }
+    },
+    {
+      "shotNumber": 10,
+      "shotType": "Epic Crane Finale",
+      "lensAngle": "40mm Prime transitioning to aerial",
+      "imageframe": "[Role1] monitors the [Prop4] whilst standing in [Set5]",
+      "action": {
+        "roleActions": "Oversees extraction as helicopters depart the coastline.",
+        "dialogue": "Mission accomplished. Bring everyone home.",
+        "roleDialog": "Relieved yet professional.",
+        "soundDesign": "Helicopter rotors, ocean waves, orchestral finale."
+      }
+    }
+  ]
+}

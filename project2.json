@@ -1,0 +1,172 @@
+{
+    "title": "Shadows Across Tehran",
+    "genre": "Spy Thriller",
+    "premise": "Intelligence operative James Smith travels to Iran to intercept a courier connected to the extremist organization Dust of Allah. As he navigates surveillance-heavy streets and shifting allegiances, he discovers the courier may hold information capable of preventing a catastrophic international incident.",
+    "logline": "A veteran intelligence operative races through a web of deception to obtain critical intelligence from a mysterious courier before violent extremists can act.",
+    "visualTone": {
+        "colorPalette": [
+            "#1C1F26",
+            "#7A1F1F",
+            "#C8A96B",
+            "#5E6B75",
+            "#E6E1D3"
+        ],
+        "cameraLenses": "ARRI Master Anamorphic 40mm, 50mm and 75mm primes",
+        "lightingPhilosophy": "Naturalistic espionage realism with motivated practical lighting, deep contrast, and atmospheric shadows",
+        "grainAesthetic": "Kodak Vision3 500T 5219 subtle 35mm grain"
+    },
+    "sets": [
+        {
+            "id": "Set1",
+            "tag": "[Set1]",
+            "name": "Crowded Bazaar Passage",
+            "description": "A dense marketplace of narrow corridors, layered textiles, stone facades, aging signage, and tightly packed storefronts.",
+            "atmosphere": "Busy pedestrian traffic, warm air, dust haze, and distant vehicle noise.",
+            "lighting": "Filtered sunlight through fabric canopies mixed with practical shop lights."
+        },
+        {
+            "id": "Set2",
+            "tag": "[Set2]",
+            "name": "Rooftop Observation Point",
+            "description": "A weathered rooftop overlooking a sprawling cityscape with satellite dishes and concrete structures.",
+            "atmosphere": "Dry breeze, distant traffic, and a constant sense of surveillance.",
+            "lighting": "Late-afternoon golden light with long shadows and reflective urban highlights."
+        },
+        {
+            "id": "Set3",
+            "tag": "[Set3]",
+            "name": "Underground Transit Platform",
+            "description": "A utilitarian transit station with tiled walls, concrete pillars, and sparse architectural decoration.",
+            "atmosphere": "Echoing footsteps, train vibrations, and intermittent announcements.",
+            "lighting": "Cool fluorescent fixtures creating hard shadows and muted color rendition."
+        }
+    ],
+    "characters": [
+        {
+            "id": "Character1",
+            "tag": "[Character1]",
+            "name": "James Smith",
+            "actorName": "Seasoned intelligence operative archetype",
+            "physicalDescription": "Early 40s, weathered features, athletic build, short dark hair, focused eyes, subtle facial scars.",
+            "behavioralTraits": "Observant, disciplined, economical movement, constantly evaluates surroundings."
+        },
+        {
+            "id": "Character2",
+            "tag": "[Character2]",
+            "name": "Nadia Farzan",
+            "actorName": "Mysterious courier with guarded demeanor",
+            "physicalDescription": "Mid-30s, sharp features, dark eyes, composed posture, understated appearance.",
+            "behavioralTraits": "Cautious, intelligent, reserved, rarely reveals emotion."
+        }
+    ],
+    "costumes": [
+        {
+            "id": "Costume1",
+            "tag": "[Costume1]",
+            "name": "Field Operative Attire",
+            "description": "Practical civilian clothing designed to blend into urban environments with concealed equipment.",
+            "materials": "Cotton blend jacket, durable trousers, leather accessories.",
+            "wearCondition": "Light travel wear and minor dust accumulation."
+        },
+        {
+            "id": "Costume2",
+            "tag": "[Costume2]",
+            "name": "Courier Disguise",
+            "description": "Modest travel clothing with layered garments intended to avoid attention.",
+            "materials": "Light woven fabrics, weathered leather satchel, practical footwear.",
+            "wearCondition": "Moderately worn from frequent travel."
+        }
+    ],
+    "props": [
+        {
+            "id": "Prop1",
+            "tag": "[Prop1]",
+            "name": "Encrypted Data Drive",
+            "description": "Small metallic storage device with protective casing and authentication markings.",
+            "narrativeSignificance": "Contains intelligence that could reveal planned extremist activity.",
+            "handlingNote": "Transferred discreetly and concealed quickly."
+        },
+        {
+            "id": "Prop2",
+            "tag": "[Prop2]",
+            "name": "Secure Communicator",
+            "description": "Compact encrypted communications device with minimal display.",
+            "narrativeSignificance": "Allows contact with intelligence handlers and asset networks.",
+            "handlingNote": "Used briefly and kept hidden from view."
+        },
+        {
+            "id": "Prop3",
+            "tag": "[Prop3]",
+            "name": "Observation Camera",
+            "description": "Miniature surveillance camera fitted inside an inconspicuous housing.",
+            "narrativeSignificance": "Provides evidence and situational awareness.",
+            "handlingNote": "Positioned discreetly to monitor locations."
+        }
+    ],
+    "roles": [
+        {
+            "id": "Role1",
+            "roleName": "Intelligence Operative",
+            "characterId": "Character1",
+            "costumeId": "Costume1",
+            "synthesisText": "[Character1] wearing [Costume1] becomes (Intelligence Operative)"
+        },
+        {
+            "id": "Role2",
+            "roleName": "Conflicted Courier",
+            "characterId": "Character2",
+            "costumeId": "Costume2",
+            "synthesisText": "[Character2] wearing [Costume2] becomes (Conflicted Courier)"
+        }
+    ],
+    "shots": [
+        {
+            "shotNumber": 1,
+            "shotType": "Handheld Tracking Shot",
+            "lensAngle": "40mm Anamorphic Prime, shallow DoF",
+            "imageframe": "[Role1] monitors the [Prop3] whilst standing in [Set1]",
+            "action": {
+                "roleActions": "Moves through the crowd while scanning faces and checking surveillance feeds for signs of the courier.",
+                "dialogue": "One contact. One chance. No mistakes.",
+                "roleDialog": "Quiet, focused, internalized determination.",
+                "soundDesign": "Marketplace chatter, footsteps, distant engines, subtle tension drone."
+            }
+        },
+        {
+            "shotNumber": 2,
+            "shotType": "Telephoto Surveillance Shot",
+            "lensAngle": "75mm Anamorphic Prime, compressed perspective",
+            "imageframe": "[Role2] carries the [Prop1] whilst standing in [Set2]",
+            "action": {
+                "roleActions": "Approaches the rooftop edge, periodically checking for followers before preparing for a covert meeting.",
+                "dialogue": "They're watching everyone now.",
+                "roleDialog": "Measured caution mixed with underlying fear.",
+                "soundDesign": "Wind noise, distant city ambience, faint electronic interference."
+            }
+        },
+        {
+            "shotNumber": 3,
+            "shotType": "Medium Two-Shot",
+            "lensAngle": "50mm Anamorphic Prime",
+            "imageframe": "[Role2] transfers the [Prop1] whilst standing in [Set3]",
+            "action": {
+                "roleActions": "Approaches carefully, exchanges brief eye contact, and discreetly passes the device before continuing onward.",
+                "dialogue": "That's everything I know.",
+                "roleDialog": "Quiet urgency, emotionally restrained.",
+                "soundDesign": "Approaching train, station announcements, reverberant footsteps."
+            }
+        },
+        {
+            "shotNumber": 4,
+            "shotType": "Low-Angle Closing Shot",
+            "lensAngle": "40mm Anamorphic Prime with gradual push-in",
+            "imageframe": "[Role1] activates the [Prop2] whilst standing in [Set3]",
+            "action": {
+                "roleActions": "Secures the intelligence, establishes contact with headquarters, and watches the departing train disappear into darkness.",
+                "dialogue": "The information is secure. The operation continues.",
+                "roleDialog": "Controlled relief tempered by concern.",
+                "soundDesign": "Train departure, communication static, deep ambient score, fading station echoes."
+            }
+        }
+    ]
+}

@@ -1,0 +1,168 @@
+{
+  "title": "The Starpath Quest",
+  "genre": "Mythic Adventure",
+  "premise": "Three children are swept into a fantastical realm after discovering an ancient celestial relic hidden beneath an old oak tree. Pursued by dark forces seeking the relic's power, they must journey across enchanted lands to awaken a forgotten guardian and restore balance to the world.",
+  "logline": "Three ordinary children embark on a mythic quest through a magical realm to protect an ancient celestial relic from a rising darkness.",
+  "visualTone": {
+    "colorPalette": ["#3A86FF", "#FFD166", "#06D6A0", "#6A4C93", "#FFF3B0"],
+    "cameraLenses": "Cooke Panchro Classic 32mm, 50mm and 75mm primes",
+    "lightingPhilosophy": "Golden-hour fantasy naturalism with celestial backlight, magical practical glows, and soft atmospheric diffusion",
+    "grainAesthetic": "Kodak Vision3 250D 5207 fine 35mm grain"
+  },
+  "sets": [
+    {
+      "id": "Set1",
+      "tag": "[Set1]",
+      "name": "Whispering Oak Glade",
+      "description": "An ancient forest clearing dominated by a colossal silver-barked oak whose roots form natural archways among glowing wildflowers and moss-covered stones.",
+      "atmosphere": "Floating pollen, gentle breeze, sparkling dust motes, and birdsong echoing through the trees.",
+      "lighting": "Warm sunbeams filtering through leaves with emerald reflections and soft golden highlights."
+    },
+    {
+      "id": "Set2",
+      "tag": "[Set2]",
+      "name": "Moonbridge Valley",
+      "description": "A vast valley crossed by a luminous crystal bridge suspended above a mist-filled chasm.",
+      "atmosphere": "Rolling mist, drifting fireflies, and distant creature calls.",
+      "lighting": "Moonlit blues contrasted by glowing crystal pathways and silver atmospheric bloom."
+    },
+    {
+      "id": "Set3",
+      "tag": "[Set3]",
+      "name": "Celestial Guardian Shrine",
+      "description": "A mountaintop temple carved into radiant white stone decorated with star maps, celestial carvings, and towering pillars.",
+      "atmosphere": "High mountain winds, swirling magical particles, and thin clouds passing overhead.",
+      "lighting": "Brilliant celestial shafts breaking through clouds with radiant blue-white highlights."
+    }
+  ],
+  "characters": [
+    {
+      "id": "Character1",
+      "tag": "[Character1]",
+      "name": "Lena Hart",
+      "actorName": "Adventurous young heroine with expressive curiosity",
+      "physicalDescription": "12 years old, freckled face, bright green eyes, auburn braided hair, athletic build.",
+      "behavioralTraits": "Natural leader, inquisitive gaze, confident stride, quick reactions."
+    },
+    {
+      "id": "Character2",
+      "tag": "[Character2]",
+      "name": "Owen Reed",
+      "actorName": "Thoughtful young scholar archetype",
+      "physicalDescription": "11 years old, round glasses, dark hair, curious brown eyes, lean frame.",
+      "behavioralTraits": "Analytical thinker, cautious movement, frequently studies surroundings."
+    }
+  ],
+  "costumes": [
+    {
+      "id": "Costume1",
+      "tag": "[Costume1]",
+      "name": "Starbound Explorer Attire",
+      "description": "Layered travel tunic with hooded cloak, utility satchel, and celestial embroidery.",
+      "materials": "Weathered linen, soft wool, leather straps, silver-thread stitching.",
+      "wearCondition": "Freshly equipped with minor signs of woodland travel."
+    },
+    {
+      "id": "Costume2",
+      "tag": "[Costume2]",
+      "name": "Moonbridge Pathfinder Garb",
+      "description": "Lightweight adventuring outfit featuring reinforced boots and glowing rune accents.",
+      "materials": "Brushed cotton, enchanted threadwork, polished leather.",
+      "wearCondition": "Light dust and signs of recent journeying."
+    }
+  ],
+  "props": [
+    {
+      "id": "Prop1",
+      "tag": "[Prop1]",
+      "name": "Celestial Compass",
+      "description": "A golden compass containing a miniature constellation that shifts and rotates inside its crystal face.",
+      "narrativeSignificance": "Guides the children toward the hidden guardian shrine.",
+      "handlingNote": "Held carefully in both hands and consulted whenever choices arise."
+    },
+    {
+      "id": "Prop2",
+      "tag": "[Prop2]",
+      "name": "Moonstone Staff",
+      "description": "A carved wooden staff topped with a glowing lunar gemstone.",
+      "narrativeSignificance": "Channels protective magic during dangerous moments.",
+      "handlingNote": "Raised overhead during magical activations."
+    },
+    {
+      "id": "Prop3",
+      "tag": "[Prop3]",
+      "name": "Starheart Relic",
+      "description": "A radiant crystal artifact emitting gentle pulses of celestial light.",
+      "narrativeSignificance": "The source of the world's balance and the object sought by dark forces.",
+      "handlingNote": "Carried close to the chest and protected at all costs."
+    }
+  ],
+  "roles": [
+    {
+      "id": "Role1",
+      "tag": "[Role1]",
+      "roleName": "Chosen Pathfinder",
+      "characterId": "Character1",
+      "costumeId": "Costume1",
+      "synthesisText": "[Character1] wearing [Costume1] becomes [Role1] (Chosen Pathfinder)"
+    },
+    {
+      "id": "Role2",
+      "tag": "[Role2]",
+      "roleName": "Lore Keeper",
+      "characterId": "Character2",
+      "costumeId": "Costume2",
+      "synthesisText": "[Character2] wearing [Costume2] becomes [Role2] (Lore Keeper)"
+    }
+  ],
+  "shots": [
+    {
+      "shotNumber": 1,
+      "shotType": "Wide Discovering Hero Shot",
+      "lensAngle": "32mm Prime, moderate depth of field",
+      "imageframe": "[Role1] discovers the [Prop1] whilst standing in [Set1]",
+      "action": {
+        "roleActions": "Kneels beside exposed roots, brushes away soil, and lifts the compass as the other unseen children gather behind.",
+        "dialogue": "Look... I think it's trying to show us something.",
+        "roleDialog": "Wonder-filled, breathless, and curious.",
+        "soundDesign": "Birdsong, rustling leaves, magical chimes, distant woodland ambience."
+      }
+    },
+    {
+      "shotNumber": 2,
+      "shotType": "Epic Tracking Shot",
+      "lensAngle": "50mm Prime, cinematic motion blur",
+      "imageframe": "[Role2] studies the [Prop1] whilst standing in [Set2]",
+      "action": {
+        "roleActions": "Walks cautiously across the crystal bridge while comparing symbols on the compass to constellations overhead.",
+        "dialogue": "The stars aren't pointing home... they're pointing forward.",
+        "roleDialog": "Thoughtful realization mixed with nervous excitement.",
+        "soundDesign": "Whistling wind, crystal resonance, distant fantastical creature calls."
+      }
+    },
+    {
+      "shotNumber": 3,
+      "shotType": "Low-Angle Magical Reveal",
+      "lensAngle": "75mm Prime, shallow depth of field",
+      "imageframe": "[Role1] raises the [Prop2] whilst standing in [Set3]",
+      "action": {
+        "roleActions": "Steps onto the shrine platform and raises the staff as ancient symbols ignite around the temple.",
+        "dialogue": "Guardian of the stars, we need your help!",
+        "roleDialog": "Determined, courageous, and emotionally sincere.",
+        "soundDesign": "Rising magical energy, stone movements, celestial choir textures."
+      }
+    },
+    {
+      "shotNumber": 4,
+      "shotType": "Craning Triumphant Finale",
+      "lensAngle": "40mm Prime transitioning to aerial perspective",
+      "imageframe": "[Role1] presents the [Prop3] whilst standing in [Set3]",
+      "action": {
+        "roleActions": "Raises the relic skyward as waves of light sweep across the landscape and restore the realm's harmony.",
+        "dialogue": "We found our way because we never stopped believing.",
+        "roleDialog": "Triumphant, heartfelt, and inspiring.",
+        "soundDesign": "Orchestral swell, celestial harmonies, wind gusts, radiant magical crescendo."
+      }
+    }
+  ]
+}

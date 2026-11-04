@@ -1,5 +1,5 @@
-const filepath = "x:\\inputmixed\\PoolsideDreamsLSM4416_split_pieces_42_parts\\";
-const downloadDir = "X:\\inputmixed\\PoolsideDreamsLSM4416_split_pieces_42_parts";
+const filepath = "downloads";
+const downloadDir = "downloads";
 const path = require('path');
 function waitForKeypress() {
     return new Promise(resolve => {
@@ -20,6 +20,12 @@ function waitForKeypress() {
             resolve();
         });
     });
+}
+
+async function waitTime(time = 10000, upto = 20000) {
+     const timewait = Math.floor(Math.random() * (upto - time + 1)) + time;
+    console.log ("Waiting "+timewait);
+    await new Promise(r => setTimeout(r, timewait));
 }
 
 const readline = require('readline');
@@ -1074,5 +1080,6 @@ module.exports = {
     downloadDir,
     waitForKeypress,
     getInput,
+    waitTime,
     blocks
 };
