@@ -104,8 +104,8 @@ const URL = 'https://www.gentube.app/create';
     //const chosen = ["props", "sets", "characters", "costumes"];
     //const chosen = ["costumes"];
     //const chosen = ["characters"];
-    const chosen = ["sets","roles"];
-    //const chosen = ["sets"];
+    //const chosen = ["roles"];
+    const chosen = ["shots"];
 
     for (const section of chosen) {
         for (const item of matrix[section]) {
@@ -119,7 +119,7 @@ const URL = 'https://www.gentube.app/create';
 
             if (section === 'shots') {
                 useExisting = true;
-                text = text  + ' ' + matrix.visualTone.lightingPhilosophy + ' ' + matrix.visualTone.colorPalette;
+                text = item.shotType + ' ' + text + ' ' + matrix.visualTone.lightingPhilosophy + ' ' + matrix.visualTone.colorPalette;
                 assetTags = item.assetTags;
             }
             if (section === 'sets') {
@@ -141,7 +141,7 @@ const URL = 'https://www.gentube.app/create';
             }
 
             await render(text, assetTags, useExisting);
-            await waitTime(5000);
+            await waitTime(3000);
 
             // Capture largest data:image
             const dataImages = await page.evaluate(() => {
@@ -157,6 +157,8 @@ const URL = 'https://www.gentube.app/create';
 
             });
 
+            console.log(dataImages.length);
+
             if (dataImages.length === 0) {
 
                 console.log('[DATA] No data images found for prompt');
@@ -167,7 +169,9 @@ const URL = 'https://www.gentube.app/create';
                     b.size > a.size ? b : a
                 );
 
-                await saveDataImage(largest.src, item.id + ".webp");
+                const last = dataImages[dataImages.length-1];
+
+                await saveDataImage(last.src, item.id + ".webp");
             }
         }
     }

@@ -222,44 +222,266 @@
     }
   ],
   "shots": [
-    {
-      "id": "Shot1",
-      "shotType": "Extreme Wide Establishing Shot",
-      "lensAngle": "32mm Anamorphic",
-      "assetTags": "[Role1] [Prop1] [Set4]",
-      "description": "The Castaway clutches the Temporal Compass whilst standing on the Storm-Battered Reef.",
-      "action": {
-        "roleActions": "Staggers through crashing waves and struggles to maintain footing.",
-        "dialogue": "Where am I?",
-        "roleDialog": "Confused and terrified.",
-        "soundDesign": "Thunder, wind and crashing surf."
-      }
-    },
-    {
-      "id": "Shot2",
-      "shotType": "Low-Angle Hero Shot",
-      "lensAngle": "40mm Anamorphic",
-      "assetTags": "[Role2] [Prop2] [Set1]",
-      "description": "The Pirate Captain raises the Captain's Flintlock whilst standing on the Black Tide Pirate Ship.",
-      "action": {
-        "roleActions": "Steps onto the quarterdeck and commands the crew.",
-        "dialogue": "All hands, to your stations.",
-        "roleDialog": "Firm and authoritative.",
-        "soundDesign": "Rigging creaks and distant gulls."
-      }
-    },
-    {
-      "id": "Shot3",
-      "shotType": "Medium Tracking Shot",
-      "lensAngle": "50mm Prime",
-      "assetTags": "[Role3] [Prop3] [Set2]",
-      "description": "The Treasure Seeker studies the Treasure Map whilst standing inside the Port Nassau Tavern.",
-      "action": {
-        "roleActions": "Spreads the map across a table and traces hidden routes.",
-        "dialogue": "This path was lost centuries ago.",
-        "roleDialog": "Intrigued and focused.",
-        "soundDesign": "Tavern chatter and clinking mugs."
-      }
+  {
+    "id": "Shot1",
+    "shotType": "Extreme Wide Establishing Shot",
+    "lensAngle": "32mm Anamorphic",
+    "assetTags": "[Role1] [Prop1] [Set4]",
+    "description": "The Castaway clutches the Temporal Compass whilst standing on the Storm-Battered Reef.",
+    "action": {
+      "roleActions": "Staggers through crashing waves and struggles to maintain footing after arriving in an unfamiliar century.",
+      "dialogue": "Where am I?",
+      "roleDialog": "Confused, breathless and overwhelmed.",
+      "soundDesign": "Thunderclaps, crashing surf, distant wind howl."
     }
+  },
+  {
+    "id": "Shot2",
+    "shotType": "Low-Angle Hero Shot",
+    "lensAngle": "40mm Anamorphic",
+    "assetTags": "[Role2] [Prop2] [Set1]",
+    "description": "The Pirate Captain raises the Captain's Flintlock whilst standing on the Black Tide Pirate Ship.",
+    "action": {
+      "roleActions": "Steps onto the quarterdeck and surveys the crew.",
+      "dialogue": "The sea belongs to those bold enough to take it.",
+      "roleDialog": "Commanding and fearless.",
+      "soundDesign": "Creaking timbers, snapping sails, ocean wind."
+    }
+  },
+  {
+    "id": "Shot3",
+    "shotType": "Handheld Medium Shot",
+    "lensAngle": "50mm Prime",
+    "assetTags": "[Role4] [Prop4] [Set1]",
+    "description": "The Enforcer grips the Cutlass whilst standing on the Black Tide Pirate Ship.",
+    "action": {
+      "roleActions": "Circles the newcomer and sizes him up as a threat.",
+      "dialogue": "He won't survive a week.",
+      "roleDialog": "Mocking and confrontational.",
+      "soundDesign": "Footsteps on wet deck planks."
+    }
+  },
+  {
+    "id": "Shot4",
+    "shotType": "Over-The-Shoulder Shot",
+    "lensAngle": "65mm Prime",
+    "assetTags": "[Role1] [Prop1] [Set1]",
+    "description": "The Castaway inspects the Temporal Compass whilst standing on the Black Tide Pirate Ship.",
+    "action": {
+      "roleActions": "Rotates the compass and studies the impossible markings.",
+      "dialogue": "That wasn't there before.",
+      "roleDialog": "Quiet disbelief.",
+      "soundDesign": "Faint metallic ticking and ocean ambience."
+    }
+  },
+  {
+    "id": "Shot5",
+    "shotType": "Wide Interior Shot",
+    "lensAngle": "35mm Prime",
+    "assetTags": "[Role1] [Prop1] [Set2]",
+    "description": "The Castaway hides the Temporal Compass whilst standing inside the Port Nassau Tavern.",
+    "action": {
+      "roleActions": "Keeps his hood lowered and avoids eye contact.",
+      "dialogue": "Just keep your head down.",
+      "roleDialog": "Nervous self-reassurance.",
+      "soundDesign": "Tavern chatter, mugs hitting tables, distant laughter."
+    }
+  },
+  {
+    "id": "Shot6",
+    "shotType": "Medium Two-Shot",
+    "lensAngle": "50mm Prime",
+    "assetTags": "[Role3] [Prop3] [Set2]",
+    "description": "The Treasure Seeker studies the Treasure Map whilst standing inside the Port Nassau Tavern.",
+    "action": {
+      "roleActions": "Spreads the map across a table and points to hidden routes.",
+      "dialogue": "This map leads somewhere legends fear to name.",
+      "roleDialog": "Confident and persuasive.",
+      "soundDesign": "Candle crackle and subdued crowd noise."
+    }
+  },
+  {
+    "id": "Shot7",
+    "shotType": "Close-Up",
+    "lensAngle": "85mm Prime",
+    "assetTags": "[Role2] [Prop6] [Set1]",
+    "description": "The Pirate Captain opens the Captain's Logbook whilst standing on the Black Tide Pirate Ship.",
+    "action": {
+      "roleActions": "Turns weathered pages searching for a forgotten entry.",
+      "dialogue": "I've seen this symbol before.",
+      "roleDialog": "Reflective and cautious.",
+      "soundDesign": "Page turns, rigging creaks."
+    }
+  },
+  {
+    "id": "Shot8",
+    "shotType": "Tracking Shot",
+    "lensAngle": "40mm Prime",
+    "assetTags": "[Role5] [Prop4] [Set1]",
+    "description": "The Trusted Deckhand carries the Cutlass whilst standing on the Black Tide Pirate Ship.",
+    "action": {
+      "roleActions": "Works alongside sailors hauling ropes and securing cargo.",
+      "dialogue": "I'll take this watch.",
+      "roleDialog": "Earnest and reliable.",
+      "soundDesign": "Rope tension, footsteps, gulls."
+    }
+  },
+  {
+    "id": "Shot9",
+    "shotType": "Wide Landscape Shot",
+    "lensAngle": "32mm Anamorphic",
+    "assetTags": "[Role3] [Prop3] [Set3]",
+    "description": "The Treasure Seeker unfolds the Treasure Map whilst standing inside the Hidden Jungle Cove.",
+    "action": {
+      "roleActions": "Compares landmarks against the map markings.",
+      "dialogue": "We're exactly where the trail begins.",
+      "roleDialog": "Excited and focused.",
+      "soundDesign": "Jungle insects, distant surf."
+    }
+  },
+  {
+    "id": "Shot10",
+    "shotType": "Low-Angle Rally Shot",
+    "lensAngle": "40mm Prime",
+    "assetTags": "[Role2] [Prop2] [Set3]",
+    "description": "The Pirate Captain points the Captain's Flintlock whilst standing inside the Hidden Jungle Cove.",
+    "action": {
+      "roleActions": "Addresses the assembled crew before the expedition.",
+      "dialogue": "Today we claim our destiny.",
+      "roleDialog": "Powerful and inspiring.",
+      "soundDesign": "Cheering pirates and jungle ambience."
+    }
+  },
+  {
+    "id": "Shot11",
+    "shotType": "Combat Tracking Shot",
+    "lensAngle": "50mm Prime",
+    "assetTags": "[Role4] [Prop4] [Set3]",
+    "description": "The Enforcer swings the Cutlass whilst standing inside the Hidden Jungle Cove.",
+    "action": {
+      "roleActions": "Charges toward rival treasure hunters and clears a path.",
+      "dialogue": "Move!",
+      "roleDialog": "Explosive aggression.",
+      "soundDesign": "Blade impacts and jungle echoes."
+    }
+  },
+  {
+    "id": "Shot12",
+    "shotType": "Reaction Close-Up",
+    "lensAngle": "85mm Prime",
+    "assetTags": "[Role1] [Prop1] [Set3]",
+    "description": "The Castaway grips the Temporal Compass whilst standing inside the Hidden Jungle Cove.",
+    "action": {
+      "roleActions": "Watches the compass needle spin toward ancient ruins.",
+      "dialogue": "It's guiding us.",
+      "roleDialog": "Awestruck realization.",
+      "soundDesign": "Low mysterious hum."
+    }
+  },
+  {
+    "id": "Shot13",
+    "shotType": "Wide Reveal Shot",
+    "lensAngle": "32mm Anamorphic",
+    "assetTags": "[Role3] [Prop5] [Set5]",
+    "description": "The Treasure Seeker raises the Iron Key whilst standing inside the Ancient Spanish Ruins.",
+    "action": {
+      "roleActions": "Discovers a keyhole hidden within carved stonework.",
+      "dialogue": "We've found the entrance.",
+      "roleDialog": "Excited but controlled.",
+      "soundDesign": "Wind through ruins and falling dust."
+    }
+  },
+  {
+    "id": "Shot14",
+    "shotType": "Insert Shot",
+    "lensAngle": "100mm Macro",
+    "assetTags": "[Role3] [Prop5] [Set5]",
+    "description": "The Treasure Seeker inserts the Iron Key whilst standing inside the Ancient Spanish Ruins.",
+    "action": {
+      "roleActions": "Carefully turns the key inside the ancient mechanism.",
+      "dialogue": "Come on...",
+      "roleDialog": "Quiet anticipation.",
+      "soundDesign": "Grinding stone gears."
+    }
+  },
+  {
+    "id": "Shot15",
+    "shotType": "Interior Reveal Shot",
+    "lensAngle": "40mm Prime",
+    "assetTags": "[Role1] [Prop1] [Set5]",
+    "description": "The Castaway examines the Temporal Compass whilst standing inside the Ancient Spanish Ruins.",
+    "action": {
+      "roleActions": "Approaches a glowing artifact chamber.",
+      "dialogue": "This is what brought me here.",
+      "roleDialog": "Amazed and emotional.",
+      "soundDesign": "Resonant energy drones."
+    }
+  },
+  {
+    "id": "Shot16",
+    "shotType": "Confrontation Shot",
+    "lensAngle": "65mm Prime",
+    "assetTags": "[Role4] [Prop4] [Set5]",
+    "description": "The Enforcer draws the Cutlass whilst standing inside the Ancient Spanish Ruins.",
+    "action": {
+      "roleActions": "Blocks the chamber entrance and claims the treasure.",
+      "dialogue": "Nobody leaves with it.",
+      "roleDialog": "Threatening certainty.",
+      "soundDesign": "Steel scraping from scabbard."
+    }
+  },
+  {
+    "id": "Shot17",
+    "shotType": "Reverse Close-Up",
+    "lensAngle": "85mm Prime",
+    "assetTags": "[Role2] [Prop2] [Set5]",
+    "description": "The Pirate Captain levels the Captain's Flintlock whilst standing inside the Ancient Spanish Ruins.",
+    "action": {
+      "roleActions": "Steps between allies and greed-driven mutineers.",
+      "dialogue": "Stand down.",
+      "roleDialog": "Calm but dangerous.",
+      "soundDesign": "Silence broken by distant stone creaks."
+    }
+  },
+  {
+    "id": "Shot18",
+    "shotType": "Action Tracking Shot",
+    "lensAngle": "40mm Prime",
+    "assetTags": "[Role5] [Prop4] [Set5]",
+    "description": "The Trusted Deckhand swings the Cutlass whilst standing inside the Ancient Spanish Ruins.",
+    "action": {
+      "roleActions": "Defends the crew and disarms attackers.",
+      "dialogue": "Get back!",
+      "roleDialog": "Protective urgency.",
+      "soundDesign": "Fast-paced combat impacts."
+    }
+  },
+  {
+    "id": "Shot19",
+    "shotType": "Dolly-In Shot",
+    "lensAngle": "65mm Prime",
+    "assetTags": "[Role1] [Prop1] [Set5]",
+    "description": "The Castaway activates the Temporal Compass whilst standing inside the Ancient Spanish Ruins.",
+    "action": {
+      "roleActions": "Raises the compass toward the glowing artifact.",
+      "dialogue": "Take me home.",
+      "roleDialog": "Raw vulnerability and hope.",
+      "soundDesign": "Rising temporal energy and harmonic resonance."
+    }
+  },
+  {
+    "id": "Shot20",
+    "shotType": "Final Hero Shot",
+    "lensAngle": "50mm Anamorphic",
+    "assetTags": "[Role1] [Prop1] [Set4]",
+    "description": "The Castaway holds the Temporal Compass whilst standing on the Storm-Battered Reef.",
+    "action": {
+      "roleActions": "Emerges from the temporal storm and gazes toward a changed horizon.",
+      "dialogue": "It's finally over.",
+      "roleDialog": "Relieved yet uncertain.",
+      "soundDesign": "Ocean ambience, fading temporal echoes, distant thunder."
+    }
+  }
+
   ]
 }

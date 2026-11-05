@@ -54,11 +54,10 @@ async function downloadViaPuppeteer(page, url, filepath) {
         .filter(f => /^Shot.*\.(png|jpg|jpeg|webp)$/i.test(f));
 
     files.sort((a, b) => {
-        const na = parseInt(a);
-        const nb = parseInt(b);
-        if (!isNaN(na) && !isNaN(nb)) return na - nb;
-        return a.localeCompare(b);
-    });
+    const na = parseInt(a.match(/\d+/)?.[0] || 0, 10);
+    const nb = parseInt(b.match(/\d+/)?.[0] || 0, 10);
+    return na - nb;
+});
 
     console.log("Files detected:", files);
     console.log("Files total:", files.length);
