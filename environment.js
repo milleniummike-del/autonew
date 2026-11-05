@@ -1,5 +1,5 @@
-const filepath = "downloads";
-const downloadDir = "downloads";
+const filepath = "X:\\inputprojects\\project4";
+const downloadDir = "X:\\inputprojects\\project4";
 const path = require('path');
 function waitForKeypress() {
     return new Promise(resolve => {
@@ -22,7 +22,12 @@ function waitForKeypress() {
     });
 }
 
-async function waitTime(time = 10000, upto = 20000) {
+async function waitTime(time = 1000) {
+    console.log ("Waiting "+time);
+    await new Promise(r => setTimeout(r, time));
+}
+
+async function waitTimeRandom(time = 10000, upto = 20000) {
      const timewait = Math.floor(Math.random() * (upto - time + 1)) + time;
     console.log ("Waiting "+timewait);
     await new Promise(r => setTimeout(r, timewait));
@@ -32,18 +37,44 @@ const readline = require('readline');
 
 let previousValue = '';
 
-function getInput(message = 'Enter value: ') {
-    const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout
-    });
-
+function getInput(message = 'Enter prompt: ') {
     return new Promise(resolve => {
-        const prompt = previousValue
-            ? `${message}[${previousValue}]: `
-            : message;
 
-        rl.question(prompt, answer => {
+        const rl = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout
+        });
+
+        readline.emitKeypressEvents(process.stdin);
+
+        if (process.stdin.isTTY) {
+            process.stdin.setRawMode(true);
+        }
+
+        rl.setPrompt(message);
+        rl.prompt();
+
+        const onKeypress = (str, key) => {
+            if (key && key.name === 'tab') {
+                // Clear current input
+                rl.write(null, { ctrl: true, name: 'u' });
+
+                // Insert previous prompt
+                if (previousValue) {
+                    rl.write(previousValue);
+                }
+            }
+        };
+
+        process.stdin.on('keypress', onKeypress);
+
+        rl.once('line', answer => {
+            process.stdin.removeListener('keypress', onKeypress);
+
+            if (process.stdin.isTTY) {
+                process.stdin.setRawMode(false);
+            }
+
             const value = answer.trim() || previousValue;
 
             if (value) {
@@ -53,9 +84,16 @@ function getInput(message = 'Enter value: ') {
             rl.close();
             resolve(value);
         });
+
+        rl.once('close', () => {
+            process.stdin.removeListener('keypress', onKeypress);
+
+            if (process.stdin.isTTY && process.stdin.isRaw) {
+                process.stdin.setRawMode(false);
+            }
+        });
     });
 }
-
 
 const blocks = [
 {

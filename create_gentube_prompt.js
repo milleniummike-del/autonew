@@ -4,10 +4,11 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 const path = require('path');
 const { getBrowser, safeRun, TIMEOUT } = require('./browser');
-const { downloadDir, waitForKeypress, getInput, blocks } = require('./environment');
+const { downloadDir, filepath, waitForKeypress, waitTime, blocks, getInput } = require('./environment');
 puppeteer.use(StealthPlugin());
+const useExisting = true;
 
-const URL = 'https://www.gentube.app/create-together/k17e0enegvgsec6fy4epj16zrx8d9w78?creating=1';
+const URL = 'https://www.gentube.app/create';
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -50,13 +51,45 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
     // MAIN LOOP
     for (let i = 0; i < 100000; i++) {
+        await page.goto(URL, {
+            waitUntil: 'networkidle2',
+            timeout: 60000
+        });
 
         let promptText = await getInput('Enter prompt: ');
 
+        const assetNames = [...new Set(
+            [...promptText.matchAll(/\[([^\]]+)\]/g)].map(match => match[1])
+        )];
+
         promptText = promptText.replace(/\{([^}]+)\}/g, (match, key) => {
-                const block = blocks.find(b => b[key] !== undefined);
-                return block ? block[key] : match;
-            });
+            const block = blocks.find(b => b[key] !== undefined);
+            return block ? block[key] : match;
+        });
+
+        promptText = promptText.replace(/\[[^\]]*\]/g, '');
+
+        if (useExisting && assetNames.length!=0) {
+            console.log("Assets found " + assetNames.length)
+            for (let count = 0; count < assetNames.length; count++) {
+                const assetName = assetNames[count];
+                await page.click('button[aria-label="Add an image — Max 10 MB"]');
+                await page.waitForFunction(() => {
+                    return document.querySelector('input[type="file"]');
+                });
+
+                const fileInput = await page.$('input[type="file"]');
+                await fileInput.uploadFile(filepath + "\\" + assetName);
+
+                console.log("Uploaded:", filepath + "\\" + assetName);
+            }
+            try {
+                await page.click('button[aria-label="Close"]');
+            } catch(e) {
+
+            }
+        }
+
         const success = await safeRun(promptText, async () => {
 
             const textareaSelector = 'textarea';
@@ -71,9 +104,9 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
             // Fill textarea
             await page.locator(textareaSelector).fill(promptText);
             await page.keyboard.press('Enter');// Wait for image generation
-
+            await waitTime();
             await page.click('button[aria-label="Create"]');
-            
+            await waitTime();
             // Capture largest data:image
             const dataImages = await page.evaluate(() => {
 
@@ -98,18 +131,11 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
                     b.size > a.size ? b : a
                 );
 
-                await saveDataImage(largest.src);
+                //await saveDataImage(largest.src);
             }
         });
 
         await waitForKeypress();
-                    // Clear button
-            await page.waitForSelector(
-                'button[aria-label="Clear"]',
-                { visible: true, timeout: 15000 }
-            );
-
-            await page.click('button[aria-label="Clear"]');
     }
 
     console.log('\n[COMPLETE] All prompts processed.');

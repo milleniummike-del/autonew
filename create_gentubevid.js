@@ -36,7 +36,7 @@ async function downloadViaPuppeteer(page, url, filepath) {
 (async () => {
     const browser = await getBrowser();
 
-    const matrix = require('./matrix.json');
+    const matrix = require('./project4.json');
     const page = await browser.newPage();
 
     await page.goto('https://www.gentube.app/genmovie', {
@@ -51,7 +51,7 @@ async function downloadViaPuppeteer(page, url, filepath) {
     // READ AND SORT FILES FROM inputimages DIRECTORY
     // ---------------------------------------------------------
     let files = fs.readdirSync(inputDir)
-        .filter(f => /\.(png|jpg|jpeg|webp)$/i.test(f));
+        .filter(f => /^Shot.*\.(png|jpg|jpeg|webp)$/i.test(f));
 
     files.sort((a, b) => {
         const na = parseInt(a);
@@ -61,15 +61,16 @@ async function downloadViaPuppeteer(page, url, filepath) {
     });
 
     console.log("Files detected:", files);
+    console.log("Files total:", files.length);
 
     await new Promise(r => setTimeout(r, 2000));
 
     for (let v = 0; v < files.length; v++) {
 
         const filePath = path.join(inputDir, files[v]);
-        const shot = getRandomCinematicShot();
-        let currentPrompt = `${shot} - sound: no music just natural background noises`;
-        currentPrompt = `${matrix.shots[v].in_frame_still_prompt} - sound: no music just natural background noises`;
+        //const shot = getRandomCinematicShot();
+        //let currentPrompt = `${shot} - sound: no music just natural background noises`;
+        let currentPrompt = JSON.stringify(matrix.shots[v].action);
         console.log(currentPrompt);
 
         // ---------------------------------------------------------

@@ -23,7 +23,7 @@
       "camera_framing": "extreme wide shot",
       "camera_movement": "Slow cinematic forward movement toward the artist.",
       "artist_performance": "singing, expressive performance and natural movement",
-      "in_frame_still_prompt": "High-Impact Dynamic Keyframe, 28mm Wide Anamorphic, Dutch tilt 15 degrees — [Role1] throws the [Prop3] whilst standing in [Set2]"},
+      "in_frame_still_prompt": "High-Impact Dynamic Keyframe, 28mm Wide Anamorphic, Dutch tilt 15 degrees — [Role1] throws the [Prop1] whilst standing in [Set2]"},
     {
       "shot_number": 2,
       "shot_type": "Artist Introduction",
@@ -33,7 +33,7 @@
       "camera_framing": "medium shot",
       "camera_movement": "Slow controlled push-in toward the artist.",
       "artist_performance": "singing, expressive performance and natural movement",
-      "in_frame_still_prompt": "Extreme Close-Up Insert, 90mm Macro Cine, f/2.8 — [Role1] examines the [Prop1] whilst standing in [Set3]"
+      "in_frame_still_prompt": "Extreme Close-Up Insert, 90mm Macro Cine, f/2.8 — [Role1] examines the [Prop1] whilst standing in [Set1]"
     },
     {
       "shot_number": 3,

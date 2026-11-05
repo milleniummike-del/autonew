@@ -1,197 +1,197 @@
-
 {
-  "title": "THE CURSE OF THE BLACK TIDE",
-  "genre": "Golden Age of Piracy (1680–1730) / Historical Adventure / Time-Travel Fantasy",
-  "premise": "In 2022, a young man named Ethan Cole discovers an ancient maritime compass in a forgotten coastal museum. During a violent electrical storm, the compass activates, transporting him through time to the Caribbean in 1718, at the height of the Golden Age of Piracy. Stranded in an unfamiliar world of wooden sailing ships, ruthless privateers and lawless island settlements, Ethan is rescued by a notorious pirate captain. Initially regarded as an inexperienced outsider, Ethan must learn the brutal realities of pirate life, master historical weapons, navigate dangerous alliances and earn the respect of a hardened crew. When he discovers that the mysterious compass is connected to a legendary treasure and a secret that could send him home, Ethan faces a choice between returning to his former life or embracing his destiny as a pirate.",
-  "logline": "Transported from 2022 to the Caribbean in 1718 by a mysterious antique compass, a young modern man must survive the ruthless Golden Age of Piracy, earn his place aboard a notorious pirate ship and choose between returning home or becoming the legend he was destined to be.",
+  "title": "Pirates",
+  "genre": "Golden Age of Piracy (1680–1730)",
+  "premise": "A young man from 2022 is transported into the dangerous Caribbean during the Golden Age of Piracy, where he must earn the trust of a pirate crew, survive deadly rivalries, uncover the secrets of a temporal artifact, and discover whether he can ever return home.",
+  "logline": "A modern-day young man stranded in the pirate age must become one of history's most feared sailors to unlock a mysterious artifact capable of bending time itself.",
   "visualTone": {
     "colorPalette": [
-      "#172A32",
-      "#76533A",
-      "#C49A62",
-      "#B8A78B",
-      "#263D35"
+      "#091B2B",
+      "#A8743B",
+      "#D9C69A",
+      "#5A2C1A",
+      "#6F7D74"
     ],
-    "cameraLenses": "Panavision C-Series Anamorphic and vintage Cooke Speed Panchro primes. Primary photography uses 40mm anamorphic for immersive environmental storytelling, 50mm spherical for intimate character performances, 75mm portrait lenses for dramatic close-ups and 100mm macro lenses for detailed compass, weapon and nautical prop inserts. Gentle anamorphic distortion, organic lens breathing, shallow depth of field and naturalistic focus transitions.",
-    "lightingPhilosophy": "Naturalistic historical chiaroscuro combining warm Caribbean sunlight, hard directional tropical daylight, deep interior shadows, practical oil lanterns, candlelight and storm-driven lightning. Golden-hour backlighting creates atmospheric silhouettes against sails and rigging. Ship interiors use warm 2200K practical illumination contrasted with cool 6500K moonlight entering through wooden hatches. Volumetric sea mist, smoke and atmospheric haze provide cinematic depth.",
-    "grainAesthetic": "Kodak Vision3 500T 5219 35mm film stock aesthetic with subtle organic silver-halide grain, gentle highlight halation, restrained contrast, rich shadow detail and warm analogue color reproduction. Exterior daylight sequences emulate Kodak Vision3 250D 5207. A tactile, photochemical historical adventure aesthetic with restrained digital sharpness."
+    "cameraLenses": "Cooke Panchro Classic 32mm, 50mm and 75mm / Panavision C-Series Anamorphic 40mm",
+    "lightingPhilosophy": "Naturalistic maritime realism with golden-hour backlight, candlelit interiors, moonlit silhouettes, volumetric storm atmospherics and dramatic chiaroscuro contrast",
+    "grainAesthetic": "Kodak Vision3 500T 5219 35mm grain"
   },
   "sets": [
     {
       "id": "Set1",
       "tag": "[Set1]",
-      "name": "The Modern Maritime Museum",
-      "description": "A coastal maritime museum in 2022, occupying a converted nineteenth-century stone customs building. The interior features tall timber display cabinets, glass cases containing antique navigational instruments, brass ship fittings, faded nautical charts, weathered wooden figureheads and framed paintings of historic sailing vessels. The central exhibition chamber contains an isolated display pedestal holding an unusually ornate eighteenth-century compass. Polished stone flooring, exposed iron beams and modern security equipment establish the contemporary period.",
-      "atmosphere": "Quiet and deserted after closing time. Rain lashes the exterior windows while a powerful electrical storm develops offshore. The museum interior carries a faint smell of damp stone, old timber and dust. Occasional electrical flickering disrupts the otherwise silent environment.",
-      "lighting": "Cool overhead museum lighting at approximately 4000K creates controlled pools of illumination across the exhibits. Blue-grey storm light enters through high windows. The antique compass produces an unnatural amber glow during the time-travel event, illuminating Ethan's face and casting moving reflections across the glass display cases."
+      "name": "Black Tide Pirate Ship",
+      "description": "A weathered brigantine with scarred teak decks, towering masts, rope rigging, patched sails, rusted cannon mounts and years of battle damage.",
+      "atmosphere": "Salt mist, sea spray, humid air and endless ocean horizons.",
+      "lighting": "Golden sunlight through sails during day, lantern illumination at night."
     },
     {
       "id": "Set2",
       "tag": "[Set2]",
-      "name": "The Caribbean Pirate Ship",
-      "description": "The main deck of a historically authentic early eighteenth-century wooden sailing vessel, constructed from dark weathered oak and fitted with a square-rigged mainmast, wooden capstan, hemp rigging, canvas sails and heavy timber railings. The deck is crowded with coils of rope, wooden barrels, belaying pins and practical maritime equipment. A raised quarterdeck provides the captain with an elevated command position. The vessel displays authentic hand-operated nautical mechanisms and no modern equipment.",
-      "atmosphere": "A warm tropical breeze moves continuously through the rigging. Salt spray drifts across the deck while seabirds circle overhead. Sailors move purposefully through their duties, creating a busy but disciplined maritime environment.",
-      "lighting": "Strong Caribbean daylight at approximately 5600K illuminates the deck. Hard sunlight produces crisp shadows from the rigging across the wooden planks. Warm reflected light from the sea fills the shadowed faces, while late-afternoon sequences introduce amber highlights and long cinematic shadows."
+      "name": "Port Nassau Tavern",
+      "description": "A crowded timber tavern packed with smugglers, sailors, gamblers and mercenaries.",
+      "atmosphere": "Rum fumes, cigar smoke, spilled ale and constant tension.",
+      "lighting": "Flickering candles and warm amber lantern light."
     },
     {
       "id": "Set3",
       "tag": "[Set3]",
-      "name": "Tortuga Pirate Harbour",
-      "description": "A bustling Caribbean harbour settlement in 1718, surrounded by weathered timber buildings, stone foundations, open-air taverns, makeshift market stalls and narrow muddy streets. Wooden sailing vessels of different sizes occupy the harbour, with tall masts and canvas sails rising above the rooftops. Dockworkers unload barrels, merchants trade supplies and armed sailors negotiate business beneath faded canvas awnings. The architecture is a historically grounded mixture of Caribbean colonial construction and improvised maritime settlement buildings.",
-      "atmosphere": "Hot, humid and crowded. Tropical birds call above the harbour while gulls circle the ships. Smoke from cooking fires mixes with sea mist, tavern noise and the smell of fish, tar, wet rope and rum. The harbour feels energetic but dangerous, with watchful sailors and opportunistic criminals occupying every corner.",
-      "lighting": "Bright tropical sunlight filtered through canvas awnings creates alternating patches of warm light and deep shade. Reflected golden light bounces from the harbour water onto timber walls. Tavern entrances are illuminated by oil lanterns and warm interior candlelight."
+      "name": "Hidden Jungle Cove",
+      "description": "A tropical cove secluded by cliffs, tangled vegetation and crystal waters.",
+      "atmosphere": "Heavy humidity, birds, insects and rolling sea fog.",
+      "lighting": "Filtered emerald sunlight through dense canopy."
     },
     {
       "id": "Set4",
       "tag": "[Set4]",
-      "name": "The Captain's Quarters",
-      "description": "A cramped but imposing private cabin beneath the quarterdeck of the pirate vessel. Dark oak walls are decorated with navigational charts, handwritten sea routes, a brass telescope, a wooden writing desk and shelves containing nautical instruments. A large stern window overlooks the Caribbean Sea. The cabin contains a heavy timber chair, a sea chest reinforced with iron bands and a chart table covered in parchment maps and navigation markings.",
-      "atmosphere": "Still, enclosed and tense. The vessel's movement causes the hanging lanterns and suspended instruments to sway gently. Distant creaking timbers and muted deck activity suggest the constant movement of a working sailing ship.",
-      "lighting": "Warm oil-lantern illumination at approximately 2200K creates concentrated amber highlights across the desk and the captain's face. Cool blue daylight enters through the stern windows, establishing a contrast between the warm interior and the open ocean beyond."
+      "name": "Storm-Battered Reef",
+      "description": "A deadly reef covered with coral spikes, wreckage and crashing surf.",
+      "atmosphere": "Thunderstorms, violent winds and relentless waves.",
+      "lighting": "Blue-grey storm ambience illuminated by lightning strikes."
     },
     {
       "id": "Set5",
       "tag": "[Set5]",
-      "name": "The Hidden Treasure Cove",
-      "description": "A secluded volcanic island cove surrounded by towering limestone cliffs, dense tropical vegetation, exposed black volcanic rock and a narrow strip of pale sand. A partially concealed cave entrance sits behind hanging vines and twisted tree roots. Inside the cave, the walls are dark and mineral-rich, with shallow pools of seawater reflecting the entrance light. An ancient stone platform stands at the rear, containing carved navigational symbols corresponding to the markings on the mysterious compass.",
-      "atmosphere": "An isolated and ominous tropical environment. Waves crash against the surrounding rocks, while wind moves through the palms and cave entrance. Fine sea spray and suspended moisture create a mysterious atmospheric veil. The cave feels ancient and untouched.",
-      "lighting": "Exterior sequences use dramatic late-afternoon sunlight and strong backlighting through palm leaves. The cave entrance receives narrow shafts of warm sunlight, while the interior falls into deep blue-green shadow. The compass provides a subtle amber practical light that reveals hidden inscriptions across the stone platform."
+      "name": "Ancient Spanish Ruins",
+      "description": "Collapsed stone ruins consumed by jungle vines and forgotten by history.",
+      "atmosphere": "Dust, silence and mysterious echoes.",
+      "lighting": "Sunbeams piercing through broken arches and stone chambers."
     }
   ],
   "characters": [
     {
       "id": "Character1",
       "tag": "[Character1]",
-      "name": "Ethan Cole",
-      "actorName": "Young male adventure protagonist, naturalistic contemporary leading-man archetype, approximately 25 years old. Expressive performance combining vulnerability, curiosity, humour and gradually developing confidence.",
-      "physicalDescription": "Approximately 25 years old, lean athletic build, medium height, angular oval face, defined cheekbones, straight nose, expressive hazel eyes and dark brown slightly wavy hair. Clean-shaven at the beginning of the story, developing light stubble after several days at sea. His physical appearance initially reflects a contemporary young man but gradually becomes weathered through exposure to the tropical environment.",
-      "behavioralTraits": "Initially nervous, observant and intellectually curious. Moves with the awkwardness of someone unfamiliar with shipboard life, frequently looking towards experienced sailors for guidance. His posture gradually becomes more confident. He develops a controlled fighting stance, learns to maintain balance on a moving deck and begins displaying the decisiveness of an experienced pirate."
+      "name": "Ethan Ward",
+      "actorName": "Young adventure protagonist",
+      "description": "23 years old, athletic build, brown eyes, short dark hair, clean-shaven face and modern appearance.",
+      "behavioralTraits": "Adaptive, intelligent, curious, cautious and courageous when necessary."
     },
     {
       "id": "Character2",
       "tag": "[Character2]",
-      "name": "Captain Elias Blackthorne",
-      "actorName": "Weathered male authority figure, commanding leading-character archetype, approximately 48 years old. Strong physical presence, controlled intensity and understated charisma.",
-      "physicalDescription": "Approximately 48 years old, broad-shouldered and muscular, weathered angular face, deep-set dark eyes, prominent nose, thick dark beard streaked with grey and long dark hair tied loosely behind his head. A narrow scar crosses his left cheek. His hands are calloused and his expression is frequently stern.",
-      "behavioralTraits": "Commands attention without unnecessary movement. Speaks slowly and deliberately, often maintaining eye contact longer than is comfortable. Uses small gestures to control his crew and rarely raises his voice. Demonstrates calculated aggression, maritime intelligence and a dry sense of humour."
+      "name": "Captain Blackthorne",
+      "actorName": "Veteran charismatic pirate captain",
+      "description": "Late forties, weathered skin, blue eyes, grey beard and a prominent facial scar.",
+      "behavioralTraits": "Commanding, strategic, disciplined and intimidating."
     },
     {
       "id": "Character3",
       "tag": "[Character3]",
-      "name": "Isabella Vane",
-      "actorName": "Female pirate navigator and skilled maritime strategist, approximately 29 years old. Strong independent supporting protagonist with sharp intelligence and controlled emotional performances.",
-      "physicalDescription": "Approximately 29 years old, athletic build, olive-toned complexion, defined cheekbones, dark brown eyes and long dark hair usually secured beneath a weathered headscarf. A small scar marks her right eyebrow. Her movements are agile and balanced.",
-      "behavioralTraits": "Highly observant, resourceful and sceptical of strangers. Studies people before speaking, often communicating through subtle expressions. Moves confidently across the deck and handles navigational instruments with practiced precision. Gradually becomes Ethan's most trusted ally."
+      "name": "Isabella Cortez",
+      "actorName": "Resourceful explorer archetype",
+      "description": "Early thirties, sharp features, olive complexion and dark braided hair.",
+      "behavioralTraits": "Confident, adventurous, observant and persuasive."
     },
     {
       "id": "Character4",
       "tag": "[Character4]",
-      "name": "Thomas Rook",
-      "actorName": "Experienced male pirate boatswain, rugged supporting-character archetype, approximately 42 years old. Physically imposing with expressive comic timing and a rough maritime voice.",
-      "physicalDescription": "Approximately 42 years old, stocky muscular build, broad jaw, broken nose, pale blue eyes and a thick reddish-brown beard. His weathered face displays several old scars. His forearms are heavily calloused from years of working with ropes, sails and weapons.",
-      "behavioralTraits": "Blunt, suspicious and frequently impatient. Uses broad physical gestures and a rough sense of humour. Initially considers Ethan a liability but gradually becomes a reluctant mentor. His movements are practical and economical, reflecting years of shipboard experience."
-    },
-    {
-      "id": "Character5",
-      "tag": "[Character5]",
-      "name": "Silas Crowe",
-      "actorName": "Male antagonist and ruthless pirate treasure hunter, approximately 45 years old. Lean, calculating character archetype with an unsettling calm presence.",
-      "physicalDescription": "Approximately 45 years old, tall and lean, narrow face, prominent cheekbones, cold grey eyes, shoulder-length black hair and a neatly trimmed dark beard. A deep scar runs along the side of his neck. His appearance is carefully maintained despite his violent profession.",
-      "behavioralTraits": "Patient, manipulative and opportunistic. Rarely displays overt anger, preferring quiet threats and calculated intimidation. Watches people carefully before acting. His movements are controlled, precise and deliberately theatrical."
+      "name": "Gideon Flint",
+      "actorName": "Massive pirate enforcer",
+      "description": "Broad-shouldered giant with scars, shaved head and a broken nose.",
+      "behavioralTraits": "Aggressive, loyal, fearless and territorial."
     }
   ],
   "costumes": [
     {
       "id": "Costume1",
       "tag": "[Costume1]",
-      "name": "The Displaced Modern Traveller",
-      "description": "Contemporary 2022 clothing consisting of a charcoal-grey cotton T-shirt, dark blue denim jeans, a practical black belt and worn dark trainers. The silhouette is unmistakably modern and contrasts sharply with the historical clothing surrounding him. As the story progresses, the garments become stained with seawater, dirt and wear.",
-      "materials": "Cotton jersey, denim, synthetic rubber soles, modern metal belt hardware and contemporary stitching.",
-      "wearCondition": "Initially clean and relatively new. After arriving in 1718, the clothing becomes wet, salt-stained, torn around the knees and progressively deteriorated."
+      "name": "Modern Survivor Clothing",
+      "description": "Hoodie, jeans, sneakers and makeshift repairs.",
+      "materials": "Cotton, denim and synthetic fabrics.",
+      "wearCondition": "Torn, soaked and salt-stained."
     },
     {
       "id": "Costume2",
       "tag": "[Costume2]",
-      "name": "The Blackthorne Captain's Attire",
-      "description": "Historically inspired early eighteenth-century pirate captain clothing consisting of a loose ivory linen shirt, dark burgundy waistcoat, long weathered brown frock coat, knee-length breeches, worn leather boots, a wide leather belt and a black tricorn hat. A dark crimson sash is tied around the waist. The overall silhouette is commanding but practical for maritime movement.",
-      "materials": "Handwoven linen, wool, aged leather, brass buttons, cotton sash fabric and weathered felt.",
-      "wearCondition": "Well-used and salt-weathered. Coat edges show minor fraying, boots carry dried mud and salt stains, and the leather belt displays years of handling. Brass hardware is tarnished rather than polished."
+      "name": "Captain's Regalia",
+      "description": "Tricorn hat, long naval coat, leather belts and ceremonial sash.",
+      "materials": "Wool, brass and aged leather.",
+      "wearCondition": "Worn yet meticulously maintained."
     },
     {
       "id": "Costume3",
       "tag": "[Costume3]",
-      "name": "The Navigator's Maritime Clothing",
-      "description": "Practical pirate navigator clothing consisting of a cream linen shirt, fitted dark green waistcoat, brown knee-length breeches, leather boots and a faded rust-red headscarf. A narrow leather belt carries small navigational accessories. The cut allows unrestricted movement across the ship and through dense tropical vegetation.",
-      "materials": "Linen, wool, vegetable-tanned leather, cotton headscarf and aged brass fastenings.",
-      "wearCondition": "Sun-faded, salt-stained and slightly worn. The shirt sleeves are rolled above the elbows. The waistcoat is maintained carefully, while the boots display extensive maritime wear."
+      "name": "Treasure Hunter Attire",
+      "description": "Explorer's coat, fitted trousers, utility belts and durable boots.",
+      "materials": "Canvas, linen and leather.",
+      "wearCondition": "Travel-worn and weathered."
     },
     {
       "id": "Costume4",
       "tag": "[Costume4]",
-      "name": "The Veteran Boatswain's Workwear",
-      "description": "A practical sailor's outfit comprising an off-white linen shirt, faded brown wool waistcoat, dark charcoal breeches, heavy leather boots, wide utility belt and faded dark blue bandana. A simple leather wrist guard protects one forearm during deck work.",
-      "materials": "Coarse linen, wool, vegetable-tanned leather, hemp stitching and aged iron buckles.",
-      "wearCondition": "Heavily distressed, with salt stains, rope abrasions, darkened cuffs, patched knees and worn leather. The clothing reflects years of harsh maritime labour."
+      "name": "Enforcer Battle Gear",
+      "description": "Sleeveless coat, reinforced boots and combat harness.",
+      "materials": "Heavy leather and iron hardware.",
+      "wearCondition": "Scarred and battle-damaged."
     },
     {
       "id": "Costume5",
       "tag": "[Costume5]",
-      "name": "The Shadow Corsair's Attire",
-      "description": "A dark, carefully maintained pirate outfit comprising a black linen shirt, charcoal waistcoat, long dark brown leather coat, black breeches, high leather boots, dark leather belt and weathered black tricorn hat. A muted crimson neckcloth provides a restrained colour accent. The silhouette is elegant but intimidating.",
-      "materials": "Black linen, dark wool, aged leather, brass fastenings, cotton neckcloth and heavy boot leather.",
-      "wearCondition": "Well maintained but visibly aged. The coat has subtle salt marks, the boots are polished from regular care and the leather accessories show controlled wear. No garment appears modern or synthetic."
+      "name": "Trusted Deckhand Garb",
+      "description": "Loose pirate shirt, patched trousers and working belts.",
+      "materials": "Linen, hemp and leather.",
+      "wearCondition": "Extensively worn from shipboard labor."
     }
   ],
   "props": [
     {
       "id": "Prop1",
       "tag": "[Prop1]",
-      "name": "The Chronos Maritime Compass",
-      "description": "An ornate eighteenth-century brass pocket compass approximately ten centimetres in diameter. Its circular case features intricate engraved nautical markings, a hinged protective lid, a dark blue enamel face and a delicate golden compass needle. Unusual symbols are engraved around the outer rim. The needle occasionally moves independently of magnetic direction and emits a faint amber glow when activated.",
-      "narrativeSignificance": "The compass is the mechanism responsible for transporting Ethan from 2022 to 1718. It contains the navigational markings required to locate the hidden treasure and may provide a route back to his own time. Its connection to the island cave drives the central mystery.",
-      "handlingNote": "Ethan initially holds it carefully with both hands, examining its unfamiliar markings. During activation, he grips it tightly as the needle spins. In later scenes, he carries it securely inside his waistcoat or holds it close to the engraved stone platform."
+      "name": "Temporal Compass",
+      "description": "A brass compass engraved with impossible symbols and mysterious mechanisms.",
+      "narrativeSignificance": "The only clue to Ethan's return home.",
+      "handlingNote": "Held carefully and checked frequently."
     },
     {
       "id": "Prop2",
       "tag": "[Prop2]",
-      "name": "Captain Blackthorne's Flintlock Pistol",
-      "description": "A historically appropriate early eighteenth-century single-shot flintlock pistol featuring a dark walnut stock, iron barrel, brass trigger guard and exposed flintlock mechanism. The wooden grip is worn smooth from years of handling. The metal components are darkened and weathered.",
-      "narrativeSignificance": "The pistol represents the authority and danger of the pirate world. Captain Blackthorne initially uses it to establish control over Ethan and later entrusts it to him as a sign of earned respect.",
-      "handlingNote": "Held with one hand using a firm wrist and controlled arm extension. The pistol is handled as a historically accurate single-shot weapon, requiring deliberate preparation rather than modern firearm handling assumptions."
+      "name": "Captain's Flintlock",
+      "description": "Decorative naval pistol with engraved metalwork.",
+      "narrativeSignificance": "Represents authority and command.",
+      "handlingNote": "Drawn with confidence and precision."
     },
     {
       "id": "Prop3",
       "tag": "[Prop3]",
-      "name": "The Captain's Cutlass",
-      "description": "A curved eighteenth-century naval cutlass with a broad single-edged steel blade, simple brass knuckle guard and dark wooden grip. The blade has shallow scratches and a dull reflective finish. Its proportions are practical for close-quarters maritime combat.",
-      "narrativeSignificance": "The cutlass represents Ethan's transformation from an inexperienced outsider into a capable pirate. Learning to wield it becomes a physical expression of his adaptation to the dangerous historical world.",
-      "handlingNote": "Initially carried awkwardly by Ethan with an uncertain grip. Under Thomas Rook's instruction, he learns to hold it with controlled wrist movement and balanced footwork. Experienced pirates carry it in a worn leather scabbard."
+      "name": "Treasure Map",
+      "description": "Ancient parchment covered in coded directions.",
+      "narrativeSignificance": "Guides the heroes toward the artifact.",
+      "handlingNote": "Carefully unfolded and studied."
     },
     {
       "id": "Prop4",
       "tag": "[Prop4]",
-      "name": "The Captain's Navigational Chart",
-      "description": "A large hand-drawn parchment sea chart depicting the Caribbean islands, reefs, coastal routes and a concealed island location. The chart contains inked compass roses, handwritten notes, navigational symbols and several faded red markings. Its edges are curled and stained by saltwater.",
-      "narrativeSignificance": "The chart connects the compass to the hidden treasure cove and reveals that Captain Blackthorne has been searching for the island for many years. Silas Crowe also seeks the same location, creating a race to reach the treasure.",
-      "handlingNote": "Spread flat across the captain's oak chart table and secured with small wooden weights. Isabella traces routes with her finger while Ethan compares the markings with those engraved on the compass."
+      "name": "Cutlass",
+      "description": "Curved pirate sword bearing signs of countless battles.",
+      "narrativeSignificance": "Symbolizes survival in the pirate world.",
+      "handlingNote": "Carried on a belt and drawn swiftly."
     },
     {
       "id": "Prop5",
       "tag": "[Prop5]",
-      "name": "The Ironbound Treasure Chest",
-      "description": "A heavy rectangular chest constructed from dark tropical hardwood, reinforced with blackened wrought-iron bands and an oversized antique lock. The timber surface is deeply weathered, with old salt deposits and scratches. Its interior contains gold coins, small gemstones and a folded parchment bearing strange navigational symbols.",
-      "narrativeSignificance": "The chest is the physical objective of the pirate expedition. Its contents reveal that the treasure is connected to the compass and may contain the final clue to opening a passage through time.",
-      "handlingNote": "Requires two hands to lift and is normally transported by two crew members. It rests on the stone platform inside the cave. Its heavy lid opens slowly with a distinctive iron hinge creak."
+      "name": "Iron Key",
+      "description": "Ancient Spanish key marked with cryptic symbols.",
+      "narrativeSignificance": "Unlocks the artifact chamber.",
+      "handlingNote": "Kept concealed until needed."
+    },
+    {
+      "id": "Prop6",
+      "tag": "[Prop6]",
+      "name": "Captain's Logbook",
+      "description": "Leather-bound journal filled with routes and forgotten legends.",
+      "narrativeSignificance": "Contains clues about the temporal mystery.",
+      "handlingNote": "Stored carefully and protected from seawater."
     }
   ],
   "roles": [
     {
       "id": "Role1",
       "tag": "[Role1]",
-      "roleName": "The Time-Displaced Stranger",
+      "roleName": "The Castaway",
       "characterId": "Character1",
       "costumeId": "Costume1",
-      "synthesisText": "[Character1] wearing [Costume1] becomes [Role1] (The Time-Displaced Stranger)"
+      "assetTags": "[Character1] [Costume1]",
+      "description": "Ethan Ward wearing Modern Survivor Clothing becomes The Castaway, a confused outsider trying to survive in the pirate age."
     },
     {
       "id": "Role2",
@@ -199,92 +199,66 @@
       "roleName": "The Pirate Captain",
       "characterId": "Character2",
       "costumeId": "Costume2",
-      "synthesisText": "[Character2] wearing [Costume2] becomes [Role2] (The Pirate Captain)"
+      "assetTags": "[Character2] [Costume2]",
+      "description": "Captain Blackthorne wearing Captain's Regalia becomes The Pirate Captain, the feared leader of the Black Tide crew."
     },
     {
       "id": "Role3",
       "tag": "[Role3]",
-      "roleName": "The Ship's Navigator",
+      "roleName": "The Treasure Seeker",
       "characterId": "Character3",
       "costumeId": "Costume3",
-      "synthesisText": "[Character3] wearing [Costume3] becomes [Role3] (The Ship's Navigator)"
+      "assetTags": "[Character3] [Costume3]",
+      "description": "Isabella Cortez wearing Treasure Hunter Attire becomes The Treasure Seeker, an explorer obsessed with uncovering forgotten secrets."
     },
     {
       "id": "Role4",
       "tag": "[Role4]",
-      "roleName": "The Veteran Boatswain",
+      "roleName": "The Enforcer",
       "characterId": "Character4",
       "costumeId": "Costume4",
-      "synthesisText": "[Character4] wearing [Costume4] becomes [Role4] (The Veteran Boatswain)"
-    },
-    {
-      "id": "Role5",
-      "tag": "[Role5]",
-      "roleName": "The Rival Corsair",
-      "characterId": "Character5",
-      "costumeId": "Costume5",
-      "synthesisText": "[Character5] wearing [Costume5] becomes [Role5] (The Rival Corsair)"
+      "assetTags": "[Character4] [Costume4]",
+      "description": "Gideon Flint wearing Enforcer Battle Gear becomes The Enforcer, a brutal fighter who enforces the captain's will."
     }
   ],
   "shots": [
     {
-      "shotNumber": 1,
-      "shotType": "Extreme Wide Establishing Shot transitioning into an Intimate Medium Close-Up",
-      "lensAngle": "40mm Panavision C-Series Anamorphic, slow forward dolly, natural perspective, shallow depth of field during the close-up.",
-      "imageframe": "[Role1] discovers the [Prop1] whilst standing in [Set1]",
+      "id": "Shot1",
+      "shotType": "Extreme Wide Establishing Shot",
+      "lensAngle": "32mm Anamorphic",
+      "assetTags": "[Role1] [Prop1] [Set4]",
+      "description": "The Castaway clutches the Temporal Compass whilst standing on the Storm-Battered Reef.",
       "action": {
-        "roleActions": "Begin with a static wide composition of the empty maritime museum. The camera slowly pushes towards the central display case. Ethan enters frame from the right, walking casually before stopping in front of the antique compass. He leans forward, studying the instrument through the glass. He carefully opens the display enclosure and lifts the compass with both hands. A sudden lightning flash illuminates the room. The compass needle begins spinning rapidly. Ethan recoils, then grips the compass tightly as amber light spreads across his hands and face. A violent supernatural flash overwhelms the frame, creating the visual transition into 1718.",
-        "dialogue": "Ethan: \"What the hell is this thing?\"",
-        "roleDialog": "Ethan speaks quietly with genuine curiosity, initially almost amused. His delivery becomes uncertain as the compass activates. The final words are delivered in a breathless whisper, followed by a sharp gasp of genuine fear.",
-        "soundDesign": "Begin with subdued museum ambience, distant rain against glass and the faint hum of overhead lighting. Add soft footsteps on stone flooring, a subtle glass enclosure creak and metallic contact as Ethan lifts the compass. Introduce a low-frequency supernatural drone beneath the spinning needle, gradually increasing in pitch. Thunder crashes with the final activation, accompanied by an explosive atmospheric impact and a brief moment of near silence."
+        "roleActions": "Staggers through crashing waves and struggles to maintain footing.",
+        "dialogue": "Where am I?",
+        "roleDialog": "Confused and terrified.",
+        "soundDesign": "Thunder, wind and crashing surf."
       }
     },
     {
-      "shotNumber": 2,
-      "shotType": "Low-Angle Medium Tracking Shot",
-      "lensAngle": "35mm Panavision Anamorphic Prime, controlled handheld movement, moderate depth of field.",
-      "imageframe": "[Role2] confronts [Role1] with the [Prop2] whilst standing in [Set2]",
+      "id": "Shot2",
+      "shotType": "Low-Angle Hero Shot",
+      "lensAngle": "40mm Anamorphic",
+      "assetTags": "[Role2] [Prop2] [Set1]",
+      "description": "The Pirate Captain raises the Captain's Flintlock whilst standing on the Black Tide Pirate Ship.",
       "action": {
-        "roleActions": "Open with Ethan lying on the wet wooden deck, disoriented and breathing heavily. The camera tracks low across the planks as a pair of worn leather boots enters the foreground. Captain Blackthorne steps into frame, stopping directly over Ethan. He raises the flintlock pistol and points it towards Ethan's chest. Ethan slowly raises both hands, looking between the weapon and the unfamiliar captain. Blackthorne circles him with measured steps before stopping and leaning forward. The ship's rigging moves overhead while sailors watch from the background. Ethan slowly sits upright, trying to understand his surroundings.",
-        "dialogue": "Captain Blackthorne: \"You there! Who are you, and how did you come aboard my ship?\"\nEthan: \"I... I don't know. I was somewhere else.\"\nCaptain Blackthorne: \"Then you'd best learn quickly. This is no place for lost boys.\"",
-        "roleDialog": "Blackthorne delivers his questions with cold authority, keeping his voice low and controlled. His final sentence contains a hint of contempt and dark amusement. Ethan is breathless and confused, struggling to form a coherent explanation. His voice cracks slightly on the final words.",
-        "soundDesign": "Layer ocean waves against the hull, wind moving through hemp rigging, wooden deck creaks, distant gull calls and canvas sails snapping. Include leather boots striking wet timber, the metallic movement of the flintlock mechanism and a low musical tension drone. The dialogue remains foregrounded with natural open-air ship acoustics."
+        "roleActions": "Steps onto the quarterdeck and commands the crew.",
+        "dialogue": "All hands, to your stations.",
+        "roleDialog": "Firm and authoritative.",
+        "soundDesign": "Rigging creaks and distant gulls."
       }
     },
     {
-      "shotNumber": 3,
-      "shotType": "Over-the-Shoulder Medium Two-Shot",
-      "lensAngle": "50mm Cooke Speed Panchro Prime, warm practical lighting, shallow depth of field.",
-      "imageframe": "[Role3] examines the [Prop1] whilst standing in [Set3]",
+      "id": "Shot3",
+      "shotType": "Medium Tracking Shot",
+      "lensAngle": "50mm Prime",
+      "assetTags": "[Role3] [Prop3] [Set2]",
+      "description": "The Treasure Seeker studies the Treasure Map whilst standing inside the Port Nassau Tavern.",
       "action": {
-        "roleActions": "Isabella stands beside a weathered wooden harbour stall, studying the compass in Ethan's outstretched hand. The camera frames the instrument in the foreground, then racks focus to Isabella's suspicious expression. She takes the compass carefully, rotates its brass casing and runs her thumb across the engraved markings. Ethan watches anxiously. Isabella looks towards the harbour before returning her attention to him. In the background, sailors move barrels between moored vessels while a tavern doorway opens and closes. Isabella hands the compass back and gestures towards the pirate ship in the distance.",
-        "dialogue": "Isabella: \"That compass is older than most men who sail these waters. Where did you find it?\"\nEthan: \"It brought me here. I don't belong in this century.\"\nIsabella: \"Then perhaps it brought you here for a reason.\"",
-        "roleDialog": "Isabella speaks with measured curiosity and scepticism, examining Ethan as carefully as the compass. Her first question is direct and investigative. Ethan speaks with restrained urgency, struggling to explain something that sounds impossible. Isabella's final sentence is quieter and more thoughtful, suggesting she recognises the significance of the instrument.",
-        "soundDesign": "Create a layered harbour soundscape of overlapping tavern conversations, wooden cart wheels, dockside footsteps, gulls, waves against pilings and distant sailors shouting. Add subtle metallic clicks as Isabella handles the compass. A restrained low string motif begins when she recognises the engraved symbols, suggesting that the mystery has become more significant."
-      }
-    },
-    {
-      "shotNumber": 4,
-      "shotType": "Dramatic Interior Medium Shot with Slow Push-In",
-      "lensAngle": "75mm Cooke Speed Panchro Portrait Prime, compressed perspective, very shallow depth of field.",
-      "imageframe": "[Role2] reveals the [Prop4] to [Role1] whilst standing in [Set4]",
-      "action": {
-        "roleActions": "Captain Blackthorne stands behind the chart table with both hands resting on its weathered wooden surface. Ethan stands opposite him, holding the compass. Blackthorne slowly unrolls the navigational chart, revealing a marked island location. He places one finger over the marked cove and then gestures towards the compass in Ethan's hand. Isabella stands near the stern window, observing the exchange in silence. The camera slowly pushes towards Blackthorne as he reveals that another pirate is searching for the same treasure. Ethan's expression changes from confusion to determination.",
-        "dialogue": "Captain Blackthorne: \"This island has swallowed ships, men and fortunes. Yet the compass has finally shown us the way.\"\nEthan: \"You think this can take me home?\"\nCaptain Blackthorne: \"I think it can give us something worth dying for. But Crowe is hunting it too.\"",
-        "roleDialog": "Blackthorne speaks with restrained intensity and the confidence of a man who has spent years pursuing this mystery. His voice drops when mentioning the island. Ethan's question carries hope and desperation. Blackthorne's final statement is delivered slowly, with a deliberate pause before naming Crowe, introducing the threat without melodrama.",
-        "soundDesign": "Use restrained interior ship ambience, deep timber creaks, the gentle swing of an oil lantern and muted waves beyond the stern window. Parchment unfolds with a dry textured rustle. Introduce a subtle low cello drone beneath Blackthorne's dialogue. Add a distant thunder roll as the name Crowe is spoken."
-      }
-    },
-    {
-      "shotNumber": 5,
-      "shotType": "Epic Wide Shot transitioning into Low-Angle Heroic Medium Shot",
-      "lensAngle": "40mm Panavision C-Series Anamorphic, dramatic backlighting, deep environmental focus transitioning to selective character focus.",
-      "imageframe": "[Role1] opens the [Prop5] whilst standing in [Set5]",
-      "action": {
-        "roleActions": "Begin with a wide cinematic view of the secluded cove. Ethan, Blackthorne and Isabella enter the cave from the sunlit beach. The camera tracks behind them as they approach the ancient stone platform. Ethan raises the compass and its needle begins pointing towards the ironbound chest. He approaches cautiously and places one hand on the heavy lid. After exchanging a brief glance with Blackthorne, he pulls the chest open. The lid rises slowly, revealing gold coins, gemstones and a folded parchment. The amber compass light spreads across the carved stone symbols. Ethan notices that the parchment contains a pattern resembling a map of his own world. He looks up in astonishment. In the distant cave entrance, a shadowy figure appears, suggesting that Silas Crowe has followed them. End on a slow push towards Ethan's face as he realises that the treasure may offer a way home, but the danger is far from over.",
-        "dialogue": "Ethan: \"It's real... all of it.\"\nCaptain Blackthorne: \"Aye. And now the sea will decide who deserves it.\"\nEthan: \"I came here trying to find my way home. But I think I've found something else.\"",
-        "roleDialog": "Ethan initially speaks in a breathless whisper, overwhelmed by the discovery. Blackthorne responds with quiet satisfaction and the confidence of an experienced captain. Ethan's final line is reflective and emotionally grounded, showing that his transformation is no longer merely about survival. His voice carries newfound determination, while his eyes remain fixed on the mysterious parchment.",
-        "soundDesign": "Open with crashing waves, wind passing through the cave entrance and distant tropical birds. Introduce subtle dripping water and reverberant footsteps as the group approaches the chest. The iron hinges produce a heavy metallic groan as the lid opens, followed by the delicate clinking of gold coins. A mysterious orchestral texture builds with low strings, restrained brass and distant choral atmosphere as the compass activates. A sharp metallic sound accompanies the appearance of Crowe's silhouette. End with a deep cinematic musical impact followed by the sound of ocean waves."
+        "roleActions": "Spreads the map across a table and traces hidden routes.",
+        "dialogue": "This path was lost centuries ago.",
+        "roleDialog": "Intrigued and focused.",
+        "soundDesign": "Tavern chatter and clinking mugs."
       }
     }
   ]

@@ -4,34 +4,10 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 const path = require('path');
 const { getBrowser, safeRun, TIMEOUT } = require('./browser');
-const {downloadDir} = require('./environment');
+const { downloadDir, filepath, waitForKeypress, waitTime, blocks } = require('./environment');
 puppeteer.use(StealthPlugin());
 
-const URL = 'https://www.gentube.app/create-together/k17e0enegvgsec6fy4epj16zrx8d9w78?creating=1';
-
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-
-// Wait for any key to be pressed in the terminal
-function waitForKeypress() {
-    return new Promise(resolve => {
-        console.log('\nWebsite loaded. Press any key to start...');
-
-        if (process.stdin.isTTY) {
-            process.stdin.setRawMode(true);
-        }
-
-        process.stdin.resume();
-
-        process.stdin.once('data', () => {
-            if (process.stdin.isTTY) {
-                process.stdin.setRawMode(false);
-            }
-
-            process.stdin.pause();
-            resolve();
-        });
-    });
-}
+const URL = 'https://www.gentube.app/create';
 
 (async () => {
 
@@ -51,7 +27,7 @@ function waitForKeypress() {
     }
 
     // Save DATA URI image ONLY
-    async function saveDataImage(src) {
+    async function saveDataImage(src, filename) {
 
         const match = src.match(/^data:(image\/[\w.+-]+);base64,(.*)$/);
 
@@ -62,44 +38,110 @@ function waitForKeypress() {
 
         const buffer = Buffer.from(base64, 'base64');
 
-        const filename = `dataimg_${Date.now()}.${ext}`;
+        if (!filename) {
+            filename = `dataimg_${Date.now()}.${ext}`;
+        }
         const filepath = path.join(downloadDir, filename);
 
         fs.writeFileSync(filepath, buffer);
 
         console.log('[DATA] Saved:', filepath);
     }
-
-    // WAIT FOR KEY BEFORE STARTING
-
-
     console.log('Total prompts:', matrix.sets.length);
 
-    // MAIN LOOP
-    for (let i = 0; i < matrix.shots.length; i++) {
-    await waitForKeypress();
-        console.log(`\nProcessing prompt ${i + 1}/${matrix.shots.length}`);
 
-        const success = await safeRun(`Prompt ${i + 1}`, async () => {
+    async function render(promptText, assetTags = [], useExisting = false) {
 
-            const textareaSelector = 'textarea';
+        const textareaSelector = 'textarea';
 
-            await page.waitForSelector(textareaSelector, {
-                visible: true,
-                timeout: TIMEOUT
+        await page.waitForSelector(textareaSelector, {
+            visible: true,
+            timeout: TIMEOUT
+        });
+
+        const assetNames = [...new Set(
+            [...assetTags.matchAll(/\[([^\]]+)\]/g)].map(match => match[1])
+        )];
+
+        promptText = promptText.replace(/\{([^}]+)\}/g, (match, key) => {
+            const block = blocks.find(b => b[key] !== undefined);
+            return block ? block[key] : match;
+        });
+
+        promptText = promptText.replace(/\[[^\]]*\]/g, '');
+
+        if (useExisting && assetNames.length != 0) {
+            console.log("Assets found " + assetNames.length)
+            for (let count = 0; count < assetNames.length; count++) {
+                const assetName = assetNames[count] + ".webp";
+                await page.click('button[aria-label="Add an image — Max 10 MB"]');
+                await page.waitForFunction(() => {
+                    return document.querySelector('input[type="file"]');
+                });
+
+                const fileInput = await page.$('input[type="file"]');
+                await fileInput.uploadFile(filepath + "\\" + assetName);
+
+                console.log("Uploaded:", filepath + "\\" + assetName);
+            }
+            try {
+                await page.click('button[aria-label="Close"]');
+            } catch (e) {
+
+            }
+        }
+
+        console.log(promptText);
+
+        // Fill textarea
+        await page.locator(textareaSelector).fill(promptText);
+        await page.keyboard.press('Enter');// Wait for image generation
+        await waitTime();
+        await page.click('button[aria-label="Create"]');
+    }
+
+    //const chosen = ["roles","shots"];
+    //const chosen = ["props", "sets", "characters", "costumes"];
+    //const chosen = ["costumes"];
+    //const chosen = ["characters"];
+    const chosen = ["sets","roles"];
+    //const chosen = ["sets"];
+
+    for (const section of chosen) {
+        for (const item of matrix[section]) {
+            await page.goto(URL, {
+                waitUntil: 'networkidle2',
+                timeout: 60000
             });
+            let useExisting = false;
+            let text = item.description;
+            let assetTags = "";
 
-            const text = JSON.stringify(
-                matrix.shots[i]
-            );
+            if (section === 'shots') {
+                useExisting = true;
+                text = text  + ' ' + matrix.visualTone.lightingPhilosophy + ' ' + matrix.visualTone.colorPalette;
+                assetTags = item.assetTags;
+            }
+            if (section === 'sets') {
+                text = text + ' photorealistic ' + matrix.visualTone.lightingPhilosophy + ' ' + matrix.visualTone.colorPalette;
+            }
+            if (section === 'props') {
+                text = text + " studio portrait photo of object standing against a seamless white background, soft even lighting, neutral expression, full-length shot, clean symmetrical composition"
+            }
 
-            console.log(text);
+            if (section === 'roles') {
+                useExisting = true;
+                assetTags = item.assetTags;
+            }
+            if (section === 'costumes') {
+                text = text + " object placed on a plain white mannequin - Full-body studio portrait standing against a seamless white background, soft even lighting, neutral expression, full-length shot, clean symmetrical composition, high-fashion editorial photography style."
+            }
+            if (section === 'characters' || section == 'roles') {
+                text = text + " photorealistic Full-body studio portrait standing against a seamless white background, soft even lighting, neutral expression, full-length shot, clean symmetrical composition, high-fashion editorial photography style."
+            }
 
-            // Fill textarea
-            await page.locator(textareaSelector).fill(text);
-            await page.keyboard.press('Enter');// Wait for image generation
-            await page.click('button[aria-label="Create"]');
-            
+            await render(text, assetTags, useExisting);
+            await waitTime(5000);
 
             // Capture largest data:image
             const dataImages = await page.evaluate(() => {
@@ -117,7 +159,7 @@ function waitForKeypress() {
 
             if (dataImages.length === 0) {
 
-                console.log('[DATA] No data images found for prompt', i + 1);
+                console.log('[DATA] No data images found for prompt');
 
             } else {
 
@@ -125,27 +167,10 @@ function waitForKeypress() {
                     b.size > a.size ? b : a
                 );
 
-                await saveDataImage(largest.src);
+                await saveDataImage(largest.src, item.id + ".webp");
             }
-
-            // Clear button
-            await page.waitForSelector(
-                'button[aria-label="Clear"]',
-                { visible: true, timeout: 15000 }
-            );
-
-            await page.click('button[aria-label="Clear"]');
-
-            return true;
-        });
-
-        if (!success) {
-            console.error(`[SKIPPED] Prompt ${i + 1} failed. Moving to next.`);
         }
-
-        await sleep(2000);
     }
-
     console.log('\n[COMPLETE] All prompts processed.');
 
 })().catch(error => {

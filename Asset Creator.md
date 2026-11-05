@@ -24,10 +24,13 @@ Strict Rules:
    - Props: [Prop1], [Prop2], [Prop3]
    - Roles: [Role1], [Role2]
 2. ROLE SYNTHESIS: Every role is a combination of a Character and a Costume.
-   synthesisText MUST be formatted as:
-   "[Character1] wearing [Costume1] becomes [Role1] (Role Title)"
-3. SHOT IMAGEFRAMES: The imageframe string MUST follow the tagged modular format:
-   "[Role1] <action with [Prop1]> whilst standing in [Set1]"
+   assetTags MUST be formatted as:
+   "[Character1] [Costume1]"
+   description MUST be exploded to the relevant tag
+3. SHOT IMAGEFRAMES: The assetTags string MUST follow the tagged modular format:
+   "[Role1] [Prop1] [Set1]"
+   The description string MUST exploded to the relevant tag
+   "Role1 throwing the sword whilst standing in the castle"
 4. ACTIONS: Include detailed roleActions (blocking), dialogue, roleDialog (emotional register/delivery), and soundDesign.
 5. VISUAL TONE: Provide 5 hex color codes, specific vintage or modern cinema lenses, lighting philosophy, and film grain stock.
 
@@ -60,7 +63,7 @@ JSON Structure:
       "tag": "[Character1]",
       "name": "Character Name",
       "actorName": "Actor Archetype / Casting Notes",
-      "physicalDescription": "Age, face, bone structure, eyes, hair, scars",
+      "description": "Age, face, bone structure, eyes, hair, scars",
       "behavioralTraits": "Habits, movement style, facial expressions"
     }
   ],
@@ -91,15 +94,17 @@ JSON Structure:
       "roleName": "Role Title",
       "characterId": "Character1",
       "costumeId": "Costume1",
-      "synthesisText": "[Character1] wearing [Costume1] becomes [Role1] (Role Title)"
+      "assetTags": "[Character1] [Costume1] [Role1]"
+      "description:" : ""
     }
   ],
   "shots": [
     {
-      "shotNumber": 1,
+      "id": "Shot1",
       "shotType": "Low-Angle Medium Tracking Shot",
       "lensAngle": "35mm Anamorphic Prime, shallow DoF",
-      "imageframe": "[Role1] draws the [Prop1] whilst standing in [Set1]",
+      "assetTags": "[Role1]  [Prop1] [Set1]",
+      "description": "",
       "action": {
         "roleActions": "Actor blocking and physical beats",
         "dialogue": "Spoken line",
