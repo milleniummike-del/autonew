@@ -7,8 +7,8 @@ const { getRandomCinematicShot } = require('./cinematic_shots');
 const { projectName, downloadDir, waitForKeypress, getInput, waitTimeRandom, waitTime, blocks } = require('./environment');
 const matrix = require('./' + projectName);
 puppeteer.use(StealthPlugin());
-const step = 1;
-let things = "props costumes";
+const step = 2;
+let things = "roles";
 
 (async () => {
 
