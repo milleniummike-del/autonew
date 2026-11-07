@@ -98,7 +98,10 @@ let things = "roles";
             });
             if (useExisting && assetNames.length > 0) {
                 for (let count = 0; count < assetNames.length; count++) {
+                    console.log(assetNames);
+                    console.log(assetNames[0]);
                     const assetName = assetNames[count].replace(/[\[\]]/g, "");
+                    console.log(assetName);
                     if (1 == 1) {
                         await page.waitForSelector('mat-icon.add-menu-icon', {
                             visible: true,
@@ -145,7 +148,6 @@ let things = "roles";
 
                         await new Promise(r => setTimeout(r, 500));
                         await page.locator('input[placeholder="Search"]').fill(assetName);
-
                         await new Promise(r => setTimeout(r, 500));
 
                         await page.evaluate((assetName) => {
