@@ -21,7 +21,7 @@ function waitForKeypress() {
         });
     });
 }
-const projectName = "project6.json";
+const projectFile = "project6.json";
 async function waitTime(time = 1000) {
     console.log ("Waiting "+time);
     await new Promise(r => setTimeout(r, time));
@@ -1121,5 +1121,5 @@ module.exports = {
     waitTime,
     waitTimeRandom,
     blocks,
-    projectName
+    projectFile
 };
