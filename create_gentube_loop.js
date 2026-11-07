@@ -13,7 +13,7 @@ const URL = 'https://www.gentube.app/create';
 
     const browser = await getBrowser();
 
-    const matrix = require('./project4.json');
+    const matrix = require('./project5.json');
 
     //const page = await browser.newPage();
     const pages = await browser.pages();
@@ -47,8 +47,6 @@ const URL = 'https://www.gentube.app/create';
 
         console.log('[DATA] Saved:', filepath);
     }
-    console.log('Total prompts:', matrix.sets.length);
-
 
     async function render(promptText, assetTags = [], useExisting = false) {
 
@@ -59,9 +57,13 @@ const URL = 'https://www.gentube.app/create';
             timeout: TIMEOUT
         });
 
+        console.log(JSON.stringify(assetTags));
+
         const assetNames = [...new Set(
-            [...assetTags.matchAll(/\[([^\]]+)\]/g)].map(match => match[1])
-        )];
+    assetTags.flatMap(tag =>
+        [...tag.matchAll(/\[([^\]]+)\]/g)].map(match => match[1])
+    )
+)];
 
         promptText = promptText.replace(/\{([^}]+)\}/g, (match, key) => {
             const block = blocks.find(b => b[key] !== undefined);
@@ -104,7 +106,7 @@ const URL = 'https://www.gentube.app/create';
     //const chosen = ["props", "sets", "characters", "costumes"];
     //const chosen = ["costumes"];
     //const chosen = ["characters"];
-    //const chosen = ["roles"];
+    //const chosen = ["roles","shots"];
     const chosen = ["shots"];
 
     for (const section of chosen) {

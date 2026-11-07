@@ -1,5 +1,5 @@
-const filepath = "X:\\inputprojects\\project4";
-const downloadDir = "X:\\inputprojects\\project4";
+const filepath = "X:\\inputprojects\\project5";
+const downloadDir = "X:\\inputprojects\\project5";
 const path = require('path');
 function waitForKeypress() {
     return new Promise(resolve => {
@@ -21,13 +21,13 @@ function waitForKeypress() {
         });
     });
 }
-
+const projectName = "project6.json";
 async function waitTime(time = 1000) {
     console.log ("Waiting "+time);
     await new Promise(r => setTimeout(r, time));
 }
 
-async function waitTimeRandom(time = 10000, upto = 20000) {
+async function waitTimeRandom(time = 8000, upto = 16000) {
      const timewait = Math.floor(Math.random() * (upto - time + 1)) + time;
     console.log ("Waiting "+timewait);
     await new Promise(r => setTimeout(r, timewait));
@@ -1119,5 +1119,7 @@ module.exports = {
     waitForKeypress,
     getInput,
     waitTime,
-    blocks
+    waitTimeRandom,
+    blocks,
+    projectName
 };

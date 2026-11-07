@@ -4,17 +4,18 @@ const { getBrowser } = require('./browser');
 const fs = require('fs');
 const path = require('path');
 const { getRandomCinematicShot } = require('./cinematic_shots');
-const { downloadDir, waitForKeypress, getInput, waitTime, blocks } = require('./environment');
+const { projectName, downloadDir, waitForKeypress, getInput, waitTimeRandom, waitTime, blocks } = require('./environment');
+const matrix = require('./' + projectName);
 puppeteer.use(StealthPlugin());
-const projectName = "";
 const step = 1;
+let things = "props costumes";
 
 (async () => {
 
     const browser = await getBrowser();;
     const pages = await browser.pages();
     const page = pages[pages.length - 1];
-    const matrix = require('./project3.json');
+
 
     /*
     await page.goto(
@@ -87,80 +88,77 @@ const step = 1;
         if (coords) await page.mouse.click(coords.x, coords.y);
     }
 
-    async function create(promptText, useExisting = false) {
+    async function create(promptText, useExisting = false, assetNames = []) {
         try {
-            const assetNames = [...new Set(
-                [...promptText.matchAll(/\[([^\]]+)\]/g)].map(match => match[1])
-            )];
 
             promptText = promptText.replace(/\{([^}]+)\}/g, (match, key) => {
                 const block = blocks.find(b => b[key] !== undefined);
                 return block ? block[key] : match;
             });
-            if (useExisting) {
+            if (useExisting && assetNames.length > 0) {
                 for (let count = 0; count < assetNames.length; count++) {
-                    const assetName = assetNames[count];
-                    if (!assetName.includes("Role")){
-                    await page.waitForSelector('mat-icon.add-menu-icon', {
-                        visible: true,
-                        timeout: 30000
-                    });
+                    const assetName = assetNames[count].replace(/[\[\]]/g, "");
+                    if (1 == 1) {
+                        await page.waitForSelector('mat-icon.add-menu-icon', {
+                            visible: true,
+                            timeout: 30000
+                        });
 
-                    await page.click('mat-icon.add-menu-icon');
-                    if (projectName) {
-                    await page.waitForSelector('mat-select', {
-                        visible: true,
-                        timeout: 30000
-                    });
+                        await page.click('mat-icon.add-menu-icon');
+                        if (projectName) {
+                            await page.waitForSelector('mat-select', {
+                                visible: true,
+                                timeout: 30000
+                            });
 
 
-                    await page.click('mat-select');
+                            await page.click('mat-select');
 
-                    console.log('Opened project selector');
+                            console.log('Opened project selector');
 
-                    await page.waitForSelector('span.flow-add-menu-dropdown-option-text', {
-                        visible: true,
-                        timeout: 30000
-                    });
-                    
-                    await page.evaluate((projectName) => {
-                        const target = [...document.querySelectorAll(
-                            'span.flow-add-menu-dropdown-option-text'
-                        )].find(el => el.textContent.trim() === projectName);
+                            await page.waitForSelector('span.flow-add-menu-dropdown-option-text', {
+                                visible: true,
+                                timeout: 30000
+                            });
 
-                        if (!target) {
-                            throw new Error(projectName + ' option not found');
+                            await page.evaluate((projectName) => {
+                                const target = [...document.querySelectorAll(
+                                    'span.flow-add-menu-dropdown-option-text'
+                                )].find(el => el.textContent.trim() === projectName);
+
+                                if (!target) {
+                                    throw new Error(projectName + ' option not found');
+                                }
+
+                                target.scrollIntoView({ block: 'center' });
+
+                                // Click the parent option if available
+                                (target.closest('button, [role="menuitem"], .flow-add-menu-dropdown-option') || target).click();
+                            }, projectName);
                         }
 
-                        target.scrollIntoView({ block: 'center' });
+                        await page.waitForSelector('span.asset-title', {
+                            visible: true,
+                            timeout: 30000
+                        });
 
-                        // Click the parent option if available
-                        (target.closest('button, [role="menuitem"], .flow-add-menu-dropdown-option') || target).click();
-                    }, projectName);
-                }
+                        await new Promise(r => setTimeout(r, 500));
+                        await page.locator('input[placeholder="Search"]').fill(assetName);
 
-                    await page.waitForSelector('span.asset-title', {
-                        visible: true,
-                        timeout: 30000
-                    });
+                        await new Promise(r => setTimeout(r, 500));
 
-                    await new Promise(r => setTimeout(r, 1000));
-                    await page.locator('input[placeholder="Search"]').fill(assetName);
+                        await page.evaluate((assetName) => {
+                            const target = [...document.querySelectorAll('span.asset-title')]
+                                .find(el => el.textContent.trim() === assetName);
 
-                    await new Promise(r => setTimeout(r, 2000));
+                            if (!target) {
+                                throw new Error('Element not found');
+                            }
 
-                    await page.evaluate((assetName) => {
-                        const target = [...document.querySelectorAll('span.asset-title')]
-                            .find(el => el.textContent.trim() === assetName);
-
-                        if (!target) {
-                            throw new Error('Element not found');
-                        }
-
-                        target.scrollIntoView({ block: 'center' });
-                        target.click();
-                    }, assetName);
-                }
+                            target.scrollIntoView({ block: 'center' });
+                            target.click();
+                        }, assetName);
+                    }
                 }
             }
 
@@ -198,45 +196,50 @@ const step = 1;
     }
 
     if (step == 1) {
-    // Step 1 - Create initial assets
-    for (let a = 0; a < matrix.sets.length; a++) {
-        const promptText = JSON.stringify(matrix.sets[a]) + ' ' + JSON.stringify(matrix.visualTone[a]);
-        await create(promptText);
-        await waitTime();
+        // Step 1 - Create initial assets
+        if (things.includes("sets")) {
+            for (let a = 0; a < matrix.sets.length; a++) {
+                const promptText = JSON.stringify(matrix.sets[a]) + ' ' + JSON.stringify(matrix.visualTone[a]);
+                await create(promptText);
+                await waitTimeRandom();
+            }
+        }
+        if (things.includes("props")) {
+            for (let b = 0; b < matrix.props.length; b++) {
+                const promptText = JSON.stringify(matrix.props[b]) + ' studio portrait photo of object standing against a seamless white background, soft even lighting, neutral expression, full-length shot, clean symmetrical composition';
+                await create(promptText);
+                await waitTimeRandom();
+            }
+        }
+        if (things.includes("costumes")) {
+            for (let d = 0; d < matrix.costumes.length; d++) {
+                const promptText = JSON.stringify(matrix.costumes[d]) + ' object placed on a plain white mannequin - Full-body studio portrait standing against a seamless white background, soft even lighting, neutral expression, full-length shot, clean symmetrical composition, high-fashion editorial photography style. ';
+                await create(promptText);
+                await waitTimeRandom();
+            }
+        }
+        if (things.includes("characters")) {
+            for (let c = 0; c < matrix.characters.length; c++) {
+                const promptText = JSON.stringify(matrix.characters[c]) + '{PhotoStyle1}';
+                await create(promptText);
+                await waitTimeRandom();
+            }
+        }
     }
-
-    for (let b = 0; b < matrix.props.length; b++) {
-        const promptText = JSON.stringify(matrix.props[b]) + ' ' + JSON.stringify(matrix.visualTone[b]);
-        await create(promptText);
-        await waitTime();
+    if (step == 2) {
+        // Step 2 - needs Characters and Costumes
+        for (let c = 0; c < matrix.roles.length; c++) {
+            const promptText = JSON.stringify(matrix.roles[c]) + '{PhotoStyle1}';
+            await create(promptText, true, matrix.roles[c].assetTags);
+            await waitTimeRandom();
+        }
     }
-
-    for (let d = 0; d < matrix.costumes.length; d++) {
-        const promptText = JSON.stringify(matrix.costumes[d]) + ' ' + JSON.stringify(matrix.visualTone[d]);
-        await create(promptText);
-        await waitTime();
+    if (step == 3) {
+        // Step 3 - needs Roles, Sets, Props,
+        for (let c = 0; c < matrix.shots.length; c++) {
+            const promptText = JSON.stringify(matrix.shots[c]) + ' ' + JSON.stringify(matrix.visualTone);
+            await create(promptText, true, matrix.shots[c].assetTags);
+            await waitTimeRandom();
+        }
     }
-
-    for (let c = 0; c < matrix.characters.length; c++) {
-        const promptText = JSON.stringify(matrix.characters[c]) + '{PhotoStyle1}';
-        await create(promptText);
-        await waitTime();
-    }
-}
-if  (step == 2) {
-    // Step 2 - needs Characters and Costumes
-    for (let c = 0; c < matrix.roles.length; c++) {
-        const promptText = JSON.stringify(matrix.roles[c]) + '{PhotoStyle1}';
-        await create(promptText, true);
-        await waitTime();
-    }
-}
-if (step == 3) {
-    // Step 3 - needs Roles, Sets, Props,
-    for (let c = 0; c < matrix.shots.length; c++) {
-        const promptText = JSON.stringify(matrix.shots[c]) + ' ' + JSON.stringify(matrix.visualTone[c]);
-        await create(promptText, true);
-        await waitTime();
-    }
-}
 })();

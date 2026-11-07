@@ -50,9 +50,8 @@ async function downloadViaPuppeteer(page, url, filepath) {
     // ---------------------------------------------------------
     // READ AND SORT FILES FROM inputimages DIRECTORY
     // ---------------------------------------------------------
-    let files = fs.readdirSync(inputDir)
-        .filter(f => /^Shot.*\.(png|jpg|jpeg|webp)$/i.test(f));
-
+    //let files = fs.readdirSync(inputDir).filter(f => /^Shot.*\.(png|jpg|jpeg|webp)$/i.test(f));
+    let files = fs.readdirSync(inputDir).filter(f => /\.(png|jpg|jpeg|webp)$/i.test(f));
     files.sort((a, b) => {
     const na = parseInt(a.match(/\d+/)?.[0] || 0, 10);
     const nb = parseInt(b.match(/\d+/)?.[0] || 0, 10);
@@ -64,7 +63,7 @@ async function downloadViaPuppeteer(page, url, filepath) {
 
     await new Promise(r => setTimeout(r, 2000));
 
-    for (let v = 0; v < files.length; v++) {
+    for (let v = 0; v < matrix.shots.length; v++) {
 
         const filePath = path.join(inputDir, files[v]);
         //const shot = getRandomCinematicShot();

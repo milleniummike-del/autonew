@@ -1,0 +1,294 @@
+{
+  "title": "The Silent Service",
+  "genre": "Political Thriller Drama",
+  "premise": "The US ambassador to Britain uncovers a covert submarine plot and betrays the President of the United States.",
+  "logline": "When the US ambassador to London discovers that his own President has secretly ordered a Royal Navy-hosted submarine operation that could ignite a war, he must choose between loyalty to the man who made him and loyalty to the truth.",
+  "visualTone": {
+    "colorPalette": ["#0B1D2E", "#3E5C76", "#A8B5C2", "#8C2F39", "#C9A96E"],
+    "cameraLenses": "Panavision C-Series Anamorphic, 40mm T2.8 for interiors; 75mm T2.8 for isolating close-ups; 28mm T2.8 for architectural wides",
+    "lightingPhilosophy": "Low-key motivated practicals with cold steel-blue window light against warm tungsten desk lamps; power is shown through hard side-light and deep shadow, with rain-diffused soft light for exteriors",
+    "grainAesthetic": "Kodak Vision3 500T 5219 35mm with visible but controlled grain, slightly desaturated with lifted blacks"
+  },
+  "sets": [
+    {
+      "id": "Set1",
+      "tag": "[Set1]",
+      "name": "Winfield House Study, London",
+      "description": "Wood-paneled private study in the US ambassador's residence, with floor-to-ceiling mahogany bookshelves, a heavy walnut partners desk, a worn Persian rug, tall sash windows with brass fittings and a framed portrait of the President on the wall",
+      "atmosphere": "Hushed late-night stillness, light rain on the glass, faint cigar and old-paper smell, distant ticking mantel clock",
+      "lighting": "Single green banker's lamp at about 2700K on the desk, cold 6500K moonlit rain-light through the windows, deep shadow pooling in the bookshelves"
+    },
+    {
+      "id": "Set2",
+      "tag": "[Set2]",
+      "name": "The Oval Office, Washington DC",
+      "description": "Curved cream walls, the Resolute desk, gold drapes, a deep blue presidential seal carpet, flags flanking the desk and a wall of family photographs",
+      "atmosphere": "Controlled, sterile and formal, early morning, with a sense of enormous pressure behind the ceremony",
+      "lighting": "Soft daylight through the bulletproof windows behind the desk, silhouetting the President, with warm sconces and a cool fill from a secure video screen"
+    },
+    {
+      "id": "Set3",
+      "tag": "[Set3]",
+      "name": "HMNB Clyde Submarine Pen, Scotland",
+      "description": "A vast concrete submarine dock with rusted gantry cranes, wet steel catwalks, mooring cables as thick as a man's arm and the black hull of a Dreadnought-class submarine rising from the water",
+      "atmosphere": "Freezing sea fog, diesel and salt air, dripping condensation, low metallic echo, near-total darkness",
+      "lighting": "Sodium-orange floodlights cutting through fog, red navigation lamps on the hull, rim-lit breath and rain, long deep shadows under the gantries"
+    },
+    {
+      "id": "Set4",
+      "tag": "[Set4]",
+      "name": "Whitehall Subterranean Briefing Room",
+      "description": "A windowless reinforced-concrete war room with a long oak conference table, analog wall maps of the North Atlantic, green-shaded lamps, banks of encrypted terminals and a brass wall clock",
+      "atmosphere": "Stale recycled air, oppressive silence broken by the hum of ventilation, claustrophobic and secretive",
+      "lighting": "Overhead fluorescent strips at about 4000K with a sickly green cast, map-table practicals, hard shadows cast upward from desk lamps"
+    },
+    {
+      "id": "Set5",
+      "tag": "[Set5]",
+      "name": "Thames Embankment at Vauxhall Dawn",
+      "description": "A stone riverside walkway with wrought-iron lamp posts, wet cobbled paving, a low parapet wall and the glass-and-concrete bulk of the SIS building across the water",
+      "atmosphere": "Pre-dawn mist rising off the river, steady drizzle, distant traffic hum and gulls, a feeling of exposure and finality",
+      "lighting": "Pale blue pre-dawn ambient light, amber streetlamp pools, reflections shimmering on wet stone, the first gold sun sliver on the horizon"
+    }
+  ],
+  "characters": [
+    {
+      "id": "Character1",
+      "tag": "[Character1]",
+      "name": "Ambassador Elias Crane",
+      "actorName": "Late 50s American statesman archetype, in the vein of Bryan Cranston or Michael Shannon, patrician gravitas with buried doubt",
+      "description": "A 58-year-old man with a lean angular face, high cheekbones, deep-set gray-blue eyes ringed by sleeplessness, silver swept-back hair and a thin scar through his left eyebrow",
+      "behavioralTraits": "Measured speech, habitual thumb-rubbing of a wedding band, long deliberate pauses, a smile that never reaches his eyes, stands very still when he is lying"
+    },
+    {
+      "id": "Character2",
+      "tag": "[Character2]",
+      "name": "President Thomas Whitlock",
+      "actorName": "Mid-60s commanding charismatic leader archetype, in the vein of Denzel Washington or Jeff Daniels",
+      "description": "A 64-year-old man with a broad square jaw, warm brown eyes that can turn cold in an instant, close-cropped salt-and-pepper hair and deep laugh lines",
+      "behavioralTraits": "Leans in to speak softly for emphasis, taps two fingers on the desk when angry, uses first names to create false intimacy, quick and charming public smile that vanishes in private"
+    },
+    {
+      "id": "Character3",
+      "tag": "[Character3]",
+      "name": "Commander Isla Ravensdale",
+      "actorName": "Mid-40s disciplined Royal Navy officer archetype, in the vein of Rosamund Pike or Keeley Hawes",
+      "description": "A 44-year-old woman with a weathered oval face, sharp green eyes, a strong nose, auburn hair pinned tightly beneath her cap and a faint burn scar along her jaw",
+      "behavioralTraits": "Crisp economical speech, unwavering eye contact, stands with hands clasped behind her back, no wasted movement, a dry flicker of humor under pressure"
+    },
+    {
+      "id": "Character4",
+      "tag": "[Character4]",
+      "name": "Naomi Feld",
+      "actorName": "Mid-30s sharp ambitious aide archetype, in the vein of Lupita Nyong'o or Zazie Beetz",
+      "description": "A 34-year-old woman with a heart-shaped face, warm dark skin, alert brown eyes behind thin-framed glasses, close-cropped natural hair and a small silver stud in each ear",
+      "behavioralTraits": "Walks fast, carries a phone in each hand, finishes other people's sentences, bites the inside of her cheek when worried, quietly observes everything"
+    },
+    {
+      "id": "Character5",
+      "tag": "[Character5]",
+      "name": "Sir Julian Pryce",
+      "actorName": "Early 60s urbane spymaster archetype, in the vein of Ralph Fiennes or Mark Strong",
+      "description": "A 61-year-old man with a long narrow face, pale watery blue eyes, thinning white hair combed straight back, a prominent brow and a faint tremor in his left hand",
+      "behavioralTraits": "Speaks in soft precise sentences, never raises his voice, steeples his fingers while listening, offers tea as a tactical pause, smiles apologetically before delivering threats"
+    }
+  ],
+  "costumes": [
+    {
+      "id": "Costume1",
+      "tag": "[Costume1]",
+      "name": "The Ambassador's Charcoal Three-Piece",
+      "description": "A single-breasted charcoal three-piece suit with a notch lapel, a white spread-collar shirt, a dark burgundy silk tie, a slim American flag lapel pin and a loosened collar by the end of the film",
+      "materials": "Fine worsted wool, silk tie, mother-of-pearl buttons, polished black Oxford shoes with leather soles",
+      "wearCondition": "Immaculate at first, progressively rumpled, with a loosened tie, creased sleeves and a smear of rain at the cuffs by the final scene"
+    },
+    {
+      "id": "Costume2",
+      "tag": "[Costume2]",
+      "name": "The President's Navy Power Suit",
+      "description": "A tailored navy two-button suit with a crisp white shirt, a pale blue tie, a gold American flag lapel pin and a confident straight-shouldered silhouette",
+      "materials": "Italian super-120s wool, silk-blend tie, polished brass cufflinks stamped with the presidential seal",
+      "wearCondition": "Flawlessly pressed, camera-ready, with one tie knot slightly loosened in the private confrontation"
+    },
+    {
+      "id": "Costume3",
+      "tag": "[Costume3]",
+      "name": "Royal Navy Foul-Weather Dress",
+      "description": "A dark navy Royal Navy officer's working uniform with gold-braided shoulder boards, a peaked cap, a weatherproof black oilskin overcoat and a rolled collar against the wind",
+      "materials": "Heavy wool serge, waxed oilskin, brass buttons, gold bullion braid, leather gloves and rubber-soled boots",
+      "wearCondition": "Salt-stained shoulders, damp hem, scuffed boots and rain-beaded fabric"
+    },
+    {
+      "id": "Costume4",
+      "tag": "[Costume4]",
+      "name": "The Chief of Staff's Working Blazer",
+      "description": "A tailored slate-gray blazer over a cream silk blouse with slim black trousers, a lanyard-clipped embassy ID, flat leather ankle boots and a long wool trench draped over one arm",
+      "materials": "Wool-crepe blazer, silk blouse, leather boots, nylon lanyard with laminated ID, canvas phone sleeve",
+      "wearCondition": "Well kept but travel-worn, with coffee at one cuff, creased elbows and scuffed boot toes"
+    },
+    {
+      "id": "Costume5",
+      "tag": "[Costume5]",
+      "name": "The Spymaster's Pinstripe and Overcoat",
+      "description": "A charcoal pinstripe three-piece suit with a heavy camel-hair overcoat, a faded regimental striped tie, a gold pocket watch chain and a tightly furled umbrella",
+      "materials": "Savile Row pinstripe wool, camel-hair overcoat, silk lining, brass pocket watch, black lacquered umbrella with malacca handle",
+      "wearCondition": "Elegantly old-fashioned, immaculately brushed, with frayed cuffs and slightly shiny elbows suggesting decades of service"
+    }
+  ],
+  "props": [
+    {
+      "id": "Prop1",
+      "tag": "[Prop1]",
+      "name": "Biometric Steel Briefcase",
+      "description": "A matte-black reinforced steel briefcase with a fingerprint scanner, a chained wrist cuff, scuffed corners and a faded diplomatic seal sticker",
+      "narrativeSignificance": "Carries the original operational order that proves the President authorized the submarine plot",
+      "handlingNote": "Held tight against the chest, set down with reluctance and opened with a trembling thumb"
+    },
+    {
+      "id": "Prop2",
+      "tag": "[Prop2]",
+      "name": "Encrypted Fountain-Pen Drive",
+      "description": "A heavy black lacquered fountain pen with a silver clip and a hidden USB-C encrypted drive inside the barrel",
+      "narrativeSignificance": "Holds the digital copy of the plot, passed secretly to British intelligence as the act of betrayal",
+      "handlingNote": "Twirled absently while thinking, handed over in a handshake-like gesture"
+    },
+    {
+      "id": "Prop3",
+      "tag": "[Prop3]",
+      "name": "Red Secure Satellite Phone",
+      "description": "A rugged red handset with a coiled cable, a thick rubber antenna, a numeric keypad worn smooth and a small LED indicator showing encryption status",
+      "narrativeSignificance": "The direct line between the Ambassador and the President, used for the final confrontation",
+      "handlingNote": "Gripped in a white-knuckled fist, held away from the ear when the voice grows loud"
+    },
+    {
+      "id": "Prop4",
+      "tag": "[Prop4]",
+      "name": "Submarine Hull Schematic Roll",
+      "description": "A large rolled blueprint of a Dreadnought-class submarine on heavy vellum, annotated in red grease pencil with a redacted Operation Trident Gate marking",
+      "narrativeSignificance": "Reveals the modified payload bay used to carry the unsanctioned weapon",
+      "handlingNote": "Unrolled across a crate and pinned flat with a flashlight and a gloved palm against the wind"
+    },
+    {
+      "id": "Prop5",
+      "tag": "[Prop5]",
+      "name": "Sealed Executive Order Folder",
+      "description": "A cream leather folio embossed with the presidential seal, bound with a red ribbon and a wax stamp, containing a single signed page",
+      "narrativeSignificance": "The signed authorization that binds the President personally to the operation",
+      "handlingNote": "Presented with ceremony, opened slowly, signed with a flourish and slid across the desk like a verdict"
+    }
+  ],
+  "roles": [
+    {
+      "id": "Role1",
+      "tag": "[Role1]",
+      "roleName": "The Betraying Ambassador",
+      "characterId": "Character1",
+      "costumeId": "Costume1",
+      "assetTags": "[Character1] [Costume1]",
+      "description": "A 58-year-old man with a lean angular face, high cheekbones, deep-set gray-blue eyes ringed by sleeplessness, silver swept-back hair and a thin scar through his left eyebrow wearing a single-breasted charcoal three-piece suit with a notch lapel, a white spread-collar shirt, a dark burgundy silk tie, a slim American flag lapel pin and a loosened collar by the end of the film"
+    },
+    {
+      "id": "Role2",
+      "tag": "[Role2]",
+      "roleName": "The Betrayed President",
+      "characterId": "Character2",
+      "costumeId": "Costume2",
+      "assetTags": "[Character2] [Costume2]",
+      "description": "A 64-year-old man with a broad square jaw, warm brown eyes that can turn cold in an instant, close-cropped salt-and-pepper hair and deep laugh lines wearing a tailored navy two-button suit with a crisp white shirt, a pale blue tie, a gold American flag lapel pin and a confident straight-shouldered silhouette"
+    },
+    {
+      "id": "Role3",
+      "tag": "[Role3]",
+      "roleName": "The Submarine Commander",
+      "characterId": "Character3",
+      "costumeId": "Costume3",
+      "assetTags": "[Character3] [Costume3]",
+      "description": "A 44-year-old woman with a weathered oval face, sharp green eyes, a strong nose, auburn hair pinned tightly beneath her cap and a faint burn scar along her jaw wearing a dark navy Royal Navy officer's working uniform with gold-braided shoulder boards, a peaked cap, a weatherproof black oilskin overcoat and a rolled collar against the wind"
+    },
+    {
+      "id": "Role4",
+      "tag": "[Role4]",
+      "roleName": "The Conflicted Chief of Staff",
+      "characterId": "Character4",
+      "costumeId": "Costume4",
+      "assetTags": "[Character4] [Costume4]",
+      "description": "A 34-year-old woman with a heart-shaped face, warm dark skin, alert brown eyes behind thin-framed glasses, close-cropped natural hair and a small silver stud in each ear wearing a tailored slate-gray blazer over a cream silk blouse with slim black trousers, a lanyard-clipped embassy ID, flat leather ankle boots and a long wool trench draped over one arm"
+    },
+    {
+      "id": "Role5",
+      "tag": "[Role5]",
+      "roleName": "The British Spymaster",
+      "characterId": "Character5",
+      "costumeId": "Costume5",
+      "assetTags": "[Character5] [Costume5]",
+      "description": "A 61-year-old man with a long narrow face, pale watery blue eyes, thinning white hair combed straight back, a prominent brow and a faint tremor in his left hand wearing a charcoal pinstripe three-piece suit with a heavy camel-hair overcoat, a faded regimental striped tie, a gold pocket watch chain and a tightly furled umbrella"
+    }
+  ],
+  "shots": [
+    {
+      "id": "Shot1",
+      "shotType": "Slow Push-In Medium Close-Up",
+      "lensAngle": "40mm Anamorphic Prime, T2.8, shallow depth of field, eye-level",
+      "assetTags": "[Role1] [Prop1] [Set1]",
+      "description": "A 58-year-old man with a lean angular face, high cheekbones, deep-set gray-blue eyes ringed by sleeplessness, silver swept-back hair and a thin scar through his left eyebrow wearing a single-breasted charcoal three-piece suit with a notch lapel, a white spread-collar shirt, a dark burgundy silk tie, a slim American flag lapel pin and a loosened collar by the end of the film USES a matte-black reinforced steel briefcase with a fingerprint scanner, a chained wrist cuff, scuffed corners and a faded diplomatic seal sticker IN a wood-paneled private study in the US ambassador's residence, with floor-to-ceiling mahogany bookshelves, a heavy walnut partners desk, a worn Persian rug, tall sash windows with brass fittings and a framed portrait of the President on the wall",
+      "action": {
+        "roleActions": "Crane enters, locks the door behind him and sets the briefcase on the desk. He presses his thumb to the scanner, lifts the lid and slowly reads the first page of the order. He sinks into the chair, removes his wedding band, places it beside the lamp and stares at the President's portrait.",
+        "dialogue": "Forty years of service, and you made me an accomplice.",
+        "roleDialog": "Barely audible and hollow, shock giving way to cold resolve, each word weighed before it is spoken.",
+        "soundDesign": "Soft rain on the glass, the slow tick of the mantel clock, the electronic chirp of the scanner, a low sub-bass drone rising as he reads."
+      }
+    },
+    {
+      "id": "Shot2",
+      "shotType": "Low-Angle Wide Tracking Shot",
+      "lensAngle": "28mm Anamorphic Prime, T2.8, deep focus, handheld stabilized",
+      "assetTags": "[Role3] [Prop4] [Set3]",
+      "description": "A 44-year-old woman with a weathered oval face, sharp green eyes, a strong nose, auburn hair pinned tightly beneath her cap and a faint burn scar along her jaw wearing a dark navy Royal Navy officer's working uniform with gold-braided shoulder boards, a peaked cap, a weatherproof black oilskin overcoat and a rolled collar against the wind USES a large rolled blueprint of a Dreadnought-class submarine on heavy vellum, annotated in red grease pencil with a redacted Operation Trident Gate marking IN a vast concrete submarine dock with rusted gantry cranes, wet steel catwalks, mooring cables as thick as a man's arm and the black hull of a Dreadnought-class submarine rising from the water",
+      "action": {
+        "roleActions": "Ravensdale strides along the wet catwalk with the black hull looming behind her. She stops at a steel crate, unrolls the schematic against the wind and pins it with a flashlight. She taps the modified payload bay with a gloved finger and looks up sharply as distant footsteps echo.",
+        "dialogue": "That bay was never in the original design. Someone rebuilt my boat in the dark.",
+        "roleDialog": "Clipped, controlled fury, naval discipline holding back a personal sense of violation.",
+        "soundDesign": "Wind whistling through the gantries, distant foghorn, water slapping against the hull, the metallic groan of mooring cables, echoing boots on steel."
+      }
+    },
+    {
+      "id": "Shot3",
+      "shotType": "Static Wide Symmetrical Shot with Slow Dolly In",
+      "lensAngle": "35mm Anamorphic Prime, T2.8, deep focus, slightly low angle",
+      "assetTags": "[Role2] [Prop5] [Set2]",
+      "description": "A 64-year-old man with a broad square jaw, warm brown eyes that can turn cold in an instant, close-cropped salt-and-pepper hair and deep laugh lines wearing a tailored navy two-button suit with a crisp white shirt, a pale blue tie, a gold American flag lapel pin and a confident straight-shouldered silhouette USES a cream leather folio embossed with the presidential seal, bound with a red ribbon and a wax stamp, containing a single signed page IN curved cream walls, the Resolute desk, gold drapes, a deep blue presidential seal carpet, flags flanking the desk and a wall of family photographs",
+      "action": {
+        "roleActions": "Whitlock stands behind the Resolute desk, backlit by the windows. He opens the folio, signs the page with a flourish and slides it toward a waiting aide. He pauses, glances at a video screen showing the Ambassador's empty chair and taps two fingers on the desk.",
+        "dialogue": "Elias will understand. He always does. That's why I picked him.",
+        "roleDialog": "Warm, confident and paternal on the surface, with a thin edge of menace and a flicker of doubt beneath.",
+        "soundDesign": "Muted room tone, a clock ticking, the scratch of a fountain pen, distant muffled Secret Service chatter, a low orchestral pulse swelling under the final line."
+      }
+    },
+    {
+      "id": "Shot4",
+      "shotType": "Over-the-Shoulder Two-Shot, Slow Rack Focus",
+      "lensAngle": "50mm Anamorphic Prime, T2.8, shallow depth of field, eye-level",
+      "assetTags": "[Role5] [Prop2] [Set4]",
+      "description": "A 61-year-old man with a long narrow face, pale watery blue eyes, thinning white hair combed straight back, a prominent brow and a faint tremor in his left hand wearing a charcoal pinstripe three-piece suit with a heavy camel-hair overcoat, a faded regimental striped tie, a gold pocket watch chain and a tightly furled umbrella USES a heavy black lacquered fountain pen with a silver clip and a hidden USB-C encrypted drive inside the barrel IN a windowless reinforced-concrete war room with a long oak conference table, analog wall maps of the North Atlantic, green-shaded lamps, banks of encrypted terminals and a brass wall clock",
+      "action": {
+        "roleActions": "Pryce receives the pen across the oak table, unscrews the barrel with trembling fingers and slides the drive into a terminal. He watches the schematic fill the screen, steeples his fingers, then pours tea slowly while studying the Ambassador's face.",
+        "dialogue": "You understand, Mr. Ambassador, that after tonight there is no way back for you.",
+        "roleDialog": "Soft, courteous and almost sympathetic, the quiet politeness of a man who has ended careers over tea.",
+        "soundDesign": "Ventilation hum, the clink of porcelain, the faint electronic whir of the terminal, a distant muffled phone ringing unanswered, a sustained low string note."
+      }
+    },
+    {
+      "id": "Shot5",
+      "shotType": "Long Telephoto Profile Shot into Slow Pull-Out Wide",
+      "lensAngle": "75mm Anamorphic Prime, T2.8, compressed background, then 28mm wide for the final reveal",
+      "assetTags": "[Role1] [Prop3] [Set5]",
+      "description": "A 58-year-old man with a lean angular face, high cheekbones, deep-set gray-blue eyes ringed by sleeplessness, silver swept-back hair and a thin scar through his left eyebrow wearing a single-breasted charcoal three-piece suit with a notch lapel, a white spread-collar shirt, a dark burgundy silk tie, a slim American flag lapel pin and a loosened collar by the end of the film USES a rugged red handset with a coiled cable, a thick rubber antenna, a numeric keypad worn smooth and a small LED indicator showing encryption status IN a stone riverside walkway with wrought-iron lamp posts, wet cobbled paving, a low parapet wall and the glass-and-concrete bulk of the SIS building across the water",
+      "action": {
+        "roleActions": "Crane stands at the parapet as dawn breaks, tie loosened and suit soaked. He raises the red phone, listens to the President's voice, then lowers it slowly and lets it fall into the Thames. He turns, walks away along the embankment without looking back, and the camera pulls out to reveal the SIS building across the water.",
+        "dialogue": "I served the office, Tom. I never served the man.",
+        "roleDialog": "Quiet, steady and finally unburdened, grief and relief bound together in a single exhale.",
+        "soundDesign": "Distant gulls, steady drizzle, river lapping stone, the muffled shout of the President through the receiver, a heavy splash, then silence and a single sustained piano note."
+      }
+    }
+  ]
+}

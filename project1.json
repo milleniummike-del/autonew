@@ -104,6 +104,10 @@
       "roleName": "Chosen Pathfinder",
       "characterId": "Character1",
       "costumeId": "Costume1",
+      "assetTags": [
+        "[Character1]",
+        "[Costume1]"
+      ],
       "synthesisText": "[Character1] wearing [Costume1] becomes [Role1] (Chosen Pathfinder)"
     },
     {
@@ -112,6 +116,10 @@
       "roleName": "Lore Keeper",
       "characterId": "Character2",
       "costumeId": "Costume2",
+      "assetTags": [
+        "[Character2]",
+        "[Costume2]"
+      ],
       "synthesisText": "[Character2] wearing [Costume2] becomes [Role2] (Lore Keeper)"
     }
   ],
@@ -121,7 +129,11 @@
       "shotType": "Wide Discovering Hero Shot",
       "lensAngle": "32mm Prime, moderate depth of field",
       "imageframe": "[Role1] discovers the [Prop1] whilst standing in [Set1]",
-      "action": {
+      "assetTags": [
+        "[Role1]",
+        "[Prop1]",
+        "[Set1]"
+      ],"action": {
         "roleActions": "Kneels beside exposed roots, brushes away soil, and lifts the compass as the other unseen children gather behind.",
         "dialogue": "Look... I think it's trying to show us something.",
         "roleDialog": "Wonder-filled, breathless, and curious.",
@@ -133,7 +145,11 @@
       "shotType": "Epic Tracking Shot",
       "lensAngle": "50mm Prime, cinematic motion blur",
       "imageframe": "[Role2] studies the [Prop1] whilst standing in [Set2]",
-      "action": {
+      "assetTags": [
+        "[Role2]",
+        "[Prop1]",
+        "[Set2]"
+      ],"action": {
         "roleActions": "Walks cautiously across the crystal bridge while comparing symbols on the compass to constellations overhead.",
         "dialogue": "The stars aren't pointing home... they're pointing forward.",
         "roleDialog": "Thoughtful realization mixed with nervous excitement.",
@@ -145,6 +161,11 @@
       "shotType": "Low-Angle Magical Reveal",
       "lensAngle": "75mm Prime, shallow depth of field",
       "imageframe": "[Role1] raises the [Prop2] whilst standing in [Set3]",
+      "assetTags": [
+        "[Role1]",
+        "[Prop2]",
+        "[Set3]"
+      ],
       "action": {
         "roleActions": "Steps onto the shrine platform and raises the staff as ancient symbols ignite around the temple.",
         "dialogue": "Guardian of the stars, we need your help!",
@@ -157,6 +178,11 @@
       "shotType": "Craning Triumphant Finale",
       "lensAngle": "40mm Prime transitioning to aerial perspective",
       "imageframe": "[Role1] presents the [Prop3] whilst standing in [Set3]",
+      "assetTags": [
+        "[Role1]",
+        "[Prop3]",
+        "[Set3]"
+      ],
       "action": {
         "roleActions": "Raises the relic skyward as waves of light sweep across the landscape and restore the realm's harmony.",
         "dialogue": "We found our way because we never stopped believing.",

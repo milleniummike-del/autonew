@@ -94,8 +94,8 @@ JSON Structure:
       "roleName": "Role Title",
       "characterId": "Character1",
       "costumeId": "Costume1",
-      "assetTags": "[Character1] [Costume1] [Role1]"
-      "description:" : ""
+      "assetTags": "[Character1] [Costume1]",
+      "description" : "Age, face, bone structure, eyes, hair, scars wearing Garment cut, layers, silhouette, accessories"
     }
   ],
   "shots": [
@@ -104,7 +104,7 @@ JSON Structure:
       "shotType": "Low-Angle Medium Tracking Shot",
       "lensAngle": "35mm Anamorphic Prime, shallow DoF",
       "assetTags": "[Role1]  [Prop1] [Set1]",
-      "description": "",
+      "description": "Age, face, bone structure, eyes, hair, scars wearing Garment cut, layers, silhouette, accessories USES Tactile build, visual indicators, material IN Architectural and textural detail",
       "action": {
         "roleActions": "Actor blocking and physical beats",
         "dialogue": "Spoken line",

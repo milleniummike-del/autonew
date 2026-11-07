@@ -116,13 +116,13 @@ const projectName = "George the Bard";
 
             for (let count = 0; count < assetNames.length; count++) {
                 const assetName = assetNames[count];
-                await page.waitForSelector('mat-icon.add-menu-icon', {
+                console.log('Waiting for add');
+                await page.waitForSelector('button[aria-label="Add ingredients to the prompt box"]', {
                     visible: true,
                     timeout: 30000
                 });
-
-                await page.click('mat-icon.add-menu-icon');
-
+                await page.locator('button[aria-label="Add ingredients to the prompt box"]').click();
+           /*
                 await page.waitForSelector('mat-select', {
                     visible: true,
                     timeout: 30000
@@ -132,10 +132,14 @@ const projectName = "George the Bard";
 
                 console.log('Opened project selector');
 
+     
+                console.log('waiting for span.flow-add-menu-dropdown-option-text');
                 await page.waitForSelector('span.flow-add-menu-dropdown-option-text', {
                     visible: true,
                     timeout: 30000
                 });
+
+                console.log('Looking for '+projectName);
 
                 await page.evaluate((projectName) => {
                     const target = [...document.querySelectorAll(
@@ -152,10 +156,12 @@ const projectName = "George the Bard";
                     (target.closest('button, [role="menuitem"], .flow-add-menu-dropdown-option') || target).click();
                 }, projectName);
 
+
                 await page.waitForSelector('span.asset-title', {
                     visible: true,
                     timeout: 30000
                 });
+                */
 
                 await new Promise(r => setTimeout(r, 1000));
                 await page.locator('input[placeholder="Search"]').fill(assetName);
@@ -163,8 +169,7 @@ const projectName = "George the Bard";
                 await new Promise(r => setTimeout(r, 2000));
 
                 await page.evaluate((assetName) => {
-                    const target = [...document.querySelectorAll('span.asset-title')]
-                        .find(el => el.textContent.trim() === assetName);
+                    const target = document.querySelector('span.asset-title');
 
                     if (!target) {
                         throw new Error('Element not found');

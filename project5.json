@@ -1,0 +1,957 @@
+{
+  "title": "Echoes of Yesterday",
+  "genre": "Action Thriller / Science Fiction / Time Travel Drama",
+  "premise": "An elderly man travels back in time to the 1980s and encounters his seventeen-year-old self. As he attempts to prevent a tragedy that shaped his entire life, he discovers that changing the past may destroy the future he remembers. Pursued by a dangerous criminal enforcer and forced to confront the choices he once made, he must decide whether to protect his younger self or allow history to unfold.",
+  "shotCount": 5,
+  "setCount": 5,
+  "propCount": 5,
+  "characterCount": 5,
+  "roleCount": 5,
+  "visualTone": {
+    "description": "A cinematic 1980s time-travel thriller combining grounded period authenticity, atmospheric science fiction, gritty urban action and emotionally intimate character drama. The visual language contrasts the cold, desaturated present with the warmer, textured world of the 1980s. Practical lighting, atmospheric haze, strong silhouettes, motivated highlights and carefully controlled camera movement create a realistic Hollywood feature-film aesthetic.",
+    "colorPalette": [
+      {
+        "name": "Faded Gold",
+        "hex": "#D6B77A",
+        "description": "Warm nostalgic highlights, tungsten interiors and memories of the past."
+      },
+      {
+        "name": "Midnight Blue",
+        "hex": "#172A3A",
+        "description": "Cold shadows, nighttime exteriors and the loneliness of the present."
+      },
+      {
+        "name": "Rust Red",
+        "hex": "#A34435",
+        "description": "Danger, violence, warning lights and dramatic emotional tension."
+      },
+      {
+        "name": "Weathered Green",
+        "hex": "#64745C",
+        "description": "Aged industrial environments, military equipment and muted 1980s production design."
+      },
+      {
+        "name": "Ash Grey",
+        "hex": "#D0D0C7",
+        "description": "Concrete, smoke, institutional interiors and the clinical appearance of technology."
+      }
+    ],
+    "cinematography": {
+      "aspectRatio": "2.39:1",
+      "frameRate": "24fps",
+      "visualStyle": "Photorealistic cinematic live-action photography, naturalistic performances, authentic period production design, realistic skin texture, detailed environments, practical effects and restrained science-fiction visual effects.",
+      "cameraMovement": "Controlled dolly movements, slow tracking shots, deliberate handheld camera work during action sequences, atmospheric establishing shots and intimate close-ups during emotional moments.",
+      "lensPackage": [
+        {
+          "name": "Panavision C-Series Anamorphic",
+          "use": "Wide establishing shots, environmental compositions and cinematic action sequences."
+        },
+        {
+          "name": "Cooke S4 Prime",
+          "use": "Naturalistic medium shots, character performances and intimate dialogue."
+        },
+        {
+          "name": "85mm Portrait Lens",
+          "use": "Emotional close-ups, facial details and dramatic character reactions."
+        },
+        {
+          "name": "40mm Anamorphic",
+          "use": "Two-character compositions and environmental storytelling."
+        }
+      ],
+      "lightingPhilosophy": "Motivated practical lighting with warm tungsten sources in the 1980s environments, cool moonlight and industrial fluorescent lighting in darker locations. Use realistic shadow falloff, volumetric atmospheric haze, controlled backlighting and subtle lens flares. Avoid artificial-looking illumination.",
+      "filmStock": "Kodak Vision3 500T aesthetic with subtle organic film grain, natural highlight roll-off, rich blacks and restrained halation.",
+      "visualEffects": "Photorealistic temporal displacement effects, subtle electromagnetic distortion, practical sparks, realistic smoke and atmospheric light interaction. Avoid cartoon-like effects, excessive glowing interfaces and exaggerated science-fiction imagery."
+    },
+    "audioStyle": {
+      "music": "A cinematic hybrid score combining atmospheric synthesizers, restrained analog 1980s electronic textures, orchestral tension and emotional piano themes.",
+      "soundDesign": "Detailed environmental ambience, mechanical sounds, distant traffic, electrical interference, footsteps, wind, industrial reverberation and realistic physical impacts.",
+      "dialogueStyle": "Naturalistic performances with restrained emotional delivery. Dialogue should feel grounded, conversational and appropriate to the characters' ages and circumstances."
+    }
+  },
+  "sets": [
+    {
+      "id": "Set1",
+      "name": "Abandoned Research Laboratory",
+      "category": "Interior",
+      "era": "Present Day",
+      "description": "A forgotten underground research facility hidden beneath an abandoned industrial building. The laboratory contains stained concrete walls, exposed electrical conduits, rusted metal support beams, old computer terminals, analog monitoring equipment, dusty workbenches and scattered technical documents. At its centre stands an experimental temporal displacement apparatus assembled from industrial machinery, copper wiring, magnetic coils and a reinforced metal platform. Cold fluorescent lights flicker overhead while emergency red indicators illuminate sections of the room. Dust hangs in the air, and the atmosphere feels isolated, dangerous and technologically primitive.",
+      "environment": "Underground industrial research facility.",
+      "lighting": "Cold fluorescent overhead lighting mixed with intermittent red warning lights and concentrated blue-white illumination from the temporal apparatus.",
+      "atmosphere": "Abandoned, secretive, claustrophobic and ominous.",
+      "colorTreatment": "Cold blue-grey shadows, dirty concrete neutrals and occasional red highlights.",
+      "visualDetails": [
+        "Exposed electrical conduits",
+        "Dust-covered laboratory equipment",
+        "Old analog monitors",
+        "Heavy industrial machinery",
+        "Copper cables and magnetic coils",
+        "Flickering fluorescent ceiling lights",
+        "Reinforced metal flooring",
+        "Emergency warning indicators"
+      ]
+    },
+    {
+      "id": "Set2",
+      "name": "1985 Suburban Family Home",
+      "category": "Interior",
+      "era": "1985",
+      "description": "A modest suburban family house preserved in authentic mid-1980s style. The living room features patterned wallpaper, dark wooden furniture, a bulky CRT television, a VHS player, cassette tapes, family photographs, a rotary telephone and a faded patterned sofa. Warm table lamps illuminate the room, while soft daylight enters through lace curtains. The house feels lived-in and emotionally significant, representing the childhood and family life that elderly Arthur has spent decades remembering. Small imperfections, worn carpets and period-appropriate domestic objects establish a convincing 1985 environment.",
+      "environment": "Residential suburban family home.",
+      "lighting": "Warm tungsten table lamps combined with soft natural daylight through the windows.",
+      "atmosphere": "Nostalgic, intimate, familiar and emotionally charged.",
+      "colorTreatment": "Warm faded gold, brown wood, muted greens and natural cream tones.",
+      "visualDetails": [
+        "Patterned 1980s wallpaper",
+        "Bulky CRT television",
+        "VHS video player",
+        "Rotary telephone",
+        "Cassette tapes",
+        "Dark wooden furniture",
+        "Framed family photographs",
+        "Patterned curtains and worn carpet"
+      ]
+    },
+    {
+      "id": "Set3",
+      "name": "1980s Downtown Street",
+      "category": "Exterior",
+      "era": "1985",
+      "description": "A busy urban street in the mid-1980s, lined with brick storefronts, independent shops, old cinemas, diners and weathered commercial buildings. Period-correct vehicles occupy the road, including boxy sedans, station wagons and older delivery vans. Shop windows display hand-painted signs, neon lettering and vintage advertisements. Pedestrians wear authentic 1980s clothing, including denim jackets, leather coats, tracksuits and colourful knitwear. The pavement is slightly wet, reflecting shop lights and passing vehicle headlights. The street provides an authentic backdrop for a tense confrontation and pursuit.",
+      "environment": "1980s commercial city district.",
+      "lighting": "Overcast afternoon daylight transitioning into warm storefront illumination and neon reflections.",
+      "atmosphere": "Lively, gritty, unpredictable and increasingly threatening.",
+      "colorTreatment": "Muted urban neutrals contrasted with faded neon reds, greens and amber.",
+      "visualDetails": [
+        "Period-correct 1980s cars",
+        "Brick storefronts",
+        "Vintage cinema signage",
+        "Neon shop signs",
+        "Old streetlights",
+        "Wet pavement reflections",
+        "1980s advertising posters",
+        "Authentic period pedestrian clothing"
+      ]
+    },
+    {
+      "id": "Set4",
+      "name": "Riverside Industrial Warehouse",
+      "category": "Interior and Exterior",
+      "era": "1985",
+      "description": "A neglected industrial warehouse beside a dark river, surrounded by rusted shipping containers, loading bays, cracked concrete and abandoned machinery. Inside, enormous steel support columns rise toward a high corrugated roof. Old wooden crates, metal shelving, industrial chains and damaged equipment create deep layers of foreground and background detail. Narrow windows admit cold shafts of moonlight, while isolated industrial lamps cast hard pools of yellow illumination across the floor. The warehouse has an exposed loading area overlooking the river, allowing characters to move between shadowy interiors and the open industrial exterior.",
+      "environment": "Abandoned riverside industrial warehouse.",
+      "lighting": "Cold moonlight through high windows, isolated industrial tungsten lamps and occasional vehicle headlights entering through the loading bay.",
+      "atmosphere": "Dangerous, isolated, suspenseful and hostile.",
+      "colorTreatment": "Deep midnight blue, weathered green, rusty brown and isolated warm highlights.",
+      "visualDetails": [
+        "Large corrugated metal roof",
+        "Steel structural columns",
+        "Old wooden crates",
+        "Industrial chains",
+        "Rusting machinery",
+        "Concrete loading platform",
+        "Shipping containers",
+        "Dark river visible outside",
+        "Broken warehouse windows"
+      ]
+    },
+    {
+      "id": "Set5",
+      "name": "Abandoned Railway Platform",
+      "category": "Exterior",
+      "era": "1985",
+      "description": "A deserted railway platform at the edge of a small industrial town. The station has aged brickwork, weathered wooden benches, old metal signage, a faded timetable board and vintage platform lamps. Two parallel railway tracks disappear into the darkness beyond the station. Tall grass grows between sections of cracked concrete, and a light mist drifts across the rails. The platform feels suspended in time, providing a quiet and emotionally powerful setting for the final encounter between the elderly man and his younger self.",
+      "environment": "Abandoned railway station.",
+      "lighting": "Soft amber platform lamps, cold blue moonlight and subtle atmospheric haze.",
+      "atmosphere": "Melancholic, peaceful, mysterious and emotionally resonant.",
+      "colorTreatment": "Faded gold highlights, midnight blue shadows and weathered grey textures.",
+      "visualDetails": [
+        "Old railway tracks",
+        "Weathered wooden benches",
+        "Vintage platform lamps",
+        "Faded station signage",
+        "Aged brick walls",
+        "Overgrown grass",
+        "Old timetable board",
+        "Light mist across the railway"
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "Character1",
+      "name": "Arthur Bennett",
+      "age": 72,
+      "gender": "Male",
+      "role": "Protagonist",
+      "description": "An elderly man with a weathered face, deep-set blue-grey eyes, pronounced forehead lines, silver-grey hair and a neatly trimmed grey beard. His expression reveals decades of regret, exhaustion and unresolved grief. He has a lean build and slightly stooped posture, but his eyes remain alert and intelligent. His movements are measured and deliberate, revealing a man whose body has aged while his determination remains intact. He carries the emotional burden of a life-changing event from his youth and believes that travelling back in time may give him one final opportunity to change his destiny.",
+      "physicalAppearance": {
+        "height": "Approximately 178 cm",
+        "build": "Lean, slightly stooped elderly physique",
+        "hair": "Short silver-grey hair, neatly combed",
+        "eyes": "Blue-grey",
+        "facialHair": "Neatly trimmed grey beard and moustache",
+        "distinguishingFeatures": "Deep facial lines, tired eyes and a small scar above the right eyebrow"
+      },
+      "personality": "Intelligent, determined, emotionally guarded, reflective and quietly courageous.",
+      "performanceStyle": "Subtle facial expressions, controlled physical movements, restrained emotional reactions and moments of visible vulnerability.",
+      "continuityRules": [
+        "Always appears approximately 72 years old.",
+        "Maintains the same silver-grey hair and trimmed grey beard.",
+        "Retains the small scar above his right eyebrow.",
+        "His posture remains slightly stooped.",
+        "His facial appearance must remain consistent between all shots."
+      ]
+    },
+    {
+      "id": "Character2",
+      "name": "Young Arthur Bennett",
+      "age": 17,
+      "gender": "Male",
+      "role": "Younger Version of the Protagonist",
+      "description": "A seventeen-year-old version of Arthur Bennett with youthful facial features, short dark brown hair, blue-grey eyes and a slim athletic build. He has a confident but occasionally reckless personality, typical of a young man who believes he understands the world but has not yet experienced its consequences. His expressions are more spontaneous and emotionally transparent than those of his elderly counterpart. His face must clearly resemble elderly Arthur, with matching eye shape, nose structure, jawline and distinctive scar above the right eyebrow.",
+      "physicalAppearance": {
+        "height": "Approximately 175 cm",
+        "build": "Slim athletic teenage physique",
+        "hair": "Short dark brown hair with a slightly untidy 1980s style",
+        "eyes": "Blue-grey",
+        "facialHair": "Clean-shaven",
+        "distinguishingFeatures": "Matching facial structure and a small scar above the right eyebrow"
+      },
+      "personality": "Curious, impulsive, humorous, independent and occasionally defiant.",
+      "performanceStyle": "Natural teenage body language, spontaneous reactions, expressive facial movements and energetic physical behaviour.",
+      "continuityRules": [
+        "Always appears approximately 17 years old.",
+        "Maintains identical facial structure across all shots.",
+        "Has short dark brown hair and blue-grey eyes.",
+        "Retains the small scar above his right eyebrow.",
+        "Must visibly resemble the elderly Arthur Bennett."
+      ]
+    },
+    {
+      "id": "Character3",
+      "name": "Daniel Mercer",
+      "age": 38,
+      "gender": "Male",
+      "role": "Antagonist / Criminal Enforcer",
+      "description": "A physically imposing criminal enforcer with a broad build, short dark hair, cold brown eyes and a rough, intimidating face. His expression is controlled and threatening, with a faint scar running along his left cheek. He moves with confidence and calculated aggression. He is connected to a criminal operation that Young Arthur becomes involved with during the 1980s. Mercer believes that fear and violence are the most effective ways to control people. His presence creates an immediate sense of danger whenever he enters a scene.",
+      "physicalAppearance": {
+        "height": "Approximately 188 cm",
+        "build": "Broad, muscular physique",
+        "hair": "Short dark hair",
+        "eyes": "Dark brown",
+        "facialHair": "Short dark stubble",
+        "distinguishingFeatures": "Scar along the left cheek and heavy facial features"
+      },
+      "personality": "Aggressive, manipulative, calculating, intimidating and ruthless.",
+      "performanceStyle": "Minimal unnecessary movement, direct eye contact, controlled aggression and sudden explosive physical action.",
+      "continuityRules": [
+        "Always appears approximately 38 years old.",
+        "Maintains short dark hair and dark stubble.",
+        "Retains the scar on his left cheek.",
+        "Maintains the same broad, muscular physique.",
+        "His wardrobe and appearance remain consistent throughout the 1985 sequences."
+      ]
+    },
+    {
+      "id": "Character4",
+      "name": "Eleanor Bennett",
+      "age": 42,
+      "gender": "Female",
+      "role": "Arthur's Family Connection",
+      "description": "A warm but emotionally resilient woman with shoulder-length chestnut-brown hair, expressive hazel eyes and a natural, understated appearance. She is a significant part of Arthur's family history and represents the emotional connections that shaped his youth. She is perceptive, compassionate and strong-willed, capable of recognising when something is wrong even when people attempt to conceal it. Her presence grounds the story in ordinary family life and gives the time-travel narrative an emotional centre.",
+      "physicalAppearance": {
+        "height": "Approximately 168 cm",
+        "build": "Average slender physique",
+        "hair": "Shoulder-length chestnut-brown hair",
+        "eyes": "Hazel",
+        "facialHair": "None",
+        "distinguishingFeatures": "Expressive eyes and a gentle but determined expression"
+      },
+      "personality": "Compassionate, intelligent, protective, perceptive and emotionally strong.",
+      "performanceStyle": "Naturalistic gestures, warm expressions and restrained emotional reactions.",
+      "continuityRules": [
+        "Always appears approximately 42 years old.",
+        "Maintains shoulder-length chestnut-brown hair.",
+        "Maintains hazel eyes and consistent facial features.",
+        "Wears authentic mid-1980s clothing.",
+        "Her appearance must remain consistent throughout her scenes."
+      ]
+    },
+    {
+      "id": "Character5",
+      "name": "Detective Samuel Reeves",
+      "age": 51,
+      "gender": "Male",
+      "role": "Investigator",
+      "description": "An experienced police detective with a serious expression, short greying brown hair, tired green eyes and a solid average build. His face shows years of investigative work and exposure to violence. He is methodical, observant and difficult to deceive. He is investigating the criminal activity surrounding Daniel Mercer and gradually becomes suspicious of the unusual circumstances surrounding Arthur Bennett. He represents the law and the ordinary world attempting to make sense of events that cannot easily be explained.",
+      "physicalAppearance": {
+        "height": "Approximately 181 cm",
+        "build": "Solid average physique",
+        "hair": "Short greying brown hair",
+        "eyes": "Green",
+        "facialHair": "Light stubble",
+        "distinguishingFeatures": "Tired eyes, prominent brow and a weathered complexion"
+      },
+      "personality": "Analytical, persistent, sceptical, disciplined and quietly compassionate.",
+      "performanceStyle": "Measured movements, observant expressions and controlled dialogue delivery.",
+      "continuityRules": [
+        "Always appears approximately 51 years old.",
+        "Maintains short greying brown hair.",
+        "Maintains green eyes and light stubble.",
+        "Wears an authentic 1980s detective suit.",
+        "Maintains consistent facial features throughout the story."
+      ]
+    }
+  ],
+  "costumes": [
+    {
+      "id": "Costume1",
+      "name": "Elderly Time Traveller Overcoat",
+      "description": "A dark charcoal-grey wool overcoat worn by elderly Arthur Bennett. The coat is slightly oversized, weathered around the cuffs and marked by years of use. Beneath it he wears a dark knitted jumper, a faded collared shirt, charcoal trousers and worn black leather shoes. The clothing is understated and practical, reflecting his age and the difficult circumstances of his journey.",
+      "wardrobeDetails": [
+        "Dark charcoal wool overcoat",
+        "Faded dark knitted jumper",
+        "Muted collared shirt",
+        "Charcoal trousers",
+        "Worn black leather shoes",
+        "Simple leather belt"
+      ],
+      "continuityRules": [
+        "The overcoat remains the same dark charcoal colour.",
+        "The coat has visibly worn cuffs.",
+        "The same jumper and trousers are used throughout.",
+        "No modern logos or contemporary fashion details."
+      ]
+    },
+    {
+      "id": "Costume2",
+      "name": "1985 Teenage Streetwear",
+      "description": "Authentic mid-1980s teenage clothing consisting of a faded blue denim jacket, a light grey cotton T-shirt, straight-cut dark blue jeans and worn white leather trainers. The denim jacket has subtle natural fading and slightly rolled sleeves. The overall outfit reflects ordinary teenage street fashion rather than exaggerated retro styling.",
+      "wardrobeDetails": [
+        "Faded blue denim jacket",
+        "Light grey cotton T-shirt",
+        "Straight-cut dark blue jeans",
+        "Worn white leather trainers",
+        "Simple leather belt",
+        "1980s wristwatch"
+      ],
+      "continuityRules": [
+        "Denim jacket remains faded blue.",
+        "T-shirt remains light grey.",
+        "Jeans remain dark blue and straight-cut.",
+        "Trainers remain white and visibly worn.",
+        "No modern logos or contemporary accessories."
+      ]
+    },
+    {
+      "id": "Costume3",
+      "name": "Criminal Leather Jacket",
+      "description": "A black leather biker jacket with a worn finish, slightly raised collar and subtle creases. Daniel wears it over a dark charcoal shirt, black trousers and heavy black leather boots. The outfit is deliberately understated and intimidating, reflecting the hard-edged criminal culture of the mid-1980s.",
+      "wardrobeDetails": [
+        "Black worn leather biker jacket",
+        "Dark charcoal shirt",
+        "Black trousers",
+        "Heavy black leather boots",
+        "Dark leather belt",
+        "Minimal metal accessories"
+      ],
+      "continuityRules": [
+        "Leather jacket remains black and visibly worn.",
+        "Dark shirt remains consistent.",
+        "Black trousers and boots remain unchanged.",
+        "No modern fashion details."
+      ]
+    },
+    {
+      "id": "Costume4",
+      "name": "Eleanor's 1980s Outfit",
+      "description": "A period-authentic mid-1980s outfit consisting of a muted burgundy blouse, a dark brown fitted jacket, a knee-length charcoal skirt, sheer tights and practical leather shoes. Her clothing is understated and appropriate for an ordinary suburban woman in 1985.",
+      "wardrobeDetails": [
+        "Muted burgundy blouse",
+        "Dark brown fitted jacket",
+        "Knee-length charcoal skirt",
+        "Sheer dark tights",
+        "Practical leather shoes",
+        "Simple gold earrings"
+      ],
+      "continuityRules": [
+        "Burgundy blouse remains the primary clothing colour.",
+        "Dark brown jacket remains consistent.",
+        "Skirt length and colour remain unchanged.",
+        "Accessories remain subtle and period-appropriate."
+      ]
+    },
+    {
+      "id": "Costume5",
+      "name": "1980s Detective Suit",
+      "description": "A practical dark navy two-piece suit with a slightly loose 1980s cut, pale blue shirt, muted patterned tie and polished black leather shoes. The suit is worn naturally rather than appearing overly formal. A dark leather belt and simple wristwatch complete the outfit.",
+      "wardrobeDetails": [
+        "Dark navy two-piece suit",
+        "Pale blue collared shirt",
+        "Muted patterned tie",
+        "Polished black leather shoes",
+        "Dark leather belt",
+        "Simple wristwatch"
+      ],
+      "continuityRules": [
+        "Suit remains dark navy.",
+        "Shirt remains pale blue.",
+        "Tie remains muted and patterned.",
+        "Shoes remain black leather.",
+        "Clothing must reflect authentic 1980s tailoring."
+      ]
+    }
+  ],
+  "props": [
+    {
+      "id": "Prop1",
+      "name": "Temporal Displacement Device",
+      "category": "Experimental Technology",
+      "description": "A compact experimental time-travel apparatus assembled from industrial electronic components, a reinforced metal housing, exposed copper wiring, magnetic coils and a small analogue control panel. The device contains a central circular energy chamber surrounded by mechanical locking components. Its surface is scratched and worn, revealing its experimental nature. When activated, the chamber produces an intense white-blue electrical pulse accompanied by electromagnetic distortion, sparks and a deep mechanical vibration.",
+      "visualDetails": [
+        "Reinforced metal housing",
+        "Exposed copper wiring",
+        "Circular magnetic chamber",
+        "Analogue switches",
+        "Small mechanical control panel",
+        "Industrial electrical connectors",
+        "Scratched and weathered surfaces"
+      ],
+      "continuityRules": [
+        "The device maintains the same overall shape and dimensions.",
+        "The central circular chamber remains visually distinctive.",
+        "Copper wiring and analogue controls remain in the same positions.",
+        "Activation effects are white-blue electrical pulses.",
+        "The device must look physically constructed rather than like a holographic interface."
+      ]
+    },
+    {
+      "id": "Prop2",
+      "name": "Vintage Wristwatch",
+      "category": "Personal Item",
+      "description": "An old-fashioned analogue wristwatch with a round cream-coloured dial, small black numerals, slim black hands and a scratched silver metal case. It is attached to a worn dark brown leather strap. The watch has sentimental significance and connects elderly Arthur to his younger self. Its scratched glass and aged strap reveal decades of use.",
+      "visualDetails": [
+        "Round cream dial",
+        "Black analogue numerals",
+        "Slim black hands",
+        "Scratched silver metal case",
+        "Worn dark brown leather strap",
+        "Slightly scratched glass"
+      ],
+      "continuityRules": [
+        "The watch always has the same cream dial.",
+        "The metal case remains scratched.",
+        "The leather strap remains dark brown and worn.",
+        "The watch is an analogue mechanical design.",
+        "No digital display or modern smartwatch features."
+      ]
+    },
+    {
+      "id": "Prop3",
+      "name": "Family Photograph",
+      "category": "Personal Keepsake",
+      "description": "A slightly faded printed colour photograph showing a younger Arthur standing with members of his family outside their suburban home during the 1980s. The photograph has a white border, slightly rounded corners and a few visible creases. The colours have faded naturally over time, giving it an authentic aged appearance. It serves as a visual connection between Arthur's memories and the people he is trying to protect.",
+      "visualDetails": [
+        "Small printed colour photograph",
+        "White photographic border",
+        "Rounded corners",
+        "Slightly faded colours",
+        "Visible creases",
+        "Authentic 1980s photographic texture"
+      ],
+      "continuityRules": [
+        "The photograph retains the same composition.",
+        "The white border remains visible.",
+        "The paper remains slightly creased and faded.",
+        "It must look like a physical printed photograph."
+      ]
+    },
+    {
+      "id": "Prop4",
+      "name": "Black Leather Briefcase",
+      "category": "Personal Equipment",
+      "description": "A rectangular black leather briefcase with reinforced corners, two metal combination locks, a sturdy handle and subtle scratches across its surface. The case is heavy and slightly worn, with an aged professional appearance. Its contents are never fully revealed, creating an element of mystery and tension.",
+      "visualDetails": [
+        "Rectangular black leather body",
+        "Reinforced corners",
+        "Two metal combination locks",
+        "Sturdy leather handle",
+        "Subtle surface scratches",
+        "Dark metal fittings"
+      ],
+      "continuityRules": [
+        "The briefcase remains black.",
+        "Both metal locks remain visible.",
+        "The handle and corner reinforcements remain consistent.",
+        "The case maintains the same proportions and worn appearance."
+      ]
+    },
+    {
+      "id": "Prop5",
+      "name": "Cassette Recorder",
+      "category": "1980s Electronics",
+      "description": "A portable mid-1980s cassette recorder with a dark grey plastic casing, rectangular cassette compartment, mechanical record and playback buttons, a small speaker grille and a built-in microphone. The casing shows minor scratches and signs of regular use. It is an authentic analogue device with no modern digital display or wireless features.",
+      "visualDetails": [
+        "Dark grey plastic casing",
+        "Rectangular cassette compartment",
+        "Mechanical playback buttons",
+        "Mechanical record button",
+        "Small speaker grille",
+        "Built-in microphone",
+        "Minor surface scratches"
+      ],
+      "continuityRules": [
+        "The recorder remains dark grey.",
+        "Mechanical buttons remain in the same arrangement.",
+        "The cassette compartment remains visible.",
+        "No digital screen or modern interface.",
+        "It must remain a physically authentic 1980s device."
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "id": "Role1",
+      "name": "Elderly Arthur Bennett",
+      "character": "Character1",
+      "costume": "Costume1",
+      "assetTags": [
+        "[Character1]",
+        "[Costume1]"
+      ],
+      "description": "Arthur Bennett, aged 72, wearing his dark charcoal wool overcoat, faded knitted jumper, collared shirt, charcoal trousers and worn black leather shoes. His silver-grey hair, trimmed beard, blue-grey eyes and small scar above his right eyebrow remain consistent. He is the central protagonist, carrying the emotional burden of a life spent regretting the past."
+    },
+    {
+      "id": "Role2",
+      "name": "Young Arthur Bennett",
+      "character": "Character2",
+      "costume": "Costume2",
+      "assetTags": [
+        "[Character2]",
+        "[Costume2]"
+      ],
+      "description": "Arthur Bennett at seventeen years old, wearing a faded blue denim jacket, light grey T-shirt, dark blue jeans and worn white leather trainers. His short dark brown hair, blue-grey eyes and distinctive scar above his right eyebrow establish his resemblance to elderly Arthur."
+    },
+    {
+      "id": "Role3",
+      "name": "Daniel Mercer",
+      "character": "Character3",
+      "costume": "Costume3",
+      "assetTags": [
+        "[Character3]",
+        "[Costume3]"
+      ],
+      "description": "Daniel Mercer, a 38-year-old criminal enforcer with a broad muscular build, short dark hair, dark stubble and a scar on his left cheek. He wears a worn black leather biker jacket, dark charcoal shirt, black trousers and heavy leather boots. His controlled aggression makes him a persistent threat."
+    },
+    {
+      "id": "Role4",
+      "name": "Eleanor Bennett",
+      "character": "Character4",
+      "costume": "Costume4",
+      "assetTags": [
+        "[Character4]",
+        "[Costume4]"
+      ],
+      "description": "Eleanor Bennett, aged 42, with shoulder-length chestnut-brown hair and hazel eyes. She wears a muted burgundy blouse, dark brown fitted jacket, knee-length charcoal skirt, sheer tights and practical leather shoes. She represents the emotional centre of Arthur's family history."
+    },
+    {
+      "id": "Role5",
+      "name": "Detective Samuel Reeves",
+      "character": "Character5",
+      "costume": "Costume5",
+      "assetTags": [
+        "[Character5]",
+        "[Costume5]"
+      ],
+      "description": "Detective Samuel Reeves, aged 51, with short greying brown hair, green eyes and light stubble. He wears a dark navy 1980s two-piece suit, pale blue shirt, muted patterned tie and polished black leather shoes. He is a persistent investigator following the criminal activity surrounding Daniel Mercer."
+    }
+  ],
+  "shots": [
+    {
+      "id": "Shot1",
+      "title": "The Last Experiment",
+      "duration": 5,
+      "assetTags": [
+        "[Role1]",
+        "[Prop1]",
+        "[Set1]"
+      ],
+      "location": "Abandoned Research Laboratory",
+      "timeOfDay": "Night",
+      "description": "Inside [Set1], [Role1] stands alone beside [Prop1], the experimental temporal displacement device. His dark charcoal overcoat hangs loosely from his shoulders as he studies the machine's analogue control panel. He slowly places one hand against the reinforced metal housing, then activates the device. The circular magnetic chamber begins to vibrate, electrical arcs flash between exposed copper coils and intense white-blue light spreads across the laboratory. His face is illuminated by the rapidly intensifying energy as the room begins to distort around him.",
+      "action": {
+        "roleActions": [
+          {
+            "role": "Role1",
+            "action": "Studies the temporal displacement device, places one hand on its metal housing and activates the control mechanism. He braces himself as the machine begins to generate an intense electrical field."
+          }
+        ],
+        "dialogue": [
+          {
+            "character": "Arthur Bennett",
+            "line": "One last chance."
+          }
+        ],
+        "roleDialog": [
+          {
+            "role": "Role1",
+            "line": "One last chance.",
+            "delivery": "Quiet, determined and emotionally restrained."
+          }
+        ],
+        "soundDesign": [
+          "Low industrial electrical hum",
+          "Mechanical relays clicking into position",
+          "Deep magnetic chamber vibration",
+          "Electrical crackling and intermittent sparks",
+          "A rising cinematic sub-bass pulse",
+          "Sudden explosive temporal energy discharge"
+        ]
+      },
+      "camera": {
+        "shotType": "Medium-wide cinematic shot transitioning into a close-up",
+        "lens": "40mm anamorphic",
+        "movement": "Slow controlled dolly-in toward Arthur, followed by a subtle forward push as the device activates.",
+        "composition": "Arthur occupies the left third of the frame while the temporal device dominates the right side. Industrial equipment creates layered foreground depth.",
+        "focus": "Begin with the laboratory and machine in focus, then gradually shift attention to Arthur's face.",
+        "depthOfField": "Moderately shallow with detailed environmental context.",
+        "framing": "2.39:1 widescreen cinematic composition."
+      },
+      "lighting": {
+        "key": "Cold overhead fluorescent illumination.",
+        "fill": "Minimal ambient blue-grey fill.",
+        "backlight": "White-blue electrical light from the temporal chamber.",
+        "practical": "Intermittent red warning indicators.",
+        "atmosphere": "Dust particles and subtle volumetric haze become visible in the machine's light."
+      },
+      "visualTone": "Tense, mysterious, grounded science fiction with a dramatic escalation.",
+      "transition": "A sudden white-blue temporal flash fills the entire frame, creating a hard visual transition into the past."
+    },
+    {
+      "id": "Shot2",
+      "title": "A Face from the Past",
+      "duration": 5,
+      "assetTags": [
+        "[Role1]",
+        "[Role2]",
+        "[Prop3]",
+        "[Set2]"
+      ],
+      "location": "1985 Suburban Family Home",
+      "timeOfDay": "Late Afternoon",
+      "description": "Inside [Set2], [Role1] stands in the familiar living room, visibly overwhelmed by the surroundings he has not seen for decades. Warm afternoon sunlight filters through the curtains, illuminating the family photographs and period furniture. He looks down at [Prop3], the old family photograph held carefully in his hand. Across the room, [Role2] enters wearing his faded denim jacket and notices the strange elderly visitor. The two versions of Arthur stare at one another in disbelief, recognising the same eyes, facial structure and distinctive scar. The younger man takes a cautious step forward while the elderly man struggles to contain his emotions.",
+      "action": {
+        "roleActions": [
+          {
+            "role": "Role1",
+            "action": "Looks around the familiar living room, examines the family photograph and slowly raises his eyes toward his younger self. His expression changes from disbelief to overwhelming emotion."
+          },
+          {
+            "role": "Role2",
+            "action": "Enters the living room, stops when he notices the elderly stranger and studies his face with suspicion. He cautiously steps forward, trying to understand the resemblance."
+          }
+        ],
+        "dialogue": [
+          {
+            "character": "Young Arthur Bennett",
+            "line": "Who the hell are you?"
+          },
+          {
+            "character": "Arthur Bennett",
+            "line": "I'm you. Just a little further down the road."
+          }
+        ],
+        "roleDialog": [
+          {
+            "role": "Role2",
+            "line": "Who the hell are you?",
+            "delivery": "Suspicious, confused and defensive."
+          },
+          {
+            "role": "Role1",
+            "line": "I'm you. Just a little further down the road.",
+            "delivery": "Softly spoken, emotional and almost disbelieving."
+          }
+        ],
+        "soundDesign": [
+          "Quiet suburban ambience outside the house",
+          "Distant birds and passing traffic",
+          "Soft mechanical ticking from a wall clock",
+          "Subtle floorboard creaks",
+          "A restrained emotional piano theme",
+          "Natural room ambience and intimate dialogue"
+        ]
+      },
+      "camera": {
+        "shotType": "Medium two-shot with alternating close-ups",
+        "lens": "40mm anamorphic and 85mm portrait lens",
+        "movement": "Slow lateral camera movement revealing both characters in the same composition.",
+        "composition": "The elderly Arthur stands in the foreground while the younger Arthur appears deeper in the room. The composition gradually aligns their faces.",
+        "focus": "Rack focus between the two versions of Arthur.",
+        "depthOfField": "Shallow portrait depth of field with the family home remaining recognisable.",
+        "framing": "Intimate cinematic widescreen composition."
+      },
+      "lighting": {
+        "key": "Warm afternoon sunlight entering through lace curtains.",
+        "fill": "Soft natural interior bounce.",
+        "backlight": "Warm window light outlining the characters.",
+        "practical": "Period table lamps and natural household lighting.",
+        "atmosphere": "Subtle dust particles floating in the sunlight."
+      },
+      "visualTone": "Nostalgic, intimate and emotionally powerful.",
+      "transition": "Cut on Young Arthur's suspicious expression to a tense exterior street confrontation."
+    },
+    {
+      "id": "Shot3",
+      "title": "The Man from the Shadows",
+      "duration": 5,
+      "assetTags": [
+        "[Role2]",
+        "[Role3]",
+        "[Role1]",
+        "[Prop2]",
+        "[Set3]"
+      ],
+      "location": "1980s Downtown Street",
+      "timeOfDay": "Late Afternoon",
+      "description": "On [Set3], [Role2] walks along the busy 1980s street while [Role1] follows a short distance behind. Period-correct cars move through the background and neon shop signs reflect across the slightly wet pavement. [Role2] suddenly notices [Role3] standing beside a parked car, watching him with a cold expression. Daniel steps away from the vehicle and approaches the younger man. Elderly Arthur recognises the dangerous situation immediately and looks down at [Prop2], the vintage wristwatch on his wrist, before moving quickly to intervene. The street atmosphere changes from ordinary urban activity to imminent danger.",
+      "action": {
+        "roleActions": [
+          {
+            "role": "Role2",
+            "action": "Walks along the pavement, notices Daniel Mercer and slows down as he recognises the threatening man."
+          },
+          {
+            "role": "Role3",
+            "action": "Leaves the parked car and approaches Young Arthur with calculated confidence, keeping his eyes fixed on him."
+          },
+          {
+            "role": "Role1",
+            "action": "Recognises Daniel Mercer, glances briefly at his wristwatch and moves urgently toward the younger Arthur to intervene."
+          }
+        ],
+        "dialogue": [
+          {
+            "character": "Daniel Mercer",
+            "line": "You owe me something, kid."
+          },
+          {
+            "character": "Arthur Bennett",
+            "line": "Get away from him."
+          }
+        ],
+        "roleDialog": [
+          {
+            "role": "Role3",
+            "line": "You owe me something, kid.",
+            "delivery": "Low, threatening and controlled."
+          },
+          {
+            "role": "Role1",
+            "line": "Get away from him.",
+            "delivery": "Firm, urgent and protective."
+          }
+        ],
+        "soundDesign": [
+          "Distant traffic and vintage car engines",
+          "Footsteps on wet pavement",
+          "Muted urban crowd ambience",
+          "A vehicle passing close to the camera",
+          "Subtle low-frequency suspense music",
+          "Sharp musical tension accent as Daniel approaches"
+        ]
+      },
+      "camera": {
+        "shotType": "Tracking medium-wide shot followed by a tense over-the-shoulder composition",
+        "lens": "40mm anamorphic",
+        "movement": "Tracking movement alongside Young Arthur, followed by a short handheld push toward Daniel as he approaches.",
+        "composition": "Young Arthur occupies the foreground while Daniel is revealed in the midground. Elderly Arthur enters the background and moves into the composition.",
+        "focus": "Maintain clear facial focus on the three characters as the confrontation develops.",
+        "depthOfField": "Moderate depth of field with recognisable urban background detail.",
+        "framing": "Dynamic widescreen street composition."
+      },
+      "lighting": {
+        "key": "Soft overcast late-afternoon daylight.",
+        "fill": "Natural reflected light from shopfronts and pavement.",
+        "backlight": "Subtle vehicle headlights and warm shop illumination.",
+        "practical": "Authentic neon shop signs and period street lighting.",
+        "atmosphere": "Slightly damp pavement with realistic reflections."
+      },
+      "visualTone": "Urban tension, suspense and the beginning of a dangerous confrontation.",
+      "transition": "A rapid cut as Daniel turns toward elderly Arthur, leading into the warehouse confrontation."
+    },
+    {
+      "id": "Shot4",
+      "title": "The Truth in the Warehouse",
+      "duration": 5,
+      "assetTags": [
+        "[Role1]",
+        "[Role2]",
+        "[Role3]",
+        "[Role5]",
+        "[Prop4]",
+        "[Prop5]",
+        "[Set4]"
+      ],
+      "location": "Riverside Industrial Warehouse",
+      "timeOfDay": "Night",
+      "description": "Inside [Set4], [Role1] and [Role2] confront [Role3] near a stack of old wooden crates. Daniel stands beside [Prop4], the black leather briefcase, while [Role5] approaches from the loading-bay entrance. Cold moonlight cuts through the warehouse windows, revealing drifting dust and the silhouettes of steel columns. A small [Prop5] cassette recorder lies on a nearby workbench. Elderly Arthur steps between Daniel and his younger self, attempting to prevent the confrontation from becoming violent. The detective watches carefully, uncertain whether to arrest the men or uncover the truth behind their strange connection.",
+      "action": {
+        "roleActions": [
+          {
+            "role": "Role1",
+            "action": "Positions himself protectively in front of Young Arthur and confronts Daniel, determined to prevent the events he remembers from happening again."
+          },
+          {
+            "role": "Role2",
+            "action": "Stands behind elderly Arthur, looking between the three men and struggling to understand the situation."
+          },
+          {
+            "role": "Role3",
+            "action": "Stands beside the black leather briefcase, watches Arthur with open hostility and takes a threatening step forward."
+          },
+          {
+            "role": "Role5",
+            "action": "Enters through the loading bay, surveys the warehouse and observes the confrontation before moving closer."
+          }
+        ],
+        "dialogue": [
+          {
+            "character": "Daniel Mercer",
+            "line": "You think you can change what happened?"
+          },
+          {
+            "character": "Arthur Bennett",
+            "line": "I don't need to change everything. Just this."
+          },
+          {
+            "character": "Detective Samuel Reeves",
+            "line": "Nobody moves. I want some answers."
+          }
+        ],
+        "roleDialog": [
+          {
+            "role": "Role3",
+            "line": "You think you can change what happened?",
+            "delivery": "Menacing, contemptuous and confident."
+          },
+          {
+            "role": "Role1",
+            "line": "I don't need to change everything. Just this.",
+            "delivery": "Controlled, determined and emotionally intense."
+          },
+          {
+            "role": "Role5",
+            "line": "Nobody moves. I want some answers.",
+            "delivery": "Authoritative, firm and suspicious."
+          }
+        ],
+        "soundDesign": [
+          "Low wind entering through broken warehouse windows",
+          "Metal chains moving gently in the background",
+          "Distant river water and industrial ambience",
+          "Footsteps echoing across concrete",
+          "Briefcase locks rattling as Daniel moves",
+          "Cassette recorder buttons clicking",
+          "Low orchestral tension with restrained percussion",
+          "Deep warehouse reverberation"
+        ]
+      },
+      "camera": {
+        "shotType": "Wide dramatic master shot followed by alternating medium close-ups",
+        "lens": "32mm anamorphic and 85mm portrait lens",
+        "movement": "Slow circular dolly movement around the confrontation, transitioning into controlled handheld close-ups.",
+        "composition": "Arthur and Young Arthur occupy the centre of the frame, Daniel stands opposite them and Detective Reeves enters from the background loading bay.",
+        "focus": "Maintain clear focus on the speaking character while preserving the spatial relationship between all four characters.",
+        "depthOfField": "Moderately shallow, with the warehouse structure remaining visible.",
+        "framing": "Layered widescreen composition using steel columns and crates to create depth."
+      },
+      "lighting": {
+        "key": "Cold moonlight entering through high warehouse windows.",
+        "fill": "Minimal blue-grey ambient illumination.",
+        "backlight": "Hard shafts of light outlining the characters against the warehouse interior.",
+        "practical": "Isolated industrial tungsten lamps and distant vehicle headlights.",
+        "atmosphere": "Subtle smoke and volumetric haze visible in the light beams."
+      },
+      "visualTone": "Dark, suspenseful and confrontational, with a strong emotional undercurrent.",
+      "transition": "Cut from Arthur's determined expression to the quiet railway platform, allowing the confrontation to resolve off-screen."
+    },
+    {
+      "id": "Shot5",
+      "title": "The Last Goodbye",
+      "duration": 5,
+      "assetTags": [
+        "[Role1]",
+        "[Role2]",
+        "[Prop2]",
+        "[Prop3]",
+        "[Set5]"
+      ],
+      "location": "Abandoned Railway Platform",
+      "timeOfDay": "Dawn",
+      "description": "On [Set5], [Role1] and [Role2] stand facing one another beside the old railway tracks. A pale dawn sky casts soft blue light across the deserted platform while warm amber lamps remain illuminated behind them. Elderly Arthur looks at [Prop2], his vintage wristwatch, then carefully places [Prop3], the family photograph, into the younger man's hand. Young Arthur studies the photograph and looks back at the old man, beginning to understand the significance of their encounter. The two versions of Arthur share a final silent moment. The elderly man turns toward the distant tracks, leaving his younger self standing alone on the platform as the morning light gradually grows brighter.",
+      "action": {
+        "roleActions": [
+          {
+            "role": "Role1",
+            "action": "Looks at his vintage wristwatch, takes out the family photograph and places it carefully into Young Arthur's hand. He holds the younger man's gaze for a final moment before turning toward the railway tracks."
+          },
+          {
+            "role": "Role2",
+            "action": "Accepts the family photograph, studies it and looks at the elderly man with a mixture of sadness, confusion and growing understanding. He remains still as the older version of himself turns away."
+          }
+        ],
+        "dialogue": [
+          {
+            "character": "Young Arthur Bennett",
+            "line": "Will I really become you?"
+          },
+          {
+            "character": "Arthur Bennett",
+            "line": "That depends on what you do next."
+          }
+        ],
+        "roleDialog": [
+          {
+            "role": "Role2",
+            "line": "Will I really become you?",
+            "delivery": "Quiet, vulnerable and uncertain."
+          },
+          {
+            "role": "Role1",
+            "line": "That depends on what you do next.",
+            "delivery": "Gentle, reflective and quietly hopeful."
+          }
+        ],
+        "soundDesign": [
+          "Soft wind moving across the railway platform",
+          "Distant birds beginning to sing",
+          "Subtle metallic resonance from the railway tracks",
+          "Quiet footsteps on the concrete platform",
+          "A restrained emotional piano melody",
+          "Gradually rising orchestral strings",
+          "Natural dawn ambience"
+        ]
+      },
+      "camera": {
+        "shotType": "Wide symmetrical two-shot transitioning into intimate close-ups",
+        "lens": "40mm anamorphic and 85mm portrait lens",
+        "movement": "Slow dolly backward as the two characters face one another, followed by a gentle pullback as elderly Arthur turns away.",
+        "composition": "Both versions of Arthur stand opposite each other, framed by the parallel railway tracks. The photograph provides a visual connection between them.",
+        "focus": "Begin with both characters in focus, then shift briefly to the photograph before returning to their faces.",
+        "depthOfField": "Moderately shallow with the railway station and tracks remaining recognisable.",
+        "framing": "Balanced widescreen composition with strong leading lines from the railway tracks."
+      },
+      "lighting": {
+        "key": "Soft natural dawn light.",
+        "fill": "Cool blue ambient sky illumination.",
+        "backlight": "Warm amber platform lamps creating a subtle rim around the characters.",
+        "practical": "Vintage railway platform lamps.",
+        "atmosphere": "Light mist drifting across the tracks and soft atmospheric haze."
+      },
+      "visualTone": "Emotional, reflective, nostalgic and quietly hopeful.",
+      "transition": "Slow fade to black as the emotional music resolves."
+    }
+  ]
+}

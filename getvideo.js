@@ -3,20 +3,7 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
-
-// Utility function to wait for a key press in the terminal
-function waitForKeyPress(promptText = 'Press ENTER to continue...') {
-    return new Promise((resolve) => {
-        const rl = readline.createInterface({
-            input: process.stdin,
-            output: process.stdout
-        });
-        rl.question(promptText, () => {
-            rl.close();
-            resolve();
-        });
-    });
-}
+const {waitForKeypress} = require('./environment');
 
 puppeteer.use(StealthPlugin());
 
@@ -85,8 +72,7 @@ function getNextEpisode(showPath) {
             
             const submitBtn = await page.waitForSelector('input[name="search"]');
             await submitBtn.click();
-            await new Promise(resolve => setTimeout(resolve, 10000));
-            console.log('waited 10 seconds')
+            await waitForKeypress();
         }
 
         console.log('\n🏁 Finished processing all shows.');
@@ -95,8 +81,5 @@ function getNextEpisode(showPath) {
     } catch (err) {
         console.error('Error:', err);
     } finally {
-        if (browser) {
-            await browser.close();
-        }
     }
 })();
