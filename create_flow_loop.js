@@ -8,22 +8,20 @@ const { projectFile, downloadDir, waitForKeypress, getInput, waitTimeRandom, wai
 const matrix = require('./' + projectFile);
 const projectName = "";
 puppeteer.use(StealthPlugin());
-const step = 2;
-let things = "roles";
+const step = 1;
+let things = "sets props characters costumes";
 
 (async () => {
 
     const browser = await getBrowser();;
     const pages = await browser.pages();
-    const page = pages[pages.length - 1];
+    //const page = pages[pages.length - 1];
+    const page = await browser.newPage();
 
-
-    /*
     await page.goto(
-        'https://flow.google.com/project/e151608f-dad7-4ab9-9218-e7de6511744d',
+        'https://flow.google.com/project/b50f1a73-a257-49f1-bb99-301db636bea0',
         { waitUntil: "networkidle2", timeout: 0 }
     );
-    */
 
     async function safeType(page, text) {
         const client = await page.target().createCDPSession();
@@ -151,8 +149,8 @@ let things = "roles";
                         await new Promise(r => setTimeout(r, 500));
 
                         await page.evaluate((assetName) => {
-                            const target = [...document.querySelectorAll('span.asset-title')]
-                                .find(el => el.textContent.trim() === assetName);
+                            //const target = [...document.querySelectorAll('span.asset-title')].find(el => el.textContent.trim() === assetName);
+                            const target = [...document.querySelectorAll('span.asset-title')].find(el => el.textContent.trim().includes(assetName));
 
                             if (!target) {
                                 throw new Error('Element not found');
@@ -229,19 +227,24 @@ let things = "roles";
             }
         }
     }
+    const roleStart = 0;
+    const roleEnd = 4; // matrix.roles.length
     if (step == 2) {
         // Step 2 - needs Characters and Costumes
-        for (let c = 0; c < matrix.roles.length; c++) {
+        for (let c = roleStart; c < roleEnd; c++) {
             const promptText = JSON.stringify(matrix.roles[c]) + '{PhotoStyle1}';
             await create(promptText, true, matrix.roles[c].assetTags);
             await waitTimeRandom();
         }
     }
     if (step == 3) {
+        const scene = 1;
+        const shotsStart = 0;
+        const shotsEnd = matrix.scenes[scene].shots.length;
         // Step 3 - needs Roles, Sets, Props,
-        for (let c = 0; c < matrix.shots.length; c++) {
-            const promptText = JSON.stringify(matrix.shots[c]) + ' ' + JSON.stringify(matrix.visualTone);
-            await create(promptText, true, matrix.shots[c].assetTags);
+        for (let c = shotsStart; c < shotsEnd; c++) {
+            const promptText = "id:"+matrix.scenes[scene].shots[c].id+" "+matrix.scenes[scene].shots[c].description;
+            await create(promptText, true, matrix.scenes[scene].shots[c].assetTags);
             await waitTimeRandom();
         }
     }

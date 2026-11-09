@@ -1,0 +1,371 @@
+
+{
+  "title": "The Arcane Academy",
+  "genre": "Fantasy Wizardry",
+  "premise": "A young wizard arrives at an ancient academy of magic, hoping to master his mysterious abilities. During his first days, he discovers an extraordinary connection to an ancient magical force sealed beneath the school. With the help of a loyal fellow student and a wise professor, he must uncover the academy's forgotten secrets and confront a supernatural enemy before its power is unleashed.",
+  "logline": "When a young apprentice discovers that his unusual magical abilities are connected to an ancient power buried beneath his new school, he must master his gift before a forgotten supernatural force destroys the academy.",
+  "visualTone": {
+    "colorPalette": [
+      "#17243A",
+      "#493B68",
+      "#B99A62",
+      "#397C79",
+      "#D8D2C4"
+    ],
+    "cameraLenses": "Panavision C-Series Anamorphic lenses for grand cinematic compositions, 24mm and 35mm for sweeping architectural environments, 50mm for natural character coverage, 75mm and 85mm for expressive close-ups, and 100mm macro for magical details. Use controlled shallow depth of field for emotional moments and deep focus for monumental environments.",
+    "lightingPhilosophy": "Atmospheric fantasy lighting built around motivated practical sources, warm candlelight, cool moonlight and dramatic chiaroscuro. Magical energy must illuminate nearby characters and architecture with physically believable reflections, coloured spill and volumetric interaction. Use strong rim lighting to separate characters from atmospheric backgrounds.",
+    "grainAesthetic": "Kodak Vision3 500T 5219 35mm film grain aesthetic, subtle organic grain structure, gentle highlight halation, rich shadow detail, restrained saturation and cinematic contrast."
+  },
+  "sets": [
+    {
+      "id": "Set1",
+      "tag": "Set1",
+      "name": "The Grand Academy Entrance",
+      "description": "An enormous medieval stone gateway leading into an ancient wizarding academy. Towering Gothic arches, weathered limestone pillars, intricate magical carvings and enormous iron-bound oak doors dominate the entrance. A broad cobbled courtyard extends towards distant towers, while carved gargoyles overlook the approach. The architecture is imposing, historic and filled with mysterious detail.",
+      "atmosphere": "Cool early-morning air, drifting ground mist, occasional wind moving the academy banners and fine particles suspended in the light.",
+      "lighting": "Soft cool dawn light illuminates the stonework, while floating golden lanterns create warm pools of light beneath the entrance arch. Volumetric rays cut through the mist."
+    },
+    {
+      "id": "Set2",
+      "tag": "Set2",
+      "name": "The Grand Hall of Magic",
+      "description": "A spectacular ceremonial hall featuring towering vaulted ceilings, enormous stained-glass windows, polished stone floors and long dark wooden tables. Suspended chandeliers and hundreds of floating candles illuminate the hall. Ancient magical banners hang between carved columns, and a raised ceremonial platform stands at the far end.",
+      "atmosphere": "Warm indoor air filled with the distant murmur of students, subtle candle smoke and occasional drifting magical particles.",
+      "lighting": "Golden candlelight combines with jewel-toned reflections from stained-glass windows. Soft ambient illumination fills the vaulted ceiling, with gentle shadows around the hall's stone columns."
+    },
+    {
+      "id": "Set3",
+      "tag": "Set3",
+      "name": "The Enchanted Spell Classroom",
+      "description": "An ancient magical classroom filled with heavy oak desks, dusty spellbooks, floating chalkboards, shelves of mysterious ingredients and glowing runic diagrams. Tall arched windows overlook the academy grounds. A large demonstration area occupies the centre of the room, surrounded by protective magical symbols carved into the floor.",
+      "atmosphere": "Quiet academic ambience, drifting chalk dust, faint magical energy and the subtle movement of enchanted objects.",
+      "lighting": "Soft natural daylight enters through tall windows, balanced by warm desk candles. Magical spells introduce brief coloured illumination across the classroom walls and faces."
+    },
+    {
+      "id": "Set4",
+      "tag": "Set4",
+      "name": "The Forbidden Library",
+      "description": "A vast underground library hidden beneath the academy. Towering wooden bookshelves disappear into darkness, connected by narrow spiral staircases and suspended walkways. Ancient manuscripts rest on stone reading tables, while floating books move slowly between shelves. At the centre stands a carved stone reading pedestal surrounded by mysterious inscriptions.",
+      "atmosphere": "Cold underground air, suspended dust, faint echoes and an unnatural stillness occasionally disturbed by the movement of enchanted books.",
+      "lighting": "Deep blue atmospheric illumination, isolated pools of warm candlelight and subtle golden light emerging from enchanted manuscripts. Volumetric shafts of light reveal floating dust."
+    },
+    {
+      "id": "Set5",
+      "tag": "Set5",
+      "name": "The Arcane Observatory Tower",
+      "description": "The highest chamber of the academy, containing an enormous circular room beneath a glass-domed ceiling. Ancient astronomical instruments surround a central circular stone platform engraved with magical symbols. Tall arched windows reveal the night sky, while a powerful ancient crystal stands at the centre of the chamber.",
+      "atmosphere": "Cold night air, swirling clouds visible through the dome, drifting magical particles and increasingly turbulent energy as the ancient crystal awakens.",
+      "lighting": "Cold moonlight enters through the glass dome, contrasting with violet illumination from the crystal. Powerful magical events create dramatic blue-white and golden light, with deep shadows around the chamber."
+    }
+  ],
+  "characters": [
+    {
+      "id": "Character1",
+      "tag": "Character1",
+      "name": "Elias Thorn",
+      "actorName": "Young male fantasy lead, approximately 17 years old; expressive and approachable appearance, natural youthful performance, capable of conveying vulnerability, curiosity and growing confidence.",
+      "description": "A 17-year-old male apprentice wizard with a slim build, fair skin, expressive hazel eyes and tousled dark brown hair falling naturally across his forehead. His youthful face has subtle freckles across the nose, a softly defined jawline and an alert, thoughtful expression. No visible facial scars. His appearance should remain consistent throughout the story.",
+      "behavioralTraits": "Initially hesitant and observant, frequently looking around with curiosity. Often grips objects tightly when nervous, pauses before speaking and displays uncertainty through subtle facial expressions. As the story progresses, his posture becomes more upright and his movements increasingly decisive."
+    },
+    {
+      "id": "Character2",
+      "tag": "Character2",
+      "name": "Professor Alaric Voss",
+      "actorName": "Distinguished older male character actor, approximately 62 years old; commanding presence, restrained physical performance and a measured, authoritative voice.",
+      "description": "A tall, slender 62-year-old male wizard with pale skin, piercing blue-grey eyes and long silver hair swept back from his forehead. His face features pronounced cheekbones, deep lines around the eyes and a neatly trimmed silver beard. His expression is calm but intensely observant, suggesting decades of experience and concealed knowledge.",
+      "behavioralTraits": "Moves slowly and deliberately, maintaining a composed posture. Frequently studies people before responding. Uses controlled hand gestures when explaining magic and becomes visibly protective when danger threatens his students."
+    },
+    {
+      "id": "Character3",
+      "tag": "Character3",
+      "name": "Mira Ashbourne",
+      "actorName": "Young female fantasy supporting lead, approximately 17 years old; confident, expressive performance with a natural athletic presence and sharp emotional reactions.",
+      "description": "A 17-year-old female wizard with a graceful athletic build, warm olive skin, vivid green eyes and long auburn hair tied loosely behind her head. Her facial features are defined by expressive eyebrows, a determined gaze and a subtle natural smile. She has a confident, alert expression and no visible facial scars.",
+      "behavioralTraits": "Moves confidently and quickly, often leaning forward when interested. Displays intelligence through observant glances and quick reactions. Uses expressive hand gestures and instinctively positions herself beside friends when danger appears."
+    },
+    {
+      "id": "Character4",
+      "tag": "Character4",
+      "name": "Dorian Blackwood",
+      "actorName": "Young male rival character, approximately 18 years old; polished appearance, controlled expressions and a confident, competitive physical presence.",
+      "description": "An 18-year-old male wizard with a broad athletic build, pale skin, sharp grey eyes and carefully styled black hair. His angular face features a pronounced jawline, straight nose and controlled expression. His gaze is intense and frequently judgemental, suggesting someone accustomed to privilege and admiration.",
+      "behavioralTraits": "Maintains an upright, confident posture and rarely shows uncertainty. Uses deliberate movements, subtle smirks and prolonged eye contact to assert superiority. His competitive nature occasionally gives way to genuine surprise when confronted with extraordinary magic."
+    },
+    {
+      "id": "Character5",
+      "tag": "Character5",
+      "name": "The Shadow Warden",
+      "actorName": "Ancient supernatural antagonist; exceptionally tall and imposing physical silhouette, minimal movement, unnaturally controlled gestures and a deep distorted voice.",
+      "description": "An ancient supernatural wizard-like entity with an extremely tall, gaunt silhouette and an almost human form. Its face is obscured by darkness beneath a weathered hood, revealing only two faintly glowing violet eyes. Its skin is pale and partially concealed by drifting black mist. Its proportions are elongated and unsettling, with long fingers and an unnatural stillness.",
+      "behavioralTraits": "Moves slowly and deliberately, often appearing to glide rather than walk. Holds unnaturally still before making sudden controlled gestures. Communicates through minimal movement, fixed eye contact and a deep, resonant voice."
+    }
+  ],
+  "costumes": [
+    {
+      "id": "Costume1",
+      "tag": "Costume1",
+      "name": "Elias's Apprentice Uniform",
+      "description": "A traditional academy uniform consisting of a dark navy wool robe with subtle silver embroidery, a fitted charcoal waistcoat, pale grey shirt, narrow dark tie, tailored black trousers and polished leather boots. The robe has a deep hood, silver-edged cuffs and an embroidered academy crest over the chest. The silhouette is youthful but formal, with layered fabrics that move naturally during action.",
+      "materials": "Heavy woven wool, soft cotton shirt fabric, matte charcoal suiting, polished leather footwear and antique silver thread embroidery.",
+      "wearCondition": "Newly issued and generally well maintained, with minor creasing from travel and slightly worn leather boot soles."
+    },
+    {
+      "id": "Costume2",
+      "tag": "Costume2",
+      "name": "Professor Voss's Master Robes",
+      "description": "An elaborate midnight-blue wizard robe with deep velvet panels, intricate silver runic embroidery and wide flowing sleeves. Beneath it he wears a high-collared charcoal tunic, dark tailored trousers and polished black boots. A silver chain and ancient ceremonial clasp secure the robe at the chest.",
+      "materials": "Midnight-blue velvet, dense wool, fine metallic embroidery, brushed silver hardware and soft charcoal cotton.",
+      "wearCondition": "Well preserved and meticulously maintained, with subtle age-related fading along the robe edges and polished ceremonial hardware."
+    },
+    {
+      "id": "Costume3",
+      "tag": "Costume3",
+      "name": "Mira's Academy Uniform",
+      "description": "A fitted forest-green academy robe with antique gold trim, a cream blouse, dark fitted waistcoat, pleated charcoal skirt, dark tights and knee-high leather boots. A leather belt carries small magical tools, while a subtle embroidered academy crest decorates the shoulder.",
+      "materials": "Forest-green wool, cream cotton, charcoal suiting, antique gold thread, dark leather and metal belt fittings.",
+      "wearCondition": "Practical and well maintained, with light creasing around the elbows and minor scuffs on the leather boots."
+    },
+    {
+      "id": "Costume4",
+      "tag": "Costume4",
+      "name": "Dorian's Formal Wizard Uniform",
+      "description": "A tailored black academy robe with burgundy velvet lining, intricate gold embroidery and structured shoulders. Underneath is a crisp white shirt, fitted black waistcoat, dark trousers and polished black boots. A decorative gold clasp and family insignia complete the aristocratic appearance.",
+      "materials": "Fine black wool, burgundy velvet, white cotton, gold metallic embroidery and polished leather.",
+      "wearCondition": "Immaculately maintained, carefully pressed and polished, with no visible damage or significant distress."
+    },
+    {
+      "id": "Costume5",
+      "tag": "Costume5",
+      "name": "The Warden's Shadow Garments",
+      "description": "A long, weathered black ceremonial robe with layered fabric, a deep hood and ragged edges that dissolve into drifting shadow. Faint violet runes appear across the sleeves and chest. The garment moves unnaturally as if suspended in water, with dark mist trailing from its edges.",
+      "materials": "Layered distressed black fabric, semi-transparent shadow-like gauze, darkened metal fastenings and luminous violet magical markings.",
+      "wearCondition": "Ancient, torn and heavily weathered, with frayed edges that continuously dissolve into supernatural black mist."
+    }
+  ],
+  "props": [
+    {
+      "id": "Prop1",
+      "tag": "Prop1",
+      "name": "The Elderwood Wand",
+      "description": "A handcrafted dark elderwood wand approximately 35 centimetres long, with a subtly twisted organic shape, intricate carved grooves and a small silver inlay near the handle. Its tapered tip emits a faint blue-white glow when magical energy passes through it.",
+      "narrativeSignificance": "Elias's primary magical instrument. It unexpectedly channels a power far greater than an apprentice should possess, revealing that his abilities are connected to the ancient force beneath the academy.",
+      "handlingNote": "Held naturally in one hand, with the fingers wrapped around the carved grip. Spellcasting involves precise wrist movements and controlled directional gestures. During powerful magic, the wand tip glows and releases visible energy."
+    },
+    {
+      "id": "Prop2",
+      "tag": "Prop2",
+      "name": "The Ancient Spellbook",
+      "description": "A large, weathered leather-bound spellbook with cracked dark burgundy covers, brass corner fittings and an embossed circular magical emblem. Its yellowed parchment pages contain intricate handwritten runes that illuminate with a faint golden glow when opened.",
+      "narrativeSignificance": "Contains forgotten information about the ancient power sealed beneath the academy and provides the first clue connecting Elias to the supernatural events.",
+      "handlingNote": "Carried with both hands due to its weight and placed carefully on reading tables. Pages are turned slowly, revealing magical inscriptions that respond to nearby energy."
+    },
+    {
+      "id": "Prop3",
+      "tag": "Prop3",
+      "name": "The Celestial Amulet",
+      "description": "An ancient silver amulet containing a faceted blue crystal suspended inside an ornate circular metal setting. Delicate runic engravings surround the crystal, which pulses with increasingly intense light when Elias approaches hidden magical energy.",
+      "narrativeSignificance": "The amulet is the key to awakening and controlling Elias's inherited magical ability. It also reacts to the sealed force beneath the academy.",
+      "handlingNote": "Worn around the neck on a fine silver chain. It rests naturally against the chest and is occasionally lifted into view by Elias when investigating its markings."
+    },
+    {
+      "id": "Prop4",
+      "tag": "Prop4",
+      "name": "The Arcane Crystal",
+      "description": "A large irregularly shaped translucent violet crystal mounted on a dark stone base. Fine luminous fractures run through its interior, producing floating particles and subtle pulses of supernatural energy. Its surface reflects nearby light with unusual intensity.",
+      "narrativeSignificance": "The crystal contains the ancient magical force imprisoned beneath the academy. Its awakening allows the Shadow Warden to return and threatens the entire school.",
+      "handlingNote": "Remains mounted on its stone base at the centre of the observatory platform. Characters approach cautiously without touching it until the final confrontation."
+    },
+    {
+      "id": "Prop5",
+      "tag": "Prop5",
+      "name": "The Silver Pocket Watch",
+      "description": "An antique silver pocket watch with a finely engraved circular case, delicate mechanical hands and an intricate chain. Its face contains unusual arcane markings instead of conventional numbers. The hands occasionally move independently when exposed to powerful magic.",
+      "narrativeSignificance": "A personal keepsake carried by Elias from his previous life. Its strange reaction to the academy's magic hints that the events surrounding his arrival may not be accidental.",
+      "handlingNote": "Carried in a waistcoat pocket and removed using its silver chain. Elias holds it in his palm and studies its face when anxious or uncertain."
+    }
+  ],
+  "roles": [
+    {
+      "id": "Role1",
+      "tag": "Role1",
+      "roleName": "Elias Thorn - The Chosen Apprentice",
+      "characterId": "Character1",
+      "costumeId": "Costume1",
+      "assetTags": [
+        "Character1",
+        "Costume1"
+      ],
+      "description": "Elias Thorn is a 17-year-old male apprentice wizard with a slim build, fair skin, expressive hazel eyes, tousled dark brown hair and subtle freckles across his nose. He has a softly defined jawline and a thoughtful, alert expression. He wears a traditional dark navy wool academy robe with subtle silver embroidery, a fitted charcoal waistcoat, pale grey shirt, narrow dark tie, tailored black trousers and polished leather boots. His robe features a deep hood, silver-edged cuffs and an embroidered academy crest."
+    },
+    {
+      "id": "Role2",
+      "tag": "Role2",
+      "roleName": "Professor Alaric Voss - The Academy Mentor",
+      "characterId": "Character2",
+      "costumeId": "Costume2",
+      "assetTags": [
+        "Character2",
+        "Costume2"
+      ],
+      "description": "Professor Alaric Voss is a tall, slender 62-year-old male wizard with pale skin, piercing blue-grey eyes, long silver hair swept back from his forehead, pronounced cheekbones and a neatly trimmed silver beard. Deep lines around his eyes reflect decades of experience. He wears elaborate midnight-blue master robes with deep velvet panels, intricate silver runic embroidery and wide flowing sleeves, over a high-collared charcoal tunic, dark tailored trousers and polished black boots. A silver chain and ancient ceremonial clasp secure the robe at his chest."
+    },
+    {
+      "id": "Role3",
+      "tag": "Role3",
+      "roleName": "Mira Ashbourne - The Loyal Companion",
+      "characterId": "Character3",
+      "costumeId": "Costume3",
+      "assetTags": [
+        "Character3",
+        "Costume3"
+      ],
+      "description": "Mira Ashbourne is a 17-year-old female wizard with a graceful athletic build, warm olive skin, vivid green eyes, long auburn hair tied loosely behind her head and expressive facial features. She wears a fitted forest-green academy robe with antique gold trim, a cream blouse, dark fitted waistcoat, pleated charcoal skirt, dark tights and knee-high leather boots. A practical leather belt carries small magical tools, while an embroidered academy crest decorates her shoulder."
+    },
+    {
+      "id": "Role4",
+      "tag": "Role4",
+      "roleName": "Dorian Blackwood - The Rival Apprentice",
+      "characterId": "Character4",
+      "costumeId": "Costume4",
+      "assetTags": [
+        "Character4",
+        "Costume4"
+      ],
+      "description": "Dorian Blackwood is an 18-year-old male wizard with a broad athletic build, pale skin, sharp grey eyes, carefully styled black hair, an angular face and a pronounced jawline. He wears a tailored black academy robe with burgundy velvet lining, intricate gold embroidery and structured shoulders, over a crisp white shirt, fitted black waistcoat and dark trousers. Polished black boots and a decorative gold clasp bearing his family insignia complete his aristocratic appearance."
+    },
+    {
+      "id": "Role5",
+      "tag": "Role5",
+      "roleName": "The Shadow Warden - The Ancient Enemy",
+      "characterId": "Character5",
+      "costumeId": "Costume5",
+      "assetTags": [
+        "Character5",
+        "Costume5"
+      ],
+      "description": "The Shadow Warden is an ancient supernatural entity with an extremely tall, gaunt, almost human silhouette, an obscured face, pale partially visible skin and two faintly glowing violet eyes. Its proportions are elongated and unsettling, with long fingers and an unnatural stillness. It wears a long, weathered black ceremonial robe with layered fabric, a deep hood and ragged edges that dissolve into drifting shadow. Faint violet runes appear across its sleeves and chest, while dark mist trails from the garment."
+    }
+  ],
+  "shots": [
+  {
+    "id": "Shot1",
+    "shotType": "Wide Establishing Shot",
+    "lensAngle": "24mm Anamorphic Prime, deep cinematic perspective",
+    "assetTags": ["Role1", "Role3", "Set3"],
+    "description": "Elias Thorn, a 17-year-old apprentice with fair skin, hazel eyes, freckles and tousled dark brown hair, wears his dark navy wool academy robe with silver embroidery, charcoal waistcoat and leather boots. Mira Ashbourne, an athletic 17-year-old with olive skin, green eyes and long auburn hair, wears her forest-green academy robe with antique gold trim. They practise butterfly spells inside the Enchanted Spell Classroom, surrounded by ancient stone walls, tall arched windows and floating magical symbols.",
+    "action": "The camera slowly tracks towards the students as a single violet butterfly appears above their demonstration table. Elias stops practising and points towards it. Elias: \"Mira, look at that!\""
+  },
+  {
+    "id": "Shot2",
+    "shotType": "Extreme Close-Up",
+    "lensAngle": "100mm Macro Anamorphic, extremely shallow DoF",
+    "assetTags": ["Role1", "Set3"],
+    "description": "A rare enchanted butterfly hovers above the oak table. Its translucent violet wings contain intricate silver runes, while its delicate body emits an unnatural pulsing light. Its wings move almost imperceptibly as tiny particles drift around it.",
+    "action": "The camera pushes towards the butterfly as it turns towards Elias, following his movement with unsettling precision. Elias: \"It's watching me.\""
+  },
+  {
+    "id": "Shot3",
+    "shotType": "Medium Two-Shot",
+    "lensAngle": "50mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role1", "Role3", "Set3"],
+    "description": "Mira steps beside Elias, her auburn hair falling over the shoulders of her forest-green robe. Her green eyes narrow as she studies the violet markings. Elias cautiously extends his right hand towards the butterfly.",
+    "action": "Mira suddenly catches Elias's wrist and pulls his hand away. Mira: \"Wait! Don't touch it.\""
+  },
+  {
+    "id": "Shot4",
+    "shotType": "Extreme Close-Up",
+    "lensAngle": "100mm Macro Lens, compressed perspective",
+    "assetTags": ["Role3", "Set3"],
+    "description": "The butterfly's delicate violet wings fill the frame. Ancient silver runes illuminate one after another, revealing a forbidden magical symbol resembling a circular seal surrounded by twisted branches.",
+    "action": "The camera slowly tracks across the markings. Mira recognises the symbol and whispers. Mira: \"That's a forbidden seal.\""
+  },
+  {
+    "id": "Shot5",
+    "shotType": "Medium Tracking Shot",
+    "lensAngle": "35mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role1", "Role3", "Prop2", "Set3"],
+    "description": "Elias, with tousled dark brown hair and a concentrated expression, rushes towards the oak demonstration table. His navy academy robe swings as he opens the burgundy leather Ancient Spellbook, revealing yellowed parchment, brass corners and intricate magical illustrations.",
+    "action": "Elias rapidly searches through the illustrated pages while Mira watches the butterfly hovering above them. Elias: \"There must be something about it.\""
+  },
+  {
+    "id": "Shot6",
+    "shotType": "Over-the-Shoulder Close-Up",
+    "lensAngle": "50mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role1", "Role3", "Prop2", "Set3"],
+    "description": "The open Ancient Spellbook displays an illustration of a violet butterfly surrounded by dark tendrils. Beneath the illustration, ancient writing describes a creature capable of carrying sealed magic between worlds. The parchment glows with faint golden runes.",
+    "action": "Mira leans over Elias's shoulder and reads the inscription. Mira: \"It's a keeper of sealed magic.\""
+  },
+  {
+    "id": "Shot7",
+    "shotType": "Low-Angle Medium Shot",
+    "lensAngle": "35mm Anamorphic Prime, dramatic perspective",
+    "assetTags": ["Role1", "Role3", "Set3"],
+    "description": "The violet butterfly suddenly expands its wings above the demonstration table. Its silver runes illuminate the classroom ceiling as a circular pattern of purple light spreads across the stone floor. Elias and Mira are illuminated by the unnatural glow.",
+    "action": "A pulse of magical energy bursts from the butterfly, scattering loose parchment across the table. Elias steps backwards. Elias: \"What did we just awaken?\""
+  },
+  {
+    "id": "Shot8",
+    "shotType": "Medium Circular Tracking Shot",
+    "lensAngle": "40mm Anamorphic Prime, cinematic shallow DoF",
+    "assetTags": ["Role1", "Role3", "Set3"],
+    "description": "The enchanted butterfly flies between Elias and Mira, leaving a trail of violet particles. The particles assemble into a floating projection of an enormous ancient stone doorway covered in magical seals.",
+    "action": "The camera circles the students as Mira recognises the doorway. She points towards the projection. Mira: \"I've seen that doorway before!\""
+  },
+  {
+    "id": "Shot9",
+    "shotType": "Extreme Close-Up",
+    "lensAngle": "85mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role1", "Prop2", "Set3"],
+    "description": "The Ancient Spellbook lies open on the oak table. New glowing writing appears across its yellowed parchment beneath the butterfly illustration. The final sentence illuminates in violet: THE SEAL IS WEAKENING.",
+    "action": "Elias reads the warning as the parchment begins trembling. Elias: \"It says the seal is weakening.\""
+  },
+  {
+    "id": "Shot10",
+    "shotType": "Extreme Close-Up",
+    "lensAngle": "100mm Macro Anamorphic, extremely shallow DoF",
+    "assetTags": ["Role1", "Set3"],
+    "description": "Elias's pale hand fills the frame as the violet butterfly gently lands on his fingertips. A glowing circular rune appears beneath his skin, matching the forbidden symbol on the butterfly's wings.",
+    "action": "The mark pulses with violet light. Elias freezes as the butterfly folds its wings. Mira: \"Elias, it's marked you!\""
+  },
+  {
+    "id": "Shot11",
+    "shotType": "Medium Close-Up",
+    "lensAngle": "50mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role1", "Role3", "Set3"],
+    "description": "Mira examines the glowing rune on Elias's hand. Her green eyes reflect its violet light. Elias looks frightened but fascinated as the butterfly circles his head, leaving a thin trail of magical particles.",
+    "action": "Mira carefully takes Elias's wrist and compares the mark with the butterfly's wing pattern. Mira: \"I think it has chosen you.\""
+  },
+  {
+    "id": "Shot12",
+    "shotType": "High-Angle Wide Shot",
+    "lensAngle": "24mm Anamorphic Prime, deep focus",
+    "assetTags": ["Role1", "Role3", "Set3"],
+    "description": "The butterfly flies towards the classroom floor. Its violet trail forms an enormous circular rune beneath the oak demonstration table. The ancient stone tiles tremble as purple light spreads through their cracks.",
+    "action": "Elias grabs the table while Mira steps away from the glowing circle. Both stare at the floor as the magical pattern expands. Elias: \"Whatever it wants, it's down there.\""
+  },
+  {
+    "id": "Shot13",
+    "shotType": "Extreme Close-Up",
+    "lensAngle": "100mm Macro Lens, shallow DoF",
+    "assetTags": ["Role3", "Set3"],
+    "description": "The violet butterfly hovers inches above the illuminated floor rune. Its translucent body begins darkening as swirling black mist becomes visible inside it. Two tiny violet lights flicker within the darkness.",
+    "action": "Mira notices the movement inside the butterfly and reaches towards Elias to warn him. Mira: \"Elias, something is inside it!\""
+  },
+  {
+    "id": "Shot14",
+    "shotType": "Dutch-Angle Close-Up",
+    "lensAngle": "35mm Anamorphic Prime, dramatic distortion",
+    "assetTags": ["Role1", "Role3", "Set3"],
+    "description": "The butterfly suddenly opens its wings to their full span. Its body becomes transparent, revealing a miniature swirling mass of black mist and two glowing violet eyes. Dark energy distorts the air around it.",
+    "action": "A violent burst of shadow energy erupts from the butterfly. Elias shields his face while Mira staggers backwards. The butterfly vanishes, leaving a violet symbol suspended in the air. Elias: \"That wasn't an ordinary spell!\""
+  },
+  {
+    "id": "Shot15",
+    "shotType": "Low-Angle Medium Two-Shot",
+    "lensAngle": "35mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role1", "Role3", "Prop2", "Set3"],
+    "description": "Elias and Mira stand beside the oak demonstration table, facing the fading violet symbol. Elias's navy academy robe is illuminated by the remaining magical glow, while Mira's forest-green robe catches the warm light from the tall windows. The Ancient Spellbook lies open between them.",
+    "action": "Elias closes the Ancient Spellbook and looks towards the classroom entrance. Mira steps beside him, determined to investigate. Elias: \"We need to find that doorway.\" Mira: \"Then we're going together.\""
+  }
+]
+}

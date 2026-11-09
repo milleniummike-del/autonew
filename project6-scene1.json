@@ -1,0 +1,389 @@
+{
+  "title": "The Silent Service",
+  "genre": "Political Thriller Drama",
+  "premise": "The US ambassador to Britain uncovers a covert submarine plot and betrays the President of the United States.",
+  "logline": "When the US ambassador to London discovers that his own President has secretly ordered a Royal Navy-hosted submarine operation that could ignite a war, he must choose between loyalty to the man who made him and loyalty to the truth.",
+  "visualTone": {
+    "colorPalette": ["#0B1D2E", "#3E5C76", "#A8B5C2", "#8C2F39", "#C9A96E"],
+    "cameraLenses": "Panavision C-Series Anamorphic, 40mm T2.8 for interiors; 75mm T2.8 for isolating close-ups; 28mm T2.8 for architectural wides",
+    "lightingPhilosophy": "Low-key motivated practicals with cold steel-blue window light against warm tungsten desk lamps; power is shown through hard side-light and deep shadow, with rain-diffused soft light for exteriors",
+    "grainAesthetic": "Kodak Vision3 500T 5219 35mm with visible but controlled grain, slightly desaturated with lifted blacks"
+  },
+  "sets": [
+    {
+      "id": "Set1",
+      "tag": "Set1",
+      "name": "Winfield House Study, London",
+      "description": "Wood-paneled private study in the US ambassador's residence, with floor-to-ceiling mahogany bookshelves, a heavy walnut partners desk, a worn Persian rug, tall sash windows with brass fittings and a framed portrait of the President on the wall",
+      "atmosphere": "Hushed late-night stillness, light rain on the glass, faint cigar and old-paper smell, distant ticking mantel clock",
+      "lighting": "Single green banker's lamp at about 2700K on the desk, cold 6500K moonlit rain-light through the windows, deep shadow pooling in the bookshelves"
+    },
+    {
+      "id": "Set2",
+      "tag": "Set2",
+      "name": "The Oval Office, Washington DC",
+      "description": "Curved cream walls, the Resolute desk, gold drapes, a deep blue presidential seal carpet, flags flanking the desk and a wall of family photographs",
+      "atmosphere": "Controlled, sterile and formal, early morning, with a sense of enormous pressure behind the ceremony",
+      "lighting": "Soft daylight through the bulletproof windows behind the desk, silhouetting the President, with warm sconces and a cool fill from a secure video screen"
+    },
+    {
+      "id": "Set3",
+      "tag": "Set3",
+      "name": "HMNB Clyde Submarine Pen, Scotland",
+      "description": "A vast concrete submarine dock with rusted gantry cranes, wet steel catwalks, mooring cables as thick as a man's arm and the black hull of a Dreadnought-class submarine rising from the water",
+      "atmosphere": "Freezing sea fog, diesel and salt air, dripping condensation, low metallic echo, near-total darkness",
+      "lighting": "Sodium-orange floodlights cutting through fog, red navigation lamps on the hull, rim-lit breath and rain, long deep shadows under the gantries"
+    },
+    {
+      "id": "Set4",
+      "tag": "Set4",
+      "name": "Whitehall Subterranean Briefing Room",
+      "description": "A windowless reinforced-concrete war room with a long oak conference table, analog wall maps of the North Atlantic, green-shaded lamps, banks of encrypted terminals and a brass wall clock",
+      "atmosphere": "Stale recycled air, oppressive silence broken by the hum of ventilation, claustrophobic and secretive",
+      "lighting": "Overhead fluorescent strips at about 4000K with a sickly green cast, map-table practicals, hard shadows cast upward from desk lamps"
+    },
+    {
+      "id": "Set5",
+      "tag": "Set5",
+      "name": "Thames Embankment at Vauxhall Dawn",
+      "description": "A stone riverside walkway with wrought-iron lamp posts, wet cobbled paving, a low parapet wall and the glass-and-concrete bulk of the SIS building across the water",
+      "atmosphere": "Pre-dawn mist rising off the river, steady drizzle, distant traffic hum and gulls, a feeling of exposure and finality",
+      "lighting": "Pale blue pre-dawn ambient light, amber streetlamp pools, reflections shimmering on wet stone, the first gold sun sliver on the horizon"
+    }
+  ],
+  "characters": [
+    {
+      "id": "Character1",
+      "tag": "Character1",
+      "name": "Ambassador Elias Crane",
+      "actorName": "Late 50s American statesman archetype, in the vein of Bryan Cranston or Michael Shannon, patrician gravitas with buried doubt",
+      "description": "A 58-year-old man with a lean angular face, high cheekbones, deep-set gray-blue eyes ringed by sleeplessness, silver swept-back hair and a thin scar through his left eyebrow",
+      "behavioralTraits": "Measured speech, habitual thumb-rubbing of a wedding band, long deliberate pauses, a smile that never reaches his eyes, stands very still when he is lying"
+    },
+    {
+      "id": "Character2",
+      "tag": "Character2",
+      "name": "President Thomas Whitlock",
+      "actorName": "Mid-60s commanding charismatic leader archetype, in the vein of Denzel Washington or Jeff Daniels",
+      "description": "A 64-year-old man with a broad square jaw, warm brown eyes that can turn cold in an instant, close-cropped salt-and-pepper hair and deep laugh lines",
+      "behavioralTraits": "Leans in to speak softly for emphasis, taps two fingers on the desk when angry, uses first names to create false intimacy, quick and charming public smile that vanishes in private"
+    },
+    {
+      "id": "Character3",
+      "tag": "Character3",
+      "name": "Commander Isla Ravensdale",
+      "actorName": "Mid-40s disciplined Royal Navy officer archetype, in the vein of Rosamund Pike or Keeley Hawes",
+      "description": "A 44-year-old woman with a weathered oval face, sharp green eyes, a strong nose, auburn hair pinned tightly beneath her cap and a faint burn scar along her jaw",
+      "behavioralTraits": "Crisp economical speech, unwavering eye contact, stands with hands clasped behind her back, no wasted movement, a dry flicker of humor under pressure"
+    },
+    {
+      "id": "Character4",
+      "tag": "Character4",
+      "name": "Naomi Feld",
+      "actorName": "Mid-30s sharp ambitious aide archetype, in the vein of Lupita Nyong'o or Zazie Beetz",
+      "description": "A 34-year-old woman with a heart-shaped face, warm dark skin, alert brown eyes behind thin-framed glasses, close-cropped natural hair and a small silver stud in each ear",
+      "behavioralTraits": "Walks fast, carries a phone in each hand, finishes other people's sentences, bites the inside of her cheek when worried, quietly observes everything"
+    },
+    {
+      "id": "Character5",
+      "tag": "Character5",
+      "name": "Sir Julian Pryce",
+      "actorName": "Early 60s urbane spymaster archetype, in the vein of Ralph Fiennes or Mark Strong",
+      "description": "A 61-year-old man with a long narrow face, pale watery blue eyes, thinning white hair combed straight back, a prominent brow and a faint tremor in his left hand",
+      "behavioralTraits": "Speaks in soft precise sentences, never raises his voice, steeples his fingers while listening, offers tea as a tactical pause, smiles apologetically before delivering threats"
+    }
+  ],
+  "costumes": [
+    {
+      "id": "Costume1",
+      "tag": "Costume1",
+      "name": "The Ambassador's Charcoal Three-Piece",
+      "description": "A single-breasted charcoal three-piece suit with a notch lapel, a white spread-collar shirt, a dark burgundy silk tie, a slim American flag lapel pin and a loosened collar by the end of the film",
+      "materials": "Fine worsted wool, silk tie, mother-of-pearl buttons, polished black Oxford shoes with leather soles",
+      "wearCondition": "Immaculate at first, progressively rumpled, with a loosened tie, creased sleeves and a smear of rain at the cuffs by the final scene"
+    },
+    {
+      "id": "Costume2",
+      "tag": "Costume2",
+      "name": "The President's Navy Power Suit",
+      "description": "A tailored navy two-button suit with a crisp white shirt, a pale blue tie, a gold American flag lapel pin and a confident straight-shouldered silhouette",
+      "materials": "Italian super-120s wool, silk-blend tie, polished brass cufflinks stamped with the presidential seal",
+      "wearCondition": "Flawlessly pressed, camera-ready, with one tie knot slightly loosened in the private confrontation"
+    },
+    {
+      "id": "Costume3",
+      "tag": "Costume3",
+      "name": "Royal Navy Foul-Weather Dress",
+      "description": "A dark navy Royal Navy officer's working uniform with gold-braided shoulder boards, a peaked cap, a weatherproof black oilskin overcoat and a rolled collar against the wind",
+      "materials": "Heavy wool serge, waxed oilskin, brass buttons, gold bullion braid, leather gloves and rubber-soled boots",
+      "wearCondition": "Salt-stained shoulders, damp hem, scuffed boots and rain-beaded fabric"
+    },
+    {
+      "id": "Costume4",
+      "tag": "Costume4",
+      "name": "The Chief of Staff's Working Blazer",
+      "description": "A tailored slate-gray blazer over a cream silk blouse with slim black trousers, a lanyard-clipped embassy ID, flat leather ankle boots and a long wool trench draped over one arm",
+      "materials": "Wool-crepe blazer, silk blouse, leather boots, nylon lanyard with laminated ID, canvas phone sleeve",
+      "wearCondition": "Well kept but travel-worn, with coffee at one cuff, creased elbows and scuffed boot toes"
+    },
+    {
+      "id": "Costume5",
+      "tag": "Costume5",
+      "name": "The Spymaster's Pinstripe and Overcoat",
+      "description": "A charcoal pinstripe three-piece suit with a heavy camel-hair overcoat, a faded regimental striped tie, a gold pocket watch chain and a tightly furled umbrella",
+      "materials": "Savile Row pinstripe wool, camel-hair overcoat, silk lining, brass pocket watch, black lacquered umbrella with malacca handle",
+      "wearCondition": "Elegantly old-fashioned, immaculately brushed, with frayed cuffs and slightly shiny elbows suggesting decades of service"
+    }
+  ],
+  "props": [
+    {
+      "id": "Prop1",
+      "tag": "Prop1",
+      "name": "Biometric Steel Briefcase",
+      "description": "A matte-black reinforced steel briefcase with a fingerprint scanner, a chained wrist cuff, scuffed corners and a faded diplomatic seal sticker",
+      "narrativeSignificance": "Carries the original operational order that proves the President authorized the submarine plot",
+      "handlingNote": "Held tight against the chest, set down with reluctance and opened with a trembling thumb"
+    },
+    {
+      "id": "Prop2",
+      "tag": "Prop2",
+      "name": "Encrypted Fountain-Pen Drive",
+      "description": "A heavy black lacquered fountain pen with a silver clip and a hidden USB-C encrypted drive inside the barrel",
+      "narrativeSignificance": "Holds the digital copy of the plot, passed secretly to British intelligence as the act of betrayal",
+      "handlingNote": "Twirled absently while thinking, handed over in a handshake-like gesture"
+    },
+    {
+      "id": "Prop3",
+      "tag": "Prop3",
+      "name": "Red Secure Satellite Phone",
+      "description": "A rugged red handset with a coiled cable, a thick rubber antenna, a numeric keypad worn smooth and a small LED indicator showing encryption status",
+      "narrativeSignificance": "The direct line between the Ambassador and the President, used for the final confrontation",
+      "handlingNote": "Gripped in a white-knuckled fist, held away from the ear when the voice grows loud"
+    },
+    {
+      "id": "Prop4",
+      "tag": "Prop4",
+      "name": "Submarine Hull Schematic Roll",
+      "description": "A large rolled blueprint of a Dreadnought-class submarine on heavy vellum, annotated in red grease pencil with a redacted Operation Trident Gate marking",
+      "narrativeSignificance": "Reveals the modified payload bay used to carry the unsanctioned weapon",
+      "handlingNote": "Unrolled across a crate and pinned flat with a flashlight and a gloved palm against the wind"
+    },
+    {
+      "id": "Prop5",
+      "tag": "Prop5",
+      "name": "Sealed Executive Order Folder",
+      "description": "A cream leather folio embossed with the presidential seal, bound with a red ribbon and a wax stamp, containing a single signed page",
+      "narrativeSignificance": "The signed authorization that binds the President personally to the operation",
+      "handlingNote": "Presented with ceremony, opened slowly, signed with a flourish and slid across the desk like a verdict"
+    }
+  ],
+  "roles": [
+    {
+      "id": "Role1",
+      "tag": "Role1",
+      "roleName": "The Betraying Ambassador",
+      "characterId": "Character1",
+      "costumeId": "Costume1",
+      "assetTags": [
+        "Character1",
+        "Costume1"
+      ],
+      "description": "A 58-year-old man with a lean angular face, high cheekbones, deep-set gray-blue eyes ringed by sleeplessness, silver swept-back hair and a thin scar through his left eyebrow wearing a single-breasted charcoal three-piece suit with a notch lapel, a white spread-collar shirt, a dark burgundy silk tie, a slim American flag lapel pin and a loosened collar by the end of the film"
+    },
+    {
+      "id": "Role2",
+      "tag": "Role2",
+      "roleName": "The Betrayed President",
+      "characterId": "Character2",
+      "costumeId": "Costume2",
+      "assetTags": [
+        "Character2",
+        "Costume2"
+      ],
+      "description": "A 64-year-old man with a broad square jaw, warm brown eyes that can turn cold in an instant, close-cropped salt-and-pepper hair and deep laugh lines wearing a tailored navy two-button suit with a crisp white shirt, a pale blue tie, a gold American flag lapel pin and a confident straight-shouldered silhouette"
+    },
+    {
+      "id": "Role3",
+      "tag": "Role3",
+      "roleName": "The Submarine Commander",
+      "characterId": "Character3",
+      "costumeId": "Costume3",
+      "assetTags": [
+        "Character3",
+        "Costume3"
+      ],
+      "description": "A 44-year-old woman with a weathered oval face, sharp green eyes, a strong nose, auburn hair pinned tightly beneath her cap and a faint burn scar along her jaw wearing a dark navy Royal Navy officer's working uniform with gold-braided shoulder boards, a peaked cap, a weatherproof black oilskin overcoat and a rolled collar against the wind"
+    },
+    {
+      "id": "Role4",
+      "tag": "Role4",
+      "roleName": "The Conflicted Chief of Staff",
+      "characterId": "Character4",
+      "costumeId": "Costume4",
+      "assetTags": [
+        "Character4",
+        "Costume4"
+      ],
+      "description": "A 34-year-old woman with a heart-shaped face, warm dark skin, alert brown eyes behind thin-framed glasses, close-cropped natural hair and a small silver stud in each ear wearing a tailored slate-gray blazer over a cream silk blouse with slim black trousers, a lanyard-clipped embassy ID, flat leather ankle boots and a long wool trench draped over one arm"
+    },
+    {
+      "id": "Role5",
+      "tag": "Role5",
+      "roleName": "The British Spymaster",
+      "characterId": "Character5",
+      "costumeId": "Costume5",
+      "assetTags": [
+        "Character5",
+        "Costume5"
+      ],
+      "description": "A 61-year-old man with a long narrow face, pale watery blue eyes, thinning white hair combed straight back, a prominent brow and a faint tremor in his left hand wearing a charcoal pinstripe three-piece suit with a heavy camel-hair overcoat, a faded regimental striped tie, a gold pocket watch chain and a tightly furled umbrella"
+    }
+  ],
+  "shots": 
+  [
+  {
+    "id": "Shot1",
+    "shotType": "Wide Establishing Shot",
+    "lensAngle": "24mm Anamorphic Prime, deep focus, cinematic perspective",
+    "assetTags": ["Role1", "Role2", "Set2"],
+    "description": "Inside the Grand Hall of Magic, Elias Thorn, a 17-year-old apprentice with fair skin, hazel eyes, freckles and tousled dark brown hair, wears his dark navy wool academy robe with silver embroidery, charcoal waistcoat and pale grey shirt. Professor Alaric Voss, a tall, slender 62-year-old wizard with long silver hair and beard, stands beside him wearing midnight-blue master robes with silver runic embroidery. A large enchanted map of London floats above the central table.",
+    "action": "The camera slowly tracks towards the gathering. Professor Voss gestures towards the London map as several districts illuminate in red. Professor Voss: \"Al Shar has arrived in London.\""
+  },
+  {
+    "id": "Shot2",
+    "shotType": "Medium Close-Up",
+    "lensAngle": "50mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role2", "Set2"],
+    "description": "Professor Alaric Voss stands beside the floating London map, his blue-grey eyes fixed on a glowing location marker. His long silver beard moves slightly as magical currents circulate around the table. His expression is serious and controlled.",
+    "action": "Voss enlarges the map with a movement of his hand. Several possible locations appear, connected by faint golden lines. Professor Voss: \"We believe he entered the city recently.\""
+  },
+  {
+    "id": "Shot3",
+    "shotType": "Over-the-Shoulder Medium Shot",
+    "lensAngle": "35mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role1", "Role3", "Set2"],
+    "description": "Elias stands beside Mira Ashbourne, an athletic 17-year-old with olive skin, green eyes and long auburn hair, wearing her forest-green academy robe with antique gold trim. Both examine the floating map, where London's streets and landmarks appear as detailed magical projections.",
+    "action": "Elias leans towards the map and studies the illuminated districts. Mira folds her arms, considering the implications. Elias: \"What does he want here?\""
+  },
+  {
+    "id": "Shot4",
+    "shotType": "Low-Angle Medium Shot",
+    "lensAngle": "40mm Anamorphic Prime, dramatic perspective",
+    "assetTags": ["Role4", "Set2"],
+    "description": "Dorian Blackwood, an 18-year-old apprentice with pale skin, grey eyes, styled black hair and a broad athletic build, stands at the opposite side of the table. His tailored black wizard robe has burgundy velvet lining and intricate gold embroidery. He studies the London projection with an ambitious, confident expression.",
+    "action": "Dorian steps closer and points towards central London. Dorian: \"He's looking for something. We need to discover what.\""
+  },
+  {
+    "id": "Shot5",
+    "shotType": "Extreme Close-Up",
+    "lensAngle": "85mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role2", "Set2"],
+    "description": "The floating London map fills the frame. Streets, railway lines and the River Thames glow in delicate blue light. A single red marker pulses over the city while several surrounding locations remain deliberately obscured.",
+    "action": "Professor Voss moves his hand across the projection, revealing a second marker near the river. Professor Voss: \"His movements suggest a specific destination.\""
+  },
+  {
+    "id": "Shot6",
+    "shotType": "Medium Two-Shot",
+    "lensAngle": "50mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role1", "Role3", "Set2"],
+    "description": "Elias and Mira stand shoulder to shoulder, illuminated by the blue glow of the London map. Elias looks concerned, while Mira studies the projected streets with a focused expression.",
+    "action": "Mira points towards several locations where the red marker has appeared. Mira: \"Could these sightings be connected?\""
+  },
+  {
+    "id": "Shot7",
+    "shotType": "Medium Close-Up",
+    "lensAngle": "65mm Anamorphic Prime, compressed perspective",
+    "assetTags": ["Role2", "Role4", "Set2"],
+    "description": "Professor Voss turns towards Dorian. Dorian stands rigidly beside the table, his black robe and burgundy lining catching the light from the magical projection. The professor's expression remains stern.",
+    "action": "Voss raises one hand, stopping Dorian from interrupting. Professor Voss: \"We need evidence before making assumptions.\""
+  },
+  {
+    "id": "Shot8",
+    "shotType": "Close-Up",
+    "lensAngle": "85mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role1", "Set2"],
+    "description": "Elias's freckled face is illuminated by the floating map. His hazel eyes move between the glowing locations as he considers the pattern. His expression changes from uncertainty to determination.",
+    "action": "Elias steps forward and looks directly at Professor Voss. Elias: \"Then let us find someone who has seen him.\""
+  },
+  {
+    "id": "Shot9",
+    "shotType": "Medium Tracking Shot",
+    "lensAngle": "35mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role3", "Role4", "Set2"],
+    "description": "Mira moves around the table towards Dorian. Her auburn hair falls over her forest-green robe as she studies the illuminated map. Dorian turns towards her, his expression guarded.",
+    "action": "Mira suggests speaking to people who may have witnessed Al Shar's arrival. Dorian considers the idea before responding. Mira: \"Someone in the city must know something.\""
+  },
+  {
+    "id": "Shot10",
+    "shotType": "Low-Angle Medium Close-Up",
+    "lensAngle": "50mm Anamorphic Prime, dramatic perspective",
+    "assetTags": ["Role2", "Set2"],
+    "description": "Professor Voss stands before the enormous London projection. Blue light illuminates his silver hair and the detailed silver runic embroidery across his midnight-blue robes.",
+    "action": "Voss gestures towards the map, which expands to show the entire city. Professor Voss: \"We will work together and follow verified information.\""
+  },
+  {
+    "id": "Shot11",
+    "shotType": "Over-the-Shoulder Close-Up",
+    "lensAngle": "65mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role1", "Role2", "Set2"],
+    "description": "The camera frames Elias over Professor Voss's shoulder. The young apprentice studies the map, where a faint symbol has appeared beside the River Thames. Elias's navy robe catches the shifting blue light.",
+    "action": "Elias notices the unfamiliar symbol and points towards it. Elias: \"Professor, what's that marking?\""
+  },
+  {
+    "id": "Shot12",
+    "shotType": "Extreme Close-Up",
+    "lensAngle": "100mm Macro Anamorphic, extremely shallow DoF",
+    "assetTags": ["Role2", "Set2"],
+    "description": "A mysterious symbol appears above the London map, glowing violet against the blue projection. Its intricate design resembles an ancient magical seal, pulsing slowly as though responding to an unseen presence.",
+    "action": "Professor Voss leans closer, recognising the symbol. His expression becomes noticeably more concerned. Professor Voss: \"That changes everything.\""
+  },
+  {
+    "id": "Shot13",
+    "shotType": "Medium Wide Shot",
+    "lensAngle": "35mm Anamorphic Prime, deep focus",
+    "assetTags": ["Role1", "Role3", "Role4", "Set2"],
+    "description": "Elias, Mira and Dorian gather around the floating London map. Their different coloured academy robes contrast with the cold blue projection. The violet symbol continues pulsing above the River Thames.",
+    "action": "Dorian steps forward and demands an explanation. Mira looks between him and Professor Voss. Dorian: \"What does that symbol mean?\""
+  },
+  {
+    "id": "Shot14",
+    "shotType": "Medium Close-Up",
+    "lensAngle": "50mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role2", "Set2"],
+    "description": "Professor Voss faces the students, his blue-grey eyes reflecting the violet symbol. His midnight-blue robes remain perfectly still as the magical projection flickers behind him.",
+    "action": "Voss pauses before explaining that the symbol is associated with an ancient magical object. Professor Voss: \"It is connected to something extremely dangerous.\""
+  },
+  {
+    "id": "Shot15",
+    "shotType": "Dynamic Medium Tracking Shot",
+    "lensAngle": "35mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role1", "Role3", "Set2"],
+    "description": "Elias and Mira move towards the far side of the table, studying the violet symbol from different angles. The projected streets of London shift beneath their faces, reflecting in their eyes.",
+    "action": "Elias asks whether Al Shar has come to obtain the object. Mira studies the symbol and nods cautiously. Elias: \"He must be searching for it.\""
+  },
+  {
+    "id": "Shot16",
+    "shotType": "Low-Angle Medium Shot",
+    "lensAngle": "40mm Anamorphic Prime, dramatic perspective",
+    "assetTags": ["Role4", "Role2", "Set2"],
+    "description": "Dorian stands opposite Professor Voss, his black robe with burgundy velvet lining contrasting with the professor's midnight-blue robes. Both are framed against the enormous floating map.",
+    "action": "Dorian suggests that the team must act before Al Shar reaches his destination. Professor Voss responds firmly. Dorian: \"Then we cannot afford to waste time.\""
+  },
+  {
+    "id": "Shot17",
+    "shotType": "Close-Up",
+    "lensAngle": "85mm Anamorphic Prime, shallow DoF",
+    "assetTags": ["Role1", "Set2"],
+    "description": "Elias looks down at the London map, then raises his hazel eyes towards the others. His expression is apprehensive but determined, and the silver embroidery on his navy robe catches the magical light.",
+    "action": "Elias volunteers to help investigate the mysterious symbol. Elias: \"I'll help find out what he's after.\""
+  },
+  {
+    "id": "Shot18",
+    "shotType": "Wide Cinematic Shot",
+    "lensAngle": "24mm Anamorphic Prime, deep focus",
+    "assetTags": ["Role1", "Role2", "Role3", "Role4", "Set2"],
+    "description": "The four members of the academy team stand around the floating London map. The violet symbol pulses above the River Thames as blue light illuminates the Grand Hall of Magic. The atmosphere is tense, with the students awaiting Professor Voss's final instructions.",
+    "action": "Professor Voss closes his hand and the map contracts into a glowing sphere. He looks at each student before giving the team their assignment. Professor Voss: \"Find the truth. Do not confront him alone.\" The camera slowly pulls back as the team prepares to act."
+  }
+]
+}

@@ -1,0 +1,387 @@
+{
+  "title": "The Last Ember of Aurelion",
+  "genre": "High Fantasy Epic",
+  "premise": "A disgraced dragon knight must escort the last dragon egg across a war-torn continent while hunted relentlessly by a necromancer king who seeks to corrupt its power and resurrect an empire of undead dragons.",
+  "logline": "A fallen dragon knight and unlikely allies race across a dying realm to protect the final dragon egg before a necromancer king can turn it into the heart of an undead apocalypse.",
+  "visualTone": {
+    "colorPalette": [
+      "#1E2A38",
+      "#B33A3A",
+      "#C8A25A",
+      "#738A5E",
+      "#E0D8C0"
+    ],
+    "cameraLenses": "Panavision C-Series Anamorphic, 40mm T2.8 and 75mm T2.3",
+    "lightingPhilosophy": "Mythic naturalism with volumetric rim-lighting, motivated practical firelight, and celestial backlighting",
+    "grainAesthetic": "Kodak Vision3 500T 5219 35mm grain"
+  },
+  "sets": [
+    {
+      "id": "Set1",
+      "tag": "Set1",
+      "name": "Ashen Dragon Bastion",
+      "description": "Collapsed mountain fortress carved into black volcanic stone with shattered dragon statues, broken battlements, and wind-scoured courtyards",
+      "atmosphere": "Cold alpine winds, drifting ash, distant thunder, clear mountain air",
+      "lighting": "Overcast daylight with shafts of sunlight piercing storm clouds"
+    },
+    {
+      "id": "Set2",
+      "tag": "Set2",
+      "name": "Whisperwood Crossing",
+      "description": "Ancient forest trail beneath colossal silver-barked trees tangled with roots and luminous moss",
+      "atmosphere": "Misty woodland air, floating spores, birdsong mixed with distant howls",
+      "lighting": "Filtered emerald sunlight through dense canopy"
+    },
+    {
+      "id": "Set3",
+      "tag": "Set3",
+      "name": "Sunscar Canyon",
+      "description": "Vast sandstone canyon split by a narrow caravan route and towering weathered cliffs",
+      "atmosphere": "Dry winds, blowing sand, echoing stone acoustics",
+      "lighting": "Golden afternoon sunlight with long dramatic shadows"
+    },
+    {
+      "id": "Set4",
+      "tag": "Set4",
+      "name": "Ruins of Eldergate",
+      "description": "Abandoned marble city overgrown with vines and fractured arches surrounding a sacred dragon shrine",
+      "atmosphere": "Still air, drifting petals, haunting silence",
+      "lighting": "Soft twilight illumination with moonlit highlights"
+    },
+    {
+      "id": "Set5",
+      "tag": "Set5",
+      "name": "Celestial Dragon Sanctum",
+      "description": "Gigantic crystalline temple atop a mountain summit with glowing runes and floating stone bridges",
+      "atmosphere": "Thin crisp air, magical energy currents, distant dragon calls",
+      "lighting": "Radiant starlight mixed with blue-white crystal glow"
+    }
+  ],
+  "characters": [
+    {
+      "id": "Character1",
+      "tag": "Character1",
+      "name": "Sir Kaelen Voss",
+      "actorName": "Weathered heroic leading man",
+      "description": "Age 38, sharp jawline, deep-set gray eyes, shoulder-length dark hair streaked with silver, burn scar across left cheek",
+      "behavioralTraits": "Guarded posture, disciplined movements, rarely smiles but fiercely protective"
+    },
+    {
+      "id": "Character2",
+      "tag": "Character2",
+      "name": "Lyra Dawnveil",
+      "actorName": "Charismatic fantasy heroine",
+      "description": "Age 24, oval face, bright green eyes, auburn braided hair, faint rune tattoo on neck",
+      "behavioralTraits": "Quick thinking, curious gaze, agile movements and expressive emotions"
+    },
+    {
+      "id": "Character3",
+      "tag": "Character3",
+      "name": "Brother Thorne",
+      "actorName": "Veteran character actor",
+      "description": "Age 56, broad face, brown eyes, shaved head, thick beard marked with gray",
+      "behavioralTraits": "Calm gestures, reassuring smile, deliberate measured motions"
+    },
+    {
+      "id": "Character4",
+      "tag": "Character4",
+      "name": "Nim Ashfoot",
+      "actorName": "Energetic rogue archetype",
+      "description": "Age 19, narrow face, amber eyes, unruly black hair, small nose scar",
+      "behavioralTraits": "Restless energy, fast reactions, mischievous grins"
+    },
+    {
+      "id": "Character5",
+      "tag": "Character5",
+      "name": "King Malgrath",
+      "actorName": "Commanding dark antagonist",
+      "description": "Age 60, gaunt face, glowing blue eyes, pale skin, skeletal features beneath necrotic markings",
+      "behavioralTraits": "Unblinking stare, controlled menace, slow deliberate movements"
+    }
+  ],
+  "costumes": [
+    {
+      "id": "Costume1",
+      "tag": "Costume1",
+      "name": "Exiled Dragon Plate",
+      "description": "Battle-worn dragon knight armor with layered steel plates, weathered crimson cloak and dragon crest",
+      "materials": "Forged steel, leather straps, wool cloak, bronze fittings",
+      "wearCondition": "Heavy battle wear, scratches, ash stains"
+    },
+    {
+      "id": "Costume2",
+      "tag": "Costume2",
+      "name": "Forest Wayfarer Garb",
+      "description": "Fitted ranger coat, hooded mantle, utility belts and woodland boots",
+      "materials": "Dyed linen, supple leather, woven wool",
+      "wearCondition": "Light travel wear and mud stains"
+    },
+    {
+      "id": "Costume3",
+      "tag": "Costume3",
+      "name": "Pilgrim Healer Robes",
+      "description": "Layered monk robes with ceremonial cords and embroidered blessings",
+      "materials": "Raw cotton, woven silk, wooden prayer beads",
+      "wearCondition": "Clean but road worn around hems"
+    },
+    {
+      "id": "Costume4",
+      "tag": "Costume4",
+      "name": "Shadow Scout Outfit",
+      "description": "Slim dark tunic, light armor pads, scarf and climbing gear",
+      "materials": "Canvas, leather, iron buckles",
+      "wearCondition": "Well maintained with minor tears"
+    },
+    {
+      "id": "Costume5",
+      "tag": "Costume5",
+      "name": "Necromancer King Regalia",
+      "description": "Black ceremonial armor adorned with bone motifs and flowing tattered cape",
+      "materials": "Blackened steel, bone inlays, cursed silk",
+      "wearCondition": "Ancient yet unnaturally pristine"
+    }
+  ],
+  "props": [
+    {
+      "id": "Prop1",
+      "tag": "Prop1",
+      "name": "Last Dragon Egg",
+      "description": "Large obsidian-scaled egg veined with molten gold light",
+      "narrativeSignificance": "The final living dragon and central object of the quest",
+      "handlingNote": "Carried carefully with both hands or inside a secure cradle"
+    },
+    {
+      "id": "Prop2",
+      "tag": "Prop2",
+      "name": "Dragonfang Greatsword",
+      "description": "Massive silver blade etched with draconic runes and a wing-shaped guard",
+      "narrativeSignificance": "Symbol of the knight's lost honor",
+      "handlingNote": "Wielded with two hands during combat"
+    },
+    {
+      "id": "Prop3",
+      "tag": "Prop3",
+      "name": "Starfire Map",
+      "description": "Ancient parchment displaying magical celestial routes",
+      "narrativeSignificance": "Guides the heroes toward the sanctum",
+      "handlingNote": "Unrolled and studied cautiously"
+    },
+    {
+      "id": "Prop4",
+      "tag": "Prop4",
+      "name": "Sanctum Key Crystal",
+      "description": "Glowing blue crystal prism engraved with dragon sigils",
+      "narrativeSignificance": "Opens the final sanctuary",
+      "handlingNote": "Held upright to activate ancient mechanisms"
+    },
+    {
+      "id": "Prop5",
+      "tag": "Prop5",
+      "name": "Bone Crown Staff",
+      "description": "Obsidian staff capped with a crown formed from fused skeletal remains",
+      "narrativeSignificance": "Focus of the necromancer king's power",
+      "handlingNote": "Gripped like a scepter while channeling magic"
+    }
+  ],
+  "roles": [
+    {
+      "id": "Role1",
+      "tag": "Role1",
+      "roleName": "Disgraced Dragon Knight",
+      "characterId": "Character1",
+      "costumeId": "Costume1",
+      "assetTags": [
+        "Character1",
+        "Costume1"
+      ],
+      "description": "Age 38, sharp jawline, deep-set gray eyes, shoulder-length dark hair streaked with silver, burn scar across left cheek wearing battle-worn dragon knight armor with layered steel plates, weathered crimson cloak and dragon crest"
+    },
+    {
+      "id": "Role2",
+      "tag": "Role2",
+      "roleName": "Forest Guide",
+      "characterId": "Character2",
+      "costumeId": "Costume2",
+      "assetTags": [
+        "Character2",
+        "Costume2"
+      ],
+      "description": "Age 24, oval face, bright green eyes, auburn braided hair, faint rune tattoo on neck wearing fitted ranger coat, hooded mantle, utility belts and woodland boots"
+    },
+    {
+      "id": "Role3",
+      "tag": "Role3",
+      "roleName": "Pilgrim Healer",
+      "characterId": "Character3",
+      "costumeId": "Costume3",
+      "assetTags": [
+        "Character3",
+        "Costume3"
+      ],
+      "description": "Age 56, broad face, brown eyes, shaved head, thick beard marked with gray wearing layered monk robes with ceremonial cords and embroidered blessings"
+    },
+    {
+      "id": "Role4",
+      "tag": "Role4",
+      "roleName": "Scout Rogue",
+      "characterId": "Character4",
+      "costumeId": "Costume4",
+      "assetTags": [
+        "Character4",
+        "Costume4"
+      ],
+      "description": "Age 19, narrow face, amber eyes, unruly black hair, small nose scar wearing slim dark tunic, light armor pads, scarf and climbing gear"
+    },
+    {
+      "id": "Role5",
+      "tag": "Role5",
+      "roleName": "Necromancer King",
+      "characterId": "Character5",
+      "costumeId": "Costume5",
+      "assetTags": [
+        "Character5",
+        "Costume5"
+      ],
+      "description": "Age 60, gaunt face, glowing blue eyes, pale skin, skeletal features beneath necrotic markings wearing black ceremonial armor adorned with bone motifs and flowing tattered cape"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "The Oath Renewed",
+      "description": "Cold mountain fortress, steel-blue palette, volcanic textures, windswept atmosphere",
+      "shots": [
+        {
+          "id": "Shot1",
+          "shotType": "Low-Angle Medium Tracking Shot",
+          "lensAngle": "40mm Anamorphic Prime, shallow DoF",
+          "assetTags": [
+            "Role1",
+            "Prop1",
+            "Set1"
+          ],
+          "description": "Age 38, sharp jawline, deep-set gray eyes, shoulder-length dark hair streaked with silver, burn scar across left cheek wearing battle-worn dragon knight armor with layered steel plates, weathered crimson cloak and dragon crest carrying a large obsidian-scaled egg veined with molten gold light within a collapsed mountain fortress carved into black volcanic stone with shattered dragon statues",
+          "action": "Disgraced Dragon Knight lifts the Last Dragon Egg from a stone altar and says 'I failed the dragons once. Not again.' Camera tracks forward over 5 seconds as wind whips his cloak. Audio includes distant thunder and solemn strings."
+        },
+        {
+          "id": "Shot2",
+          "shotType": "Wide Establishing Crane Shot",
+          "lensAngle": "35mm Anamorphic Prime",
+          "assetTags": [
+            "Role2",
+            "Prop3",
+            "Set1"
+          ],
+          "description": "Age 24, oval face, bright green eyes, auburn braided hair, faint rune tattoo on neck wearing fitted ranger coat, hooded mantle, utility belts and woodland boots studying an ancient parchment displaying magical celestial routes in a collapsed mountain fortress carved into black volcanic stone with shattered dragon statues",
+          "action": "Forest Guide unfolds the Starfire Map and says 'The canyon passage is our fastest route.' Camera cranes downward toward the map over 5 seconds. Audio mixes wind ambience and rising adventure music."
+        },
+        {
+          "id": "Shot3",
+          "shotType": "Medium Two-Shot",
+          "lensAngle": "75mm Anamorphic Prime",
+          "assetTags": [
+            "Role1",
+            "Role2",
+            "Set1"
+          ],
+          "description": "Disgraced Dragon Knight facing Forest Guide inside a collapsed mountain fortress carved into black volcanic stone with shattered dragon statues",
+          "action": "Forest Guide says 'Then trust me.' Disgraced Dragon Knight nods and replies 'Lead the way.' Camera slowly dollies sideways for 5 seconds. Audio features rattling chains and soft orchestral resolve."
+        }
+      ]
+    },
+    {
+      "name": "Hunted Through The Wilds",
+      "description": "Emerald forests and sunlit canyon terrain, organic textures, escalating tension",
+      "shots": [
+        {
+          "id": "Shot4",
+          "shotType": "Steadicam Tracking Shot",
+          "lensAngle": "40mm Anamorphic Prime",
+          "assetTags": [
+            "Role1",
+            "Prop1",
+            "Set2"
+          ],
+          "description": "Disgraced Dragon Knight carrying a large obsidian-scaled egg veined with molten gold light among ancient forest trail beneath colossal silver-barked trees tangled with roots and luminous moss",
+          "action": "Disgraced Dragon Knight rushes down the forest path protecting the Last Dragon Egg. He says 'Keep moving.' Camera tracks beside him for 5 seconds. Audio includes pounding footsteps and urgent percussion."
+        },
+        {
+          "id": "Shot5",
+          "shotType": "Medium Action Shot",
+          "lensAngle": "50mm Anamorphic Prime",
+          "assetTags": [
+            "Role4",
+            "Set2"
+          ],
+          "description": "Age 19, narrow face, amber eyes, unruly black hair, small nose scar wearing slim dark tunic, light armor pads, scarf and climbing gear among ancient forest trail beneath colossal silver-barked trees tangled with roots and luminous moss",
+          "action": "Scout Rogue leaps onto a root ridge and says 'Riders behind us!' Camera whips upward following the jump for 5 seconds. Audio includes snapping branches and tense strings."
+        },
+        {
+          "id": "Shot6",
+          "shotType": "Telephoto Reveal Shot",
+          "lensAngle": "135mm Telephoto",
+          "assetTags": [
+            "Role5",
+            "Prop5",
+            "Set3"
+          ],
+          "description": "Age 60, gaunt face, glowing blue eyes, pale skin, skeletal features beneath necrotic markings wearing black ceremonial armor adorned with bone motifs and flowing tattered cape wielding an obsidian staff capped with a crown formed from fused skeletal remains in a vast sandstone canyon split by a narrow caravan route and towering weathered cliffs",
+          "action": "Necromancer King raises the Bone Crown Staff and says 'The egg belongs to death.' Camera pushes slowly toward him over 5 seconds. Audio includes echoing chants and dark choir."
+        },
+        {
+          "id": "Shot7",
+          "shotType": "Low-Angle Combat Tracking Shot",
+          "lensAngle": "40mm Anamorphic Prime",
+          "assetTags": [
+            "Role1",
+            "Prop2",
+            "Set3"
+          ],
+          "description": "Age 38, sharp jawline, deep-set gray eyes, shoulder-length dark hair streaked with silver, burn scar across left cheek wearing battle-worn dragon knight armor with layered steel plates, weathered crimson cloak and dragon crest wielding a massive silver blade etched with draconic runes in a vast sandstone canyon split by a narrow caravan route and towering weathered cliffs",
+          "action": "Disgraced Dragon Knight draws the Dragonfang Greatsword and blocks undead attackers. He shouts 'Run!' Camera tracks backward with the charge for 5 seconds. Audio includes clashing steel and war drums."
+        }
+      ]
+    },
+    {
+      "name": "The Dragon's Dawn",
+      "description": "Sacred ruins and celestial sanctuary, luminous blues and golds, transcendent atmosphere",
+      "shots": [
+        {
+          "id": "Shot8",
+          "shotType": "Medium Dramatic Shot",
+          "lensAngle": "75mm Anamorphic Prime",
+          "assetTags": [
+            "Role3",
+            "Prop4",
+            "Set4"
+          ],
+          "description": "Age 56, broad face, brown eyes, shaved head, thick beard marked with gray wearing layered monk robes with ceremonial cords and embroidered blessings holding a glowing blue crystal prism engraved with dragon sigils in an abandoned marble city overgrown with vines and fractured arches surrounding a sacred dragon shrine",
+          "action": "Pilgrim Healer raises the Sanctum Key Crystal and says 'The sanctuary still lives.' Camera tilts upward with the crystal glow for 5 seconds. Audio includes choral voices and magical resonance."
+        },
+        {
+          "id": "Shot9",
+          "shotType": "Epic Wide Shot",
+          "lensAngle": "35mm Anamorphic Prime",
+          "assetTags": [
+            "Role1",
+            "Prop1",
+            "Set5"
+          ],
+          "description": "Disgraced Dragon Knight carrying a large obsidian-scaled egg veined with molten gold light inside a gigantic crystalline temple atop a mountain summit with glowing runes and floating stone bridges",
+          "action": "Disgraced Dragon Knight places the Last Dragon Egg into a crystal cradle and says 'Your future begins.' Camera circles the altar over 5 seconds. Audio swells with triumphant orchestra."
+        },
+        {
+          "id": "Shot10",
+          "shotType": "Hero Close-Up Pullback",
+          "lensAngle": "75mm Anamorphic Prime",
+          "assetTags": [
+            "Role1",
+            "Prop1",
+            "Set5"
+          ],
+          "description": "Disgraced Dragon Knight beside a large obsidian-scaled egg veined with molten gold light inside a gigantic crystalline temple atop a mountain summit with glowing runes and floating stone bridges",
+          "action": "Golden cracks spread across the Last Dragon Egg as the knight watches in awe. He whispers 'Welcome back.' Camera pulls from close-up to wide reveal over 5 seconds. Audio features dragon hatchling cries and soaring choir."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,535 @@
+{
+  "title": "Tidebound",
+  "genre": "Deep-Sea Gothic Noir",
+  "premise": "In a coastal city drowned a century ago, the cathedral bells still ring beneath the water every high tide, and each toll lets one of the drowned walk the wharves at dawn. Salvage diver Mara Vance has lost her brother to the sea. She dives the sunken cathedral to steal the cracked clapper of the Great Bell and silence it, then finds that the bell's maker and its warden both want the clapper for opposite reasons, and that silencing the bell would send every returned soul back under, her brother included.",
+  "logline": "A grieving salvage diver steals the clapper of a drowned cathedral's haunted bell and must choose between silencing the tolling that brings the dead ashore and keeping her brother alive.",
+  "visualTone": {
+    "colorPalette": ["#0B1F2A", "#1D4E5F", "#6FA8A0", "#C9A227", "#8C2F39"],
+    "cameraLenses": "Cooke Speed Panchro Series II 25mm, 32mm and 50mm T2.0 vintage primes for soft halation and warm falloff; Hawk V-Lite 1.3x anamorphic 40mm for wides and the cathedral reveal; Panavision Primo 75mm T1.9 for close-ups",
+    "lightingPhilosophy": "Low-key chiaroscuro with practical sources only (storm lanterns, sodium wharf lamps, a cold blue spectral glow). Volumetric god-rays punch through murky water and fog, shadows stay deep and slightly crushed, and brass and skin catch the only warmth in a teal-dominated world.",
+    "grainAesthetic": "Kodak Vision3 500T 5219 35mm, pushed one stop for visible grain and lifted blacks, with Eastman Double-X 5222 black-and-white inserts for the Bellwright's memory flashes and a light halation bloom on highlights"
+  },
+  "sets": [
+    {
+      "id": "Set1",
+      "tag": "Set1",
+      "name": "The Drowned Nave of Saint Aldric",
+      "description": "A vast Gothic cathedral nave submerged forty feet down. Ribbed vaults sag under barnacle crust, shattered rose-window tracery hangs in the dark, and pews lie toppled in drifts of silt. A half-collapsed bell tower looms over the altar, and a dry air pocket in the vestry shelters the Warden's cot and candle stubs.",
+      "atmosphere": "Cold, murky water thick with drifting silt and pale plankton. Bubbles rise in slow strings, and distant bell resonance can be felt in the chest as a low pressure pulse.",
+      "lighting": "Shafts of dim green-blue surface light slant through broken windows. Warm 2200K candle glow in the vestry air pocket, and a cold 8000K spectral shimmer around the Great Bell."
+    },
+    {
+      "id": "Set2",
+      "tag": "Set2",
+      "name": "Salt Wharf Market",
+      "description": "A cramped stilted harbor market of tarred planks, rope nets, hanging lanterns and stalls selling eels, salvaged brass and bottled sea-glass. Rusted cranes loom overhead and the flooded cathedral spire pokes through the harbor mist beyond the railing.",
+      "atmosphere": "Pre-dawn sea fog, wet planks, brine and coal smoke. Gulls scream distantly and the planks creak with the swell.",
+      "lighting": "Flickering sodium and oil lamps at 2700K against pale blue pre-dawn sky, with long reflections on wet wood."
+    },
+    {
+      "id": "Set3",
+      "tag": "Set3",
+      "name": "Lantern Room of Greywater Light",
+      "description": "A round cast-iron lantern room atop a decommissioned lighthouse, its Fresnel lens cracked and fogged with salt. Brass railings are green with verdigris, tide charts cover the walls, and a spiral stair descends into darkness.",
+      "atmosphere": "Howling wind through broken panes, salt spray, the smell of old kerosene and cold iron.",
+      "lighting": "Moonlight diffused through salt-stained glass, with a single blue-flamed lantern throwing refracted prisms across the walls."
+    },
+    {
+      "id": "Set4",
+      "tag": "Set4",
+      "name": "The Fog Channel",
+      "description": "A narrow tidal channel between half-submerged rooftops and leaning chimneys, crossed by rotting suspension cables. A flat-bottomed skiff with a hand-cranked lamp and coiled air-line winch drifts between drowned streets, and ghostly shapes of the sunken town show just below the surface.",
+      "atmosphere": "Dense sea fog that muffles sound, glassy still water, breath visible in the cold air, and a faint tolling that seems to come from everywhere.",
+      "lighting": "Soft overcast silver at 6500K with a single swinging skiff lantern making a moving pool of amber and deep teal edges."
+    },
+    {
+      "id": "Set5",
+      "tag": "Set5",
+      "name": "The Bellwright's Foundry Crypt",
+      "description": "A vaulted undercroft beneath the cathedral where bells were once cast. Cold furnaces, bronze molds, hanging chains and a half-finished bell stand in shadow. The walls are inscribed with names of the drowned, and silt lies in perfect drifts as if time stopped.",
+      "atmosphere": "Still, airless and reverent, with floating motes and the smell of old metal and wet stone.",
+      "lighting": "Dying orange ember glow from dead furnace mouths and a pale blue spectral halo wherever the Bellwright moves."
+    }
+  ],
+  "characters": [
+    {
+      "id": "Character1",
+      "tag": "Character1",
+      "name": "Mara Vance",
+      "actorName": "Late 30s, weathered and magnetic, in the vein of Rooney Mara or Emily Blunt: quiet intensity, minimal gesture, expressive eyes",
+      "description": "34-year-old woman with a sharp jaw, high cheekbones sunburned and wind-chapped, grey-green eyes ringed with sleeplessness, dark hair cropped unevenly at the shoulder and salt-stiff, a pale scar through the left eyebrow, ropey diver's forearms.",
+      "behavioralTraits": "Economical movement, scans exits before speaking, touches her wrist where her brother's old watch used to be, speaks low and flat when angry, never wastes a word."
+    },
+    {
+      "id": "Character2",
+      "tag": "Character2",
+      "name": "Father Ignatius Crowe",
+      "actorName": "Late 60s, gaunt and haunted, in the vein of Ciaran Hinds or Jared Harris: gentle voice with iron beneath",
+      "description": "67-year-old man with a skull-like face, deep-set watery blue eyes, thin white hair plastered to his scalp, a long hooked nose, waxy skin pruned by decades of damp, and a faint tremor in his right hand.",
+      "behavioralTraits": "Moves slowly and deliberately like a man in a church, cups his hands as if praying when thinking, addresses everyone as child, pauses before every sentence."
+    },
+    {
+      "id": "Character3",
+      "tag": "Character3",
+      "name": "Elias Thorne",
+      "actorName": "Mid 40s, rugged and wry, in the vein of Mahershala Ali or Idris Elba: warm baritone with dry humor",
+      "description": "44-year-old man with a broad weathered face, a silver-flecked beard, heavy-lidded dark brown eyes, a broken nose, a gold hoop in one ear and rope scars across both palms.",
+      "behavioralTraits": "Leans on things, chews a matchstick, rarely hurries, jokes when afraid, always keeps one hand near the skiff's boathook."
+    },
+    {
+      "id": "Character4",
+      "tag": "Character4",
+      "name": "The Bellwright",
+      "actorName": "Ageless spectral presence, in the vein of Tilda Swinton: androgynous, still, voice like a struck bell with overtones",
+      "description": "Ageless androgynous figure with luminous pale skin, a bald head etched with fine bronze-colored hairline cracks, silver-white irises without pupils, long fingers tipped with verdigris, and a mouth that never fully closes.",
+      "behavioralTraits": "Glides rather than walks, tilts the head to listen to tolling, speaks in measured resonant phrases, drifts as if weightless and trailing silt."
+    },
+    {
+      "id": "Character5",
+      "tag": "Character5",
+      "name": "Wren",
+      "actorName": "Teen, wiry and quick, in the vein of Millicent Simmonds or Jacob Tremblay's older range: bright, guarded, streetwise",
+      "description": "16-year-old runner with a thin freckled face, quick amber eyes, a chipped front tooth, tangled ginger hair under a flat cap, and soot-smudged cheeks.",
+      "behavioralTraits": "Never still, bounces on the balls of her feet, talks fast and lowers her voice for secrets, grins when nervous, hides things in her sleeves."
+    }
+  ],
+  "costumes": [
+    {
+      "id": "Costume1",
+      "tag": "Costume1",
+      "name": "Salvage Diver's Rig",
+      "description": "Fitted waxed-canvas diving suit with a high collar, reinforced knee and elbow panels, a leather harness over the chest with brass buckles, a weighted belt and heavy rubber-soled boots. A faded red scarf is knotted at the neck.",
+      "materials": "Waxed canvas, vulcanized rubber seams, boiled leather straps, solid brass buckles and clasps, wool scarf",
+      "wearCondition": "Salt-bleached and patched at the knees, brass tarnished green at the edges, scarf frayed, permanent dark tide line around the hem"
+    },
+    {
+      "id": "Costume2",
+      "tag": "Costume2",
+      "name": "Warden's Waterlogged Cassock",
+      "description": "Floor-length black cassock with a short shoulder cape, a heavy iron cross on a chain, rope belt, and a ring of church keys at the hip. The hem is weighted with sewn-in lead shot.",
+      "materials": "Heavy wool broadcloth, oiled leather, wrought iron, hemp rope",
+      "wearCondition": "Stained with watermarks to the chest, white salt crystals along seams, sleeves threadbare, mended with mismatched thread"
+    },
+    {
+      "id": "Costume3",
+      "tag": "Costume3",
+      "name": "Ferryman's Oilskins",
+      "description": "Knee-length oiled-cotton coat with a deep hood, a thick knit jumper beneath, braided suspenders, tall rubber waders and fingerless gloves. A coiled rope and hooked knife hang from the belt.",
+      "materials": "Oilskin cotton, hand-knit wool, vulcanized rubber, braided hemp, steel",
+      "wearCondition": "Tar-streaked, patched with sailcloth, collar greasy from years of use, elbows worn smooth"
+    },
+    {
+      "id": "Costume4",
+      "tag": "Costume4",
+      "name": "Foundry Master's Shroud",
+      "description": "Floating layered robes in tarnished bronze and bone-white, with a leather smith's apron fused into the fabric and a collar of tiny bell-shaped charms. The sleeves dissolve into trailing silt.",
+      "materials": "Spectral gauze over heavy linen, hammered bronze plates, leather apron, tiny bronze bells",
+      "wearCondition": "Half-dissolved at the edges, bronze plating cracked and corroded green, fabric moving constantly as if in current"
+    },
+    {
+      "id": "Costume5",
+      "tag": "Costume5",
+      "name": "Wharf Runner's Layers",
+      "description": "Oversized patched wool coat cut down from an adult's, a flat cap, mismatched fingerless gloves, patched trousers tucked into hand-me-down boots and a messenger satchel across the chest.",
+      "materials": "Boiled wool, cotton canvas, scavenged leather, brass buttons of different sizes",
+      "wearCondition": "Sleeves rolled and re-rolled, soot and fish-oil stains, hem unraveling, buttons mismatched"
+    }
+  ],
+  "props": [
+    {
+      "id": "Prop1",
+      "tag": "Prop1",
+      "name": "Brass Diving Helmet 'The Lung'",
+      "description": "Riveted spun-brass diving helmet with three round viewports, a hinged front glass and a dented crown. A rubber air hose coils from the rear valve and a small pressure gauge is bolted to one side.",
+      "narrativeSignificance": "Mara's lifeline to the cathedral and the only thing that lets her reach the Great Bell. The air line can be cut from the skiff, making every dive a trust test.",
+      "handlingNote": "Carried under one arm like a skull, lowered over the head with both hands, tapped twice for luck before closing the faceplate."
+    },
+    {
+      "id": "Prop2",
+      "tag": "Prop2",
+      "name": "The Drowned Bell Clapper",
+      "description": "A forearm-long cast-bronze bell clapper, pitted green with a hairline crack along its length, wrapped in a rotting leather strap. It hums faintly when held and glows pale blue along the crack.",
+      "narrativeSignificance": "The tongue of the Great Bell. Without it the bell cannot toll and the drowned cannot return. All three powers in the story want it for opposed reasons.",
+      "handlingNote": "Heavy; carried two-handed against the chest. Whoever holds it feels a faint pulse like a heartbeat."
+    },
+    {
+      "id": "Prop3",
+      "tag": "Prop3",
+      "name": "Blue-Flame Storm Lantern",
+      "description": "A battered brass storm lantern with a hinged glass chimney, cracked on one side, burning a cold blue flame that needs no fuel and does not gutter in water.",
+      "narrativeSignificance": "Lit by Mara's brother before he vanished. It guides her through the nave and reacts to spirits by flaring bright.",
+      "handlingNote": "Carried by the ring handle, held up and out to read shapes in the dark, shielded with a palm when spirits approach."
+    },
+    {
+      "id": "Prop4",
+      "tag": "Prop4",
+      "name": "The Tide Ledger",
+      "description": "A swollen leather-bound ledger with a brass clasp and salt-warped pages, filled with columns of tide times, bell tolls and names written in different hands. Some entries are written in a faint silver ink that appears overnight.",
+      "narrativeSignificance": "Records each night's tolling and each name that returns. Mara's brother's name appears in the last entry.",
+      "handlingNote": "Carried inside the coat, opened with a thumb on the clasp, pages turned with a licked finger and held flat against the wind."
+    },
+    {
+      "id": "Prop5",
+      "tag": "Prop5",
+      "name": "The Bone Key",
+      "description": "A hand-length key carved from pale bone with a bronze bell-shaped bow and teeth cut like a tiny cathedral skyline. It is cold to the touch and slightly luminous.",
+      "narrativeSignificance": "The only thing that can lock the Great Bell's cage, sealing the dead below or letting them out. The Warden has guarded it for decades.",
+      "handlingNote": "Worn on a cord beneath the cassock, held up at arm's length like a crucifix, clutched tightly when frightened."
+    }
+  ],
+  "roles": [
+    {
+      "id": "Role1",
+      "tag": "Role1",
+      "roleName": "The Diver",
+      "characterId": "Character1",
+      "costumeId": "Costume1",
+      "assetTags": ["Character1", "Costume1"],
+      "description": "34-year-old woman with a sharp jaw, sunburned high cheekbones, sleepless grey-green eyes, uneven salt-stiff dark hair and a pale scar through the left eyebrow, wearing a fitted waxed-canvas diving suit with a high collar, reinforced knees and elbows, leather chest harness with brass buckles, weighted belt, rubber-soled boots and a frayed red scarf"
+    },
+    {
+      "id": "Role2",
+      "tag": "Role2",
+      "roleName": "The Warden",
+      "characterId": "Character2",
+      "costumeId": "Costume2",
+      "assetTags": ["Character2", "Costume2"],
+      "description": "67-year-old man with a skull-like face, deep-set watery blue eyes, thin white hair plastered to his scalp, a hooked nose and waxy pruned skin, wearing a floor-length black wool cassock with a short cape, heavy iron cross, rope belt, ring of church keys and lead-weighted hem"
+    },
+    {
+      "id": "Role3",
+      "tag": "Role3",
+      "roleName": "The Ferryman",
+      "characterId": "Character3",
+      "costumeId": "Costume3",
+      "assetTags": ["Character3", "Costume3"],
+      "description": "44-year-old man with a broad weathered face, silver-flecked beard, heavy-lidded dark brown eyes, a broken nose and a gold hoop earring, wearing a knee-length tar-streaked oilskin coat with deep hood, knit jumper, braided suspenders, tall rubber waders and fingerless gloves with a coiled rope and hooked knife at the belt"
+    },
+    {
+      "id": "Role4",
+      "tag": "Role4",
+      "roleName": "The Bellwright",
+      "characterId": "Character4",
+      "costumeId": "Costume4",
+      "assetTags": ["Character4", "Costume4"],
+      "description": "Ageless androgynous spectral figure with luminous pale skin, a bald head etched with fine bronze hairline cracks, pupil-less silver-white eyes and verdigris-tipped fingers, wearing floating layered tarnished bronze and bone-white robes fused with a leather smith's apron, a collar of tiny bronze bells and sleeves dissolving into trailing silt"
+    },
+    {
+      "id": "Role5",
+      "tag": "Role5",
+      "roleName": "The Runner",
+      "characterId": "Character5",
+      "costumeId": "Costume5",
+      "assetTags": ["Character5", "Costume5"],
+      "description": "16-year-old girl with a thin freckled face, quick amber eyes, a chipped front tooth and tangled ginger hair under a flat cap, wearing an oversized patched wool coat cut down from an adult's, mismatched fingerless gloves, patched trousers tucked into hand-me-down boots and a messenger satchel across the chest"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene 1: The Last Tide",
+      "description": "Pre-dawn at Salt Wharf Market. Mara learns her brother's name has appeared in the Tide Ledger, refuses Elias's and Wren's warnings, and is ferried through the fog channel to dive the drowned cathedral.",
+      "shots": [
+        {
+          "id": "Shot1",
+          "shotType": "Extreme Wide Establishing Crane Shot, slow descent",
+          "lensAngle": "Hawk V-Lite 1.3x Anamorphic 40mm T2.2, deep focus, halation on lamps",
+          "assetTags": ["Role1", "Role3", "Set2"],
+          "description": "High crane frame over the pre-dawn fog of the stilted harbor market of tarred planks, hanging lanterns and rusted cranes, the drowned cathedral spire faint in the mist beyond. Two tiny figures are entering the market lane: a 34-year-old woman with a sharp jaw, sunburned cheekbones, grey-green eyes and a pale scar through the left eyebrow, in a fitted waxed-canvas diving suit and frayed red scarf, and a 44-year-old bearded man with a broken nose and gold hoop earring in a tar-streaked oilskin coat and waders.",
+          "action": "Shot: Extreme wide establishing shot, crane descent. Scene: Pre-dawn sea fog, sodium and oil lamps at 2700K against pale blue sky, teal shadows, wet tarred planks, coal smoke. Action: The market stirs as two figures cut through the stalls toward the skiff dock; a faint underwater bell tolls once; the Ferryman speaks as they reach the dock. Character: The Diver walks fast, eyes forward, jaw set, one hand at her bare wrist; The Ferryman strolls half a step behind, matchstick in his teeth, glancing at the spire with hidden worry. Camera: Descends from the crane tops through the fog over 5 seconds and ends on a medium-wide of the pair at the dock. Audio: Creaking planks, gulls, muffled market chatter, one deep bell toll felt as sub-bass, low string drone. The Ferryman says (dry and easy) 'Tide turns in ten minutes. After that, I don't wait.'"
+        },
+        {
+          "id": "Shot2",
+          "shotType": "Medium Tracking Shot, side-on, handheld",
+          "lensAngle": "Cooke Speed Panchro 32mm T2.0, shallow depth, warm lamp bokeh",
+          "assetTags": ["Role1", "Set2"],
+          "description": "Side-on medium frame of the diver with the scar through her left eyebrow and frayed red scarf, in her salt-bleached waxed-canvas suit and brass-buckled harness, mid-stride on the wet tarred planks of the market, one hand pressed to her bare wrist, lantern-lit stalls of eels, salvaged brass and bottled sea-glass blurred behind her.",
+          "action": "Shot: Medium tracking shot, side-on, handheld. Scene: Lantern-lit stalls, wet planks reflecting amber lamps, brine and smoke haze, teal-and-gold palette. Action: The Diver strides through the crowd without glancing at the stalls and answers the Ferryman without breaking stride. Character: Tight jaw, unblinking grey-green eyes, one hand pressed against her bare wrist, controlled grief. Camera: Tracks beside her at walking pace for 5 seconds and ends as she passes a hanging lantern that flares across her face. Audio: Market murmur, footsteps on planks, distant gulls, low cello drone. The Diver says (low and flat) 'Then we don't waste it.'"
+        },
+        {
+          "id": "Shot3",
+          "shotType": "Medium Two-Shot, handheld push-in",
+          "lensAngle": "Cooke Speed Panchro 32mm T2.0, shallow depth",
+          "assetTags": ["Role5", "Role1", "Prop4", "Set2"],
+          "description": "Medium two-shot in the lantern-lit harbor market: the diver in her waxed-canvas suit and red scarf stands still on the tarred planks, facing a breathless 16-year-old ginger runner with a freckled face, amber eyes, chipped front tooth, flat cap and oversized patched wool coat, who is arriving at a run with the swollen leather-bound Tide Ledger clutched in both hands.",
+          "action": "Shot: Medium two-shot, handheld push-in. Scene: Lantern glow on tarred planks, fog drifting between stalls, warm amber against cold blue sky. Action: The Runner sprints in, shoves the ledger into the Diver's hands and jabs a finger at a silver-inked line; the Diver freezes. Character: The Runner is breathless, half-grinning from nerves, glancing over her shoulder; the Diver's face goes still, jaw tightening. Camera: Pushes in slowly over 5 seconds and ends on the silver ink on the page between them. Audio: Crowd murmur falling away, paper rustle, faint silver chime, rising heartbeat. The Runner says (fast whisper) 'Last night's entry. His name, Mara. In silver.'"
+        },
+        {
+          "id": "Shot4",
+          "shotType": "Close-Up Insert with Rack Focus",
+          "lensAngle": "Panavision Primo 75mm T1.9, rack from page to eyes",
+          "assetTags": ["Role1", "Prop4"],
+          "description": "Close-up with the focus on an open page of the swollen Tide Ledger with its brass clasp and salt-warped pages, a faint silver name glowing on the dark paper beneath the diver's gloved thumb; the diver's sharp jaw, scarred left eyebrow and grey-green eyes are soft and out of focus behind the page.",
+          "action": "Shot: Close-up insert with rack focus. Scene: Silver ink glowing faintly on dark salt-warped paper, soft lamp light, shallow focus. Action: Her thumb traces the name, she closes the clasp with a click and lifts her eyes. Character: Grey-green eyes wet but steady, no tremor, grief hardening into fury. Camera: Racks focus from the glowing ink to her eyes over 5 seconds and ends locked on her eyes. Audio: Silver shimmer, clasp click, sustained cello note, wind dropping out. The Diver says (very low, controlled fury) 'Then he's down there.'"
+        },
+        {
+          "id": "Shot5",
+          "shotType": "Medium Two-Shot, slow push-in",
+          "lensAngle": "Cooke Speed Panchro 50mm T2.0, shallow depth, sodium lamp rim light",
+          "assetTags": ["Role3", "Role1", "Set2"],
+          "description": "Medium two-shot in the fog-wrapped market under hanging lanterns and rusted cranes: the bearded ferryman with heavy-lidded dark brown eyes and gold hoop earring in his tar-streaked oilskin coat faces the diver in her waxed-canvas suit and red scarf, a matchstick still between his teeth, sodium light rimming both of them.",
+          "action": "Shot: Medium two-shot, slow push-in. Scene: Sodium rim light through fog, deep teal shadows, rusted cranes behind. Action: The Ferryman spits out his matchstick and warns her; she answers without blinking. Character: His jokes drop away and his brow furrows; her stare is steady and unyielding. Camera: Pushes in over 5 seconds and ends tight on both faces. Audio: Muffled harbor ambience, creaking cranes, low drone. The Ferryman says (quiet) 'That bell took him. It'll take you too.'"
+        },
+        {
+          "id": "Shot6",
+          "shotType": "Medium Close-Up on the Runner, slight low angle",
+          "lensAngle": "Cooke Speed Panchro 32mm T2.0, shallow depth",
+          "assetTags": ["Role5", "Role1", "Set2"],
+          "description": "Slight low-angle medium close-up of the freckled runner with a chipped front tooth, flat cap and oversized patched wool coat, bouncing on her heels with a forced grin, the diver in her waxed-canvas suit and red scarf half in frame beside her, swinging lanterns and the drowned spire ghosting in the mist behind them.",
+          "action": "Shot: Medium close-up, slight low angle. Scene: Swinging lanterns, wet planks, drowned spire ghosting in the mist, warm amber against cold blue. Action: The Runner grins to hide her fear and tugs the Diver's sleeve; the Diver gives the smallest nod and turns to the dock. Character: The Runner bounces on her heels, chipped tooth showing, eyes shining; the Diver's face softens for a heartbeat. Camera: Holds on the Runner for 5 seconds and ends as the Diver walks out of frame. Audio: Gulls, lantern chains creaking, soft strings. The Runner says (grinning, nervous) 'Come back, yeah? You still owe me forty crowns.'"
+        },
+        {
+          "id": "Shot7",
+          "shotType": "Wide Tracking Shot over Water, low angle",
+          "lensAngle": "Hawk V-Lite 1.3x Anamorphic 40mm T2.2, low to the waterline, fog bloom",
+          "assetTags": ["Role3", "Role1", "Set4"],
+          "description": "Wide frame at the waterline of the glass-still Fog Channel: a flat-bottomed skiff with a hand-cranked lamp drifts between drowned rooftops and leaning chimneys, the bearded ferryman in his tar-streaked oilskin coat standing at the pole in the stern, the diver in her waxed-canvas suit sitting upright and motionless at the bow, dense silver fog all around.",
+          "action": "Shot: Wide tracking shot at water level, low angle. Scene: Dense silver fog at 6500K, glass-still water, drowned rooftops and leaning chimneys, one swinging amber lantern. Action: The skiff glides through the channel; a deep toll rolls across the water and ripples spread; the Ferryman speaks. Character: The Ferryman poles slowly, eyes scanning the fog, voice dropping; the Diver sits motionless at the bow, hands clasped. Camera: Glides alongside the skiff for 5 seconds and ends on the ripples fanning out. Audio: Dripping water, pole splashing, fog silence, bell toll with long reverb. The Ferryman says (murmuring, unnerved) 'You hear that? That's not the sea ringing.'"
+        },
+        {
+          "id": "Shot8",
+          "shotType": "Medium Close-Up, locked-off, slow push",
+          "lensAngle": "Panavision Primo 75mm T1.9, silver fog as key light",
+          "assetTags": ["Role1", "Set4"],
+          "description": "Locked-off medium close-up of the diver with the scar through her left eyebrow and grey-green eyes, gazing past the camera toward the unseen cathedral spire, breath visible in the cold air, her red scarf lifting in the draught, silver fog and the faint shapes of drowned rooftops soft behind her.",
+          "action": "Shot: Medium close-up, locked off with slow push. Scene: Silver fog as soft key light, cold teal shadows, visible breath. Action: Another toll rolls through the fog and she tilts her head as if she heard a voice in it. Character: Eyes widening slightly, lips parting, red scarf lifting in the draught. Camera: Pushes in slowly over 5 seconds and ends tight on her eyes. Audio: Fog silence, distant toll, faint whispering harmonics under the drone. The Diver says (almost to herself) 'It's calling him.'"
+        },
+        {
+          "id": "Shot9",
+          "shotType": "Medium Close-Up, locked-off with slow push",
+          "lensAngle": "Cooke Speed Panchro 50mm T2.0, shallow depth, warm lantern kicker",
+          "assetTags": ["Role1", "Prop1", "Set4"],
+          "description": "Medium close-up aboard the skiff: the diver with the scarred left eyebrow and red scarf holds the riveted brass diving helmet, with its three round viewports and dented crown, raised in both hands in front of her chest, her face still bare, an amber lamp swinging behind her in the silver fog.",
+          "action": "Shot: Medium close-up, locked off with slow push. Scene: Swinging amber lamp, silver fog, brass catching warm highlights. Action: She taps the helmet twice, lowers it over her head and the faceplate clangs shut. Character: Clipped, final movements, steady eyes that appear in the viewport glass. Camera: Pushes in slowly over 5 seconds and ends on her eyes reflecting the lamp in the glass. Audio: Rivet clinks, helmet thud, faceplate clang, regulator rasp, water slapping the hull. The Diver says (clipped, muffled as the glass closes) 'Twenty minutes. If I'm not up, cut the line.'"
+        },
+        {
+          "id": "Shot10",
+          "shotType": "Over-the-Shoulder Insert, handheld",
+          "lensAngle": "Cooke Speed Panchro 25mm T2.0, shallow depth",
+          "assetTags": ["Role3", "Prop1", "Set4"],
+          "description": "Over-the-shoulder frame on the skiff: the brass diving helmet with its rear air valve and coiled rubber hose sits on the diver's shoulders in the foreground, while the bearded ferryman with rope-scarred palms in his tar-streaked oilskin coat reaches toward the valve, the hand-cranked lamp swaying overhead in the fog.",
+          "action": "Shot: Over-the-shoulder insert, handheld. Scene: Swaying lamp, brass and rubber glinting, fog pressing close. Action: He twists the valve, taps the gauge twice and rests a hand on the helmet crown. Character: Rope-scarred hands, heavy-lidded eyes full of worry, a gruff tenderness. Camera: Drifts slightly with the sway of the skiff for 5 seconds and ends on his hand resting on the crown. Audio: Valve squeak, gauge tap, water lapping, low strings. The Ferryman says (gruff, warm baritone) 'Come back up, Vance. I mean it.'"
+        },
+        {
+          "id": "Shot11",
+          "shotType": "Close-Up on Hands, handheld macro push",
+          "lensAngle": "Panavision Primo 75mm T1.9 macro attachment, shallow focus on the flame",
+          "assetTags": ["Role1", "Prop3", "Set4"],
+          "description": "Macro close-up of the diver's gloved hands in brass-buckled waxed canvas hovering around the ring handle of a battered brass storm lantern with a cracked glass chimney, the wick still dark, the glass-still water of the fog channel just visible below.",
+          "action": "Shot: Close-up on hands, macro push. Scene: Cold blue flame against warm brass, silver fog, glass-still water. Action: Her gloved hands close on the lantern ring and the flame blooms blue on its own. Character: Her eyes appear behind the viewport, wet but steady. Camera: Pushes in on the flame for 5 seconds and ends on its reflection in the helmet glass. Audio: Soft ignition whoosh, muffled helmet breath, bell harmonic rising under the drone. The Diver says (muffled, to the lantern) 'Danny lit this. Let it lead me.'"
+        },
+        {
+          "id": "Shot12",
+          "shotType": "Wide Overhead Shot, slow crane-up",
+          "lensAngle": "Hawk V-Lite 1.3x Anamorphic 40mm T2.2, deep focus, fog bloom",
+          "assetTags": ["Role1", "Role3", "Set4"],
+          "description": "Wide overhead frame of the flat-bottomed skiff on the glassy fog channel ringed by drowned rooftops: the diver in her waxed-canvas suit and brass helmet sits on the gunwale with the blue lantern in her hand, the bearded ferryman in his oilskin coat kneeling beside her with the coiled air line in his fists.",
+          "action": "Shot: Wide overhead shot, crane-up. Scene: Silver fog, glass-still water, drowned rooftops ringing the skiff, a blue glow beneath the surface. Action: She falls backward into the water and the blue lantern glow sinks away as the Ferryman pays out the line. Character: The Diver is rigid and resolute; the Ferryman braces, jaw tight. Camera: Cranes up over 5 seconds until the skiff is a speck in the fog and ends on the empty ripples. Audio: Splash, bubbling, fog silence, a single bell toll. The Ferryman says (calling after her) 'Going down, Vance!'"
+        }
+      ]
+    },
+    {
+      "name": "Scene 2: The Tongue of the Bell",
+      "description": "Mara descends into the drowned nave of Saint Aldric, finds the cracked clapper of the Great Bell, and is cornered by the Warden, who begs her to put it back. Mara refuses, and the Warden sends her below to the foundry crypt.",
+      "shots": [
+        {
+          "id": "Shot13",
+          "shotType": "Underwater Wide Descent Shot, slow vertical drop",
+          "lensAngle": "Hawk V-Lite 1.3x Anamorphic 40mm T2.2, deep focus, particulate haze",
+          "assetTags": ["Role1", "Prop3", "Set1"],
+          "description": "Underwater wide frame just inside a broken rose window of the drowned nave of Saint Aldric: the diver in her waxed-canvas suit and brass-buckled harness hangs small and upright in murky green water, holding a dented blue-flame storm lantern, ribbed barnacled vaults and toppled pews fading into the dark below her.",
+          "action": "Shot: Underwater wide shot, slow vertical descent. Scene: Murky green-blue water, god-rays through broken windows, drifting silt, barnacled vaults. Action: She sinks through a broken window into the nave as the lantern lights a small blue circle on the silted floor. Character: Small against the space, breath steady, eyes wide with awe and dread. Camera: Descends with her for 5 seconds and ends on a wide of the nave floor below. Audio: Muffled underwater ambience, regulator breaths, distant bell resonance, faint choir-like drone. The Diver says (whispered, over helmet radio) 'Elias, I'm in. It's enormous.'"
+        },
+        {
+          "id": "Shot14",
+          "shotType": "Medium Shot, slow drift",
+          "lensAngle": "Cooke Speed Panchro 32mm T2.0, shallow depth, silt flares in the lantern",
+          "assetTags": ["Role1", "Prop3", "Set1"],
+          "description": "Medium shot in the drowned nave: the diver with the sharp jaw, seen through her helmet viewport and brass-buckled harness, stands at the end of a row of toppled pews holding a blue-flame storm lantern low at her side, shafts of dim green-blue light slanting through broken windows behind her, silt hanging in the beam.",
+          "action": "Shot: Medium shot, slow drift. Scene: Slanting green-blue light shafts, blue lantern glow, silt flares, toppled pews. Action: She moves between the pews reading the dark with the lantern while the Ferryman's voice crackles over the radio. Character: Controlled movements, eyes scanning, shoulders tense. Camera: Drifts beside her for 5 seconds and ends on the lantern beam crossing a toppled pew. Audio: Regulator rhythm, silt hiss, radio crackle, low pressure pulse. The Ferryman says (radio, tense) 'Depth's forty feet. Stay in the light.'"
+        },
+        {
+          "id": "Shot15",
+          "shotType": "Low-Angle Wide, slow push-in",
+          "lensAngle": "Hawk V-Lite 1.3x Anamorphic 40mm T2.2, low angle, deep focus",
+          "assetTags": ["Role1", "Set1"],
+          "description": "Low-angle wide frame from the silted floor of the drowned nave: the small figure of the diver in her waxed-canvas suit and brass helmet stands at the bottom of frame, her helmet still facing forward, while the half-collapsed bell tower above the altar looms over her through sagging barnacle-crusted ribbed vaults and drifting silt.",
+          "action": "Shot: Low-angle wide shot, slow push-in. Scene: Sagging barnacled vaults, shafts of dim light, a spectral blue shimmer high in the fallen tower. Action: She tilts her helmet back to take in the bell tower as a low pressure pulse thrums through the water. Character: Dwarfed, rigid, hands still, awe edged with fear. Camera: Pushes up from below for 5 seconds and ends on the tower looming above her. Audio: Deep sub-bass thrum, creaking stone, her breath. The Diver says (hushed) 'There. The Great Bell.'"
+        },
+        {
+          "id": "Shot16",
+          "shotType": "Medium Over-the-Shoulder Shot, slow drift",
+          "lensAngle": "Cooke Speed Panchro 32mm T2.0, shallow depth",
+          "assetTags": ["Role1", "Prop2", "Set1"],
+          "description": "Over the shoulder of the diver in her brass-buckled suit, standing at the edge of a silt drift beneath the sagging bell tower; ahead of her a cracked, pitted bronze bell clapper with a rotting leather strap lies half-buried, only its tip showing, a faint pale blue glow along its hairline crack.",
+          "action": "Shot: Medium over-the-shoulder, slow drift. Scene: Silt-buried bronze, pale blue glow along the crack, dim green light above. Action: She kneels, brushes silt from the clapper and it pulses with light like a heartbeat. Character: Careful gloved hands, stunned eyes, a flicker of unease. Camera: Drifts forward over 5 seconds and ends on the glowing crack. Audio: Silt hiss, rising bronze hum, heartbeat thump. The Diver says (stunned whisper) 'It's warm. It's beating.'"
+        },
+        {
+          "id": "Shot17",
+          "shotType": "Close-Up on Hands, handheld macro push",
+          "lensAngle": "Panavision Primo 75mm T1.9 macro attachment, ultra-shallow focus on the crack",
+          "assetTags": ["Role1", "Prop2"],
+          "description": "Macro close-up of the diver's gloved hands in waxed canvas with brass buckles gripping the rotting leather strap of a forearm-long pitted bronze bell clapper still half-buried in settled silt, a pale blue glow pulsing faintly along its hairline crack.",
+          "action": "Shot: Close-up on hands, handheld macro push. Scene: Pale blue pulse along green-pitted bronze, billowing silt. Action: She strains, the clapper tears free in a cloud of silt and she hugs it to her chest. Character: Knuckles whitening on the strap, labored breath. Camera: Pushes in for 5 seconds and ends on the clapper pressed against her harness. Audio: Silt burst, hum rising in pitch, heavy breathing. The Diver says (breathless, to herself) 'Got you.'"
+        },
+        {
+          "id": "Shot18",
+          "shotType": "Medium Shot, reactive push-in on the lantern",
+          "lensAngle": "Cooke Speed Panchro 50mm T2.0, shallow depth, blue flare",
+          "assetTags": ["Role1", "Prop2", "Prop3", "Set1"],
+          "description": "Medium shot of the diver with the scarred left eyebrow standing among toppled pews, hugging a glowing cracked bronze bell clapper to her chest, the cold blue flame of the battered brass storm lantern at her belt burning steady and small, drifting silt around her.",
+          "action": "Shot: Medium shot, reactive push-in. Scene: Blue flame flaring white, long shadows swinging across the pews. Action: The lantern flares as if in warning and she turns her whole body, shielding the flame with her palm. Character: Wary eyes, clenched jaw, a protective grip on the clapper. Camera: Pushes in on the lantern for 5 seconds and ends on her eyes scanning the dark. Audio: Flame whoosh, rising bell harmonics, her quickened breath. The Diver says (hushed, wary) 'Something's here.'"
+        },
+        {
+          "id": "Shot19",
+          "shotType": "Medium Shot, sudden reveal with slow zoom",
+          "lensAngle": "Panavision Primo 50mm T1.9, candle practical glow on the face",
+          "assetTags": ["Role2", "Prop5", "Role1", "Set1"],
+          "description": "Medium shot of the dark vestry doorway of the drowned nave, a warm 2200K candle glow spilling out over pews and candle stubs; in the doorway stands the gaunt 67-year-old man with a skull-like face, watery blue eyes and thin white hair, in a waterlogged black wool cassock with iron cross and ring of keys, a pale glowing bone key still held low at his hip, the diver's shoulder just in frame.",
+          "action": "Shot: Medium shot, sudden reveal with slow zoom. Scene: Warm 2200K candle glow from the vestry against cold green-blue water. Action: He steps from the dark vestry doorway with the Bone Key held out like a crucifix and blocks her exit. Character: Skull-like face lit gold, free hand cupped as if in prayer, sorrow over threat. Camera: Slow zooms in for 5 seconds and ends on the key at arm's length. Audio: Candle flutter, key-ring jingle, low organ drone. The Warden says (gentle, sorrowful, each word spaced like a toll) 'Put it back, child.'"
+        },
+        {
+          "id": "Shot20",
+          "shotType": "Tight Two-Shot, split-diopter style",
+          "lensAngle": "Cooke Speed Panchro 50mm T2.0 with split diopter, both faces sharp",
+          "assetTags": ["Role1", "Role2", "Prop2", "Set1"],
+          "description": "Tight two-shot in the drowned nave: the diver with the scarred left eyebrow, behind her faceplate, faces the waxen-faced Warden in his cassock across the glowing cracked bronze bell clapper clasped to her chest, both faces sharp, blue clapper glow on her side and gold candlelight on his, silt drifting between them.",
+          "action": "Shot: Tight two-shot, split-diopter. Scene: Blue clapper glow meeting gold candlelight, drifting silt between them. Action: She turns her shoulder to shield the clapper while the Warden reaches toward it with a trembling hand. Character: Her stare is cold and unblinking; his hand shakes. Camera: Holds nearly still for 5 seconds with a slight push and ends on the gap between his fingers and the clapper. Audio: Silt crackle, clapper hum rising to a whine, organ drone dropping out. The Diver says (cold, grief hardened to steel) 'He's down here. Give me one reason to leave.'"
+        },
+        {
+          "id": "Shot21",
+          "shotType": "Medium Close-Up on the Warden, slow push-in",
+          "lensAngle": "Panavision Primo 50mm T1.9, candle key light, deep shadow behind",
+          "assetTags": ["Role2", "Prop5", "Set1"],
+          "description": "Medium close-up of the gaunt Warden with a skull-like face, deep-set watery blue eyes and a faint tremor in his right hand, in his waterlogged black wool cassock with iron cross, holding the pale glowing bone key against his chest, candle key light on his face, the sagging bell tower a dark mass in the shadow behind him.",
+          "action": "Shot: Medium close-up, slow push-in. Scene: Candle key light, deep shadow, the tower looming behind him. Action: His tremor worsens and his eyes slide from her toward the bell as he pleads. Character: Watery blue eyes brimming, knuckles pale on the key, voice breaking. Camera: Pushes in for 5 seconds and ends on his trembling hand. Audio: Candle flutter, deep bell hum, organ swell. The Warden says (hushed, pleading) 'Silence that bell, and the dead go back under.'"
+        },
+        {
+          "id": "Shot22",
+          "shotType": "Close-Up on the Diver, handheld micro-push",
+          "lensAngle": "Panavision Primo 75mm T1.9, ultra-shallow depth, blue glow on one side of the face",
+          "assetTags": ["Role1", "Prop2", "Set1"],
+          "description": "Close-up of the diver's grey-green eyes and the pale scar through her left eyebrow behind the helmet viewport, eyes wide and fixed on the Warden off-frame, a faint blue glow from the cracked bronze bell clapper at her chest lighting one side of her jaw, dark green water behind.",
+          "action": "Shot: Close-up, handheld micro-push. Scene: Faint blue glow on one side of her face, dark green water behind. Action: She absorbs his words, then decides. Character: Pupils tightening, loud breath, a jaw that sets as grief turns to resolve. Camera: Creeps in for 5 seconds and ends tight on her eyes. Audio: Amplified breath, heartbeat thump, bronze hum. The Diver says (very low) 'Then he's one of them.'"
+        },
+        {
+          "id": "Shot23",
+          "shotType": "Medium Wide Shot, slow lateral track",
+          "lensAngle": "Hawk V-Lite 1.3x Anamorphic 40mm T2.2, wide aperture, silt in the foreground",
+          "assetTags": ["Role1", "Role2", "Prop2", "Set1"],
+          "description": "Medium wide frame in the drowned nave with silt drifting in the foreground: the diver in her brass-buckled waxed-canvas suit stands face to face with the black-cassocked Warden, the glowing bronze bell clapper clutched to her chest, the broken window glimmering faintly beyond them and the bell tower dark overhead.",
+          "action": "Shot: Medium wide shot, slow lateral track. Scene: Silt in the foreground, tower groaning above, blue glow against green-black water. Action: She shoulders past the Warden toward the exit as the floor shudders; he does not stop her. Character: She is rigid and driven; he lowers his eyes in resignation. Camera: Tracks sideways for 5 seconds and ends on the Warden alone in frame. Audio: Stone groan, silt rush, her breath. The Diver says (steel in her voice) 'Move aside.'"
+        },
+        {
+          "id": "Shot24",
+          "shotType": "Wide High-Angle Shot, slow crane-down into a rift",
+          "lensAngle": "Hawk V-Lite 1.3x Anamorphic 40mm T2.2, deep focus, blue light bloom from below",
+          "assetTags": ["Role1", "Role2", "Set1"],
+          "description": "Wide high-angle frame of the silted flagstone floor of the drowned nave of Saint Aldric: the diver in her waxed-canvas suit stands still with the clapper at her chest, the black-cassocked Warden beside her with his head lifted, the flagstones between them whole and silent, a faint hairline of blue light beginning to show in one slab.",
+          "action": "Shot: Wide high-angle shot, crane-down. Scene: Cold blue light pouring up through cracked flagstones into green water, silt spraying outward. Action: The floor splits and a stairwell opens; she hovers at the edge as the Warden bows his head. Character: She is frozen, clutching the clapper; he is humbled, hands cupped in prayer. Camera: Cranes down for 5 seconds and ends looking into the spiral of the stairwell. Audio: Stone cracking, silt blast, rising choir tones, deep pressure pulse. The Warden says (gentle but iron-edged) 'Below is where they wait. Go, child.'"
+        }
+      ]
+    },
+    {
+      "name": "Scene 3: The Foundry Crypt",
+      "description": "Deep below the nave, Mara finds her brother's name carved among the drowned and is confronted by the Bellwright, who reveals what silencing the bell would cost. The Warden arrives with the Bone Key, and the three of them reach a standoff over the clapper.",
+      "shots": [
+        {
+          "id": "Shot25",
+          "shotType": "Extreme Wide Establishing Shot, slow crane-down through a stone stairwell",
+          "lensAngle": "Hawk V-Lite 1.3x Anamorphic 40mm T2.2, deep focus, particulate haze",
+          "assetTags": ["Role1", "Prop3", "Set5"],
+          "description": "Extreme wide frame looking down a stone stairwell into the vaulted undercroft of the drowned foundry: cold furnaces with dying orange embers, bronze bell molds, hanging chains and walls inscribed with the names of the drowned; at the top of frame the tiny diver in her waxed-canvas suit, brass-buckled harness and frayed red scarf holds a battered brass storm lantern with a cold blue flame.",
+          "action": "Shot: Extreme wide establishing shot, crane-down. Scene: Dead furnaces with dying orange embers, hanging chains, thousands of carved names, silt hanging motionless, blue lantern the only light. Action: She sinks into the crypt, the lantern carving a small circle from the dark. Character: Small and cautious, scarf drifting, eyes wide. Camera: Cranes down the stairwell for 5 seconds and ends on a wide of the crypt with her at its center. Audio: Airless hush, regulator breath, distant bell hum. The Diver says (muffled, whispering) 'Elias, I'm below the nave. Names. Thousands.'"
+        },
+        {
+          "id": "Shot26",
+          "shotType": "Medium Tracking Shot along the inscribed wall, slow lateral move",
+          "lensAngle": "Cooke Speed Panchro 32mm T2.0, shallow depth, lantern bokeh on the stone",
+          "assetTags": ["Role1", "Prop3", "Set5"],
+          "description": "Medium frame beside a wall carved with the names of the drowned in the foundry undercroft: the diver with the scar through her left eyebrow and frayed red scarf, in her salt-bleached waxed-canvas suit, holds the cracked blue-flame brass storm lantern raised toward the first lines of names, blue light against the dying orange ember glow of the dead furnace mouths.",
+          "action": "Shot: Medium tracking shot along the wall. Scene: Carved stone names, blue lantern glow against orange ember light, floating motes. Action: She sweeps the lantern along the names until the flame flares at one line and she stops, glove hovering. Character: Scanning eyes, held breath, a hand that trembles slightly. Camera: Tracks beside her for 5 seconds and ends on the flaring name. Audio: Stone-muffled ambience, flame flutter, her breathing. The Diver says (low and flat) 'Vance. Daniel Vance. He's here.'"
+        },
+        {
+          "id": "Shot27",
+          "shotType": "Close-Up Insert with Rack Focus",
+          "lensAngle": "Panavision Primo 75mm T1.9, rack from carved name to eyes",
+          "assetTags": ["Role1", "Prop3", "Set5"],
+          "description": "Close-up with sharp focus on a freshly carved name glowing faintly among weathered inscriptions on the foundry crypt wall; in the soft foreground edge, the diver's grey-green eyes and the scar through her left eyebrow are blurred, the blue flame of the dented brass storm lantern reflected in her faceplate glass.",
+          "action": "Shot: Close-up insert, rack focus. Scene: A freshly carved name glowing among weathered inscriptions, blue flame reflected in glass. Action: Focus shifts from the glowing name to her eyes as her breath fogs the glass and a blue shimmer blooms behind her. Character: Wet eyes, trembling lower lip, fierce hope. Camera: Racks from the name to her eyes over 5 seconds and ends on the blue shimmer in the background. Audio: Soft breath, flame hiss, a faint chime of tiny bells. The Diver says (barely audible) 'Hold on, Danny.'"
+        },
+        {
+          "id": "Shot28",
+          "shotType": "Over-the-Shoulder Wide, slow push-in on the unfinished bell",
+          "lensAngle": "Hawk V-Lite 1.3x Anamorphic 40mm T2.2, flare on spectral glow",
+          "assetTags": ["Role1", "Role4", "Set5"],
+          "description": "Over-the-shoulder wide frame from behind the diver in her waxed-canvas suit and red scarf, looking across the vaulted foundry crypt of cold furnaces, bronze molds and hanging chains toward a half-finished bell standing in shadow; drifting silt gathers beside the bell in a faint pale blue halo, with no figure yet formed.",
+          "action": "Shot: Over-the-shoulder wide shot, slow push-in. Scene: Pale blue halo against dead orange embers, unfinished bell in shadow, drifting silt. Action: The Bellwright forms from the silt beside the bell; she spins with the lantern raised. Character: The Bellwright is still, head tilted, mouth never fully closed; the Diver stiffens, lantern shaking. Camera: Pushes in for 5 seconds and ends framing the Bellwright over her shoulder. Audio: Collar bells chiming, sub-bass swell, glassy harmonics. The Bellwright says (resonant, tilting its head) 'You carry my tongue, child.'"
+        },
+        {
+          "id": "Shot29",
+          "shotType": "Medium Close-Up, locked-off with slow push",
+          "lensAngle": "Panavision Primo 75mm T1.9, spectral glow as key light",
+          "assetTags": ["Role4", "Prop2", "Set5"],
+          "description": "Locked-off medium close-up of the ageless Bellwright with luminous pale skin, bronze hairline cracks across its bald head and pupil-less silver-white eyes, in layered bronze and bone-white robes with a bell-charm collar, gazing just off-camera toward a glowing, humming bronze bell clapper out of frame, dead furnaces dark behind it in the cold foundry crypt.",
+          "action": "Shot: Medium close-up, locked off with slow push. Scene: Spectral blue key light, bronze cracks catching highlights, dark furnaces behind. Action: Its silver eyes lock on the humming clapper just out of frame as the collar charms chime in time with the pulse. Character: Unblinking, pupil-less eyes, utterly still, mouth slightly open. Camera: Pushes slowly for 5 seconds and ends tight on its eyes. Audio: Bell-charm chimes synced to a heartbeat pulse, low drone. The Bellwright says (measured, resonant) 'Do you know what it is for?'"
+        },
+        {
+          "id": "Shot30",
+          "shotType": "Medium Shot, slight low angle",
+          "lensAngle": "Cooke Speed Panchro 50mm T2.0, shallow depth, blue kicker from the lantern",
+          "assetTags": ["Role1", "Prop2", "Prop3", "Set5"],
+          "description": "Slight low-angle medium shot of the diver with the sharp jaw and scarred left eyebrow, in her waxed-canvas suit with brass-buckled harness, holding a forearm-long cracked bronze bell clapper glowing blue against her chest in one arm and the battered brass storm lantern lowered at her side, bronze molds and hanging chains dark behind her in the foundry crypt.",
+          "action": "Shot: Medium shot, slight low angle. Scene: Blue lantern kicker, orange embers behind, bronze molds in shadow. Action: She plants her boots in the silt, clapper to her chest and lantern held out like a weapon. Character: Steady, cold, jaw set, defiance masking fear. Camera: Holds with a slight push for 5 seconds and ends on her face above the clapper. Audio: Clapper hum, flame hiss, silt settling. The Diver says (steady and cold) 'It rings the dead ashore. I'm going to silence it.'"
+        },
+        {
+          "id": "Shot31",
+          "shotType": "Medium Two-Shot, slow lateral drift with silt in the foreground",
+          "lensAngle": "Hawk V-Lite 1.3x Anamorphic 40mm T2.2, wide aperture, blue halation",
+          "assetTags": ["Role1", "Role4", "Set5"],
+          "description": "Medium two-shot with drifting silt in the foreground: the diver in her waxed-canvas suit and frayed red scarf and the ageless Bellwright in floating bronze and bone-white robes with trailing silt sleeves face each other a few feet apart in the vaulted foundry crypt, a half-finished bell standing in shadow behind them.",
+          "action": "Shot: Medium two-shot, slow lateral drift. Scene: Blue halation, silt in the foreground, unfinished bell in shadow. Action: The Bellwright glides a step closer without moving its feet; she does not retreat. Character: It is gentle, almost sorrowful, sleeves dissolving into silt; she is rigid and unflinching. Camera: Drifts sideways for 5 seconds and ends with the two facing each other in profile. Audio: Soft collar chimes, sub-bass, her steady breath. The Bellwright says (gently, sorrowful) 'Silence it, and every soul that walked ashore goes back under.'"
+        },
+        {
+          "id": "Shot32",
+          "shotType": "Tight Close-Up, handheld micro-push",
+          "lensAngle": "Panavision Primo 75mm T1.9, ultra-shallow depth, spectral glow on one side of the face",
+          "assetTags": ["Role1", "Role4", "Set5"],
+          "description": "Extreme close-up of the diver's grey-green eyes and the pale scar through her left eyebrow, spectral blue glow on one side of her face, the Bellwright's silver pupil-less eyes soft and out of focus over her shoulder, silt catching blue light between them in the foundry crypt.",
+          "action": "Shot: Extreme close-up, handheld micro-push. Scene: Spectral glow on one side of her face, silt catching blue light. Action: The meaning lands on her as the Bellwright speaks from behind her shoulder. Character: Pupils tightening, breath catching audibly, eyes glassy. Camera: Creeps in for 5 seconds and ends on her eye with the Bellwright blurred behind. Audio: Amplified breath, a held bell harmonic, a heartbeat. The Bellwright says (soft and certain) 'Your brother too. He would be the first.'"
+        },
+        {
+          "id": "Shot33",
+          "shotType": "Wide Reveal Shot, dolly-back from the Bellwright to the stairwell",
+          "lensAngle": "Hawk V-Lite 1.3x Anamorphic 40mm T2.2, deep focus, warm candle practical in the distance",
+          "assetTags": ["Role2", "Prop5", "Set5"],
+          "description": "Wide frame of the vaulted foundry crypt framed by cold furnaces, a warm candle glow just appearing at the top of the stone stairwell in the distance, where the gaunt 67-year-old Warden with a skull-like face and thin white hair stands in his waterlogged black wool cassock with iron cross, rope belt and ring of church keys, a hand-length pale bone key with a bronze bell-shaped bow glowing faintly in his raised hand.",
+          "action": "Shot: Wide reveal shot, dolly-back. Scene: Warm candle practical in the distance against spectral blue, cold furnaces framing the stairwell. Action: The Warden descends the stairs, the Bone Key held aloft like a crucifix, his hem dragging a silt trail. Character: Slow, deliberate steps, skull-like face lit gold, iron beneath the gentleness. Camera: Dollies back for 5 seconds and ends on the full stairwell with the Warden in the center. Audio: Key-ring jingle, candle flutter, organ drone. The Warden says (gentle but iron-edged) 'Do not listen, child. The Bellwright lies.'"
+        },
+        {
+          "id": "Shot34",
+          "shotType": "Medium Three-Shot, slow arc",
+          "lensAngle": "Cooke Speed Panchro 32mm T2.0, shallow depth, cross-lit by candle gold and spectral blue",
+          "assetTags": ["Role1", "Role2", "Role4", "Set5"],
+          "description": "Medium three-shot in the vaulted foundry crypt: the diver in her brass-buckled waxed-canvas suit stands in the middle of a tense triangle, the waxen-faced Warden in his black wool cassock with iron cross on her left lit by candle gold, the ageless Bellwright in bronze and bone-white robes on her right lit by spectral blue, cold furnaces, bronze molds and hanging chains behind them.",
+          "action": "Shot: Medium three-shot, slow arc. Scene: Candle gold on her left and spectral blue on her right, cold furnaces and chains behind. Action: She looks from one to the other as the Bellwright tilts its head and sets the trap. Character: She is torn, eyes darting; the Warden stiffens; the Bellwright is unhurried. Camera: Arcs slowly around the triangle for 5 seconds and ends on the Warden's face. Audio: Competing organ drone and bell harmonics, her breath. The Bellwright says (unhurried) 'Ask him why he never rang your name.'"
+        },
+        {
+          "id": "Shot35",
+          "shotType": "Medium Close-Up on the Warden, slow push-in",
+          "lensAngle": "Panavision Primo 50mm T1.9, candle practical on the face, deep shadow behind",
+          "assetTags": ["Role2", "Prop5", "Set5"],
+          "description": "Medium close-up of the gaunt Warden with a skull-like face, deep-set watery blue eyes and a faint tremor in his right hand, in a waterlogged black wool cassock, gripping the pale glowing bone key with its bronze bell-shaped bow against the iron cross at his chest, candle light on his face, silt falling in the dark around him in the foundry crypt.",
+          "action": "Shot: Medium close-up, slow push-in. Scene: Candle on his face, deep shadow, silt falling in the dark. Action: The key shakes in his grip and his eyes slide away from her as the silence stretches, then he confesses. Character: Trembling hand, glistening eyes, shoulders sagging. Camera: Pushes in for 5 seconds and ends on his face. Audio: Candle flutter, silt hiss, a held organ note. The Warden says (hushed, broken) 'Because I could not bear to send them back.'"
+        },
+        {
+          "id": "Shot36",
+          "shotType": "Wide Final Tableau, slow pull-back to black",
+          "lensAngle": "Hawk V-Lite 1.3x Anamorphic 40mm T2.2, silhouetted figures against blue light bloom",
+          "assetTags": ["Role1", "Role2", "Role4", "Prop2"],
+          "description": "Wide frame in the vaulted foundry crypt of dead furnaces and the unfinished bell: the small diver in her waxed-canvas suit and red scarf stands center holding the glowing cracked bronze bell clapper lowered against her chest, the towering spectral Bellwright in bronze robes on one side and the black-cassocked Warden standing on the other, all three in silhouette against a faint blue glow.",
+          "action": "Shot: Wide final tableau, slow pull-back. Scene: Silhouettes against a blooming blue light, dead furnaces and the unfinished bell behind. Action: She raises the clapper overhead as threat and offer, the Warden drops to his knees and the Bellwright lifts its face to the light; hard cut to black on a bell toll. Character: She is hoarse and resolute; the Warden is broken; the Bellwright is rapt. Camera: Pulls back for 5 seconds and ends on the three silhouettes before cutting to black. Audio: Humming rising to a whine, organ and strings swell, single thunderous bell toll, then silence. The Diver says (hoarse, final) 'Nobody touches it until I see my brother.'"
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ const { getBrowser } = require('./browser');
 const fs = require('fs');
 const path = require('path');
 const { getRandomCinematicShot } = require('./cinematic_shots');
-const {downloadDir} = require('./environment');
+const {downloadDir, projectFile} = require('./environment');
 puppeteer.use(StealthPlugin());
 
 function waitForKeypress() {
@@ -36,7 +36,7 @@ async function downloadViaPuppeteer(page, url, filepath) {
 (async () => {
     const browser = await getBrowser();
 
-    const matrix = require('./project4.json');
+    const matrix = require('./' + projectFile);
     const page = await browser.newPage();
 
     await page.goto('https://www.gentube.app/genmovie', {
@@ -50,8 +50,8 @@ async function downloadViaPuppeteer(page, url, filepath) {
     // ---------------------------------------------------------
     // READ AND SORT FILES FROM inputimages DIRECTORY
     // ---------------------------------------------------------
-    //let files = fs.readdirSync(inputDir).filter(f => /^Shot.*\.(png|jpg|jpeg|webp)$/i.test(f));
-    let files = fs.readdirSync(inputDir).filter(f => /\.(png|jpg|jpeg|webp)$/i.test(f));
+    let files = fs.readdirSync(inputDir).filter(f => /^Shot.*\.(png|jpg|jpeg|webp)$/i.test(f));
+    //let files = fs.readdirSync(inputDir).filter(f => /\.(png|jpg|jpeg|webp)$/i.test(f));
     files.sort((a, b) => {
     const na = parseInt(a.match(/\d+/)?.[0] || 0, 10);
     const nb = parseInt(b.match(/\d+/)?.[0] || 0, 10);
@@ -61,14 +61,18 @@ async function downloadViaPuppeteer(page, url, filepath) {
     console.log("Files detected:", files);
     console.log("Files total:", files.length);
 
+    let imgCount = 0;
     await new Promise(r => setTimeout(r, 2000));
-
-    for (let v = 0; v < matrix.shots.length; v++) {
-
-        const filePath = path.join(inputDir, files[v]);
+    for (let scene = 0; scene < matrix.scenes.length; scene++) {
+    for (let v = 0; v < matrix.scenes[scene].shots.length; v++) {
+        console.log(imgCount);
+        console.log('***');
+        console.log(files[imgCount]);
+        const filePath = path.join(inputDir, files[imgCount]);
+        imgCount++;
         //const shot = getRandomCinematicShot();
         //let currentPrompt = `${shot} - sound: no music just natural background noises`;
-        let currentPrompt = JSON.stringify(matrix.shots[v].action);
+        let currentPrompt = matrix.scenes[scene].shots[v].description + ' ' + matrix.scenes[scene].shots[v].action;
         console.log(currentPrompt);
 
         // ---------------------------------------------------------
@@ -153,5 +157,6 @@ async function downloadViaPuppeteer(page, url, filepath) {
 
         console.log("Done for frame", v + 1);
     }
+}
 
 })();
