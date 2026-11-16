@@ -96,7 +96,7 @@ const URL = 'https://www.gentube.app/create';
     const chosen = ["scenes"];
     //const chosen = ["scenes"];
     //const chosen = ["costumes"];
-    //const chosen = ["characters"];
+    //const chosen = ["roles"];
     //const chosen = ["shots"];
 
     // Scene selection (Scene1 = scenes[0].shots, Scene2 = scenes[1].shots, ...)

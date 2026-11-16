@@ -1,0 +1,277 @@
+{
+    "zskyflow": 1,
+    "nodes": [
+        {
+            "id": "p1",
+            "type": "prompt",
+            "x": 40,
+            "y": 60,
+            "params": {
+                "text": "A dense rainforest in South America, a group of capuchin monkeys foraging for fruit on the forest floor, bright green leaves and vines above, a shaft of sunlight breaking through the canopy, a small clearing with a few towering trees, a gentle rustling of leaves, photorealistic cinematic wildlife documentary, realistic animal movement and textures, 16:9."
+            }
+        },
+        {
+            "id": "v1",
+            "type": "video",
+            "x": 340,
+            "y": 60,
+            "params": {}
+        },
+        {
+            "id": "p2",
+            "type": "prompt",
+            "x": 40,
+            "y": 260,
+            "params": {
+                "text": "A vast savannah in East Africa at golden hour, a pride of lions lazing in the shade of a thorn tree, golden grasslands stretching to the horizon, a few scattered acacia trees, a warm orange glow on the horizon, a gentle breeze lifting the grass, photorealistic cinematic wildlife documentary, 16:9."
+            }
+        },
+        {
+            "id": "v2",
+            "type": "video",
+            "x": 340,
+            "y": 260,
+            "params": {}
+        },
+        {
+            "id": "p3",
+            "type": "prompt",
+            "x": 40,
+            "y": 460,
+            "params": {
+                "text": "A crystal-clear lake in the Canadian wilderness, a pair of common loons swimming in tandem, mirrored reflections on the water, a few scattered lily pads, a warm summer sun shining through the trees, a gentle lapping of the water, photorealistic cinematic wildlife documentary, natural animal behaviour, 16:9."
+            }
+        },
+        {
+            "id": "v3",
+            "type": "video",
+            "x": 340,
+            "y": 460,
+            "params": {}
+        },
+        {
+            "id": "p4",
+            "type": "prompt",
+            "x": 40,
+            "y": 660,
+            "params": {
+                "text": "A rugged coastline in Norway, a flock of Arctic guillemots flying overhead, grey rocks and seaweed below, a few scattered seabirds, a cool blue-grey light along the horizon, a few scattered waves, photorealistic cinematic wildlife documentary, realistic textures and movement, 16:9."
+            }
+        },
+        {
+            "id": "v4",
+            "type": "video",
+            "x": 340,
+            "y": 660,
+            "params": {}
+        },
+        {
+            "id": "p5",
+            "type": "prompt",
+            "x": 40,
+            "y": 860,
+            "params": {
+                "text": "A dense bamboo forest in Asia, a group of Japanese serows foraging for bamboo shoots, bright green leaves above, a shaft of sunlight breaking through the canopy, a small clearing with a few towering trees, a gentle rustling of leaves, photorealistic cinematic wildlife documentary, realistic animal movement and textures, 16:9."
+            }
+        },
+        {
+            "id": "v5",
+            "type": "video",
+            "x": 340,
+            "y": 860,
+            "params": {}
+        },
+        {
+            "id": "p6",
+            "type": "prompt",
+            "x": 40,
+            "y": 1060,
+            "params": {
+                "text": "A vast steppe in Asia at sunrise, a herd of Mongolian gazelles running across the open grassland, golden grasslands stretching to the horizon, a few scattered acacia trees, a warm orange glow on the horizon, a gentle breeze lifting the grass, photorealistic cinematic wildlife documentary, 16:9."
+            }
+        },
+        {
+            "id": "v6",
+            "type": "video",
+            "x": 340,
+            "y": 1060,
+            "params": {}
+        },
+        {
+            "id": "p7",
+            "type": "prompt",
+            "x": 40,
+            "y": 1260,
+            "params": {
+                "text": "A frozen waterfall in the Canadian Rockies, a pair of river otters playing in the ice, clear blue water below, a few scattered pine trees, a cool blue-grey light along the horizon, a few scattered ice crystals, photorealistic cinematic wildlife documentary, natural animal behaviour, 16:9."
+            }
+        },
+        {
+            "id": "v7",
+            "type": "video",
+            "x": 340,
+            "y": 1260,
+            "params": {}
+        },
+        {
+            "id": "p8",
+            "type": "prompt",
+            "x": 40,
+            "y": 1460,
+            "params": {
+                "text": "A dry desert landscape in North America, a group of roadrunners foraging for food on the ground, sandy dunes and rocks below, a few scattered cacti, a warm golden light along the horizon, a few scattered dust devils, photorealistic cinematic wildlife documentary, realistic textures and movement, 16:9."
+            }
+        },
+        {
+            "id": "v8",
+            "type": "video",
+            "x": 340,
+            "y": 1460,
+            "params": {}
+        },
+        {
+            "id": "p9",
+            "type": "prompt",
+            "x": 40,
+            "y": 1660,
+            "params": {
+                "text": "A lush green forest in Europe, a pair of white-tailed eagles nesting in a towering tree, bright green leaves above, a shaft of sunlight breaking through the canopy, a small clearing with a few scattered trees, a gentle rustling of leaves, photorealistic cinematic wildlife documentary, realistic animal movement and textures, 16:9."
+            }
+        },
+        {
+            "id": "v9",
+            "type": "video",
+            "x": 340,
+            "y": 1660,
+            "params": {}
+        },
+        {
+            "id": "p10",
+            "type": "prompt",
+            "x": 40,
+            "y": 1860,
+            "params": {
+                "text": "A vast grassland in Africa at sunrise, a herd of wildebeests running across the open grassland, golden grasslands stretching to the horizon, a few scattered acacia trees, a warm orange glow on the horizon, a gentle breeze lifting the grass, photorealistic cinematic wildlife documentary, 16:9."
+            }
+        },
+        {
+            "id": "v10",
+            "type": "video",
+            "x": 340,
+            "y": 1860,
+            "params": {}
+        }
+    ],
+    "edges": [
+        {
+            "id": "e_p1_v1_prompt",
+            "from": {
+                "node": "p1",
+                "port": "out"
+            },
+            "to": {
+                "node": "v1",
+                "port": "prompt"
+            }
+        },
+        {
+            "id": "e_p2_v2_prompt",
+            "from": {
+                "node": "p2",
+                "port": "out"
+            },
+            "to": {
+                "node": "v2",
+                "port": "prompt"
+            }
+        },
+        {
+            "id": "e_p3_v3_prompt",
+            "from": {
+                "node": "p3",
+                "port": "out"
+            },
+            "to": {
+                "node": "v3",
+                "port": "prompt"
+            }
+        },
+        {
+            "id": "e_p4_v4_prompt",
+            "from": {
+                "node": "p4",
+                "port": "out"
+            },
+            "to": {
+                "node": "v4",
+                "port": "prompt"
+            }
+        },
+        {
+            "id": "e_p5_v5_prompt",
+            "from": {
+                "node": "p5",
+                "port": "out"
+            },
+            "to": {
+                "node": "v5",
+                "port": "prompt"
+            }
+        },
+        {
+            "id": "e_p6_v6_prompt",
+            "from": {
+                "node": "p6",
+                "port": "out"
+            },
+            "to": {
+                "node": "v6",
+                "port": "prompt"
+            }
+        },
+        {
+            "id": "e_p7_v7_prompt",
+            "from": {
+                "node": "p7",
+                "port": "out"
+            },
+            "to": {
+                "node": "v7",
+                "port": "prompt"
+            }
+        },
+        {
+            "id": "e_p8_v8_prompt",
+            "from": {
+                "node": "p8",
+                "port": "out"
+            },
+            "to": {
+                "node": "v8",
+                "port": "prompt"
+            }
+        },
+        {
+            "id": "e_p9_v9_prompt",
+            "from": {
+                "node": "p9",
+                "port": "out"
+            },
+            "to": {
+                "node": "v9",
+                "port": "prompt"
+            }
+        },
+        {
+            "id": "e_p10_v10_prompt",
+            "from": {
+                "node": "p10",
+                "port": "out"
+            },
+            "to": {
+                "node": "v10",
+                "port": "prompt"
+            }
+        }
+    ]
+}

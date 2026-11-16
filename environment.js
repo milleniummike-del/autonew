@@ -1,5 +1,8 @@
-const filepath = "X:\\inputprojects\\project9";
-const downloadDir = "X:\\inputprojects\\project9";
+const filepath = "X:\\inputprojects\\project10";
+const downloadDir = "X:\\inputprojects\\project10";
+const projectFile = "project10.json";
+const flowURL = "https://flow.google.com/project/740b2d51-82c7-44d9-a28e-e5a3bee7cb18";
+
 const path = require('path');
 function waitForKeypress() {
     return new Promise(resolve => {
@@ -21,7 +24,7 @@ function waitForKeypress() {
         });
     });
 }
-const projectFile = "project9.json";
+
 async function waitTime(time = 1000) {
     console.log ("Waiting "+time);
     await new Promise(r => setTimeout(r, time));
@@ -1121,5 +1124,6 @@ module.exports = {
     waitTime,
     waitTimeRandom,
     blocks,
+    flowURL,
     projectFile
 };

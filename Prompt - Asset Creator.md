@@ -28,7 +28,7 @@ Strict Rules:
    description MUST be exploded to the relevant tag
 3. SCENE SYNTHESIS: scene following a story beat - create 3 scenes
 4. SHOT IMAGEFRAMES:
-   The description string should be a description of the first key frame of the action string
+   The description string should be a description of the first key frame of the action string - it MUST have all the details that appear in the action string and be the FIRST frame of the shot
    The action string MUST be exploded to the relevant tag and contain any dialog, camera action or activities for a video shot
    "Role1 throwing the Prop2 whilst standing in the Set2" becomes "New student throwing the Magic Wand whilst standing in the Crystal Spell Chamber" - the tags map to the names - the maximum number of tags per shot is Asset Limit
    Each shot should follow a scene narrative or beat (ie Harry arrives at school and meets Hagred)

@@ -1,0 +1,349 @@
+{
+  "title": "The Cursed Flagship",
+  "genre": "High Fantasy Epic",
+  "premise": "A mutineered pirate captain uses an enchanted skeleton compass to retrieve his cursed flagship from an armada of ghost buccaneers.",
+  "logline": "After being betrayed and marooned by his own crew, a pirate captain must follow an enchanted skeleton compass through haunted seas to reclaim his cursed flagship before a ghost armada binds it forever to the realm of the dead.",
+  "visualTone": {
+    "colorPalette": [
+      "#0F172A",
+      "#1E3A5F",
+      "#3E7CB1",
+      "#C8A96B",
+      "#D9E6F2"
+    ],
+    "cameraLenses": "Panavision C-Series Anamorphic, 40mm T2.8, 75mm Portrait Anamorphic",
+    "lightingPhilosophy": "Moonlit chiaroscuro with volumetric fog, practical lantern motivation, spectral rim-lighting",
+    "grainAesthetic": "Kodak Vision3 500T 5219 35mm grain"
+  },
+  "sets": [
+    {
+      "id": "Set1",
+      "tag": "Set1",
+      "name": "Black Reef Exile Shore",
+      "description": "Jagged volcanic shoreline scattered with driftwood, wreck debris and black sand beneath towering sea cliffs",
+      "atmosphere": "Salt spray, rolling mist, crashing waves, cold ocean winds",
+      "lighting": "Silver moonlight mixed with warm torchlight, deep shadows between rocks"
+    },
+    {
+      "id": "Set2",
+      "tag": "Set2",
+      "name": "Cavern of Tides",
+      "description": "Ancient flooded cavern lined with glowing runes, coral-encrusted stone arches and tidal pools",
+      "atmosphere": "Echoing water drips, damp air, drifting sea fog",
+      "lighting": "Bioluminescent cyan reflections and shafts of moonlight through ceiling cracks"
+    },
+    {
+      "id": "Set3",
+      "tag": "Set3",
+      "name": "Phantom Sea Passage",
+      "description": "Open ocean corridor surrounded by spectral whirlpools and ghostly currents",
+      "atmosphere": "Dense fog banks, supernatural winds, distant phantom voices",
+      "lighting": "Cold blue moonlight illuminating mist and cresting waves"
+    },
+    {
+      "id": "Set4",
+      "tag": "Set4",
+      "name": "Ghost Armada Expanse",
+      "description": "Massive fleet of translucent pirate vessels drifting across a cursed sea",
+      "atmosphere": "Ethereal mist, floating embers of ghostly energy, unnerving silence",
+      "lighting": "Pale spectral glow and stark moonlit highlights"
+    },
+    {
+      "id": "Set5",
+      "tag": "Set5",
+      "name": "The Revenant Crown",
+      "description": "Ancient cursed flagship with weathered black hull, skeletal ornamentation and torn enchanted sails",
+      "atmosphere": "Whispering spirits, creaking timber, drifting fog",
+      "lighting": "Ghost-fire lanterns casting green-blue highlights across dark wood"
+    }
+  ],
+  "characters": [
+    {
+      "id": "Character1",
+      "tag": "Character1",
+      "name": "Captain Thorne Blackwake",
+      "actorName": "Weathered leading man with commanding presence",
+      "description": "42 years old, angular face, strong jawline, storm-gray eyes, shoulder-length black hair streaked with silver, scar across left cheek",
+      "behavioralTraits": "Determined posture, measured movements, intense focused gaze"
+    },
+    {
+      "id": "Character2",
+      "tag": "Character2",
+      "name": "Mira Tidecaller",
+      "actorName": "Charismatic fantasy heroine",
+      "description": "28 years old, oval face, emerald eyes, braided auburn hair, freckles across nose",
+      "behavioralTraits": "Alert stance, quick gestures, empathetic expressions"
+    },
+    {
+      "id": "Character3",
+      "tag": "Character3",
+      "name": "First Mate Voss",
+      "actorName": "Rugged character actor",
+      "description": "45 years old, broad face, shaved head, dark beard, broken nose",
+      "behavioralTraits": "Aggressive stride, clenched jaw, calculating glances"
+    },
+    {
+      "id": "Character4",
+      "tag": "Character4",
+      "name": "Admiral Morcant",
+      "actorName": "Villainous elder statesman",
+      "description": "60 years old, gaunt face, pale eyes, long white hair, weather-beaten skin",
+      "behavioralTraits": "Still posture, deliberate gestures, intimidating stare"
+    },
+    {
+      "id": "Character5",
+      "tag": "Character5",
+      "name": "Navigator Finn",
+      "actorName": "Young adventurous supporting actor",
+      "description": "22 years old, youthful features, blue eyes, curly brown hair, sun-weathered complexion",
+      "behavioralTraits": "Energetic movements, curious expressions, restless pacing"
+    }
+  ],
+  "costumes": [
+    {
+      "id": "Costume1",
+      "tag": "Costume1",
+      "name": "Exiled Captain Coat",
+      "description": "Long weathered naval coat, layered belts, high collar, brass buckles",
+      "materials": "Aged leather, waxed canvas, tarnished brass",
+      "wearCondition": "Heavy salt damage and battle wear"
+    },
+    {
+      "id": "Costume2",
+      "tag": "Costume2",
+      "name": "Tide Mage Garments",
+      "description": "Flowing layered robes, fitted vest, rune-etched accessories",
+      "materials": "Dyed linen, silk cords, polished shell ornaments",
+      "wearCondition": "Well-maintained with minor sea wear"
+    },
+    {
+      "id": "Costume3",
+      "tag": "Costume3",
+      "name": "Mutineer Attire",
+      "description": "Dark pirate jacket, utility belts, loose trousers and boots",
+      "materials": "Leather, coarse wool, iron hardware",
+      "wearCondition": "Scuffed and heavily used"
+    },
+    {
+      "id": "Costume4",
+      "tag": "Costume4",
+      "name": "Ghost Admiral Regalia",
+      "description": "Ceremonial naval coat with skeletal insignia and flowing cloak",
+      "materials": "Spectral fabric, silver embroidery, enchanted clasps",
+      "wearCondition": "Supernaturally pristine"
+    },
+    {
+      "id": "Costume5",
+      "tag": "Costume5",
+      "name": "Navigator Leathers",
+      "description": "Lightweight explorer jacket, utility harness and travel boots",
+      "materials": "Soft leather, canvas straps, brass fasteners",
+      "wearCondition": "Moderately worn from travel"
+    }
+  ],
+  "props": [
+    {
+      "id": "Prop1",
+      "tag": "Prop1",
+      "name": "Skeleton Compass",
+      "description": "Ivory compass crafted from carved bone with glowing green needle",
+      "narrativeSignificance": "Reveals the path to the cursed flagship",
+      "handlingNote": "Held in one hand and consulted during navigation"
+    },
+    {
+      "id": "Prop2",
+      "tag": "Prop2",
+      "name": "Ghostfire Lantern",
+      "description": "Bronze lantern containing flickering blue spectral flame",
+      "narrativeSignificance": "Illuminates hidden supernatural pathways",
+      "handlingNote": "Carried aloft to reveal concealed elements"
+    },
+    {
+      "id": "Prop3",
+      "tag": "Prop3",
+      "name": "Mutineer's Cutlass",
+      "description": "Curved steel blade with notched spine and worn grip",
+      "narrativeSignificance": "Symbol of Voss's betrayal",
+      "handlingNote": "Wielded aggressively in one-handed combat"
+    },
+    {
+      "id": "Prop4",
+      "tag": "Prop4",
+      "name": "Captain's Seal",
+      "description": "Gold insignia medallion embossed with a crowned kraken",
+      "narrativeSignificance": "Proof of rightful command of the flagship",
+      "handlingNote": "Displayed or held before allies"
+    },
+    {
+      "id": "Prop5",
+      "tag": "Prop5",
+      "name": "Soul Anchor Chain",
+      "description": "Massive rune-covered chain emitting pale spectral energy",
+      "narrativeSignificance": "Binds the flagship to the ghost armada",
+      "handlingNote": "Requires physical effort to move or sever"
+    }
+  ],
+  "roles": [
+    {
+      "id": "Role1",
+      "tag": "Role1",
+      "roleName": "Exiled Captain",
+      "characterId": "Character1",
+      "costumeId": "Costume1",
+      "assetTags": ["Character1", "Costume1"],
+      "description": "42 years old, angular face, strong jawline, storm-gray eyes, shoulder-length black hair streaked with silver, scar across left cheek wearing long weathered naval coat, layered belts, high collar, brass buckles"
+    },
+    {
+      "id": "Role2",
+      "tag": "Role2",
+      "roleName": "Sea Mystic",
+      "characterId": "Character2",
+      "costumeId": "Costume2",
+      "assetTags": ["Character2", "Costume2"],
+      "description": "28 years old, oval face, emerald eyes, braided auburn hair, freckles across nose wearing flowing layered robes, fitted vest, rune-etched accessories"
+    },
+    {
+      "id": "Role3",
+      "tag": "Role3",
+      "roleName": "Mutineer First Mate",
+      "characterId": "Character3",
+      "costumeId": "Costume3",
+      "assetTags": ["Character3", "Costume3"],
+      "description": "45 years old, broad face, shaved head, dark beard, broken nose wearing dark pirate jacket, utility belts, loose trousers and boots"
+    },
+    {
+      "id": "Role4",
+      "tag": "Role4",
+      "roleName": "Ghost Admiral",
+      "characterId": "Character4",
+      "costumeId": "Costume4",
+      "assetTags": ["Character4", "Costume4"],
+      "description": "60 years old, gaunt face, pale eyes, long white hair, weather-beaten skin wearing ceremonial naval coat with skeletal insignia and flowing cloak"
+    },
+    {
+      "id": "Role5",
+      "tag": "Role5",
+      "roleName": "Young Navigator",
+      "characterId": "Character5",
+      "costumeId": "Costume5",
+      "assetTags": ["Character5", "Costume5"],
+      "description": "22 years old, youthful features, blue eyes, curly brown hair, sun-weathered complexion wearing lightweight explorer jacket, utility harness and travel boots"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "The Call of the Compass",
+      "description": "Moonlit isolation, cold blue palette, wet volcanic textures, ominous atmosphere",
+      "shots": [
+        {
+          "id": "Shot1",
+          "shotType": "Low-Angle Medium Tracking Shot",
+          "lensAngle": "40mm Anamorphic Prime, shallow DoF",
+          "assetTags": ["Role1", "Prop1", "Set1"],
+          "description": "42 years old, angular face, strong jawline, storm-gray eyes, shoulder-length black hair streaked with silver, scar across left cheek wearing long weathered naval coat, layered belts, high collar, brass buckles holding an ivory compass crafted from carved bone with glowing green needle on a jagged volcanic shoreline scattered with driftwood, wreck debris and black sand beneath towering sea cliffs",
+          "action": "Exiled Captain studies the Skeleton Compass whilst standing in the Black Reef Exile Shore and says 'You still know the way.' Camera tracks forward for five seconds as the compass needle slowly rotates toward the sea."
+        },
+        {
+          "id": "Shot2",
+          "shotType": "Wide Crane Shot",
+          "lensAngle": "35mm Anamorphic",
+          "assetTags": ["Role2", "Prop2", "Set1"],
+          "description": "28 years old, oval face, emerald eyes, braided auburn hair, freckles across nose wearing flowing layered robes, fitted vest, rune-etched accessories raising a bronze lantern containing flickering blue spectral flame on a jagged volcanic shoreline scattered with driftwood, wreck debris and black sand beneath towering sea cliffs",
+          "action": "Sea Mystic lifts the Ghostfire Lantern and says 'The dead wake with the tide.' Camera cranes upward revealing spectral patterns appearing in the mist."
+        },
+        {
+          "id": "Shot3",
+          "shotType": "Medium Two-Shot",
+          "lensAngle": "50mm Anamorphic",
+          "assetTags": ["Role1", "Role2", "Prop1", "Set2"],
+          "description": "Exiled Captain and Sea Mystic entering an ancient flooded cavern lined with glowing runes, coral-encrusted stone arches and tidal pools while the Skeleton Compass glows intensely",
+          "action": "Exiled Captain follows the compass into the Cavern of Tides and says 'Then we sail tonight.' Camera dollies beside the pair as runes illuminate."
+        },
+        {
+          "id": "Shot4",
+          "shotType": "Close-Up Push-In",
+          "lensAngle": "75mm Anamorphic",
+          "assetTags": ["Role1", "Prop4", "Set2"],
+          "description": "42 years old, angular face, strong jawline, storm-gray eyes, shoulder-length black hair streaked with silver, scar across left cheek wearing long weathered naval coat, layered belts, high collar, brass buckles revealing a gold insignia medallion embossed with a crowned kraken inside an ancient flooded cavern lined with glowing runes",
+          "action": "Exiled Captain grips the Captain's Seal and says 'My ship will answer to me again.' Camera pushes into the medallion until it fills frame."
+        }
+      ]
+    },
+    {
+      "name": "Across the Phantom Sea",
+      "description": "Spectral adventure, teal-blue palette, rolling fog, supernatural tension",
+      "shots": [
+        {
+          "id": "Shot5",
+          "shotType": "Aerial Tracking Shot",
+          "lensAngle": "32mm Anamorphic",
+          "assetTags": ["Role5", "Prop2", "Set3"],
+          "description": "22 years old, youthful features, blue eyes, curly brown hair, sun-weathered complexion wearing lightweight explorer jacket, utility harness and travel boots carrying a bronze lantern containing flickering blue spectral flame through an open ocean corridor surrounded by spectral whirlpools and ghostly currents",
+          "action": "Young Navigator holds the Ghostfire Lantern above the bow and says 'A channel is opening!' Camera races overhead following the vessel through fog."
+        },
+        {
+          "id": "Shot6",
+          "shotType": "Medium Tracking Shot",
+          "lensAngle": "40mm Anamorphic",
+          "assetTags": ["Role1", "Prop1", "Set3"],
+          "description": "Exiled Captain steering by the Skeleton Compass through an open ocean corridor surrounded by spectral whirlpools and ghostly currents",
+          "action": "Exiled Captain points ahead and says 'Trust the compass.' Camera tracks alongside as waves crash across the deck."
+        },
+        {
+          "id": "Shot7",
+          "shotType": "Low-Angle Hero Shot",
+          "lensAngle": "50mm Anamorphic",
+          "assetTags": ["Role4", "Set4"],
+          "description": "60 years old, gaunt face, pale eyes, long white hair, weather-beaten skin wearing ceremonial naval coat with skeletal insignia and flowing cloak standing upon the Ghost Armada Expanse",
+          "action": "Ghost Admiral emerges from spectral fog and says 'The living do not command these waters.' Camera rises dramatically toward his looming figure."
+        },
+        {
+          "id": "Shot8",
+          "shotType": "Over-the-Shoulder Shot",
+          "lensAngle": "65mm Anamorphic",
+          "assetTags": ["Role3", "Prop3", "Set4"],
+          "description": "45 years old, broad face, shaved head, dark beard, broken nose wearing dark pirate jacket, utility belts, loose trousers and boots gripping a curved steel blade with notched spine and worn grip among the Ghost Armada Expanse",
+          "action": "Mutineer First Mate draws the Mutineer's Cutlass and says 'The flagship belongs to me now.' Camera pushes toward the threatening blade."
+        }
+      ]
+    },
+    {
+      "name": "Reclaiming the Revenant Crown",
+      "description": "Supernatural battle, green-blue ghostfire palette, weathered timber textures, triumphant atmosphere",
+      "shots": [
+        {
+          "id": "Shot9",
+          "shotType": "Dynamic Tracking Shot",
+          "lensAngle": "35mm Anamorphic",
+          "assetTags": ["Role1", "Role3", "Prop3", "Set5"],
+          "description": "Exiled Captain confronting Mutineer First Mate wielding a curved steel blade with notched spine and worn grip aboard the ancient cursed flagship with weathered black hull, skeletal ornamentation and torn enchanted sails",
+          "action": "Exiled Captain advances as Mutineer First Mate attacks. Exiled Captain says 'Your betrayal ends here.' Camera circles the duel."
+        },
+        {
+          "id": "Shot10",
+          "shotType": "Wide Action Shot",
+          "lensAngle": "40mm Anamorphic",
+          "assetTags": ["Role2", "Prop5", "Set5"],
+          "description": "Sea Mystic reaching toward a massive rune-covered chain emitting pale spectral energy aboard the ancient cursed flagship with weathered black hull and torn enchanted sails",
+          "action": "Sea Mystic channels magic and says 'Break the binding!' Camera sweeps across the deck as energy courses through the Soul Anchor Chain."
+        },
+        {
+          "id": "Shot11",
+          "shotType": "Extreme Close-Up",
+          "lensAngle": "75mm Anamorphic",
+          "assetTags": ["Role1", "Prop5", "Set5"],
+          "description": "Exiled Captain straining against a massive rune-covered chain emitting pale spectral energy aboard the ancient cursed flagship",
+          "action": "Exiled Captain pulls the Soul Anchor Chain free and says 'The ship is ours!' Camera pushes tightly into the chain as runes shatter."
+        },
+        {
+          "id": "Shot12",
+          "shotType": "Epic Wide Victory Shot",
+          "lensAngle": "32mm Anamorphic",
+          "assetTags": ["Role1", "Prop4", "Set5"],
+          "description": "Exiled Captain raising a gold insignia medallion embossed with a crowned kraken upon the ancient cursed flagship with weathered black hull, skeletal ornamentation and torn enchanted sails",
+          "action": "Exiled Captain raises the Captain's Seal and says 'Revenant Crown, sail for freedom.' Camera cranes upward for five seconds as the flagship breaks away from the fading ghost armada."
+        }
+      ]
+    }
+  ]
+}

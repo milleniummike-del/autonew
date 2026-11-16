@@ -4,12 +4,13 @@ const { getBrowser } = require('./browser');
 const fs = require('fs');
 const path = require('path');
 const { getRandomCinematicShot } = require('./cinematic_shots');
-const { projectFile, downloadDir, waitForKeypress, getInput, waitTimeRandom, waitTime, blocks } = require('./environment');
+const { projectFile, downloadDir, waitForKeypress, getInput, waitTimeRandom, waitTime, blocks, flowURL } = require('./environment');
 const matrix = require('./' + projectFile);
 const projectName = "";
 puppeteer.use(StealthPlugin());
-const step = 1;
+const step = 3;
 let things = "sets props characters costumes";
+things = "sets";
 
 (async () => {
 
@@ -19,7 +20,7 @@ let things = "sets props characters costumes";
     const page = await browser.newPage();
 
     await page.goto(
-        'https://flow.google.com/project/b50f1a73-a257-49f1-bb99-301db636bea0',
+        flowURL,
         { waitUntil: "networkidle2", timeout: 0 }
     );
 
@@ -200,7 +201,7 @@ let things = "sets props characters costumes";
         // Step 1 - Create initial assets
         if (things.includes("sets")) {
             for (let a = 0; a < matrix.sets.length; a++) {
-                const promptText = JSON.stringify(matrix.sets[a]) + ' ' + JSON.stringify(matrix.visualTone[a]);
+                const promptText = JSON.stringify(matrix.sets[a]) + ' ' + JSON.stringify(matrix.sets[a].lighting);
                 await create(promptText);
                 await waitTimeRandom();
             }
@@ -238,7 +239,7 @@ let things = "sets props characters costumes";
         }
     }
     if (step == 3) {
-        const scene = 1;
+        const scene = 2;
         const shotsStart = 0;
         const shotsEnd = matrix.scenes[scene].shots.length;
         // Step 3 - needs Roles, Sets, Props,

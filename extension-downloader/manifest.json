@@ -30,6 +30,7 @@
   "content_scripts": [
     {
       "matches": [
+        "https://zsky.ai/*",
         "https://labs.google.com/*",
         "https://labs.google/*",
         "https://flow.google.com/*",
