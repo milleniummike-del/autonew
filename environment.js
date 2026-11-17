@@ -1,6 +1,6 @@
-const filepath = "X:\\inputprojects\\project10";
-const downloadDir = "X:\\inputprojects\\project10";
-const projectFile = "project10.json";
+const filepath = "X:\\inputmixed\\test1";
+const downloadDir = "X:\\inputmixed\\test1";
+const projectFile = "loop1.json";
 const flowURL = "https://flow.google.com/project/740b2d51-82c7-44d9-a28e-e5a3bee7cb18";
 
 const path = require('path');

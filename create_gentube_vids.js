@@ -1,0 +1,168 @@
+const puppeteer = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+const { getBrowser } = require('./browser');
+const fs = require('fs');
+const path = require('path');
+const { getRandomCinematicShot } = require('./cinematic_shots');
+const { getRandomCinematicQuote } = require('./cinematic_quotes');
+const { downloadDir, projectFile } = require('./environment');
+puppeteer.use(StealthPlugin());
+
+function waitForKeypress() {
+    return new Promise(resolve => {
+        console.log('\nWebsite loaded. Press any key to start...');
+
+        if (process.stdin.isTTY) {
+            process.stdin.setRawMode(true);
+        }
+
+        process.stdin.resume();
+
+        process.stdin.once('data', () => {
+            if (process.stdin.isTTY) {
+                process.stdin.setRawMode(false);
+            }
+
+            process.stdin.pause();
+            resolve();
+        });
+    });
+}
+async function downloadViaPuppeteer(page, url, filepath) {
+    const response = await page.goto(url, { timeout: 0 });
+    const buffer = await response.buffer();
+    fs.writeFileSync(filepath, buffer);
+}
+
+(async () => {
+    const browser = await getBrowser();
+
+    const matrix = require('./' + projectFile);
+    const page = await browser.newPage();
+
+    await page.goto('https://www.gentube.app/genmovie', {
+        waitUntil: "networkidle2",
+        timeout: 0
+    });
+
+    const inputDir = downloadDir;
+    if (!fs.existsSync(inputDir)) fs.mkdirSync(inputDir);
+
+    // ---------------------------------------------------------
+    // READ AND SORT FILES FROM inputimages DIRECTORY
+    // ---------------------------------------------------------
+    //let files = fs.readdirSync(inputDir).filter(f => /^Shot.*\.(png|jpg|jpeg|webp)$/i.test(f));
+    //let files = fs.readdirSync(inputDir).filter(f => /^Shot.*\.(jpg|)$/i.test(f));
+    let files = fs.readdirSync(inputDir).filter(f => /\.(png|jpg|jpeg|webp)$/i.test(f));
+    files.sort((a, b) => {
+        const na = parseInt(a.match(/\d+/)?.[0] || 0, 10);
+        const nb = parseInt(b.match(/\d+/)?.[0] || 0, 10);
+        return na - nb;
+    });
+
+    console.log("Files detected:", files);
+    console.log("Files total:", files.length);
+
+    let imgCount = 0;
+    let frameCount = 0;
+    await new Promise(r => setTimeout(r, 2000));
+    for (let v = 0; v < files.length; v++) {
+        console.log(imgCount);
+        console.log('***');
+        console.log(files[imgCount]);
+        const filePath = path.join(inputDir, files[imgCount]);
+        imgCount++;
+        frameCount++;
+        const shot = getRandomCinematicShot();
+        const quote = getRandomCinematicQuote();
+        let currentPrompt = `${shot} - the character says "${quote}"`;
+        console.log(currentPrompt);
+
+        // ---------------------------------------------------------
+        // WAIT FOR FILE INPUT
+        // ---------------------------------------------------------
+        await page.waitForFunction(() => {
+            return document.querySelector('input[type="file"]');
+        });
+
+        const fileInput = await page.$('input[type="file"]');
+        await fileInput.uploadFile(filePath);
+
+        console.log("Uploaded:", filePath);
+
+        // ---------------------------------------------------------
+        // WAIT FOR CONFIGURE BUTTONS
+        // ---------------------------------------------------------
+        await page.waitForFunction(() => {
+            return [...document.querySelectorAll('button')]
+                .filter(el => el.textContent.trim() === 'Configure').length > 0;
+        });
+
+        const frameLabel = `Frame ${frameCount} ·`;
+
+        await page.waitForFunction((label) => {
+            return [...document.querySelectorAll('span')]
+                .some(el => el.textContent.trim().startsWith(label));
+        }, {}, frameLabel);
+
+        await page.evaluate((label) => {
+            const span = [...document.querySelectorAll('span')]
+                .find(el => el.textContent.trim().startsWith(label));
+            if (!span) return;
+
+            const card = span.closest('.relative.w-44');
+            if (!card) return;
+
+            const btn = [...card.querySelectorAll('button')]
+                .find(b => b.textContent.trim() === 'Configure');
+            btn?.click();
+        }, frameLabel);
+
+        console.log("Clicked Configure for frame " + (imgCount));
+
+        // ---------------------------------------------------------
+        // TYPE INTO CONFIGURE FIELD (FAST REACT-SAFE INJECTION)
+        // ---------------------------------------------------------
+        await page.waitForSelector('textarea.input-field', { visible: true });
+
+
+        const textarea = await page.$('textarea.input-field');
+        await textarea.click({ clickCount: 3 });
+
+        await page.evaluate((text) => {
+            const el = document.querySelector('textarea.input-field');
+
+            const setter = Object.getOwnPropertyDescriptor(
+                window.HTMLTextAreaElement.prototype,
+                'value'
+            ).set;
+
+            setter.call(el, text);
+
+            el.dispatchEvent(new Event('input', { bubbles: true }));
+            el.dispatchEvent(new Event('change', { bubbles: true }));
+        }, currentPrompt);
+
+        console.log("Injected prompt:", currentPrompt);
+
+        await page.waitForSelector('button');
+        await page.locator('xpath=//button[normalize-space()="8 seconds"]').click();
+
+        // ---------------------------------------------------------
+        // CLICK DONE
+        // ---------------------------------------------------------
+        await page.waitForFunction(() => {
+            return [...document.querySelectorAll('button')]
+                .some(el => el.textContent.trim() === 'Done');
+        });
+
+        await page.evaluate(() => {
+            const btn = [...document.querySelectorAll('button')]
+                .find(el => el.textContent.trim() === 'Done');
+            btn?.click();
+        });
+
+        console.log("Done for frame", v + 1);
+    }
+
+})();

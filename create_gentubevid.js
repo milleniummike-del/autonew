@@ -51,8 +51,8 @@ async function downloadViaPuppeteer(page, url, filepath) {
     // READ AND SORT FILES FROM inputimages DIRECTORY
     // ---------------------------------------------------------
     //let files = fs.readdirSync(inputDir).filter(f => /^Shot.*\.(png|jpg|jpeg|webp)$/i.test(f));
-    let files = fs.readdirSync(inputDir).filter(f => /^Shot.*\.(jpg|)$/i.test(f));
-    //let files = fs.readdirSync(inputDir).filter(f => /\.(png|jpg|jpeg|webp)$/i.test(f));
+    //let files = fs.readdirSync(inputDir).filter(f => /^Shot.*\.(jpg|)$/i.test(f));
+    let files = fs.readdirSync(inputDir).filter(f => /\.(png|jpg|jpeg|webp)$/i.test(f));
     files.sort((a, b) => {
         const na = parseInt(a.match(/\d+/)?.[0] || 0, 10);
         const nb = parseInt(b.match(/\d+/)?.[0] || 0, 10);
@@ -65,7 +65,7 @@ async function downloadViaPuppeteer(page, url, filepath) {
     let imgCount = 0;
     let frameCount = 0;
     await new Promise(r => setTimeout(r, 2000));
-    for (let copy = 0; copy < 6; copy++) {
+    for (let copy = 0; copy < 1; copy++) {
         imgCount = 0; // ONLY COPIES
         for (let scene = 0; scene < 1; scene++) {
             //for (let scene = 0; scene < matrix.scenes.length; scene++) {
@@ -76,9 +76,9 @@ async function downloadViaPuppeteer(page, url, filepath) {
                 const filePath = path.join(inputDir, files[imgCount]);
                 imgCount++;
                 frameCount++;
-                //const shot = getRandomCinematicShot();
-                //let currentPrompt = `${shot} - sound: no music just natural background noises`;
-                let currentPrompt = matrix.scenes[scene].shots[v].description + ' ' + matrix.scenes[scene].shots[v].action;
+                const shot = getRandomCinematicShot();
+                let currentPrompt = `${shot} - sound: no music just natural background noises`;
+                //let currentPrompt = matrix.scenes[scene].shots[v].description + ' ' + matrix.scenes[scene].shots[v].action;
                 console.log(currentPrompt);
 
                 // ---------------------------------------------------------
@@ -128,6 +128,7 @@ async function downloadViaPuppeteer(page, url, filepath) {
                 // ---------------------------------------------------------
                 await page.waitForSelector('textarea.input-field', { visible: true });
 
+
                 const textarea = await page.$('textarea.input-field');
                 await textarea.click({ clickCount: 3 });
 
@@ -146,6 +147,9 @@ async function downloadViaPuppeteer(page, url, filepath) {
                 }, currentPrompt);
 
                 console.log("Injected prompt:", currentPrompt);
+
+                await page.waitForSelector('button');
+                await page.locator('xpath=//button[normalize-space()="8 seconds"]').click();
 
                 // ---------------------------------------------------------
                 // CLICK DONE
