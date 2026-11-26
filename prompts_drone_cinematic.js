@@ -1,10 +1,9 @@
-
 /**
  * PromptForge: Aerial Drone & Landmark Generator CLI
  * Specializing in cinematic aerial landscapes, famous landmarks,
  * castles, coastlines, mountains, cities and architectural wonders.
  *
- * Usage: node prompts_drone_landscapes.js [count]
+ * Usage: node prompts_drone_landscapes_hashtags.js [count]
  */
 
 const fs = require('fs');
@@ -210,130 +209,44 @@ const ECOLOGICAL_GROUPS = [
     ],
     behaviors: [
       'flying low over dune ridges before ascending to a wide panorama',
-      'tracking above the edge of a deep sandstone canyon',
-      'circling a monumental rock formation with a wide orbit',
-      'rising above the dunes to reveal repeating sand patterns',
-      'following a winding desert valley toward distant mountains',
-      'pulling backward from a cliff edge to reveal the vast desert'
+      'tracking above sandstone formations in a smooth forward movement',
+      'ascending above a canyon rim to reveal the vast desert beyond',
+      'gliding parallel to the sculpted rock formations',
+      'pulling backward to reveal a distant mountain range',
+      'following the natural contours of a winding desert valley'
     ],
     habitats: [
-      'vast arid terrain with realistic sand and rock textures',
-      'layered sandstone formations and deep natural shadows',
-      'remote desert wilderness with immense open horizons',
-      'windswept dunes with naturally occurring ripples',
-      'rocky plateaus and distant heat haze'
-    ]
-  },
-
-  {
-    label: 'Cities, Skylines & Urban Landscapes',
-    species: [
-      'New York City skyline surrounding Manhattan',
-      'Tokyo skyline with dense urban districts',
-      'Paris rooftops and the Seine River at sunset',
-      'London skyline with the River Thames',
-      'Hong Kong skyscrapers backed by green mountains',
-      'Dubai skyline rising from the desert coastline',
-      'Singapore skyline surrounded by tropical greenery',
-      'Rio de Janeiro between mountains and the Atlantic Ocean',
-      'Venice canals and historic buildings from above',
-      'Istanbul skyline with historic domes and the Bosphorus',
-      'Prague historic rooftops surrounding the old town',
-      'Barcelona city blocks beside the Mediterranean coast',
-      'Cape Town skyline beneath Table Mountain',
-      'Lisbon rooftops cascading toward the Tagus River'
-    ],
-    behaviors: [
-      'flying forward toward the skyline from a distant vantage point',
-      'performing a smooth lateral reveal across the city',
-      'ascending above the rooftops to expose the complete cityscape',
-      'tracking along the river through the urban landscape',
-      'pulling backward to reveal the skyline against surrounding mountains',
-      'performing a broad cinematic orbit around a distinctive skyline'
-    ],
-    habitats: [
-      'realistic city geometry and geographically appropriate surroundings',
-      'dense historic districts beside modern architecture',
-      'urban waterfronts with natural reflections',
-      'expansive skylines with atmospheric depth',
-      'cities integrated with surrounding hills, rivers or coastlines'
-    ]
-  },
-
-  {
-    label: 'Lakes, Rivers & Waterfalls',
-    species: [
-      'Iguazu Falls cascading through tropical rainforest',
-      'Victoria Falls surrounded by lush African wilderness',
-      'Niagara Falls with immense flowing water and mist',
-      'Plitvice Lakes connected by cascading waterfalls',
-      'Lake Como surrounded by Italian mountain villages',
-      'Lake Louise beneath towering Canadian Rockies',
-      'Milford Sound with waterfalls and steep fjord walls',
-      'a winding river crossing a broad green valley',
-      'a turquoise glacial river flowing through rocky terrain',
-      'a remote mountain lake surrounded by dense pine forest',
-      'a massive waterfall plunging from a jungle plateau',
-      'a broad river delta spreading into the ocean'
-    ],
-    behaviors: [
-      'following the watercourse in a smooth forward aerial shot',
-      'ascending above the waterfall to reveal the surrounding landscape',
-      'tracking along the river bends from a high oblique angle',
-      'pulling away from the shoreline to reveal the entire lake',
-      'orbiting a waterfall basin while maintaining a safe distance',
-      'flying forward over the water toward distant mountains',
-      'revealing a river delta with a gradual climb'
-    ],
-    habitats: [
-      'natural water reflections and realistic flowing water',
-      'lush riverbanks and layered forested hills',
-      'rugged cliffs with drifting water mist',
-      'glacial terrain with clear blue-green water',
-      'remote lakes and expansive natural wilderness'
+      'vast arid terrain with realistic erosion patterns',
+      'golden dunes and distant sandstone mountains',
+      'dramatic canyon walls with natural layered geology',
+      'remote desert wilderness with subtle atmospheric haze',
+      'rugged plateaus and immense open landscapes'
     ]
   }
 ];
 
 // ---------------------------------------------------------
-// CINEMATIC DRONE SHOT APPROACHES
+// DRONE SHOTS
 // ---------------------------------------------------------
 const DRONE_SHOTS = [
-  'Aerial establishing shot: begin high and wide, slowly advancing to reveal the entire landscape',
-  'Cinematic push-in: fly smoothly forward toward the main subject with controlled acceleration',
-  'Slow pull-back reveal: retreat from the subject to expose the immense surrounding environment',
-  'Ascending reveal: rise steadily from a lower altitude to unveil the full panorama',
-  'Descending reveal: begin above the scene and gently descend toward the main subject',
-  'Orbit shot: perform a smooth 180-degree orbit around the landmark while keeping it centered',
-  'Full orbit: circle the main subject in a controlled 360-degree aerial movement',
-  'Lateral tracking shot: glide sideways to reveal depth, foreground details and distant scenery',
-  'Parallax reveal: move laterally past a foreground feature to uncover the distant landmark',
-  'Flyover shot: cross directly above the main subject, revealing its shape and surrounding terrain',
-  'Top-down overhead: maintain a vertical bird’s-eye view while drifting smoothly over the landscape',
-  'High oblique aerial: capture the landscape from a diagonal elevated angle with deep perspective',
-  'FPV-style cinematic dive: perform a controlled descent toward an open natural valley, avoiding obstacles',
-  'FPV-style valley flight: follow a wide open valley with fluid forward motion and realistic turns',
-  'Reveal from behind a ridge: move forward and upward until the entire landscape emerges',
-  'Reveal from behind a cliff: rise carefully above the cliff edge to expose the coastline beyond',
-  'Reverse reveal: start close to a distinctive feature and steadily pull back into a wide establishing shot',
-  'Crane-up movement: rise vertically while gently tilting down to reveal the environment',
-  'Crane-down movement: descend smoothly while tilting up to emphasize the scale of a landmark',
-  'Diagonal approach: advance diagonally toward the subject while maintaining a cinematic composition',
-  'S-curve flight: follow a gentle S-shaped path through open terrain toward the main subject',
-  'Coastal tracking: follow the coastline parallel to the shore with the ocean filling the background',
-  'River-following shot: track the natural curves of a river from above',
-  'Mountain ridge run: glide parallel to a ridge with the valley and peaks visible beyond',
-  'Slow panoramic sweep: rotate smoothly across the horizon to reveal the complete landscape',
-  'Orbit and rise: circle the subject while gradually increasing altitude for a dramatic reveal',
-  'Orbit and pull away: circle the landmark, then smoothly retreat into a wide aerial composition',
-  'Low-to-high transition: begin above open ground or water and rise into a broad panoramic view',
-  'Forward fly-through: travel through a wide, unobstructed natural opening toward the landscape beyond',
-  'Static aerial hover: hold a stable elevated viewpoint with only subtle natural environmental motion',
-  'Diagonal pull-out: move backward and sideways to reveal the relationship between foreground and background',
-  'Hyperlapse-style aerial progression: simulate a smooth accelerated journey across the landscape',
-  'Wide sweeping arc: travel in a broad curved path around the subject with a steady horizon',
-  'Distant telephoto-style aerial: compress layers of mountains and the landmark into a dramatic composition',
-  'Descending coastal approach: gradually lower toward an open shoreline while keeping the horizon stable',
+  'Wide cinematic aerial establishing shot',
+  'Slow ascending reveal',
+  'Smooth forward tracking flight',
+  'High oblique panoramic aerial shot',
+  'Slow cinematic orbit around the landscape',
+  'Low altitude tracking shot following natural terrain',
+  'Wide lateral reveal with a distant horizon',
+  'Gradual pullback revealing the full landscape',
+  'Smooth aerial flyover with natural parallax',
+  'Slow descending aerial perspective',
+  'High-altitude panoramic sweep',
+  'Gentle sweeping turn above the landscape',
+  'Aerial reveal from behind a foreground ridge',
+  'Wide-angle overhead establishing shot',
+  'Continuous cinematic aerial tracking shot',
+  'Slow rising camera movement above the terrain',
+  'Smooth aerial movement following a river or coastline',
+  'Wide landscape reveal with strong foreground depth',
   'High-altitude reveal: begin with an expansive overhead view and gently descend toward the focal subject'
 ];
 
@@ -448,12 +361,76 @@ const pickN = (arr, n) =>
     .sort(() => Math.random() - 0.5)
     .slice(0, n);
 
+
+// ---------------------------------------------------------
+// TITLE HASHTAG GENERATOR
+// Select the 3 strongest hashtags from title + description.
+// ---------------------------------------------------------
+function createTitleWithHashtags(data) {
+  const title = (data.title || "").trim();
+  const description = (data.description || "").trim();
+  const text = `${title} ${description}`.toLowerCase();
+
+  const hashtagRules = [
+    { tag: "#Drone", keywords: ["drone", "fpv", "aerial"], priority: 3 },
+    { tag: "#Cinematic", keywords: ["cinematic", "cinematography"], priority: 2 },
+    { tag: "#Nature", keywords: ["nature", "natural landscape"], priority: 2 },
+    { tag: "#Landscape", keywords: ["landscape", "valley", "scenery"], priority: 3 },
+    { tag: "#Mountains", keywords: ["mountain", "mountains", "alpine"], priority: 3 },
+    { tag: "#River", keywords: ["river", "waterway", "stream"], priority: 3 },
+    { tag: "#Waterfall", keywords: ["waterfall", "cascade"], priority: 4 },
+    { tag: "#Forest", keywords: ["forest", "woods", "woodland"], priority: 3 },
+    { tag: "#Wildlife", keywords: ["wildlife", "animal", "animals"], priority: 4 },
+    { tag: "#Ocean", keywords: ["ocean", "sea", "coast"], priority: 3 },
+    { tag: "#Beach", keywords: ["beach", "shore", "sand"], priority: 3 },
+    { tag: "#Sunset", keywords: ["sunset", "golden hour"], priority: 3 },
+    { tag: "#Sunrise", keywords: ["sunrise", "dawn"], priority: 3 },
+    { tag: "#Winter", keywords: ["winter", "snow", "snow-covered", "frost"], priority: 3 },
+    { tag: "#Travel", keywords: ["travel", "destination", "explore"], priority: 2 },
+    { tag: "#Relaxing", keywords: ["relaxing", "peaceful", "calm", "serene"], priority: 2 },
+    { tag: "#NaturePhotography", keywords: ["nature photography", "photography"], priority: 2 },
+    { tag: "#AerialVideo", keywords: ["aerial video", "aerial footage"], priority: 2 },
+    { tag: "#ScenicViews", keywords: ["scenic", "scenic views"], priority: 2 },
+    { tag: "#Documentary", keywords: ["documentary"], priority: 2 },
+    { tag: "#Fog", keywords: ["fog", "mist", "water mist"], priority: 2 },
+    { tag: "#Adventure", keywords: ["adventure", "exploration"], priority: 2 },
+    { tag: "#Lake", keywords: ["lake", "lakes"], priority: 3 },
+    { tag: "#Photography", keywords: ["photography", "photographic"], priority: 1 },
+    { tag: "#BeautifulNature", keywords: ["beautiful nature"], priority: 1 }
+  ];
+
+  const found = [];
+
+  for (const rule of hashtagRules) {
+    let matches = 0;
+
+    for (const keyword of rule.keywords) {
+      const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const regex = new RegExp(`\\b${escaped}\\b`, "gi");
+      matches += (text.match(regex) || []).length;
+    }
+
+    if (matches > 0) {
+      found.push({
+        tag: rule.tag,
+        score: matches * rule.priority
+      });
+    }
+  }
+
+  found.sort((a, b) => b.score - a.score);
+
+  const hashtags = found.slice(0, 3).map(item => item.tag);
+
+  return `${title} ${hashtags.join(" ")}`.trim();
+}
+
+
 // ---------------------------------------------------------
 // GENERATOR
 // ---------------------------------------------------------
-const generateDroneBatch = (count = 25) => {
-  const lines = [];
-  lines.push('{"shots": [');
+const generateDroneBatch = (count = 7) => {
+  const results = [];
 
   for (let i = 0; i < count; i++) {
     const group = getRandom(ECOLOGICAL_GROUPS);
@@ -479,37 +456,140 @@ const generateDroneBatch = (count = 25) => {
       `QUALITY REQUIREMENTS: ${quality}`,
       'DURATION: 5 seconds',
       'CONTINUITY: one coherent shot, consistent geography, realistic movement and stable subject identity',
-      'AUDIO: natural environmental ambience appropriate to the location, with no narration or music'
+      'AUDIO: natural environmental ambience appropriate to the location, with no narration or music',
+      'FORMAT: 16:9 widescreen'
     ].join(' | ');
 
-    lines.push(
-      JSON.stringify({
-        in_frame_still_prompt: prompt
-      }) + (i < count - 1 ? ',' : '')
-    );
+    results.push({
+      description: prompt,
+      title: createTitleWithHashtags({
+        title: spec,
+        description: prompt
+      })
+    });
   }
 
-  lines.push(']}');
-  return lines.join('\n');
+  return results;
 };
+
+
+// ---------------------------------------------------------
+// ZSKY FLOW EXPORT
+// Creates exactly 7 prompt nodes and 7 video nodes.
+// ---------------------------------------------------------
+const generateZskyFlow = (prompts, nodeCount = 7) => {
+  const nodes = [];
+  const edges = [];
+
+  const verticalSpacing = 200;
+
+  for (let i = 0; i < nodeCount; i++) {
+    const item = prompts[i];
+
+    if (!item) {
+      throw new Error(`Missing generated prompt for ZSky node ${i + 1}.`);
+    }
+
+    const promptId = `p${i + 1}`;
+    const videoId = `v${i + 1}`;
+    const y = 60 + (i * verticalSpacing);
+
+    // PROMPT NODE
+    nodes.push({
+      id: promptId,
+      type: 'prompt',
+      x: 40,
+      y,
+      params: {
+        text: item.description
+      }
+    });
+
+    // VIDEO NODE
+    nodes.push({
+      id: videoId,
+      type: 'video',
+      x: 340,
+      y,
+      params: {}
+    });
+
+    // CONNECT PROMPT TO VIDEO
+    edges.push({
+      id: `e_${promptId}_${videoId}_prompt`,
+      from: {
+        node: promptId,
+        port: 'out'
+      },
+      to: {
+        node: videoId,
+        port: 'prompt'
+      }
+    });
+  }
+
+  return {
+    zskyflow: 1,
+    nodes,
+    edges
+  };
+};
+
 
 // ---------------------------------------------------------
 // EXECUTION
 // ---------------------------------------------------------
 const args = process.argv.slice(2);
 const parsedCount = Number.parseInt(args[0], 10);
+
 const count = Number.isFinite(parsedCount) && parsedCount > 0
   ? Math.min(parsedCount, 10000)
   : 25;
 
-const output = generateDroneBatch(count);
+// Generate enough prompts for both outputs.
+// ZSky always receives exactly 7 prompts.
+const generatedPrompts = generateDroneBatch(
+  Math.max(count, 7)
+);
 
-fs.writeFileSync('matrix.json', output, {
-  encoding: 'utf8'
-});
+// YouTube output uses the requested count.
+const youtubePrompts = generatedPrompts.slice(0, count);
 
-// Validate that the output is valid JSON.
-JSON.parse(output);
+// ZSky output always uses 7 prompts.
+const zskyPrompts = generatedPrompts.slice(0, 7);
 
-console.log(`🚁 Generated ${count} cinematic drone prompts successfully.`);
-console.log(`📁 Output: ${require('path').resolve('matrix.json')}`);
+// Build JSON.
+const youtubeOutput = JSON.stringify(
+  youtubePrompts,
+  null,
+  2
+);
+
+const zskyOutput = JSON.stringify(
+  generateZskyFlow(zskyPrompts, 7),
+  null,
+  2
+);
+
+// Validate both files before writing.
+JSON.parse(youtubeOutput);
+JSON.parse(zskyOutput);
+
+// Write YouTube JSON.
+fs.writeFileSync(
+  'youtubeweek1.json',
+  youtubeOutput,
+  { encoding: 'utf8' }
+);
+
+// Write ZSky flow JSON.
+fs.writeFileSync(
+  'zsky.json',
+  zskyOutput,
+  { encoding: 'utf8' }
+);
+
+console.log(`Generated ${count} cinematic drone prompts.`);
+console.log('YouTube JSON: ' + require('path').resolve('youtubeweek1.json'));
+console.log('ZSky flow: ' + require('path').resolve('zsky.json'));
+console.log('ZSky contains 7 prompt nodes, 7 video nodes and 7 edges.');
