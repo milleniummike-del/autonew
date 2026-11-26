@@ -59,7 +59,7 @@ const TITLE = readTextFile(TITLE_FILE, getArg('title', 'My Automated Upload'));
 const DESCRIPTION = readTextFile(DESC_FILE, getArg('description', 'Uploaded with Puppeteer automation'));
 
 const CHANNEL = getArg('channel', channel);
-const FILE_NAME = getArg('file', filepath + 'test.mp4');
+const FILE_NAME = getArg('file', filepath + 'test2.mp4');
 
 const FILE_PATH = FILE_NAME;
 
