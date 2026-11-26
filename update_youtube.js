@@ -16,12 +16,8 @@ function delay(ms) {
 }
 
 (async () => {
-    const browser = await puppeteer.launch({
-        headless: false,
-        userDataDir: "browser",
-        args: ["--no-sandbox", "--disable-setuid-sandbox"]
-    });
-
+    const browser = await getBrowser();
+    /*
     const page = (await browser.pages())[0];
 
     page.on('dialog', async d => { await d.dismiss(); });
@@ -29,6 +25,7 @@ function delay(ms) {
     const listUrl = "https://studio.youtube.com/channel/UC5A2FeUQSnut7JqHRNGGmBA/videos/short";
     await page.goto(listUrl, { waitUntil: "networkidle2" });
     await page.waitForSelector("ytcp-video-row");
+
 
     for (let i = 0; i <titles.length; i++) {
 
@@ -101,6 +98,7 @@ function delay(ms) {
         // Wait for list
         await page.waitForSelector("ytcp-video-row");
     }
+    */
 
     console.log("\n🎉 DONE — All videos processed");
 

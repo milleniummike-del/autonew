@@ -10,6 +10,7 @@ const TIMEOUT = 120000;
 
 async function getBrowser() {
 
+    console.log ("called getbrowser");
     if (browser && browser.connected) {
         return browser;
     }

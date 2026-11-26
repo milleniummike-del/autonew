@@ -15,6 +15,9 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const path = require('path');
 const fs = require('fs');
 
+const { getBrowser, safeRun, TIMEOUT } = require('./browser');
+const { downloadDir, filepath, waitForKeypress, waitTime, blocks, projectFile } = require('./environment');
+
 const directory = require('./directory.js');
 
 const DEBUG = true;
@@ -56,9 +59,9 @@ const TITLE = readTextFile(TITLE_FILE, getArg('title', 'My Automated Upload'));
 const DESCRIPTION = readTextFile(DESC_FILE, getArg('description', 'Uploaded with Puppeteer automation'));
 
 const CHANNEL = getArg('channel', channel);
-const FILE_NAME = getArg('file', 'upscaled/final_1.mp4');
+const FILE_NAME = getArg('file', filepath + 'test.mp4');
 
-const FILE_PATH = path.join(directory.getPath(), FILE_NAME);
+const FILE_PATH = FILE_NAME;
 
 console.log("📂 File:", FILE_PATH);
 console.log("📝 Title:", TITLE);
@@ -67,17 +70,13 @@ console.log("📄 Description:", DESCRIPTION);
 puppeteer.use(StealthPlugin());
 
 (async () => {
-
-    const browser = await puppeteer.launch({
-        userDataDir: "browser",
-        headless: false,
-        args: ["--no-sandbox", "--disable-setuid-sandbox"],
-        devtools: DEBUG
-    });
-
+    const browser = await getBrowser();
     // IMPORTANT: page must be OUTSIDE try/catch
     const page = (await browser.pages())[0];
-    await page.bringToFront();
+    await page.goto(channels[0], {
+        waitUntil: 'networkidle2',
+        timeout: 60000
+    });
 
     try {
 
@@ -85,8 +84,6 @@ puppeteer.use(StealthPlugin());
             console.log("⚠️ Dialog:", dialog.message());
             await dialog.dismiss();
         });
-
-        await page.goto(CHANNEL, { waitUntil: "networkidle2" });
 
         console.log("👉 Login if needed...");
 
@@ -99,7 +96,7 @@ puppeteer.use(StealthPlugin());
         const fileInput = await page.waitForSelector("input[type='file']");
         await fileInput.uploadFile(FILE_PATH);
 
-        console.log("📤 Uploading...");
+        console.log("📤 Uploading... " + FILE_PATH);
 
         await page.waitForSelector("ytcp-video-title #textbox", { timeout: 60000 });
 
@@ -131,12 +128,14 @@ puppeteer.use(StealthPlugin());
 
         console.log("✍️ Title + Description set");
 
+
+
         // -------------------------------------------------
         // NEXT FLOW (safe + non-stuck)
         // -------------------------------------------------
         console.log("➡️ Wizard steps...");
 
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < 1; i++) {
 
             const nextBtn = await page.$('ytcp-button#next-button');
 
@@ -158,6 +157,8 @@ puppeteer.use(StealthPlugin());
             await nextBtn.click();
             await sleep(2000);
         }
+
+   
 
         // -------------------------------------------------
         // AUDIENCE FIX (CRITICAL)
@@ -201,23 +202,18 @@ puppeteer.use(StealthPlugin());
         console.log("➡️ Click next...");
 
 
-            let nextBtn = await page.$('ytcp-button#next-button');
+        let nextBtn = await page.$('ytcp-button#next-button');
 
-            await nextBtn.click();
+        await nextBtn.click();
 
-            console.log("➡️ Click next...");
-
-
-             nextBtn = await page.$('ytcp-button#next-button');
-
-            await nextBtn.click();
-
-            console.log("➡️ Click next...");
+        console.log("➡️ Click next...");
 
 
-             nextBtn = await page.$('ytcp-button#next-button');
+        nextBtn = await page.$('ytcp-button#next-button');
 
-            await nextBtn.click();
+        await nextBtn.click();
+
+        console.log("➡️ Click next...");
 
         // -------------------------------------------------
         // SAVE (safe selector)
@@ -256,6 +252,6 @@ puppeteer.use(StealthPlugin());
     } catch (e) {
         console.error("🔥 Error:", e);
     } finally {
-        if (browser) await browser.close();
+        console.log("ended...")
     }
 })();
